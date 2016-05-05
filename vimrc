@@ -39,34 +39,6 @@ set autoindent
 " remove trailing whitespaces and ^M chars
 autocmd FileType c,cpp,java,php,js,python,twig,xml,yml autocmd BufWritePre <buffer> :call setline(1,map(getline(1,"$"),'substitute(v:val,"\\s\\+$","","")'))
 
-" setting up colors properly
-set t_Co=256
-
-"----------
-" INTERFACE
-"---------
-
-" show matching brackets
-set showmatch
-
-" disable startup message
-set shortmess+=I
-
-" syntax highlighting
-syntax on
-
-" show line numbers
-set number
-
-" no line wrapping
-set nowrap
-
-" use mouse
-set mouse=a
-
-" always show 10 lines above and below cursor
-set scrolloff=10
-
 "--------
 " PLUGINS
 "--------
@@ -109,6 +81,9 @@ call vundle#rc()
 Plugin 'gmarik/vundle'
 
 " PLUGIN SETUP
+" vim themes
+Plugin 'flazz/vim-colorschemes'
+
 " using airline for better status line
 Plugin 'bling/vim-airline'
 Plugin 'vim-airline/vim-airline-themes'
@@ -163,4 +138,34 @@ noremap <C-l>      <Esc>:tabnext<CR>
 inoremap <C-l>      <Esc>:tabnext<CR>
 inoremap <C-h>      <Esc>:tabprev<CR>
 noremap <C-h>      <Esc>:tabprev<CR>
+
+
+"----------
+" INTERFACE
+"---------
+
+" setting up colors properly
+set t_Co=256
+colorscheme badwolf
+
+" show matching brackets
+set showmatch
+
+" disable startup message
+set shortmess+=I
+
+" syntax highlighting
+syntax on
+
+" show line numbers
+set number
+
+" no line wrapping
+set nowrap
+
+" use mouse
+set mouse=a
+
+" always show 10 lines above and below cursor
+set scrolloff=10
 
