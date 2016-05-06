@@ -17,6 +17,7 @@ export EDITOR='vim'
 # configs
 alias zshconfig='vi ~/.zshrc'
 alias vimconfig='vi ~/.vimrc'
+alias aconfig='vi ~/.config/awesome/rc.lua'
 
 # git
 alias g='git'
@@ -32,4 +33,7 @@ alias vi='vim'
 alias v='vim'
 alias "cd.."="cd ../"
 alias cl=clear
-
+alias sagi="sudo apt-get install"
+alias asearch="apt-cache search"
+alias supdate="sudo apt-get update"
+alias grep="grep --color=auto"
