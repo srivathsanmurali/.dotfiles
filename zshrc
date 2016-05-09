@@ -1,7 +1,7 @@
 # Path to your oh-my-zsh installation.
   export ZSH=/home/sri/.oh-my-zsh
 
-ZSH_THEME="robbyrussell"
+ZSH_THEME="sri"
 plugins=(git)
 
 # User configuration
@@ -18,10 +18,12 @@ export EDITOR='vim'
 alias zshconfig='vi ~/.zshrc'
 alias vimconfig='vi ~/.vimrc'
 alias aconfig='vi ~/.config/awesome/rc.lua'
+alias i3config='vi ~/.i3/config'
 
 # git
 alias g='git'
-alias ga='git add -p'
+alias ga='git add'
+alias gap='git add -p'
 alias gc='git commit'
 alias gs='git status'
 alias gd='git diff'
