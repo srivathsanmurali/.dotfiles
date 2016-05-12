@@ -16,6 +16,7 @@ export EDITOR='vim'
 ## Aliases
 # configs
 alias zshconfig='vi ~/.zshrc'
+alias zshrefresh='source ~/.zshrc'
 alias vimconfig='vi ~/.vimrc'
 alias aconfig='vi ~/.config/awesome/rc.lua'
 alias i3config='vi ~/.i3/config'
@@ -33,6 +34,7 @@ alias gp='git push'
 # misc
 alias vi='vim'
 alias v='vim'
+alias sv='sudo vim'
 alias "cd.."="cd ../"
 alias cl=clear
 alias sagi="sudo apt-get install"
