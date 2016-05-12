@@ -177,3 +177,6 @@ exec --no-startup-id nm-applet &
 
 # Wallpaper
 exec --no-startup-id nitrogren --restore &
+
+# Welcome message
+exec 'notify-send "Hello, $USER"'
