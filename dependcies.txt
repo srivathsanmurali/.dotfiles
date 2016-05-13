@@ -1,0 +1,16 @@
+#zsh
+zsh
+oh-my-zsh
+
+#vim
+powerline fonts
+
+#i3
+i3
+xubunutu-desktop
+volumeicon
+nitrogen
+font awesome
+synapse
+i3blocks
+
