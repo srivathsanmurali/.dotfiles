@@ -34,7 +34,7 @@ alias gp='git push'
 # misc
 alias vi='vim'
 alias v='vim'
-alias sv='sudo vim'
+alias sv="sudo vim"
 alias "cd.."="cd ../"
 alias cl=clear
 alias sagi="sudo apt-get install"
