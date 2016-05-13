@@ -28,8 +28,12 @@ ask() {
 dir=`pwd`
 pwd
 
+# backup=0
 # if ask "Do you want to back up all existing dotfiles?" Y; then
-#   echo "Yaay"
+#   echo "backup"
+#   rm -rf ~/.dotfileBackup
+#   mkdir ~/.dotfileBackup
+#   backup=1
 # fi
 
 if ask "Install symlink for .zshrc?" Y; then
