@@ -127,6 +127,18 @@ bindsym $mod+Shift+e exec "i3-nagbar -t warning -m 'You pressed the exit shortcu
 # lock
 bindsym $mod+x exec i3lock --color 2f343f
 
+# system menu
+set $sysmenu "system: [l]ogout  [p]oweroff  [r]eboot"
+bindsym $mod+Delete      mode $sysmenu
+
+mode $sysmenu {
+    bindsym l         exit
+    bindsym p         exec shutdown -P now
+    bindsym r         exec shutdown -r now
+    bindsym Return    mode "default"
+    bindsym Escape    mode "default"
+}
+
 # resize window (you can also use the mouse for that)
 mode "resize" {
         # These bindings trigger as soon as you enter the resize mode
