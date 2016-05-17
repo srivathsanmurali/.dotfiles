@@ -2,7 +2,7 @@
   export ZSH=/home/sri/.oh-my-zsh
 
 ZSH_THEME="sri"
-plugins=(git)
+plugins=(git common-aliases)
 
 # User configuration
   export PATH="/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games"
@@ -30,6 +30,7 @@ alias gs='git status'
 alias gd='git diff'
 alias gco='git checkout'
 alias gp='git push'
+alias gb='git branch'
 
 # misc
 alias vi='vim'

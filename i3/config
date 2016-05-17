@@ -201,7 +201,7 @@ exec --no-startup-id xfce4-power-manager &
 exec --no-startup-id nm-applet &
 
 # Wallpaper
-exec --no-startup-id nitrogren --restore &
+exec --no-startup-id nitrogen --restore &
 
 # Welcome message
 exec 'notify-send "Hello, $USER"'
