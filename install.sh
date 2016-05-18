@@ -53,6 +53,7 @@ fi
 if ask "Install symlink for .vimrc?" Y; then
   echo "vimrc"
   rm ~/.vimrc
+  rm -rf ~/.vim
   ln -sf ${dir}/vimrc ~/.vimrc
 fi
 

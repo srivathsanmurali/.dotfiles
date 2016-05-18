@@ -43,3 +43,9 @@ alias sagi="sudo apt-get install"
 alias asearch="apt-cache search"
 alias supdate="sudo apt-get update"
 alias grep="grep --color=auto"
+
+# The next line updates PATH for the Google Cloud SDK.
+source '/opt/google-cloud-sdk/path.zsh.inc'
+
+# The next line enables shell command completion for gcloud.
+source '/opt/google-cloud-sdk/completion.zsh.inc'
