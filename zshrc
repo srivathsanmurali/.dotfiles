@@ -44,8 +44,13 @@ alias asearch="apt-cache search"
 alias supdate="sudo apt-get update"
 alias grep="grep --color=auto"
 
+#redwood
+alias develSetup='. ${HOME}/redwood_ws/devel_linux/setup.zsh'
+alias rwSetup='. ${HOME}/redwood_ws/RedwoodInternal/Redwood/setup.zsh'
+
+#gcloud~redwood
 # The next line updates PATH for the Google Cloud SDK.
 source '/opt/google-cloud-sdk/path.zsh.inc'
-
 # The next line enables shell command completion for gcloud.
 source '/opt/google-cloud-sdk/completion.zsh.inc'
+
