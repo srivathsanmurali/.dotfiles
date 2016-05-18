@@ -50,8 +50,8 @@ fi
 
 if ask "install sri zsh theme?" y; then
   echo "sri.zsh-theme"
-  rm ~/.oh-my-zsh/themes/sri.zsh-theme
-  ln -sf ${dir}/sri.zsh-theme ~/.oh-my-zsh/themes/sri.zsh-theme
+  rm ${ZSH}/themes/sri.zsh-theme
+  ln -sf ${dir}/sri.zsh-theme ${ZSH}/themes/sri.zsh-theme
 fi
 
 if ask "Install symlink for .vimrc?" Y; then
