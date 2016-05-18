@@ -36,6 +36,12 @@ pwd
 #   backup=1
 # fi
 
+if ask "Install symlink for .gitconfig?" Y; then
+  echo "gitconfig"
+  rm ~/.gitconfig
+  ln -sf ${dir}/gitconfig ~/.gitconfig
+fi
+
 if ask "Install symlink for .zshrc?" Y; then
   echo "zshrc"
   rm ~/.zshrc

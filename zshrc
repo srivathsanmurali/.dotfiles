@@ -31,6 +31,7 @@ alias gd='git diff'
 alias gco='git checkout'
 alias gp='git push'
 alias gb='git branch'
+alias gcl='git clone'
 
 # misc
 alias vi='vim'

@@ -1,0 +1,7 @@
+[user]
+	email = srivathsan92@gmail.com
+	name = Srivathsan Murali
+[color]
+	ui = true
+[push]
+	default = matching
