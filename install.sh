@@ -42,11 +42,15 @@ if ask "Install symlink for .gitconfig?" Y; then
   ln -sf ${dir}/gitconfig ~/.gitconfig
 fi
 
-if ask "Install symlink for .zshrc?" Y; then
+if ask "install symlink for .zshrc?" y; then
   echo "zshrc"
   rm ~/.zshrc
-  rm ~/.oh-my-zsh/themes/sri.zsh-theme
   ln -sf ${dir}/zshrc ~/.zshrc
+fi
+
+if ask "install sri zsh theme?" y; then
+  echo "sri.zsh-theme"
+  rm ~/.oh-my-zsh/themes/sri.zsh-theme
   ln -sf ${dir}/sri.zsh-theme ~/.oh-my-zsh/themes/sri.zsh-theme
 fi
 
