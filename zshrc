@@ -5,7 +5,7 @@ ZSH_THEME="sri"
 plugins=(git common-aliases)
 
 # User configuration
-  export PATH="/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games"
+  export PATH="/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:$PATH"
 # export MANPATH="/usr/local/man:$MANPATH"
 
 source $ZSH/oh-my-zsh.sh
@@ -54,3 +54,8 @@ source '/opt/google-cloud-sdk/path.zsh.inc'
 # The next line enables shell command completion for gcloud.
 source '/opt/google-cloud-sdk/completion.zsh.inc'
 
+# ruby stuff
+#export PATH="$PATH:$HOME/.rvm/bin" # Add RVM to PATH for scripting
+export PATH="$HOME/.rbenv/bin:$PATH"
+eval "$(rbenv init -)"
+export PATH="$HOME/.rbenv/plugins/ruby-build/bin:$PATH"
