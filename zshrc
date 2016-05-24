@@ -43,6 +43,7 @@ alias sagi="sudo apt-get install"
 alias asearch="apt-cache search"
 alias supdate="sudo apt-get update"
 alias grep="grep --color=auto"
+alias m8="make -j8"
 
 #redwood
 alias develSetup='. ${HOME}/redwood_ws/devel_linux/setup.zsh'

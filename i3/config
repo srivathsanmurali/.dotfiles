@@ -84,8 +84,8 @@ bindsym $mod+a focus parent
 
 # worspace names
 set $w1  "1:www "
-set $w2  "2:term "
-set $w3  "3:vim "
+set $w2  "2:vim "
+set $w3  "3:term "
 set $w4  "4"
 set $w5  "5"
 set $w6  "6"
@@ -208,3 +208,6 @@ exec --no-startup-id nitrogen --restore &
 
 # Welcome message
 exec 'notify-send "Hello, $USER"'
+
+# special programs
+assign [title="GL 3.0 Window"] $w3
