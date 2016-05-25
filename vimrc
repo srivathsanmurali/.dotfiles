@@ -140,6 +140,9 @@ inoremap <C-h>      <Esc>:tabprev<CR>
 noremap <C-h>      <Esc>:tabprev<CR>
 
 
+" refresh hotkey
+:nnoremap <F5> :edit<CR>
+:inoremap <F5> <Esc>:edit<CR>
 "----------
 " INTERFACE
 "---------
@@ -161,7 +164,7 @@ syntax on
 set number
 
 " no line wrapping
-set nowrap
+set wrap
 
 " use mouse
 set mouse=a
