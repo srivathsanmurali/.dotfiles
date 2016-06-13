@@ -36,9 +36,15 @@ set softtabstop=2
 " enable auto intend
 set autoindent
 
+" open splits down and below
+set splitbelow
+set splitright
+
 " remove trailing whitespaces and ^M chars
 autocmd FileType c,cpp,java,php,js,python,twig,xml,yml autocmd BufWritePre <buffer> :call setline(1,map(getline(1,"$"),'substitute(v:val,"\\s\\+$","","")'))
 
+" file specific settings
+autocmd BufRead,BufNewFile *.tex set modeline spelllang=en_gb spell wrap
 "--------
 " PLUGINS
 "--------
@@ -132,13 +138,18 @@ let g:NERDTreeMapActivateNode="<F4>"
 let g:NERDTreeMapOpenInTabSilent="<F3>"
 
 " Tab navigation like Firefox.
-nnoremap <C-t>     :tabnew<CR>
+nnoremap <C-t>     <Esc>:tabnew<CR>
 inoremap <C-t>     <Esc>:tabnew<CR>
 noremap <C-l>      <Esc>:tabnext<CR>
 inoremap <C-l>      <Esc>:tabnext<CR>
 inoremap <C-h>      <Esc>:tabprev<CR>
 noremap <C-h>      <Esc>:tabprev<CR>
 
+
+noremap   <S-l>       <Esc><C-W><C-L><CR>
+inoremap  <S-l>       <Esc><C-W><C-L><CR>
+inoremap  <S-h>       <Esc><C-W><C-H><CR>
+noremap   <S-h>       <Esc><C-W><C-H><CR>
 
 " refresh hotkey
 :nnoremap <F5> :edit<CR>

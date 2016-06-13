@@ -1,0 +1,27 @@
+### My ncmpcpp config ###
+
+ncmpcpp_directory = "~/.ncmpcpp"
+mpd_host = "localhost"
+mpd_port = "6600"
+mpd_music_dir = "~/Music"
+
+# visualizer
+visualizer_fifo_path = "/tmp/mpd.fifo"
+visualizer_output_name = "my_fifo"
+visualizer_sync_interval = "30" 
+visualizer_in_stereo = "yes"
+visualizer_type = "wave" (spectrum/wave)
+#visualizer_type = "spectrum" (spectrum/wave)
+visualizer_look = "+|"
+
+#interface
+playlist_display_mode = "columns" 
+playlist_editor_display_mode = "classic"
+user_interface = "alternative" 
+progressbar_color = "white"
+progressbar_elapsed_color = "white"
+progressbar_look = "→→"
+
+#lyrics
+follow_now_playing_lyrics = "yes"
+fetch_lyrics_for_current_song_in_background = "yes"

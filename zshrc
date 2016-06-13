@@ -43,7 +43,11 @@ alias sagi="sudo apt-get install"
 alias asearch="apt-cache search"
 alias supdate="sudo apt-get update"
 alias grep="grep --color=auto"
-alias m8="make -j8"
+alias mk8="make -j4"
+alias open="xdg-open"
+alias copy="xclip -sel clip"
+alias copyPWD="pwd | xclip -sel clip"
+alias music="ncmpcpp"
 
 #redwood
 alias develSetup='. ${HOME}/redwood_ws/devel_linux/setup.zsh'
@@ -55,6 +59,8 @@ source '/opt/google-cloud-sdk/path.zsh.inc'
 # The next line enables shell command completion for gcloud.
 source '/opt/google-cloud-sdk/completion.zsh.inc'
 
+#keyboard shit
+source ~/.Xinitrc
 # ruby stuff
 #export PATH="$PATH:$HOME/.rvm/bin" # Add RVM to PATH for scripting
 export PATH="$HOME/.rbenv/bin:$PATH"

@@ -36,25 +36,25 @@ pwd
 #   backup=1
 # fi
 
-if ask "Install symlink for .gitconfig?" Y; then
+if ask "Install symlink for .gitconfig?" N; then
   echo "gitconfig"
   rm ~/.gitconfig
   ln -sf ${dir}/gitconfig ~/.gitconfig
 fi
 
-if ask "install symlink for .zshrc?" y; then
+if ask "install symlink for .zshrc?" N; then
   echo "zshrc"
   rm ~/.zshrc
   ln -sf ${dir}/zshrc ~/.zshrc
 fi
 
-if ask "install sri zsh theme?" y; then
+if ask "install sri zsh theme?" N; then
   echo "sri.zsh-theme"
   rm ${ZSH}/themes/sri.zsh-theme
   ln -sf ${dir}/sri.zsh-theme ${ZSH}/themes/sri.zsh-theme
 fi
 
-if ask "Install symlink for .vimrc?" Y; then
+if ask "Install symlink for .vimrc?" N; then
   echo "vimrc"
   rm ~/.vimrc
   rm -rf ~/.vim
@@ -67,4 +67,17 @@ if ask "Install symlink for .i3?" N; then
   rm ~/.i3blocks.conf
   ln -sf ${dir}/i3 ~/.i3
   ln -sf ${dir}/i3blocks.conf ~/.i3blocks.conf
+fi
+
+if ask "Install symlink for .mpd?" N; then
+  echo "mpd"
+  rm -rf ~/.mpd
+  ln -sf ${dir}/mpd ~/.mpd
+fi
+
+if ask "install symlink for .ncmpcpp?" N; then
+  echo "ncmpcpp"
+  rm -rf ~/.ncmpcpp
+  mkdir ~/.ncmpcpp
+  ln -sf ${dir}/ncmpcpp ~/.ncmpcpp/config
 fi

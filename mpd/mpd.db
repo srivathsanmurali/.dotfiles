@@ -1,0 +1,6186 @@
+info_begin
+format: 1
+mpd_version: 0.18.7
+fs_charset: UTF-8
+tag: Artist
+tag: ArtistSort
+tag: Album
+tag: AlbumArtist
+tag: AlbumArtistSort
+tag: Title
+tag: Track
+tag: Name
+tag: Genre
+tag: Date
+tag: Composer
+tag: Performer
+tag: Disc
+tag: MUSICBRAINZ_ARTISTID
+tag: MUSICBRAINZ_ALBUMID
+tag: MUSICBRAINZ_ALBUMARTISTID
+tag: MUSICBRAINZ_TRACKID
+info_end
+directory: 2003 - Fallen
+mtime: 1464241141
+begin: 2003 - Fallen
+song_begin: 01 - Going Under.mp3
+Time: 215
+Artist: Evanescence
+AlbumArtist: Evanescence
+Title: Going Under
+Album: Fallen
+Track: 01
+Date: 2003
+Genre: Gothic Rock
+mtime: 1333161782
+song_end
+song_begin: 02 - Bring Me To Life.mp3
+Time: 237
+Artist: Evanescence
+AlbumArtist: Evanescence
+Title: Bring Me To Life
+Album: Fallen
+Track: 02
+Date: 2003
+Genre: Gothic Rock
+mtime: 1333161784
+song_end
+song_begin: 03 - Everybody's Fool.mp3
+Time: 196
+Artist: Evanescence
+AlbumArtist: Evanescence
+Title: Everybody's Fool
+Album: Fallen
+Track: 03
+Date: 2003
+Genre: Gothic Rock
+mtime: 1333161784
+song_end
+song_begin: 04 - My Immortal.mp3
+Time: 264
+Artist: Evanescence
+AlbumArtist: Evanescence
+Title: My Immortal
+Album: Fallen
+Track: 04
+Date: 2003
+Genre: Gothic Rock
+mtime: 1333161786
+song_end
+song_begin: 05 - Haunted.mp3
+Time: 187
+Artist: Evanescence
+AlbumArtist: Evanescence
+Title: Haunted
+Album: Fallen
+Track: 05
+Date: 2003
+Genre: Gothic Rock
+mtime: 1333161788
+song_end
+song_begin: 06 - Tourniquet.mp3
+Time: 278
+Artist: Evanescence
+AlbumArtist: Evanescence
+Title: Tourniquet
+Album: Fallen
+Track: 06
+Date: 2003
+Genre: Gothic Rock
+mtime: 1333161788
+song_end
+song_begin: 07 - Imaginary.mp3
+Time: 258
+Artist: Evanescence
+AlbumArtist: Evanescence
+Title: Imaginary
+Album: Fallen
+Track: 07
+Date: 2003
+Genre: Gothic Rock
+mtime: 1333161790
+song_end
+song_begin: 08 - Taking Over Me.mp3
+Time: 230
+Artist: Evanescence
+AlbumArtist: Evanescence
+Title: Taking Over Me
+Album: Fallen
+Track: 08
+Date: 2003
+Genre: Gothic Rock
+mtime: 1333161790
+song_end
+song_begin: 09 - Hello.mp3
+Time: 220
+Artist: Evanescence
+AlbumArtist: Evanescence
+Title: Hello
+Album: Fallen
+Track: 09
+Date: 2003
+Genre: Gothic Rock
+mtime: 1333161792
+song_end
+song_begin: 10 - My Last Breath.mp3
+Time: 247
+Artist: Evanescence
+AlbumArtist: Evanescence
+Title: My Last Breath
+Album: Fallen
+Track: 10
+Date: 2003
+Genre: Gothic Rock
+mtime: 1333161794
+song_end
+song_begin: 11 - Whisper.mp3
+Time: 327
+Artist: Evanescence
+AlbumArtist: Evanescence
+Title: Whisper
+Album: Fallen
+Track: 11
+Date: 2003
+Genre: Gothic Rock
+mtime: 1333161794
+song_end
+end: 2003 - Fallen
+directory: 2006 - The Open Door
+mtime: 1464241143
+begin: 2006 - The Open Door
+song_begin: 01 - Sweet Sacrifice.mp3
+Time: 186
+Artist: Evanescence
+AlbumArtist: Evanescence
+Title: Sweet Sacrifice
+Album: The Open Door
+Track: 01
+Date: 2006
+Genre: (9)
+mtime: 1333161848
+song_end
+song_begin: 02 - Call Me When You're Sober.mp3
+Time: 215
+Artist: Evanescence
+AlbumArtist: Evanescence
+Title: Call Me When You're Sober
+Album: The Open Door
+Track: 02
+Date: 2006
+Genre: (9)
+mtime: 1333161848
+song_end
+song_begin: 03 - Weight Of The World.mp3
+Time: 218
+Artist: Evanescence
+AlbumArtist: Evanescence
+Title: Weight Of The World
+Album: The Open Door
+Track: 03
+Date: 2006
+Genre: (9)
+mtime: 1333161850
+song_end
+song_begin: 04 - Lithium.mp3
+Time: 224
+Artist: Evanescence
+AlbumArtist: Evanescence
+Title: Lithium
+Album: The Open Door
+Track: 04
+Date: 2006
+Genre: (9)
+mtime: 1333161852
+song_end
+song_begin: 05 - Cloud Nine.mp3
+Time: 262
+Artist: Evanescence
+AlbumArtist: Evanescence
+Title: Cloud Nine
+Album: The Open Door
+Track: 05
+Date: 2006
+Genre: (9)
+mtime: 1333161852
+song_end
+song_begin: 06 - Snow White Queen.mp3
+Time: 263
+Artist: Evanescence
+AlbumArtist: Evanescence
+Title: Snow White Queen
+Album: The Open Door
+Track: 06
+Date: 2006
+Genre: (9)
+mtime: 1333161854
+song_end
+song_begin: 07 - Lacrymosa.mp3
+Time: 218
+Artist: Evanescence
+AlbumArtist: Evanescence
+Title: Lacrymosa
+Album: The Open Door
+Track: 07
+Date: 2006
+Genre: (9)
+mtime: 1333161854
+song_end
+song_begin: 08 - Like You.mp3
+Time: 257
+Artist: Evanescence
+AlbumArtist: Evanescence
+Title: Like You
+Album: The Open Door
+Track: 08
+Date: 2006
+Genre: (9)
+mtime: 1333161856
+song_end
+song_begin: 09 - Lose Control.mp3
+Time: 290
+Artist: Evanescence
+AlbumArtist: Evanescence
+Title: Lose Control
+Album: The Open Door
+Track: 09
+Date: 2006
+Genre: (9)
+mtime: 1333161858
+song_end
+song_begin: 10 - The Only One.mp3
+Time: 280
+Artist: Evanescence
+AlbumArtist: Evanescence
+Title: The Only One
+Album: The Open Door
+Track: 10
+Date: 2006
+Genre: (9)
+mtime: 1333161860
+song_end
+song_begin: 11 - Your Star.mp3
+Time: 283
+Artist: Evanescence
+AlbumArtist: Evanescence
+Title: Your Star
+Album: The Open Door
+Track: 11
+Date: 2006
+Genre: (9)
+mtime: 1333161860
+song_end
+song_begin: 12 - All That I'm Living For.mp3
+Time: 229
+Artist: Evanescence
+AlbumArtist: Evanescence
+Title: All That I'm Living For
+Album: The Open Door
+Track: 12
+Date: 2006
+Genre: (9)
+mtime: 1333161862
+song_end
+song_begin: 13 - Good Enough.mp3
+Time: 331
+Artist: Evanescence
+AlbumArtist: Evanescence
+Title: Good Enough
+Album: The Open Door
+Track: 13
+Date: 2006
+Genre: (9)
+mtime: 1333161866
+song_end
+end: 2006 - The Open Door
+directory: Christopher Tin - Calling All Dawns
+mtime: 1464241147
+begin: Christopher Tin - Calling All Dawns
+song_begin: 01 Baba Yetu (feat. Soweto Gospel Choir).flac
+Time: 210
+Album: Calling All Dawns
+Artist: Christopher Tin
+Date: 2009
+Genre: Classical
+Title: Baba Yetu (feat. Soweto Gospel Choir)
+Track: 1
+mtime: 1343917082
+song_end
+song_begin: 02 Mado Kara Mieru (feat. Lia, Aoi Tada, Kaori Omura).flac
+Time: 286
+Album: Calling All Dawns
+Artist: Christopher Tin
+Date: 2009
+Genre: Classical
+Title: Mado Kara Mieru (feat. Lia, Aoi Tada, Kaori Omura)
+Track: 2
+mtime: 1300965884
+song_end
+song_begin: 03 Dao Zai Fan Ye (feat. Jia Ruhan).flac
+Time: 196
+Album: Calling All Dawns
+Artist: Christopher Tin
+Genre: Classical
+Date: 2009
+Title: Dao Zai Fan Ye (feat. Jia Ruhan)
+Track: 3
+mtime: 1300803620
+song_end
+song_begin: 04 Se  Pra Vir Que Venha (feat. Dulce Pontes).flac
+Time: 255
+Album: Calling All Dawns
+Artist: Christopher Tin
+Genre: Classical
+Date: 2009
+Title: Se É Pra Vir Que Venha (feat. Dulce Pontes)
+Track: 4
+mtime: 1300803624
+song_end
+song_begin: 05 Rassemblons-Nous.flac
+Time: 268
+Album: Calling All Dawns
+Artist: Christopher Tin
+Genre: Classical
+Date: 2009
+Title: Rassemblons-Nous
+Track: 5
+mtime: 1300803630
+song_end
+song_begin: 06 Lux Aeterna.flac
+Time: 240
+Album: Calling All Dawns
+Artist: Christopher Tin
+Genre: Classical
+Date: 2009
+Title: Lux Aeterna
+Track: 6
+mtime: 1300803632
+song_end
+song_begin: 07 Caoineadh (feat. Anonymous 4).flac
+Time: 345
+Album: Calling All Dawns
+Artist: Christopher Tin
+Genre: Classical
+Date: 2009
+Title: Caoineadh (feat. Anonymous 4)
+Track: 7
+mtime: 1300803640
+song_end
+song_begin: 08 Hymn do Trjcy Swietej (feat. Frederica von Stade).flac
+Time: 409
+Album: Calling All Dawns
+Artist: Christopher Tin
+Genre: Classical
+Date: 2009
+Title: Hymn do Trójcy Świętej (feat. Frederica von Stade)
+Track: 8
+mtime: 1300803646
+song_end
+song_begin: 09 Hayom Kadosh.flac
+Time: 106
+Album: Calling All Dawns
+Artist: Christopher Tin
+Genre: Classical
+Date: 2009
+Title: Hayom Kadosh
+Track: 9
+mtime: 1300803644
+song_end
+song_begin: 10 Hams+f+r (feat. Sussan Deyhim).flac
+Time: 173
+Album: Calling All Dawns
+Artist: Christopher Tin
+Genre: Classical
+Date: 2009
+Title: Hamsáfár (feat. Sussan Deyhim)
+Track: 10
+mtime: 1300803652
+song_end
+song_begin: 11 Sukla-Krsne.flac
+Time: 122
+Album: Calling All Dawns
+Artist: Christopher Tin
+Genre: Classical
+Date: 2009
+Title: Sukla-Krsne
+Track: 11
+mtime: 1300803652
+song_end
+song_begin: 12 Kia Hora Te Marino.flac
+Time: 199
+Album: Calling All Dawns
+Artist: Christopher Tin
+Genre: Classical
+Date: 2009
+Title: Kia Hora Te Marino
+Track: 12
+mtime: 1300803658
+song_end
+end: Christopher Tin - Calling All Dawns
+directory: Eric Clapton - No Reason to Cry (2014) [24-192 HD FLAC]
+mtime: 1464241175
+begin: Eric Clapton - No Reason to Cry (2014) [24-192 HD FLAC]
+song_begin: 01-Beautiful Thing.flac
+Time: 267
+Title: Beautiful Thing
+Album: No Reason To Cry
+Artist: Eric Clapton
+Genre: Rock
+Date: 1976
+Track: 01
+AlbumArtist: Eric Clapton
+mtime: 1459186914
+song_end
+song_begin: 02-Carnival.flac
+Time: 224
+Title: Carnival
+Album: No Reason To Cry
+Artist: Eric Clapton
+Genre: Rock
+Date: 1976
+Track: 02
+AlbumArtist: Eric Clapton
+mtime: 1459186918
+song_end
+song_begin: 03-Sign Language.flac
+Time: 179
+Title: Sign Language
+Album: No Reason To Cry
+Artist: Eric Clapton
+Genre: Rock
+Date: 1976
+Track: 03
+AlbumArtist: Eric Clapton
+mtime: 1459186914
+song_end
+song_begin: 04-County Jail Blues.flac
+Time: 241
+Title: County Jail Blues
+Album: No Reason To Cry
+Artist: Eric Clapton
+Genre: Rock
+Date: 1976
+Track: 04
+AlbumArtist: Eric Clapton
+mtime: 1459186912
+song_end
+song_begin: 05-All Our Past Times.flac
+Time: 281
+Title: All Our Past Times
+Album: No Reason To Cry
+Artist: Eric Clapton
+Genre: Rock
+Date: 1976
+Track: 05
+AlbumArtist: Eric Clapton
+mtime: 1459186926
+song_end
+song_begin: 06-Hello Old Friend.flac
+Time: 217
+Title: Hello Old Friend
+Album: No Reason To Cry
+Artist: Eric Clapton
+Genre: Rock
+Date: 1976
+Track: 06
+AlbumArtist: Eric Clapton
+mtime: 1459186918
+song_end
+song_begin: 07-Double Trouble.flac
+Time: 263
+Title: Double Trouble
+Album: No Reason To Cry
+Artist: Eric Clapton
+Genre: Rock
+Date: 1976
+Track: 07
+AlbumArtist: Eric Clapton
+mtime: 1459186920
+song_end
+song_begin: 08-Innocent Times.flac
+Time: 253
+Title: Innocent Times
+Album: No Reason To Cry
+Artist: Eric Clapton
+Genre: Rock
+Date: 1976
+Track: 08
+AlbumArtist: Eric Clapton
+mtime: 1459186920
+song_end
+song_begin: 09-Hungry.flac
+Time: 280
+Title: Hungry
+Album: No Reason To Cry
+Artist: Eric Clapton
+Genre: Rock
+Date: 1976
+Track: 09
+AlbumArtist: Eric Clapton
+mtime: 1459186918
+song_end
+song_begin: 10-Black Summer Rain.flac
+Time: 298
+Title: Black Summer Rain
+Album: No Reason To Cry
+Artist: Eric Clapton
+Genre: Rock
+Date: 1976
+Track: 10
+AlbumArtist: Eric Clapton
+mtime: 1459186922
+song_end
+song_begin: 11-Last Night.flac
+Time: 296
+Title: Last Night
+Album: No Reason To Cry
+Artist: Eric Clapton
+Genre: Rock
+Date: 1976
+Track: 11
+AlbumArtist: Eric Clapton
+mtime: 1459186918
+song_end
+end: Eric Clapton - No Reason to Cry (2014) [24-192 HD FLAC]
+directory: GoGo Penguin - Man Made Object
+mtime: 1464241190
+begin: GoGo Penguin - Man Made Object
+directory: GoGo Penguin - Man Made Object (flac).zip
+mtime: 1462783080
+begin: GoGo Penguin - Man Made Object/GoGo Penguin - Man Made Object (flac).zip
+directory: GoGo Penguin - Man Made Object
+mtime: 0
+begin: GoGo Penguin - Man Made Object/GoGo Penguin - Man Made Object (flac).zip/GoGo Penguin - Man Made Object
+song_begin: 01 - All Res.flac
+mtime: 0
+song_end
+song_begin: 02 - Unspeakable World.flac
+mtime: 0
+song_end
+song_begin: 03 - Branches Break.flac
+mtime: 0
+song_end
+song_begin: 04 - Weird Cat.flac
+mtime: 0
+song_end
+song_begin: 05 - Quiet Mind.flac
+mtime: 0
+song_end
+song_begin: 06 - Smarra.flac
+mtime: 0
+song_end
+song_begin: 07 - Initiate.flac
+mtime: 0
+song_end
+song_begin: 08 - GBFISYSIH.flac
+mtime: 0
+song_end
+song_begin: 09 - Surrender To Mountain.flac
+mtime: 0
+song_end
+song_begin: 10 - Protest.flac
+mtime: 0
+song_end
+end: GoGo Penguin - Man Made Object/GoGo Penguin - Man Made Object (flac).zip/GoGo Penguin - Man Made Object
+end: GoGo Penguin - Man Made Object/GoGo Penguin - Man Made Object (flac).zip
+directory: GoGo Penguin - Man Made Object (mp3).zip
+mtime: 1462783066
+begin: GoGo Penguin - Man Made Object/GoGo Penguin - Man Made Object (mp3).zip
+directory: GoGo Penguin - Man Made Object
+mtime: 0
+begin: GoGo Penguin - Man Made Object/GoGo Penguin - Man Made Object (mp3).zip/GoGo Penguin - Man Made Object
+song_begin: 01 - All Res.mp3
+mtime: 0
+song_end
+song_begin: 02 - Unspeakable World.mp3
+mtime: 0
+song_end
+song_begin: 03 - Branches Break.mp3
+mtime: 0
+song_end
+song_begin: 04 - Weird Cat.mp3
+mtime: 0
+song_end
+song_begin: 05 - Quiet Mind.mp3
+mtime: 0
+song_end
+song_begin: 06 - Smarra.mp3
+mtime: 0
+song_end
+song_begin: 07 - Initiate.mp3
+mtime: 0
+song_end
+song_begin: 08 - GBFISYSIH.mp3
+mtime: 0
+song_end
+song_begin: 09 - Surrender To Mountain.mp3
+mtime: 0
+song_end
+song_begin: 10 - Protest.mp3
+mtime: 0
+song_end
+end: GoGo Penguin - Man Made Object/GoGo Penguin - Man Made Object (mp3).zip/GoGo Penguin - Man Made Object
+end: GoGo Penguin - Man Made Object/GoGo Penguin - Man Made Object (mp3).zip
+directory: flac
+mtime: 1464241180
+begin: GoGo Penguin - Man Made Object/flac
+directory: GoGo Penguin - Man Made Object
+mtime: 1464241184
+begin: GoGo Penguin - Man Made Object/flac/GoGo Penguin - Man Made Object
+song_begin: 03 - Branches Break.flac
+mtime: 1462782630
+song_end
+song_begin: 07 - Initiate.flac
+mtime: 1462782632
+song_end
+song_begin: 01 - All Res.flac
+Time: 316
+Title: All Res
+Artist: GoGo Penguin
+AlbumArtist: GoGo Penguin
+Album: Man Made Object
+Date: 2016
+Track: 01
+Genre: Jazz
+mtime: 1462782628
+song_end
+song_begin: 05 - Quiet Mind.flac
+Time: 264
+Title: Quiet Mind
+Artist: GoGo Penguin
+AlbumArtist: GoGo Penguin
+Album: Man Made Object
+Date: 2016
+Track: 05
+Genre: Jazz
+mtime: 1462782630
+song_end
+song_begin: 06 - Smarra.flac
+Time: 392
+Title: Smarra
+Artist: GoGo Penguin
+AlbumArtist: GoGo Penguin
+Album: Man Made Object
+Date: 2016
+Track: 06
+Genre: Jazz
+mtime: 1462782630
+song_end
+song_begin: 08 - GBFISYSIH.flac
+Time: 202
+Title: GBFISYSIH
+Artist: GoGo Penguin
+AlbumArtist: GoGo Penguin
+Album: Man Made Object
+Date: 2016
+Track: 08
+Genre: Jazz
+mtime: 1462782632
+song_end
+song_begin: 09 - Surrender To Mountain.flac
+Time: 239
+Title: Surrender To Mountain
+Artist: GoGo Penguin
+AlbumArtist: GoGo Penguin
+Album: Man Made Object
+Date: 2016
+Track: 09
+Genre: Jazz
+mtime: 1462782632
+song_end
+end: GoGo Penguin - Man Made Object/flac/GoGo Penguin - Man Made Object
+end: GoGo Penguin - Man Made Object/flac
+end: GoGo Penguin - Man Made Object
+directory: Jason Mraz - We Sing, We Dance, We Steal Things
+mtime: 1464241195
+begin: Jason Mraz - We Sing, We Dance, We Steal Things
+song_begin: 01 - Make It Mine.mp3
+Time: 188
+Artist: Jason Mraz
+AlbumArtist: Jason Mraz
+Title: Make It Mine
+Album: We Sing, We Dance, We Steal Things (Deluxe Edition)
+Track: 01
+Date: 2008
+Genre: Pop
+mtime: 1333161570
+song_end
+song_begin: 02 - I'm Yours.mp3
+Time: 243
+Artist: Jason Mraz
+AlbumArtist: Jason Mraz
+Title: I'm Yours
+Album: We Sing, We Dance, We Steal Things (Deluxe Edition)
+Track: 02
+Date: 2008
+Genre: Pop
+mtime: 1333161570
+song_end
+song_begin: 03 - Lucky (Feat. Colbie Caillat).mp3
+Time: 190
+Artist: Jason Mraz
+AlbumArtist: Jason Mraz
+Title: Lucky (Feat. Colbie Caillat)
+Album: We Sing, We Dance, We Steal Things (Deluxe Edition)
+Track: 03
+Date: 2008
+Genre: Pop
+mtime: 1333161570
+song_end
+song_begin: 04 - Butterfly.mp3
+Time: 300
+Artist: Jason Mraz
+AlbumArtist: Jason Mraz
+Title: Butterfly
+Album: We Sing, We Dance, We Steal Things (Deluxe Edition)
+Track: 04
+Date: 2008
+Genre: Pop
+mtime: 1333161570
+song_end
+song_begin: 05 - Live High.mp3
+Time: 252
+Artist: Jason Mraz
+AlbumArtist: Jason Mraz
+Title: Live High
+Album: We Sing, We Dance, We Steal Things (Deluxe Edition)
+Track: 05
+Date: 2008
+Genre: Pop
+mtime: 1333161572
+song_end
+song_begin: 06 - Love For A Child.mp3
+Time: 246
+Artist: Jason Mraz
+AlbumArtist: Jason Mraz
+Title: Love For A Child
+Album: We Sing, We Dance, We Steal Things (Deluxe Edition)
+Track: 06
+Date: 2008
+Genre: Pop
+mtime: 1333161572
+song_end
+song_begin: 07 - Details In The Fabric (Feat. James Morrison).mp3
+Time: 346
+Artist: Jason Mraz
+AlbumArtist: Jason Mraz
+Title: Details In The Fabric (Feat. James Morrison)
+Album: We Sing, We Dance, We Steal Things (Deluxe Edition)
+Track: 07
+Date: 2008
+Genre: Pop
+mtime: 1333161572
+song_end
+song_begin: 08 - Coyotes.mp3
+Time: 218
+Artist: Jason Mraz
+AlbumArtist: Jason Mraz
+Title: Coyotes
+Album: We Sing, We Dance, We Steal Things (Deluxe Edition)
+Track: 08
+Date: 2008
+Genre: Pop
+mtime: 1333161574
+song_end
+song_begin: 09 - Only Human.mp3
+Time: 243
+Artist: Jason Mraz
+AlbumArtist: Jason Mraz
+Title: Only Human
+Album: We Sing, We Dance, We Steal Things (Deluxe Edition)
+Track: 09
+Date: 2008
+Genre: Pop
+mtime: 1333161574
+song_end
+song_begin: 10 - The Dynamo Of Volition.mp3
+Time: 217
+Artist: Jason Mraz
+AlbumArtist: Jason Mraz
+Title: The Dynamo Of Volition
+Album: We Sing, We Dance, We Steal Things (Deluxe Edition)
+Track: 10
+Date: 2008
+Genre: Pop
+mtime: 1333161574
+song_end
+song_begin: 11 - If It Kills Me.mp3
+Time: 274
+Artist: Jason Mraz
+AlbumArtist: Jason Mraz
+Title: If It Kills Me
+Album: We Sing, We Dance, We Steal Things (Deluxe Edition)
+Track: 11
+Date: 2008
+Genre: Pop
+mtime: 1333161576
+song_end
+song_begin: 12 - A Beautiful Mess.mp3
+Time: 338
+Artist: Jason Mraz
+AlbumArtist: Jason Mraz
+Title: A Beautiful Mess
+Album: We Sing, We Dance, We Steal Things (Deluxe Edition)
+Track: 12
+Date: 2008
+Genre: Pop
+mtime: 1333161576
+song_end
+end: Jason Mraz - We Sing, We Dance, We Steal Things
+directory: Musicals
+mtime: 1464241203
+begin: Musicals
+directory: Lin-Manuel Miranda - Hamilton [Original Broadway Cast Recording] [2015] [FLAC]
+mtime: 1464241216
+begin: Musicals/Lin-Manuel Miranda - Hamilton [Original Broadway Cast Recording] [2015] [FLAC]
+song_begin: 01 - Alexander Hamilton.flac
+Time: 237
+Title: Alexander Hamilton
+Album: Hamilton
+Artist: Lin-Manuel Miranda
+Genre: Musical
+AlbumArtist: Lin-Manuel Miranda
+Date: 2015
+Track: 01
+mtime: 1463999410
+song_end
+song_begin: 02 - Aaron Burr, Sir.flac
+Time: 157
+Title: Aaron Burr, Sir
+Album: Hamilton
+Artist: Lin-Manuel Miranda
+Genre: Musical
+AlbumArtist: Lin-Manuel Miranda
+Date: 2015
+Track: 02
+mtime: 1463999406
+song_end
+song_begin: 03 - My Shot.flac
+Time: 334
+Title: My Shot
+Album: Hamilton
+Artist: Lin-Manuel Miranda
+Genre: Musical
+AlbumArtist: Lin-Manuel Miranda
+Date: 2015
+Track: 03
+mtime: 1463999398
+song_end
+song_begin: 04 - The Story of Tonight.flac
+Time: 92
+Title: The Story of Tonight
+Album: Hamilton
+Artist: Lin-Manuel Miranda
+Genre: Musical
+AlbumArtist: Lin-Manuel Miranda
+Date: 2015
+Track: 04
+mtime: 1463999386
+song_end
+song_begin: 05 - The Schuyler Sisters.flac
+Time: 187
+Title: The Schuyler Sisters
+Album: Hamilton
+Artist: Lin-Manuel Miranda
+Genre: Musical
+AlbumArtist: Lin-Manuel Miranda
+Date: 2015
+Track: 05
+mtime: 1463999388
+song_end
+song_begin: 06 - Farmer Refuted.flac
+Time: 113
+Title: Farmer Refuted
+Album: Hamilton
+Artist: Lin-Manuel Miranda
+Genre: Musical
+AlbumArtist: Lin-Manuel Miranda
+Date: 2015
+Track: 06
+mtime: 1463999410
+song_end
+song_begin: 07 - You'll Be Back.flac
+Time: 209
+Title: You'll Be Back
+Album: Hamilton
+Artist: Lin-Manuel Miranda
+Genre: Musical
+AlbumArtist: Lin-Manuel Miranda
+Date: 2015
+Track: 07
+mtime: 1463999410
+song_end
+song_begin: 08 - Right Hand Man.flac
+Time: 322
+Title: Right Hand Man
+Album: Hamilton
+Artist: Lin-Manuel Miranda
+Genre: Musical
+AlbumArtist: Lin-Manuel Miranda
+Date: 2015
+Track: 08
+mtime: 1463999410
+song_end
+song_begin: 09 - A Winter's Ball.flac
+Time: 70
+Title: A Winter's Ball
+Album: Hamilton
+Artist: Lin-Manuel Miranda
+Genre: Musical
+AlbumArtist: Lin-Manuel Miranda
+Date: 2015
+Track: 09
+mtime: 1463999370
+song_end
+song_begin: 10 - Helpless.flac
+Time: 250
+Title: Helpless
+Album: Hamilton
+Artist: Lin-Manuel Miranda
+Genre: Musical
+AlbumArtist: Lin-Manuel Miranda
+Date: 2015
+Track: 10
+mtime: 1463999400
+song_end
+song_begin: 11 - Satisfied.flac
+Time: 330
+Title: Satisfied
+Album: Hamilton
+Artist: Lin-Manuel Miranda
+Genre: Musical
+AlbumArtist: Lin-Manuel Miranda
+Date: 2015
+Track: 11
+mtime: 1463999414
+song_end
+song_begin: 12 - The Story of Tonight (Reprise).flac
+Time: 116
+Title: The Story of Tonight (Reprise)
+Album: Hamilton
+Artist: Lin-Manuel Miranda
+Genre: Musical
+AlbumArtist: Lin-Manuel Miranda
+Date: 2015
+Track: 12
+mtime: 1463999390
+song_end
+song_begin: 13 - Wait for It.flac
+Time: 194
+Title: Wait for It
+Album: Hamilton
+Artist: Lin-Manuel Miranda
+Genre: Musical
+AlbumArtist: Lin-Manuel Miranda
+Date: 2015
+Track: 13
+mtime: 1463999394
+song_end
+song_begin: 14 - Stay Alive.flac
+Time: 160
+Title: Stay Alive
+Album: Hamilton
+Artist: Lin-Manuel Miranda
+Genre: Musical
+AlbumArtist: Lin-Manuel Miranda
+Date: 2015
+Track: 14
+mtime: 1463999382
+song_end
+song_begin: 15 - Ten Duel Commandments.flac
+Time: 107
+Title: Ten Duel Commandments
+Album: Hamilton
+Artist: Lin-Manuel Miranda
+Genre: Musical
+AlbumArtist: Lin-Manuel Miranda
+Date: 2015
+Track: 15
+mtime: 1463999406
+song_end
+song_begin: 16 - Meet Me Inside.flac
+Time: 84
+Title: Meet Me Inside
+Album: Hamilton
+Artist: Lin-Manuel Miranda
+Genre: Musical
+AlbumArtist: Lin-Manuel Miranda
+Date: 2015
+Track: 16
+mtime: 1463999388
+song_end
+song_begin: 17 - That Would Be Enough.flac
+Time: 179
+Title: That Would Be Enough
+Album: Hamilton
+Artist: Lin-Manuel Miranda
+Genre: Musical
+AlbumArtist: Lin-Manuel Miranda
+Date: 2015
+Track: 17
+mtime: 1463999388
+song_end
+song_begin: 18 - Guns and Ships.flac
+Time: 128
+Title: Guns and Ships
+Album: Hamilton
+Artist: Lin-Manuel Miranda
+Genre: Musical
+AlbumArtist: Lin-Manuel Miranda
+Date: 2015
+Track: 18
+mtime: 1463999402
+song_end
+song_begin: 19 - History Has Its Eyes on You.flac
+Time: 98
+Title: History Has Its Eyes on You
+Album: Hamilton
+Artist: Lin-Manuel Miranda
+Genre: Musical
+AlbumArtist: Lin-Manuel Miranda
+Date: 2015
+Track: 19
+mtime: 1463999406
+song_end
+song_begin: 20 - Yorktown (The World Turned Upside Down).flac
+Time: 243
+Title: Yorktown (The World Turned Upside Down)
+Album: Hamilton
+Artist: Lin-Manuel Miranda
+Genre: Musical
+AlbumArtist: Lin-Manuel Miranda
+Date: 2015
+Track: 20
+mtime: 1463999412
+song_end
+song_begin: 21 - What Comes Next.flac
+Time: 100
+Title: What Comes Next?
+Album: Hamilton
+Artist: Lin-Manuel Miranda
+Genre: Musical
+AlbumArtist: Lin-Manuel Miranda
+Date: 2015
+Track: 21
+mtime: 1463999410
+song_end
+song_begin: 22 - Dear Theodosia.flac
+Time: 184
+Title: Dear Theodosia
+Album: Hamilton
+Artist: Lin-Manuel Miranda
+Genre: Musical
+AlbumArtist: Lin-Manuel Miranda
+Date: 2015
+Track: 22
+mtime: 1463999408
+song_end
+song_begin: 23 - Non-Stop.flac
+Time: 386
+Title: Non-Stop
+Album: Hamilton
+Artist: Lin-Manuel Miranda
+Genre: Musical
+AlbumArtist: Lin-Manuel Miranda
+Date: 2015
+Track: 23
+mtime: 1463999414
+song_end
+song_begin: 24 - What'd I Miss.flac
+Time: 237
+Title: What'd I Miss
+Album: Hamilton
+Artist: Lin-Manuel Miranda
+Genre: Musical
+AlbumArtist: Lin-Manuel Miranda
+Date: 2015
+Track: 24
+mtime: 1463999412
+song_end
+song_begin: 25 - Cabinet Battle #1.flac
+Time: 216
+Title: Cabinet Battle #1
+Album: Hamilton
+Artist: Lin-Manuel Miranda
+Genre: Musical
+AlbumArtist: Lin-Manuel Miranda
+Date: 2015
+Track: 25
+mtime: 1463999414
+song_end
+song_begin: 26 - Take a Break.flac
+Time: 287
+Title: Take a Break
+Album: Hamilton
+Artist: Lin-Manuel Miranda
+Genre: Musical
+AlbumArtist: Lin-Manuel Miranda
+Date: 2015
+Track: 26
+mtime: 1463999402
+song_end
+song_begin: 27 - Say No to This.flac
+Time: 243
+Title: Say No to This
+Album: Hamilton
+Artist: Lin-Manuel Miranda
+Genre: Musical
+AlbumArtist: Lin-Manuel Miranda
+Date: 2015
+Track: 27
+mtime: 1463999406
+song_end
+song_begin: 28 - The Room Where It Happens.flac
+Time: 319
+Title: The Room Where It Happens
+Album: Hamilton
+Artist: Lin-Manuel Miranda
+Genre: Musical
+AlbumArtist: Lin-Manuel Miranda
+Date: 2015
+Track: 28
+mtime: 1463999396
+song_end
+song_begin: 29 - Schuyler Defeated.flac
+Time: 64
+Title: Schuyler Defeated
+Album: Hamilton
+Artist: Lin-Manuel Miranda
+Genre: Musical
+AlbumArtist: Lin-Manuel Miranda
+Date: 2015
+Track: 29
+mtime: 1463999346
+song_end
+song_begin: 30 - Cabinet Battle #2.flac
+Time: 143
+Title: Cabinet Battle #2
+Album: Hamilton
+Artist: Lin-Manuel Miranda
+Genre: Musical
+AlbumArtist: Lin-Manuel Miranda
+Date: 2015
+Track: 30
+mtime: 1463999394
+song_end
+song_begin: 31 - Washington on Your Side.flac
+Time: 182
+Title: Washington on Your Side
+Album: Hamilton
+Artist: Lin-Manuel Miranda
+Genre: Musical
+AlbumArtist: Lin-Manuel Miranda
+Date: 2015
+Track: 31
+mtime: 1463999412
+song_end
+song_begin: 32 - One Last Time.flac
+Time: 297
+Title: One Last Time
+Album: Hamilton
+Artist: Lin-Manuel Miranda
+Genre: Musical
+AlbumArtist: Lin-Manuel Miranda
+Date: 2015
+Track: 32
+mtime: 1463999400
+song_end
+song_begin: 33 - I Know Him.flac
+Time: 98
+Title: I Know Him
+Album: Hamilton
+Artist: Lin-Manuel Miranda
+Genre: Musical
+AlbumArtist: Lin-Manuel Miranda
+Date: 2015
+Track: 33
+mtime: 1463999390
+song_end
+song_begin: 34 - The Adams Administration.flac
+Time: 55
+Title: The Adams Administration
+Album: Hamilton
+Artist: Lin-Manuel Miranda
+Genre: Musical
+AlbumArtist: Lin-Manuel Miranda
+Date: 2015
+Track: 34
+mtime: 1463999372
+song_end
+song_begin: 35 - We Know.flac
+Time: 143
+Title: We Know
+Album: Hamilton
+Artist: Lin-Manuel Miranda
+Genre: Musical
+AlbumArtist: Lin-Manuel Miranda
+Date: 2015
+Track: 35
+mtime: 1463999404
+song_end
+song_begin: 36 - Hurricane.flac
+Time: 144
+Title: Hurricane
+Album: Hamilton
+Artist: Lin-Manuel Miranda
+Genre: Musical
+AlbumArtist: Lin-Manuel Miranda
+Date: 2015
+Track: 36
+mtime: 1463999410
+song_end
+song_begin: 37 - The Reynolds Pamphlet.flac
+Time: 129
+Title: The Reynolds Pamphlet
+Album: Hamilton
+Artist: Lin-Manuel Miranda
+Genre: Musical
+AlbumArtist: Lin-Manuel Miranda
+Date: 2015
+Track: 37
+mtime: 1463999402
+song_end
+song_begin: 38 - Burn.flac
+Time: 226
+Title: Burn
+Album: Hamilton
+Artist: Lin-Manuel Miranda
+Genre: Musical
+AlbumArtist: Lin-Manuel Miranda
+Date: 2015
+Track: 38
+mtime: 1463999408
+song_end
+song_begin: 39 - Blow Us All Away.flac
+Time: 174
+Title: Blow Us All Away
+Album: Hamilton
+Artist: Lin-Manuel Miranda
+Genre: Musical
+AlbumArtist: Lin-Manuel Miranda
+Date: 2015
+Track: 39
+mtime: 1463999408
+song_end
+song_begin: 40 - Stay Alive (Reprise).flac
+Time: 112
+Title: Stay Alive (Reprise)
+Album: Hamilton
+Artist: Lin-Manuel Miranda
+Genre: Musical
+AlbumArtist: Lin-Manuel Miranda
+Date: 2015
+Track: 40
+mtime: 1463999390
+song_end
+song_begin: 41 - It's Quiet Uptown.flac
+Time: 271
+Title: It's Quiet Uptown
+Album: Hamilton
+Artist: Lin-Manuel Miranda
+Genre: Musical
+AlbumArtist: Lin-Manuel Miranda
+Date: 2015
+Track: 41
+mtime: 1463999412
+song_end
+song_begin: 42 - The Election of 1800.flac
+Time: 238
+Title: The Election of 1800
+Album: Hamilton
+Artist: Lin-Manuel Miranda
+Genre: Musical
+AlbumArtist: Lin-Manuel Miranda
+Date: 2015
+Track: 42
+mtime: 1463999414
+song_end
+song_begin: 43 - Your Obedient Servant.flac
+Time: 151
+Title: Your Obedient Servant
+Album: Hamilton
+Artist: Lin-Manuel Miranda
+Genre: Musical
+AlbumArtist: Lin-Manuel Miranda
+Date: 2015
+Track: 43
+mtime: 1463999406
+song_end
+song_begin: 44 - Best of Wives and Best of Women.flac
+Time: 48
+Title: Best of Wives and Best of Women
+Album: Hamilton
+Artist: Lin-Manuel Miranda
+Genre: Musical
+AlbumArtist: Lin-Manuel Miranda
+Date: 2015
+Track: 44
+mtime: 1463999386
+song_end
+song_begin: 45 - The World Was Wide Enough.flac
+Time: 303
+Title: The World Was Wide Enough
+Album: Hamilton
+Artist: Lin-Manuel Miranda
+Genre: Musical
+AlbumArtist: Lin-Manuel Miranda
+Date: 2015
+Track: 45
+mtime: 1463999400
+song_end
+song_begin: 46 - Who Lives, Who Dies, Who Tells Your Story.flac
+Time: 218
+Title: Who Lives, Who Dies, Who Tells Your Story
+Album: Hamilton
+Artist: Lin-Manuel Miranda
+Genre: Musical
+AlbumArtist: Lin-Manuel Miranda
+Date: 2015
+Track: 46
+mtime: 1463999406
+song_end
+end: Musicals/Lin-Manuel Miranda - Hamilton [Original Broadway Cast Recording] [2015] [FLAC]
+directory: The Lion King (Original Broadway Cast)
+mtime: 1464241195
+begin: Musicals/The Lion King (Original Broadway Cast)
+song_begin: 01 - Circle of Life.mp3
+Time: 269
+Artist: Original Broadway Cast
+Title: Circle of Life
+Album: The Lion King
+Track: 01
+mtime: 1333162190
+song_end
+song_begin: 02 - Grasslands Chant.mp3
+Time: 143
+Artist: Original Broadway Cast
+Title: Grasslands Chant
+Album: The Lion King
+Track: 02/20
+Genre: Musical
+mtime: 1333162192
+song_end
+song_begin: 03 - The Morning Report.mp3
+Time: 153
+Artist: Original Broadway Cast
+Title: The Morning Report
+Album: The Lion King
+Track: 03/20
+Genre: Musical
+mtime: 1333162192
+song_end
+song_begin: 04 - The Lioness Hunt.mp3
+Time: 127
+Artist: Original Broadway Cast
+Title: The Lioness Hunt
+Album: The Lion King
+Track: 04/20
+Genre: Musical
+mtime: 1333162192
+song_end
+song_begin: 05 - I Just Can't Wait to Be King.mp3
+Time: 183
+Artist: Original Broadway Cast
+Title: I Just Can't Wait to Be King
+Album: The Lion King
+Track: 05/20
+Genre: Musical
+mtime: 1333162192
+song_end
+song_begin: 06 - Chow Down.mp3
+Time: 198
+Artist: Original Broadway Cast
+Title: Chow Down
+Album: The Lion King
+Track: 06/20
+Genre: Musical
+mtime: 1333162194
+song_end
+song_begin: 07 - The Live in You.mp3
+Time: 0
+Artist: Original Broadway Cast
+Title: The Live in You
+Album: The Lion King
+Track: 07/20
+Genre: Musical
+mtime: 1333162194
+song_end
+song_begin: 08 - Be Prepared.mp3
+Time: 206
+Artist: Original Broadway Cast
+Title: Be Prepared
+Album: The Lion King
+Track: 08
+mtime: 1333162204
+song_end
+song_begin: 09 - The Stampede.mp3
+Time: 159
+Artist: Original Broadway Cast
+Title: The Stampede
+Album: The Lion King
+Track: 09/20
+Genre: Musical
+mtime: 1333162206
+song_end
+song_begin: 10 - Rafiki Mourns.mp3
+Time: 125
+Artist: Original Broadway Cast
+Title: Rafiki Mourns
+Album: The Lion King
+Track: 10/20
+Genre: Musical
+mtime: 1333162206
+song_end
+song_begin: 11 - Hakuna Matata.mp3
+Time: 192
+Artist: Original Broadway Cast
+Title: Hakuna Matata
+Album: The Lion King
+Track: 11/20
+Genre: Musical
+mtime: 1333162206
+song_end
+song_begin: 12 - One by One.mp3
+Time: 113
+Artist: Original Broadway Cast
+Title: One by One
+Album: The Lion King
+Track: 12/20
+Genre: Musical
+mtime: 1333162206
+song_end
+song_begin: 13 - The Madness of King Scar.mp3
+Time: 328
+Artist: Original Broadway Cast
+Title: The Madness of King Scar
+Album: The Lion King
+Track: 13/20
+Genre: Musical
+mtime: 1333162208
+song_end
+song_begin: 14 - Shadowland.mp3
+Time: 124
+Artist: Original Broadway Cast
+Title: Shadowland
+Album: The Lion King
+Track: 14/20
+Genre: Musical
+mtime: 1333162208
+song_end
+song_begin: 15 - The Lion Sleeps Tonight.mp3
+Time: 70
+Artist: Original Broadway Cast
+Title: The Lion Sleeps Tonight
+Album: The Lion King
+Track: 15/20
+Genre: Musical
+mtime: 1333162208
+song_end
+song_begin: 16 - Endless Night.mp3
+Time: 283
+Artist: Original Broadway Cast
+Title: Endless Night
+Album: The Lion King
+Track: 16/20
+Genre: Musical
+mtime: 1333162210
+song_end
+song_begin: 17 - Can You Feel the Love Tonight.mp3
+Time: 300
+Artist: Original Broadway Cast
+Title: Can You Feel the Love Tonight
+Album: The Lion King
+Track: 17/20
+Genre: Musical
+mtime: 1333162210
+song_end
+song_begin: 18 - He Lives in You (Reprise).mp3
+Time: 254
+Artist: Original Broadway Cast
+Title: He Lives in You (Reprise)
+Album: The Lion King
+Track: 18/20
+Genre: Musical
+mtime: 1333162212
+song_end
+song_begin: 19 - Simba Confronts Scar.mp3
+Time: 145
+Artist: Original Broadway Cast
+Title: Simba Confronts Scar
+Album: The Lion King
+Track: 19/20
+Genre: Musical
+mtime: 1333162212
+song_end
+song_begin: 20 - King of Pride Rock - Circle of Life (Reprise).mp3
+Time: 203
+Artist: Original Broadway Cast
+Title: King of Pride Rock / Circle of Life (Reprise)
+Album: The Lion King
+Track: 20/20
+Genre: Musical
+mtime: 1333162212
+song_end
+end: Musicals/The Lion King (Original Broadway Cast)
+directory: The Lord of the Rings (Original London Cast)
+mtime: 1464241198
+begin: Musicals/The Lord of the Rings (Original London Cast)
+song_begin: 01 - Prologue ('Lasto I Lamath').ogg
+Time: 110
+Title: Prologue ('Lasto I Lamath')
+Artist: A. R. Rahman, Värttinä and Christopher Nightingale
+Album: The Lord of the Rings (Original London Cast)
+Track: 01
+MUSICBRAINZ_ALBUMID: http://musicbrainz.org/release/4202a9b1-1773-4c70-a378-c446764a647d.html
+MUSICBRAINZ_ALBUMARTISTID: http://musicbrainz.org/artist/9c4de872-5748-4212-be1b-c04acb4fda02
+MUSICBRAINZ_ARTISTID: http://musicbrainz.org/artist/9c4de872-5748-4212-be1b-c04acb4fda02
+MUSICBRAINZ_TRACKID: http://musicbrainz.org/track/b7dfdda8-eaa6-4c7e-8eb9-d09477dca219
+ArtistSort: Rahman, A. R., Värttinä and Nightingale, Christopher
+mtime: 1333161164
+song_end
+song_begin: 02 - The Road Goes On.ogg
+Time: 291
+Title: The Road Goes On
+Artist: A. R. Rahman, Värttinä and Christopher Nightingale
+Album: The Lord of the Rings (Original London Cast)
+Track: 02
+MUSICBRAINZ_ALBUMID: http://musicbrainz.org/release/4202a9b1-1773-4c70-a378-c446764a647d.html
+MUSICBRAINZ_ALBUMARTISTID: http://musicbrainz.org/artist/9c4de872-5748-4212-be1b-c04acb4fda02
+MUSICBRAINZ_ARTISTID: http://musicbrainz.org/artist/9c4de872-5748-4212-be1b-c04acb4fda02
+MUSICBRAINZ_TRACKID: http://musicbrainz.org/track/2797743b-d231-4944-8d0a-49ce41ae2c13
+ArtistSort: Rahman, A. R., Värttinä and Nightingale, Christopher
+mtime: 1333161166
+song_end
+song_begin: 03 - Saruman.ogg
+Time: 161
+Title: Saruman
+Artist: A. R. Rahman, Värttinä and Christopher Nightingale
+Album: The Lord of the Rings (Original London Cast)
+Track: 03
+MUSICBRAINZ_ALBUMID: http://musicbrainz.org/release/4202a9b1-1773-4c70-a378-c446764a647d.html
+MUSICBRAINZ_ALBUMARTISTID: http://musicbrainz.org/artist/9c4de872-5748-4212-be1b-c04acb4fda02
+MUSICBRAINZ_ARTISTID: http://musicbrainz.org/artist/9c4de872-5748-4212-be1b-c04acb4fda02
+MUSICBRAINZ_TRACKID: http://musicbrainz.org/track/5be69fb1-b485-402b-93b1-410f16dfaef5
+ArtistSort: Rahman, A. R., Värttinä and Nightingale, Christopher
+mtime: 1333161166
+song_end
+song_begin: 04 - The Cat and the Moon.ogg
+Time: 235
+Title: The Cat and the Moon
+Artist: A. R. Rahman, Värttinä and Christopher Nightingale
+Album: The Lord of the Rings (Original London Cast)
+Track: 04
+MUSICBRAINZ_ALBUMID: http://musicbrainz.org/release/4202a9b1-1773-4c70-a378-c446764a647d.html
+MUSICBRAINZ_ALBUMARTISTID: http://musicbrainz.org/artist/9c4de872-5748-4212-be1b-c04acb4fda02
+MUSICBRAINZ_ARTISTID: http://musicbrainz.org/artist/9c4de872-5748-4212-be1b-c04acb4fda02
+MUSICBRAINZ_TRACKID: http://musicbrainz.org/track/580b1ecc-eb7e-452e-b4fa-61fe440c3c22
+ArtistSort: Rahman, A. R., Värttinä and Nightingale, Christopher
+mtime: 1333161168
+song_end
+song_begin: 05 - Flight to the Ford.ogg
+Time: 235
+Title: Flight to the Ford
+Artist: A. R. Rahman, Värttinä and Christopher Nightingale
+Album: The Lord of the Rings (Original London Cast)
+Track: 05
+MUSICBRAINZ_ALBUMID: http://musicbrainz.org/release/4202a9b1-1773-4c70-a378-c446764a647d.html
+MUSICBRAINZ_ALBUMARTISTID: http://musicbrainz.org/artist/9c4de872-5748-4212-be1b-c04acb4fda02
+MUSICBRAINZ_ARTISTID: http://musicbrainz.org/artist/9c4de872-5748-4212-be1b-c04acb4fda02
+MUSICBRAINZ_TRACKID: http://musicbrainz.org/track/1ec7a6a6-2ade-4ea1-9968-c1510434bab1
+ArtistSort: Rahman, A. R., Värttinä and Nightingale, Christopher
+mtime: 1333161170
+song_end
+song_begin: 06 - The Song of Hope.ogg
+Time: 148
+Title: The Song of Hope
+Artist: A. R. Rahman, Värttinä and Christopher Nightingale
+Album: The Lord of the Rings (Original London Cast)
+Track: 06
+MUSICBRAINZ_ALBUMID: http://musicbrainz.org/release/4202a9b1-1773-4c70-a378-c446764a647d.html
+MUSICBRAINZ_ALBUMARTISTID: http://musicbrainz.org/artist/9c4de872-5748-4212-be1b-c04acb4fda02
+MUSICBRAINZ_ARTISTID: http://musicbrainz.org/artist/9c4de872-5748-4212-be1b-c04acb4fda02
+MUSICBRAINZ_TRACKID: http://musicbrainz.org/track/35e62a72-aab7-4d9f-b8a3-c15bcaebfea7
+ArtistSort: Rahman, A. R., Värttinä and Nightingale, Christopher
+mtime: 1333161170
+song_end
+song_begin: 07 - Star of Earendil.ogg
+Time: 251
+Title: Star of Earendil
+Artist: A. R. Rahman, Värttinä and Christopher Nightingale
+Album: The Lord of the Rings (Original London Cast)
+Track: 07
+MUSICBRAINZ_ALBUMID: http://musicbrainz.org/release/4202a9b1-1773-4c70-a378-c446764a647d.html
+MUSICBRAINZ_ALBUMARTISTID: http://musicbrainz.org/artist/9c4de872-5748-4212-be1b-c04acb4fda02
+MUSICBRAINZ_ARTISTID: http://musicbrainz.org/artist/9c4de872-5748-4212-be1b-c04acb4fda02
+MUSICBRAINZ_TRACKID: http://musicbrainz.org/track/8522d860-d368-473e-92cb-c396dc65e5b4
+ArtistSort: Rahman, A. R., Värttinä and Nightingale, Christopher
+mtime: 1333161172
+song_end
+song_begin: 08 - Lament for Moria.ogg
+Time: 98
+Title: Lament for Moria
+Artist: A. R. Rahman, Värttinä and Christopher Nightingale
+Album: The Lord of the Rings (Original London Cast)
+Track: 08
+MUSICBRAINZ_ALBUMID: http://musicbrainz.org/release/4202a9b1-1773-4c70-a378-c446764a647d.html
+MUSICBRAINZ_ALBUMARTISTID: http://musicbrainz.org/artist/9c4de872-5748-4212-be1b-c04acb4fda02
+MUSICBRAINZ_ARTISTID: http://musicbrainz.org/artist/9c4de872-5748-4212-be1b-c04acb4fda02
+MUSICBRAINZ_TRACKID: http://musicbrainz.org/track/7c39276c-2916-4b4f-9469-1a7f451ecb9c
+ArtistSort: Rahman, A. R., Värttinä and Nightingale, Christopher
+mtime: 1333161172
+song_end
+song_begin: 09 - The Golden Wood.ogg
+Time: 54
+Title: The Golden Wood
+Artist: A. R. Rahman, Värttinä and Christopher Nightingale
+Album: The Lord of the Rings (Original London Cast)
+Track: 09
+MUSICBRAINZ_ALBUMID: http://musicbrainz.org/release/4202a9b1-1773-4c70-a378-c446764a647d.html
+MUSICBRAINZ_ALBUMARTISTID: http://musicbrainz.org/artist/9c4de872-5748-4212-be1b-c04acb4fda02
+MUSICBRAINZ_ARTISTID: http://musicbrainz.org/artist/9c4de872-5748-4212-be1b-c04acb4fda02
+MUSICBRAINZ_TRACKID: http://musicbrainz.org/track/d8f9bd2f-5b51-462a-aa41-58d11972d5ed
+ArtistSort: Rahman, A. R., Värttinä and Nightingale, Christopher
+mtime: 1333161174
+song_end
+song_begin: 10 - Lothlorien.ogg
+Time: 243
+Title: Lothlorien
+Artist: A. R. Rahman, Värttinä and Christopher Nightingale
+Album: The Lord of the Rings (Original London Cast)
+Track: 10
+MUSICBRAINZ_ALBUMID: http://musicbrainz.org/release/4202a9b1-1773-4c70-a378-c446764a647d.html
+MUSICBRAINZ_ALBUMARTISTID: http://musicbrainz.org/artist/9c4de872-5748-4212-be1b-c04acb4fda02
+MUSICBRAINZ_ARTISTID: http://musicbrainz.org/artist/9c4de872-5748-4212-be1b-c04acb4fda02
+MUSICBRAINZ_TRACKID: http://musicbrainz.org/track/3586622b-2043-454e-86b7-8cb5392743e4
+ArtistSort: Rahman, A. R., Värttinä and Nightingale, Christopher
+mtime: 1333161174
+song_end
+song_begin: 11 - The Siege of the City of Kings.ogg
+Time: 280
+Title: The Siege of the City of Kings
+Artist: A. R. Rahman, Värttinä and Christopher Nightingale
+Album: The Lord of the Rings (Original London Cast)
+Track: 11
+MUSICBRAINZ_ALBUMID: http://musicbrainz.org/release/4202a9b1-1773-4c70-a378-c446764a647d.html
+MUSICBRAINZ_ALBUMARTISTID: http://musicbrainz.org/artist/9c4de872-5748-4212-be1b-c04acb4fda02
+MUSICBRAINZ_ARTISTID: http://musicbrainz.org/artist/9c4de872-5748-4212-be1b-c04acb4fda02
+MUSICBRAINZ_TRACKID: http://musicbrainz.org/track/447bb8bd-c808-4706-abca-5cc915b32114
+ArtistSort: Rahman, A. R., Värttinä and Nightingale, Christopher
+mtime: 1333161176
+song_end
+song_begin: 12 - Now and for Always.ogg
+Time: 289
+Title: Now and for Always
+Artist: A. R. Rahman, Värttinä and Christopher Nightingale
+Album: The Lord of the Rings (Original London Cast)
+Track: 12
+MUSICBRAINZ_ALBUMID: http://musicbrainz.org/release/4202a9b1-1773-4c70-a378-c446764a647d.html
+MUSICBRAINZ_ALBUMARTISTID: http://musicbrainz.org/artist/9c4de872-5748-4212-be1b-c04acb4fda02
+MUSICBRAINZ_ARTISTID: http://musicbrainz.org/artist/9c4de872-5748-4212-be1b-c04acb4fda02
+MUSICBRAINZ_TRACKID: http://musicbrainz.org/track/56bdb9b5-4b8f-4a3b-856a-20ed6939c433
+ArtistSort: Rahman, A. R., Värttinä and Nightingale, Christopher
+mtime: 1333161178
+song_end
+song_begin: 13 - Gollum (Smeagol).ogg
+Time: 250
+Title: Gollum (Smeagol)
+Artist: A. R. Rahman, Värttinä and Christopher Nightingale
+Album: The Lord of the Rings (Original London Cast)
+Track: 13
+MUSICBRAINZ_ALBUMID: http://musicbrainz.org/release/4202a9b1-1773-4c70-a378-c446764a647d.html
+MUSICBRAINZ_ALBUMARTISTID: http://musicbrainz.org/artist/9c4de872-5748-4212-be1b-c04acb4fda02
+MUSICBRAINZ_ARTISTID: http://musicbrainz.org/artist/9c4de872-5748-4212-be1b-c04acb4fda02
+MUSICBRAINZ_TRACKID: http://musicbrainz.org/track/bb62fe3a-7443-44b2-99cb-73e560435ff4
+ArtistSort: Rahman, A. R., Värttinä and Nightingale, Christopher
+mtime: 1333161180
+song_end
+song_begin: 14 - The Song of Hope (Duet).ogg
+Time: 232
+Title: The Song of Hope (Duet)
+Artist: A. R. Rahman, Värttinä and Christopher Nightingale
+Album: The Lord of the Rings (Original London Cast)
+Track: 14
+MUSICBRAINZ_ALBUMID: http://musicbrainz.org/release/4202a9b1-1773-4c70-a378-c446764a647d.html
+MUSICBRAINZ_ALBUMARTISTID: http://musicbrainz.org/artist/9c4de872-5748-4212-be1b-c04acb4fda02
+MUSICBRAINZ_ARTISTID: http://musicbrainz.org/artist/9c4de872-5748-4212-be1b-c04acb4fda02
+MUSICBRAINZ_TRACKID: http://musicbrainz.org/track/08ef2e8d-7abb-45df-84ae-9880310d4eb5
+ArtistSort: Rahman, A. R., Värttinä and Nightingale, Christopher
+mtime: 1333161182
+song_end
+song_begin: 15 - Wonder.ogg
+Time: 296
+Title: Wonder
+Artist: A. R. Rahman, Värttinä and Christopher Nightingale
+Album: The Lord of the Rings (Original London Cast)
+Track: 15
+MUSICBRAINZ_ALBUMID: http://musicbrainz.org/release/4202a9b1-1773-4c70-a378-c446764a647d.html
+MUSICBRAINZ_ALBUMARTISTID: http://musicbrainz.org/artist/9c4de872-5748-4212-be1b-c04acb4fda02
+MUSICBRAINZ_ARTISTID: http://musicbrainz.org/artist/9c4de872-5748-4212-be1b-c04acb4fda02
+MUSICBRAINZ_TRACKID: http://musicbrainz.org/track/fa3ea46d-517c-4f94-ad7a-edfb2c580541
+ArtistSort: Rahman, A. R., Värttinä and Nightingale, Christopher
+mtime: 1333161184
+song_end
+song_begin: 16 - The Final Battle.ogg
+Time: 202
+Title: The Final Battle
+Artist: A. R. Rahman, Värttinä and Christopher Nightingale
+Album: The Lord of the Rings (Original London Cast)
+Track: 16
+MUSICBRAINZ_ALBUMID: http://musicbrainz.org/release/4202a9b1-1773-4c70-a378-c446764a647d.html
+MUSICBRAINZ_ALBUMARTISTID: http://musicbrainz.org/artist/9c4de872-5748-4212-be1b-c04acb4fda02
+MUSICBRAINZ_ARTISTID: http://musicbrainz.org/artist/9c4de872-5748-4212-be1b-c04acb4fda02
+MUSICBRAINZ_TRACKID: http://musicbrainz.org/track/9074f385-baef-4115-854a-d1ba47996fa7
+ArtistSort: Rahman, A. R., Värttinä and Nightingale, Christopher
+mtime: 1333161186
+song_end
+song_begin: 17 - Epilogue (Farewells).ogg
+Time: 252
+Title: Epilogue (Farewells)
+Artist: A. R. Rahman, Värttinä and Christopher Nightingale
+Album: The Lord of the Rings (Original London Cast)
+Track: 17
+MUSICBRAINZ_ALBUMID: http://musicbrainz.org/release/4202a9b1-1773-4c70-a378-c446764a647d.html
+MUSICBRAINZ_ALBUMARTISTID: http://musicbrainz.org/artist/9c4de872-5748-4212-be1b-c04acb4fda02
+MUSICBRAINZ_ARTISTID: http://musicbrainz.org/artist/9c4de872-5748-4212-be1b-c04acb4fda02
+MUSICBRAINZ_TRACKID: http://musicbrainz.org/track/b54cf3d8-1396-49c2-b728-42f7b7765126
+ArtistSort: Rahman, A. R., Värttinä and Nightingale, Christopher
+mtime: 1333161186
+song_end
+song_begin: 18 - Finale.ogg
+Time: 142
+Title: Finale
+Artist: A. R. Rahman, Värttinä and Christopher Nightingale
+Album: The Lord of the Rings (Original London Cast)
+Track: 18
+MUSICBRAINZ_ALBUMID: http://musicbrainz.org/release/4202a9b1-1773-4c70-a378-c446764a647d.html
+MUSICBRAINZ_ALBUMARTISTID: http://musicbrainz.org/artist/9c4de872-5748-4212-be1b-c04acb4fda02
+MUSICBRAINZ_ARTISTID: http://musicbrainz.org/artist/9c4de872-5748-4212-be1b-c04acb4fda02
+MUSICBRAINZ_TRACKID: http://musicbrainz.org/track/7221f54a-279f-4f47-a972-b2ac27e59182
+ArtistSort: Rahman, A. R., Värttinä and Nightingale, Christopher
+mtime: 1333161188
+song_end
+end: Musicals/The Lord of the Rings (Original London Cast)
+directory: The Phantom of the Opera (2004)
+mtime: 1464241203
+begin: Musicals/The Phantom of the Opera (2004)
+song_begin: 01. Overture.flac
+Time: 167
+Album: The Phantom of the Opera
+Artist: Andrew Lloyd Webber
+ArtistSort: Lloyd Webber, Andrew
+Date: 2004
+Genre: Soundtrack
+Title: Overture
+Track: 01
+mtime: 1456619246
+song_end
+song_begin: 02. Think of Me.flac
+Time: 221
+Album: The Phantom of the Opera
+Artist: Andrew Lloyd Webber
+ArtistSort: Lloyd Webber, Andrew
+Date: 2004
+Genre: Soundtrack
+Title: Think of Me
+Track: 02
+mtime: 1456619182
+song_end
+song_begin: 03. Angel of Music.flac
+Time: 165
+Album: The Phantom of the Opera
+Artist: Andrew Lloyd Webber
+ArtistSort: Lloyd Webber, Andrew
+Date: 2004
+Genre: Soundtrack
+Title: Angel of Music
+Track: 03
+mtime: 1456619244
+song_end
+song_begin: 04. The Mirror (Angel of Music).flac
+Time: 120
+Album: The Phantom of the Opera
+Artist: Andrew Lloyd Webber
+ArtistSort: Lloyd Webber, Andrew
+Date: 2004
+Genre: Soundtrack
+Title: The Mirror (Angel of Music)
+Track: 04
+mtime: 1456619252
+song_end
+song_begin: 05. The Phantom of the Opera.flac
+Time: 217
+Album: The Phantom of the Opera
+Artist: Andrew Lloyd Webber
+ArtistSort: Lloyd Webber, Andrew
+Date: 2004
+Genre: Soundtrack
+Title: The Phantom of the Opera
+Track: 05
+mtime: 1456619222
+song_end
+song_begin: 06. The Music of the Night.flac
+Time: 341
+Album: The Phantom of the Opera
+Artist: Andrew Lloyd Webber
+ArtistSort: Lloyd Webber, Andrew
+Date: 2004
+Genre: Soundtrack
+Title: The Music of the Night
+Track: 06
+mtime: 1456619250
+song_end
+song_begin: 07. Prima Donna.flac
+Time: 210
+Album: The Phantom of the Opera
+Artist: Andrew Lloyd Webber
+ArtistSort: Lloyd Webber, Andrew
+Date: 2004
+Genre: Soundtrack
+Title: Prima Donna
+Track: 07
+mtime: 1456619252
+song_end
+song_begin: 08. All I Ask of You.flac
+Time: 294
+Album: The Phantom of the Opera
+Artist: Andrew Lloyd Webber
+ArtistSort: Lloyd Webber, Andrew
+Date: 2004
+Genre: Soundtrack
+Title: All I Ask of You
+Track: 08
+mtime: 1456619230
+song_end
+song_begin: 09. All I Ask of You (reprise).flac
+Time: 137
+Album: The Phantom of the Opera
+Artist: Andrew Lloyd Webber
+ArtistSort: Lloyd Webber, Andrew
+Date: 2004
+Genre: Soundtrack
+Title: All I Ask of You (reprise)
+Track: 09
+mtime: 1456619210
+song_end
+song_begin: 10. Masquerade.flac
+Time: 332
+Album: The Phantom of the Opera
+Artist: Andrew Lloyd Webber
+ArtistSort: Lloyd Webber, Andrew
+Date: 2004
+Genre: Soundtrack
+Title: Masquerade
+Track: 10
+mtime: 1456619244
+song_end
+song_begin: 11. Wishing You Were Somehow Here Again.flac
+Time: 224
+Album: The Phantom of the Opera
+Artist: Andrew Lloyd Webber
+ArtistSort: Lloyd Webber, Andrew
+Date: 2004
+Genre: Soundtrack
+Title: Wishing You Were Somehow Here Again
+Track: 11
+mtime: 1456619240
+song_end
+song_begin: 12. The Point of No Return.flac
+Time: 481
+Album: The Phantom of the Opera
+Artist: Andrew Lloyd Webber
+ArtistSort: Lloyd Webber, Andrew
+Date: 2004
+Genre: Soundtrack
+Title: The Point of No Return
+Track: 12
+mtime: 1456619232
+song_end
+song_begin: 13. Down Once More - Track Down This Murderer.flac
+Time: 766
+Album: The Phantom of the Opera
+Artist: Andrew Lloyd Webber
+ArtistSort: Lloyd Webber, Andrew
+Date: 2004
+Genre: Soundtrack
+Title: Down Once More / Track Down This Murderer
+Track: 13
+mtime: 1456619242
+song_end
+song_begin: 14. Learn to Be Lonely.flac
+Time: 142
+Album: The Phantom of the Opera
+Artist: Andrew Lloyd Webber
+ArtistSort: Lloyd Webber, Andrew
+Date: 2004
+Genre: Soundtrack
+Title: Learn to Be Lonely
+Track: 14
+mtime: 1456619242
+song_end
+end: Musicals/The Phantom of the Opera (2004)
+end: Musicals
+directory: Peter Hollens
+mtime: 1464241217
+begin: Peter Hollens
+directory: 2014 - Peter Hollens
+mtime: 1464241222
+begin: Peter Hollens/2014 - Peter Hollens
+song_begin: 01 - I See Fire.flac
+Time: 294
+Title: I See Fire
+Artist: Peter Hollens
+Album: Peter Hollens
+Track: 1
+Disc: 1/0
+mtime: 1414383846
+song_end
+song_begin: 02 - Skyrim feat. Lindsey Stirling.flac
+Time: 196
+Title: Skyrim feat. Lindsey Stirling
+Artist: Lindsey Stirling & Peter Hollens
+Album: Peter Hollens
+Track: 2
+Disc: 1/0
+mtime: 1414383846
+song_end
+song_begin: 03 - Won_t Give Up.flac
+Time: 244
+Title: Won't Give Up
+Artist: Peter Hollens
+Album: Peter Hollens
+Track: 3
+Disc: 1/0
+mtime: 1414383844
+song_end
+song_begin: 04 - Les Miserables Medley.flac
+Time: 242
+Title: Les Miserables Medley
+Artist: Evynne Hollens & Peter Hollens
+Album: Peter Hollens
+Track: 4
+Disc: 1/0
+mtime: 1414383848
+song_end
+song_begin: 05 - I Still Haven_t Found What I_m Looking For.flac
+Time: 217
+Title: I Still Haven't Found What I'm Looking For
+Artist: Sabrina Carpenter & Peter Hollens
+Album: Peter Hollens
+Track: 5
+Disc: 1/0
+mtime: 1414383848
+song_end
+song_begin: 06 - Shenandoah.flac
+Time: 190
+Title: Shenandoah
+Artist: Peter Hollens
+Album: Peter Hollens
+Track: 6
+Disc: 1/0
+mtime: 1414383848
+song_end
+song_begin: 07 - She Moved Through The Fair.flac
+Time: 206
+Title: She Moved Through The Fair
+Artist: Peter Hollens
+Album: Peter Hollens
+Track: 7
+Disc: 1/0
+mtime: 1414383846
+song_end
+song_begin: 08 - Hallelujah.flac
+Time: 244
+Title: Hallelujah
+Artist: Jackie Evancho & Peter Hollens
+Album: Peter Hollens
+Track: 8
+Disc: 1/0
+mtime: 1414383846
+song_end
+song_begin: 09 - Our Special Love.flac
+Time: 226
+Title: Our Special Love
+Artist: Brian Wilson & Peter Hollens
+Album: Peter Hollens
+Track: 9
+Disc: 1/0
+mtime: 1414383846
+song_end
+song_begin: 10 - The Parting Glass.flac
+Time: 198
+Title: The Parting Glass
+Artist: Peter Hollens
+Album: Peter Hollens
+Track: 10
+Disc: 1/0
+mtime: 1414383846
+song_end
+song_begin: 11 - Black Is The Color Of My True Love_s Hair.flac
+Time: 281
+Title: Black Is The Color Of My True Love's Hair
+Artist: Avi Kaplan & Peter Hollens
+Album: Peter Hollens
+Track: 11
+Disc: 1/0
+mtime: 1414383848
+song_end
+song_begin: 12 - Ashland_s Song.flac
+Time: 232
+Title: Ashland's Song
+Artist: Peter Hollens
+Album: Peter Hollens
+Track: 12
+Disc: 1/0
+mtime: 1414383846
+song_end
+song_begin: 13 - Misty Mountains.flac
+Time: 260
+Title: Misty Mountains
+Artist: Peter Hollens
+Album: Peter Hollens
+Track: 13
+Disc: 1/0
+mtime: 1414383848
+song_end
+end: Peter Hollens/2014 - Peter Hollens
+end: Peter Hollens
+directory: Pop
+mtime: 1464241247
+begin: Pop
+directory: Adele
+mtime: 1464241229
+begin: Pop/Adele
+directory: 2011 - 21
+mtime: 1464241237
+begin: Pop/Adele/2011 - 21
+song_begin: 01 - Rolling In The Deep.flac
+Time: 230
+Artist: Adele
+Title: Rolling In The Deep
+Album: 21
+Date: 2011
+Track: 01
+Genre: R&B
+mtime: 1456608774
+song_end
+song_begin: 02 - Rumour Has It.flac
+Time: 224
+Artist: Adele
+Title: Rumour Has It
+Album: 21
+Date: 2011
+Track: 02
+Genre: R&B
+mtime: 1456608762
+song_end
+song_begin: 03 - Turning Tabels.flac
+Time: 251
+Artist: Adele
+Title: Turning Tabels
+Album: 21
+Date: 2011
+Track: 03
+Genre: R&B
+mtime: 1456608744
+song_end
+song_begin: 04 - Don't You Remember.flac
+Time: 244
+Artist: Adele
+Title: Don't You Remember
+Album: 21
+Date: 2011
+Track: 04
+Genre: R&B
+mtime: 1456608766
+song_end
+song_begin: 05 - Set Fire To The Rain.flac
+Time: 242
+Artist: Adele
+Title: Set Fire To The Rain
+Album: 21
+Date: 2011
+Track: 05
+Genre: R&B
+mtime: 1456608766
+song_end
+song_begin: 06 - He Won't Go.flac
+Time: 278
+Artist: Adele
+Title: He Won't Go
+Album: 21
+Date: 2011
+Track: 06
+Genre: R&B
+mtime: 1456608772
+song_end
+song_begin: 07 - Take It All.flac
+Time: 229
+Artist: Adele
+Title: Take It All
+Album: 21
+Date: 2011
+Track: 07
+Genre: R&B
+mtime: 1456608756
+song_end
+song_begin: 08 - I'll Be Waiting.flac
+Time: 242
+Artist: Adele
+Title: I'll Be Waiting
+Album: 21
+Date: 2011
+Track: 08
+Genre: R&B
+mtime: 1456608768
+song_end
+song_begin: 09 - One And Only.flac
+Time: 349
+Artist: Adele
+Title: One And Only
+Album: 21
+Date: 2011
+Track: 09
+Genre: R&B
+mtime: 1456608766
+song_end
+song_begin: 10 - Lovesong.flac
+Time: 317
+Artist: Adele
+Title: Lovesong
+Album: 21
+Date: 2011
+Track: 10
+Genre: R&B
+mtime: 1456608754
+song_end
+song_begin: 11 - Someone Like You.flac
+Time: 288
+Artist: Adele
+Title: Someone Like You
+Album: 21
+Date: 2011
+Track: 11
+Genre: R&B
+mtime: 1456608758
+song_end
+song_begin: 12 - If It Hadn't Been For Love.flac
+Time: 189
+Artist: Adele
+Title: If It Hadn't Been For Love
+Album: 21
+Date: 2011
+Track: 12
+Genre: R&B
+mtime: 1456608770
+song_end
+song_begin: 13 - Hiding My Heart.flac
+Time: 209
+Artist: Adele
+Title: Hiding My Heart
+Album: 21
+Date: 2011
+Track: 13
+Genre: R&B
+mtime: 1456608772
+song_end
+end: Pop/Adele/2011 - 21
+directory: 2015 - 25
+mtime: 1464241229
+begin: Pop/Adele/2015 - 25
+song_begin: 01 Hello.flac
+Time: 296
+Artist: Adele
+Title: Hello
+Album: 25
+Date: 2015
+Track: 01
+Genre: Pop
+mtime: 1456607892
+song_end
+song_begin: 02 Send My Love (To Your New Lover).flac
+Time: 224
+Artist: Adele
+Title: Send My Love (To Your New Lover)
+Album: 25
+Date: 2015
+Track: 02
+Genre: Pop
+mtime: 1456607860
+song_end
+song_begin: 03 I Miss You.flac
+Time: 349
+Artist: Adele
+Title: I Miss You
+Album: 25
+Date: 2015
+Track: 03
+Genre: Pop
+mtime: 1456607898
+song_end
+song_begin: 04 When We Were Young.flac
+Time: 291
+Artist: Adele
+Title: When We Were Young
+Album: 25
+Date: 2015
+Track: 04
+Genre: Pop
+mtime: 1456607896
+song_end
+song_begin: 05 Remedy.flac
+Time: 246
+Artist: Adele
+Title: Remedy
+Album: 25
+Date: 2015
+Track: 05
+Genre: Pop
+mtime: 1456607892
+song_end
+song_begin: 06 Water Under the Bridge.flac
+Time: 241
+Artist: Adele
+Title: Water Under the Bridge
+Album: 25
+Date: 2015
+Track: 06
+Genre: Pop
+mtime: 1456607896
+song_end
+song_begin: 07 River Lea.flac
+Time: 226
+Artist: Adele
+Title: River Lea
+Album: 25
+Date: 2015
+Track: 07
+Genre: Pop
+mtime: 1456607864
+song_end
+song_begin: 08 Love in the Dark.flac
+Time: 286
+Artist: Adele
+Title: Love in the Dark
+Album: 25
+Date: 2015
+Track: 08
+Genre: Pop
+mtime: 1456607894
+song_end
+song_begin: 09 Million Years Ago.flac
+Time: 228
+Artist: Adele
+Title: Million Years Ago
+Album: 25
+Date: 2015
+Track: 09
+Genre: Pop
+mtime: 1456607896
+song_end
+song_begin: 10 All I Ask.flac
+Time: 272
+Artist: Adele
+Title: All I Ask
+Album: 25
+Date: 2015
+Track: 10
+Genre: Pop
+mtime: 1456607846
+song_end
+song_begin: 11 Sweetest Devotion.flac
+Time: 252
+Artist: Adele
+Title: Sweetest Devotion
+Album: 25
+Date: 2015
+Track: 11
+Genre: Pop
+mtime: 1456607904
+song_end
+song_begin: 12 Can't Let Go.flac
+Time: 199
+Artist: Adele
+Title: Can't Let Go
+Album: 25
+Date: 2015
+Track: 12
+Genre: Pop
+mtime: 1456607844
+song_end
+song_begin: 13 Lay Me Down.flac
+Time: 271
+Artist: Adele
+Title: Lay Me Down
+Album: 25
+Date: 2015
+Track: 13
+Genre: Pop
+mtime: 1456607898
+song_end
+song_begin: 14 Why Do You Love Me.flac
+Time: 239
+Artist: Adele
+Title: Why Do You Love Me
+Album: 25
+Date: 2015
+Track: 14
+Genre: Pop
+mtime: 1456607878
+song_end
+end: Pop/Adele/2015 - 25
+end: Pop/Adele
+directory: Bon Jovi - Cross Road
+mtime: 1464241223
+begin: Pop/Bon Jovi - Cross Road
+song_begin: 01 - Livin' On A Prayer.mp3
+Time: 251
+Artist: Bon Jovi
+Title: Livin' On A Prayer
+Album: Cross Road
+Track: 01
+Date: 1994
+Genre: Rock
+mtime: 1333161526
+song_end
+song_begin: 02 - Keep The Faith.mp3
+Time: 345
+Artist: Bon Jovi
+Title: Keep The Faith
+Album: Cross Road
+Track: 02
+Date: 1994
+Genre: 하드 락(Hard Rock)
+mtime: 1333161282
+song_end
+song_begin: 03 - Someday I'll Be Saturday Night.mp3
+Time: 279
+Artist: Bon Jovi
+Title: Someday I'll Be Saturday Night
+Album: Cross Road
+Track: 03
+Date: 1994
+Genre: 하드 락(Hard Rock)
+mtime: 1333161282
+song_end
+song_begin: 04 - Always.mp3
+Time: 353
+Artist: Bon Jovi
+Title: Always
+Album: Cross Road
+Track: 04
+Date: 1994
+Genre: 하드 락(Hard Rock)
+mtime: 1333161284
+song_end
+song_begin: 05 - Wanted Dead Or Alive.mp3
+Time: 307
+Artist: Bon Jovi
+Title: Wanted Dead Or Alive
+Album: Cross Road
+Track: 05
+Date: 1994
+Genre: 하드 락(Hard Rock)
+mtime: 1333161284
+song_end
+song_begin: 06 - Lay Your Hands On Me.mp3
+Time: 358
+Artist: Bon Jovi
+Title: Lay Your Hands On Me
+Album: Cross Road
+Track: 06
+Date: 1994
+Genre: 하드 락(Hard Rock)
+mtime: 1333161286
+song_end
+song_begin: 07 - You Give Love A Bad Name.mp3
+Time: 224
+Artist: Bon Jovi
+Title: You Give Love A Bad Name
+Album: Cross Road
+Track: 07
+Date: 1994
+Genre: 하드 락(Hard Rock)
+mtime: 1333161286
+song_end
+song_begin: 08 - Bed Of Roses.mp3
+Time: 395
+Artist: Bon Jovi
+Title: Bed Of Roses
+Album: Cross Road
+Track: 08
+Date: 1994
+Genre: 하드 락(Hard Rock)
+mtime: 1333161286
+song_end
+song_begin: 10 - In These Arms.mp3
+Time: 319
+Artist: Bon Jovi
+Title: In These Arms
+Album: Cross Road
+Track: 10
+Date: 1994
+Genre: 하드 락(Hard Rock)
+mtime: 1333161286
+song_end
+song_begin: 11 - Bad Medicine.mp3
+Time: 317
+Artist: Bon Jovi
+Title: Bad Medicine
+Album: Cross Road
+Track: 11
+Date: 1994
+Genre: 하드 락(Hard Rock)
+mtime: 1333161288
+song_end
+song_begin: 12 - I'll Be There For You.mp3
+Time: 342
+Artist: Bon Jovi
+Title: I'll Be There For You
+Album: Cross Road
+Track: 12
+Date: 1994
+Genre: 하드 락(Hard Rock)
+mtime: 1333161288
+song_end
+song_begin: 13 - In & Out Of Love.mp3
+Time: 267
+Artist: Bon Jovi
+Title: In & Out Of Love
+Album: Cross Road
+Track: 13
+Date: 1994
+Genre: 하드 락(Hard Rock)
+mtime: 1333161288
+song_end
+song_begin: 14 - Runaway.mp3
+Time: 233
+Artist: Bon Jovi
+Title: Runaway
+Album: Cross Road
+Track: 14
+Date: 1994
+Genre: 하드 락(Hard Rock)
+mtime: 1333161290
+song_end
+song_begin: 15 - Never Say Goodbye.mp3
+Time: 291
+Artist: Bon Jovi
+Title: Never Say Goodbye
+Album: Cross Road
+Track: 15
+Date: 1994
+Genre: 하드 락(Hard Rock)
+mtime: 1333161290
+song_end
+end: Pop/Bon Jovi - Cross Road
+directory: Ed Sheeran
+mtime: 1464241240
+begin: Pop/Ed Sheeran
+directory: 2014 - X
+mtime: 1464241244
+begin: Pop/Ed Sheeran/2014 - X
+song_begin: 01 One.flac
+Time: 253
+Artist: Ed Sheeran
+Title: One
+Album: X
+Date: 2014
+Track: 01
+Genre: Pop
+AlbumArtist: Ed Sheeran
+AlbumArtist: Ed Sheeran
+Disc: 1
+mtime: 1456608968
+song_end
+song_begin: 02 I'm A Mess.flac
+Time: 245
+Artist: Ed Sheeran
+Title: I'm A Mess
+Album: X
+Date: 2014
+Track: 02
+Genre: Pop
+AlbumArtist: Ed Sheeran
+AlbumArtist: Ed Sheeran
+Disc: 1
+mtime: 1456609146
+song_end
+song_begin: 03 Sing.flac
+Time: 236
+Artist: Ed Sheeran
+Title: Sing
+Album: X
+Date: 2014
+Track: 03
+Genre: Pop
+AlbumArtist: Ed Sheeran
+AlbumArtist: Ed Sheeran
+Disc: 1
+mtime: 1456608982
+song_end
+song_begin: 04 Don't.flac
+Time: 220
+Artist: Ed Sheeran
+Title: Don't
+Album: X
+Date: 2014
+Track: 04
+Genre: Pop
+AlbumArtist: Ed Sheeran
+AlbumArtist: Ed Sheeran
+Disc: 1
+mtime: 1456608966
+song_end
+song_begin: 05 Nina.flac
+Time: 226
+Artist: Ed Sheeran
+Title: Nina
+Album: X
+Date: 2014
+Track: 05
+Genre: Pop
+AlbumArtist: Ed Sheeran
+AlbumArtist: Ed Sheeran
+Disc: 1
+mtime: 1456608982
+song_end
+song_begin: 06 Photograph.flac
+Time: 259
+Artist: Ed Sheeran
+Title: Photograph
+Album: X
+Date: 2014
+Track: 06
+Genre: Pop
+AlbumArtist: Ed Sheeran
+AlbumArtist: Ed Sheeran
+Disc: 1
+mtime: 1456608970
+song_end
+song_begin: 07 Bloodstream.flac
+Time: 301
+Artist: Ed Sheeran
+Title: Bloodstream
+Album: X
+Date: 2014
+Track: 07
+Genre: Pop
+AlbumArtist: Ed Sheeran
+AlbumArtist: Ed Sheeran
+Disc: 1
+mtime: 1456608982
+song_end
+song_begin: 08 Tenerife Sea.flac
+Time: 242
+Artist: Ed Sheeran
+Title: Tenerife Sea
+Album: X
+Date: 2014
+Track: 08
+Genre: Pop
+AlbumArtist: Ed Sheeran
+AlbumArtist: Ed Sheeran
+Disc: 1
+mtime: 1456608972
+song_end
+song_begin: 09 Runaway.flac
+Time: 206
+Artist: Ed Sheeran
+Title: Runaway
+Album: X
+Date: 2014
+Track: 09
+Genre: Pop
+AlbumArtist: Ed Sheeran
+AlbumArtist: Ed Sheeran
+Disc: 1
+mtime: 1456608962
+song_end
+song_begin: 10 The Man.flac
+Time: 251
+Artist: Ed Sheeran
+Title: The Man
+Album: X
+Date: 2014
+Track: 10
+Genre: Pop
+AlbumArtist: Ed Sheeran
+AlbumArtist: Ed Sheeran
+Disc: 1
+mtime: 1456608968
+song_end
+song_begin: 11 Thinking Out Loud.flac
+Time: 282
+Artist: Ed Sheeran
+Title: Thinking Out Loud
+Album: X
+Date: 2014
+Track: 11
+Genre: Pop
+AlbumArtist: Ed Sheeran
+AlbumArtist: Ed Sheeran
+Disc: 1
+mtime: 1456608966
+song_end
+song_begin: 12 Afire Love.flac
+Time: 317
+Artist: Ed Sheeran
+Title: Afire Love
+Album: X
+Date: 2014
+Track: 12
+Genre: Pop
+AlbumArtist: Ed Sheeran
+AlbumArtist: Ed Sheeran
+Disc: 1
+mtime: 1456608956
+song_end
+end: Pop/Ed Sheeran/2014 - X
+end: Pop/Ed Sheeran
+directory: Michael Jackson - Bad
+mtime: 1464241247
+begin: Pop/Michael Jackson - Bad
+song_begin: 1 - Bad.ogg
+Time: 248
+Album: Bad
+Artist: Michael Jackson
+ArtistSort: Jackson, Michael
+Date: 2001-10-16
+MUSICBRAINZ_ALBUMARTISTID: f27ec8db-af05-4f36-916e-3d57f91ecf5e
+MUSICBRAINZ_ALBUMID: aa06acce-1cd8-4082-9550-630e2b1c5300
+MUSICBRAINZ_ARTISTID: f27ec8db-af05-4f36-916e-3d57f91ecf5e
+MUSICBRAINZ_TRACKID: 47eaab1a-667b-490d-8094-168e7d0d9ad1
+Title: Bad
+Track: 1
+mtime: 1264263420
+song_end
+song_begin: 2 - The Way You Make Me Feel.ogg
+Time: 298
+Album: Bad
+Artist: Michael Jackson
+ArtistSort: Jackson, Michael
+Date: 2001-10-16
+MUSICBRAINZ_ALBUMARTISTID: f27ec8db-af05-4f36-916e-3d57f91ecf5e
+MUSICBRAINZ_ALBUMID: aa06acce-1cd8-4082-9550-630e2b1c5300
+MUSICBRAINZ_ARTISTID: f27ec8db-af05-4f36-916e-3d57f91ecf5e
+MUSICBRAINZ_TRACKID: 4dfd0524-b7ca-45ae-901f-3023d687405f
+Title: The Way You Make Me Feel
+Track: 2
+mtime: 1264263432
+song_end
+song_begin: 3 - Speed Demon.ogg
+Time: 241
+Album: Bad
+Artist: Michael Jackson
+ArtistSort: Jackson, Michael
+Date: 2001-10-16
+MUSICBRAINZ_ALBUMARTISTID: f27ec8db-af05-4f36-916e-3d57f91ecf5e
+MUSICBRAINZ_ALBUMID: aa06acce-1cd8-4082-9550-630e2b1c5300
+MUSICBRAINZ_ARTISTID: f27ec8db-af05-4f36-916e-3d57f91ecf5e
+MUSICBRAINZ_TRACKID: a74b328a-dff5-471b-95e0-805a4f14713e
+Title: Speed Demon
+Track: 3
+mtime: 1264263434
+song_end
+song_begin: 4 - Liberian Girl.ogg
+Time: 234
+Album: Bad
+Artist: Michael Jackson
+ArtistSort: Jackson, Michael
+Date: 2001-10-16
+MUSICBRAINZ_ALBUMARTISTID: f27ec8db-af05-4f36-916e-3d57f91ecf5e
+MUSICBRAINZ_ALBUMID: aa06acce-1cd8-4082-9550-630e2b1c5300
+MUSICBRAINZ_ARTISTID: f27ec8db-af05-4f36-916e-3d57f91ecf5e
+MUSICBRAINZ_TRACKID: 7750b3a2-b167-47db-ac21-ce7533c986f4
+Title: Liberian Girl
+Track: 4
+mtime: 1264263436
+song_end
+song_begin: 5 - Just Good Friends.ogg
+Time: 247
+Album: Bad
+Artist: Michael Jackson
+ArtistSort: Jackson, Michael
+Date: 2001-10-16
+MUSICBRAINZ_ALBUMARTISTID: f27ec8db-af05-4f36-916e-3d57f91ecf5e
+MUSICBRAINZ_ALBUMID: aa06acce-1cd8-4082-9550-630e2b1c5300
+MUSICBRAINZ_ARTISTID: f27ec8db-af05-4f36-916e-3d57f91ecf5e
+MUSICBRAINZ_TRACKID: 526c6bf4-7f21-4ea8-9f8d-0f06f0e8517a
+Title: Just Good Friends
+Track: 5
+mtime: 1264263438
+song_end
+song_begin: 6 - Another Part of Me.ogg
+Time: 235
+Album: Bad
+Artist: Michael Jackson
+ArtistSort: Jackson, Michael
+Date: 2001-10-16
+MUSICBRAINZ_ALBUMARTISTID: f27ec8db-af05-4f36-916e-3d57f91ecf5e
+MUSICBRAINZ_ALBUMID: aa06acce-1cd8-4082-9550-630e2b1c5300
+MUSICBRAINZ_ARTISTID: f27ec8db-af05-4f36-916e-3d57f91ecf5e
+MUSICBRAINZ_TRACKID: 778e7766-3e46-4b4a-9313-00e260e76c3e
+Title: Another Part of Me
+Track: 6
+mtime: 1264263438
+song_end
+song_begin: 7 - Man in the Mirror.ogg
+Time: 320
+Album: Bad
+Artist: Michael Jackson
+ArtistSort: Jackson, Michael
+Date: 2001-10-16
+MUSICBRAINZ_ALBUMARTISTID: f27ec8db-af05-4f36-916e-3d57f91ecf5e
+MUSICBRAINZ_ALBUMID: aa06acce-1cd8-4082-9550-630e2b1c5300
+MUSICBRAINZ_ARTISTID: f27ec8db-af05-4f36-916e-3d57f91ecf5e
+MUSICBRAINZ_TRACKID: 46b7fd3b-926f-4765-9a8e-1f02352202d4
+Title: Man in the Mirror
+Track: 7
+mtime: 1264263440
+song_end
+song_begin: 8 - I Just Can't Stop Loving You.ogg
+Time: 253
+Album: Bad
+Artist: Michael Jackson
+ArtistSort: Jackson, Michael
+Date: 2001-10-16
+MUSICBRAINZ_ALBUMARTISTID: f27ec8db-af05-4f36-916e-3d57f91ecf5e
+MUSICBRAINZ_ALBUMID: aa06acce-1cd8-4082-9550-630e2b1c5300
+MUSICBRAINZ_ARTISTID: f27ec8db-af05-4f36-916e-3d57f91ecf5e
+MUSICBRAINZ_TRACKID: 2f1dbae6-dc5b-4279-9d69-f853cde7aef3
+Title: I Just Can't Stop Loving You
+Track: 8
+mtime: 1264263442
+song_end
+song_begin: 9 - Dirty Diana.ogg
+Time: 281
+Album: Bad
+Artist: Michael Jackson
+ArtistSort: Jackson, Michael
+Date: 2001-10-16
+MUSICBRAINZ_ALBUMARTISTID: f27ec8db-af05-4f36-916e-3d57f91ecf5e
+MUSICBRAINZ_ALBUMID: aa06acce-1cd8-4082-9550-630e2b1c5300
+MUSICBRAINZ_ARTISTID: f27ec8db-af05-4f36-916e-3d57f91ecf5e
+MUSICBRAINZ_TRACKID: 2d141cbd-8219-4b90-b2bb-ab74fa7c65b9
+Title: Dirty Diana
+Track: 9
+mtime: 1264263442
+song_end
+song_begin: 10 - Smooth Criminal.ogg
+Time: 258
+Album: Bad
+Artist: Michael Jackson
+ArtistSort: Jackson, Michael
+Date: 2001-10-16
+MUSICBRAINZ_ALBUMARTISTID: f27ec8db-af05-4f36-916e-3d57f91ecf5e
+MUSICBRAINZ_ALBUMID: aa06acce-1cd8-4082-9550-630e2b1c5300
+MUSICBRAINZ_ARTISTID: f27ec8db-af05-4f36-916e-3d57f91ecf5e
+MUSICBRAINZ_TRACKID: 5cbae4ac-7734-4d6b-be77-dfd53bb7033d
+Title: Smooth Criminal
+Track: 10
+mtime: 1264263422
+song_end
+song_begin: 11 - Leave Me Alone.ogg
+Time: 280
+Album: Bad
+Artist: Michael Jackson
+ArtistSort: Jackson, Michael
+Date: 2001-10-16
+MUSICBRAINZ_ALBUMARTISTID: f27ec8db-af05-4f36-916e-3d57f91ecf5e
+MUSICBRAINZ_ALBUMID: aa06acce-1cd8-4082-9550-630e2b1c5300
+MUSICBRAINZ_ARTISTID: f27ec8db-af05-4f36-916e-3d57f91ecf5e
+MUSICBRAINZ_TRACKID: 9c6551a7-de65-46f3-b433-30c80286ad27
+Title: Leave Me Alone
+Track: 11
+mtime: 1264263424
+song_end
+song_begin: 12 - [interview].ogg
+Time: 243
+Album: Bad
+Artist: Michael Jackson
+ArtistSort: Jones, Quincy
+Date: 2001-10-16
+MUSICBRAINZ_ALBUMARTISTID: f27ec8db-af05-4f36-916e-3d57f91ecf5e
+MUSICBRAINZ_ALBUMID: aa06acce-1cd8-4082-9550-630e2b1c5300
+MUSICBRAINZ_ARTISTID: 5803c81e-739a-4057-9a5c-cf84e55db630
+MUSICBRAINZ_TRACKID: 49509647-308f-4eb3-b9f0-b65be96ae0b1
+Title: [interview]
+Track: 12
+mtime: 1264263426
+song_end
+song_begin: 13 - Streetwalker.ogg
+Time: 349
+Album: Bad
+Artist: Michael Jackson
+ArtistSort: Jackson, Michael
+Date: 2001-10-16
+MUSICBRAINZ_ALBUMARTISTID: f27ec8db-af05-4f36-916e-3d57f91ecf5e
+MUSICBRAINZ_ALBUMID: aa06acce-1cd8-4082-9550-630e2b1c5300
+MUSICBRAINZ_ARTISTID: f27ec8db-af05-4f36-916e-3d57f91ecf5e
+MUSICBRAINZ_TRACKID: 2efc60f1-2d40-44d7-b183-3a4a35beca50
+Title: Streetwalker
+Track: 13
+mtime: 1264263428
+song_end
+song_begin: 14 - [interview].ogg
+Time: 173
+Album: Bad
+Artist: Michael Jackson
+ArtistSort: Jones, Quincy
+Date: 2001-10-16
+MUSICBRAINZ_ALBUMARTISTID: f27ec8db-af05-4f36-916e-3d57f91ecf5e
+MUSICBRAINZ_ALBUMID: aa06acce-1cd8-4082-9550-630e2b1c5300
+MUSICBRAINZ_ARTISTID: 5803c81e-739a-4057-9a5c-cf84e55db630
+MUSICBRAINZ_TRACKID: 81237096-0a12-40fc-b73b-e1bba0609a77
+Title: [interview]
+Track: 14
+mtime: 1264263428
+song_end
+song_begin: 15 - Todo mi amor eres tu (I Just Can't Stop Loving You).ogg
+Time: 245
+Album: Bad
+Artist: Michael Jackson
+ArtistSort: Jackson, Michael
+Date: 2001-10-16
+MUSICBRAINZ_ALBUMARTISTID: f27ec8db-af05-4f36-916e-3d57f91ecf5e
+MUSICBRAINZ_ALBUMID: aa06acce-1cd8-4082-9550-630e2b1c5300
+MUSICBRAINZ_ARTISTID: f27ec8db-af05-4f36-916e-3d57f91ecf5e
+MUSICBRAINZ_TRACKID: 0cb204fd-ce20-45da-b5c3-cfcd2f43798a
+Title: Todo mi amor eres tu (I Just Can't Stop Loving You)
+Track: 15
+mtime: 1264263430
+song_end
+song_begin: 16 - [interview].ogg
+Time: 150
+Album: Bad
+Artist: Michael Jackson
+ArtistSort: Jones, Quincy
+Date: 2001-10-16
+MUSICBRAINZ_ALBUMARTISTID: f27ec8db-af05-4f36-916e-3d57f91ecf5e
+MUSICBRAINZ_ALBUMID: aa06acce-1cd8-4082-9550-630e2b1c5300
+MUSICBRAINZ_ARTISTID: 5803c81e-739a-4057-9a5c-cf84e55db630
+MUSICBRAINZ_TRACKID: cb89f34c-c91a-4086-bea4-52ad76b89a4b
+Title: [interview]
+Track: 16
+mtime: 1264263430
+song_end
+song_begin: 17 - [introduction to Fly Away].ogg
+Time: 9
+Album: Bad
+Artist: Michael Jackson
+ArtistSort: Dietz, Jason
+Date: 2001-10-16
+MUSICBRAINZ_ALBUMARTISTID: f27ec8db-af05-4f36-916e-3d57f91ecf5e
+MUSICBRAINZ_ALBUMID: aa06acce-1cd8-4082-9550-630e2b1c5300
+MUSICBRAINZ_ARTISTID: 2c6b76f6-217a-4745-82d7-5aa824f8f1cc
+MUSICBRAINZ_TRACKID: bbe554b5-dafc-440e-b5c6-21c52553e3f5
+Title: [introduction to Fly Away]
+Track: 17
+mtime: 1264263430
+song_end
+song_begin: 18 - Fly Away.ogg
+Time: 206
+Album: Bad
+Artist: Michael Jackson
+ArtistSort: Jackson, Michael
+Date: 2001-10-16
+MUSICBRAINZ_ALBUMARTISTID: f27ec8db-af05-4f36-916e-3d57f91ecf5e
+MUSICBRAINZ_ALBUMID: aa06acce-1cd8-4082-9550-630e2b1c5300
+MUSICBRAINZ_ARTISTID: f27ec8db-af05-4f36-916e-3d57f91ecf5e
+MUSICBRAINZ_TRACKID: d1e7a772-4481-40a2-970f-7a1a43befd85
+Title: Fly Away
+Track: 18
+mtime: 1264263432
+song_end
+end: Pop/Michael Jackson - Bad
+directory: The Black Eyed Peas - Elephunk
+mtime: 1464241249
+begin: Pop/The Black Eyed Peas - Elephunk
+song_begin: 01. Hands Up.ogg
+Time: 216
+Title: Hands Up
+Artist: The Black Eyed Peas
+Album: Elephunk
+Date: 2003
+Genre: Hip-Hop
+Track: 1
+mtime: 1259465146
+song_end
+song_begin: 02. Labor Day (It's a Holiday).ogg
+Time: 239
+Title: Labor Day (It's a Holiday)
+Artist: The Black Eyed Peas
+Album: Elephunk
+Date: 2003
+Genre: Hip-Hop
+Track: 2
+mtime: 1259465170
+song_end
+song_begin: 03. Let's Get Retarded.ogg
+Time: 216
+Title: Let's Get Retarded
+Artist: The Black Eyed Peas
+Album: Elephunk
+Date: 2003
+Genre: Hip-Hop
+Track: 3
+mtime: 1259465190
+song_end
+song_begin: 04. Hey Mama.ogg
+Time: 215
+Title: Hey Mama
+Artist: The Black Eyed Peas
+Album: Elephunk
+Date: 2003
+Genre: Hip-Hop
+Track: 4
+mtime: 1259465210
+song_end
+song_begin: 05. Shut Up.ogg
+Time: 296
+Title: Shut Up
+Artist: The Black Eyed Peas
+Album: Elephunk
+Date: 2003
+Genre: Hip-Hop
+Track: 5
+mtime: 1259465234
+song_end
+song_begin: 06. Smells Like Funk.ogg
+Time: 305
+Title: Smells Like Funk
+Artist: The Black Eyed Peas
+Album: Elephunk
+Date: 2003
+Genre: Hip-Hop
+Track: 6
+mtime: 1259465256
+song_end
+song_begin: 07. Latin Girls.ogg
+Time: 378
+Title: Latin Girls
+Artist: The Black Eyed Peas
+Album: Elephunk
+Date: 2003
+Genre: Hip-Hop
+Track: 7
+mtime: 1259465286
+song_end
+song_begin: 08. Sexy.ogg
+Time: 283
+Title: Sexy
+Artist: The Black Eyed Peas
+Album: Elephunk
+Date: 2003
+Genre: Hip-Hop
+Track: 8
+mtime: 1259465306
+song_end
+song_begin: 09. Fly Away.ogg
+Time: 215
+Title: Fly Away
+Artist: The Black Eyed Peas
+Album: Elephunk
+Date: 2003
+Genre: Hip-Hop
+Track: 9
+mtime: 1259465322
+song_end
+song_begin: 10. The Boogie That Be.ogg
+Time: 312
+Title: The Boogie That Be
+Artist: The Black Eyed Peas
+Album: Elephunk
+Date: 2003
+Genre: Hip-Hop
+Track: 10
+mtime: 1259465348
+song_end
+song_begin: 11. The Apl Song.ogg
+Time: 175
+Title: The Apl Song
+Artist: The Black Eyed Peas
+Album: Elephunk
+Date: 2003
+Genre: Hip-Hop
+Track: 11
+mtime: 1259465360
+song_end
+song_begin: 12. Anxiety.ogg
+Time: 218
+Title: Anxiety
+Artist: The Black Eyed Peas
+Album: Elephunk
+Date: 2003
+Genre: Hip-Hop
+Track: 12
+mtime: 1259465376
+song_end
+song_begin: 13. Where Is The Love.ogg
+Time: 286
+Title: Where Is The Love
+Artist: The Black Eyed Peas
+Album: Elephunk
+Date: 2003
+Genre: Hip-Hop
+Track: 13
+mtime: 1259465396
+song_end
+song_begin: 14. Third Eye.ogg
+Time: 222
+Title: Third Eye
+Artist: The Black Eyed Peas
+Album: Elephunk
+Date: 2003
+Genre: Hip-Hop
+Track: 14
+mtime: 1259465414
+song_end
+song_begin: 15. Rock My Shit.ogg
+Time: 232
+Title: Rock My Shit
+Artist: The Black Eyed Peas
+Album: Elephunk
+Date: 2003
+Genre: Hip-Hop
+Track: 15
+mtime: 1259465432
+song_end
+song_begin: 16. What's Goin Down.ogg
+Time: 161
+Title: What's Goin Down
+Artist: The Black Eyed Peas
+Album: Elephunk
+Date: 2003
+Genre: Hip-Hop
+Track: 16
+mtime: 1259465444
+song_end
+end: Pop/The Black Eyed Peas - Elephunk
+end: Pop
+directory: Rock
+mtime: 1464241277
+begin: Rock
+directory: Coldplay
+mtime: 1464241281
+begin: Rock/Coldplay
+song_begin: 01-coldplay-a_head_full_of_dreams.flac
+Time: 224
+Artist: Coldplay
+Title: A Head Full Of Dreams
+Album: A Head Full Of Dreams
+Track: 1
+Date: 2015
+Genre: Pop
+Disc: 1
+AlbumArtist: Coldplay
+mtime: 1456602202
+song_end
+song_begin: 02-coldplay-birds.flac
+Time: 230
+Artist: Coldplay
+Title: Birds
+Album: A Head Full Of Dreams
+Track: 2
+Date: 2015
+Genre: Pop
+Disc: 1
+AlbumArtist: Coldplay
+mtime: 1456602206
+song_end
+song_begin: 03-coldplay-hymn_for_the_weekend_(feat._beyonce).flac
+Time: 259
+Artist: Coldplay
+Title: Hymn For The Weekend (Feat. Beyonce)
+Album: A Head Full Of Dreams
+Track: 3
+Date: 2015
+Genre: Pop
+Disc: 1
+AlbumArtist: Coldplay
+mtime: 1456602210
+song_end
+song_begin: 04-coldplay-everglow.flac
+Time: 283
+Artist: Coldplay
+Title: Everglow
+Album: A Head Full Of Dreams
+Track: 4
+Date: 2015
+Genre: Pop
+Disc: 1
+AlbumArtist: Coldplay
+mtime: 1456602212
+song_end
+song_begin: 05-coldplay-adventure_of_a_lifetime.flac
+Time: 264
+Artist: Coldplay
+Title: Adventure Of A Lifetime
+Album: A Head Full Of Dreams
+Track: 5
+Date: 2015
+Genre: Pop
+Disc: 1
+AlbumArtist: Coldplay
+mtime: 1456602204
+song_end
+song_begin: 06-coldplay-fun_(feat._tove_lo).flac
+Time: 268
+Artist: Coldplay
+Title: Fun (Feat. Tove Lo)
+Album: A Head Full Of Dreams
+Track: 6
+Date: 2015
+Genre: Pop
+Disc: 1
+AlbumArtist: Coldplay
+mtime: 1456602210
+song_end
+song_begin: 07-coldplay-kaleidoscope.flac
+Time: 112
+Artist: Coldplay
+Title: Kaleidoscope
+Album: A Head Full Of Dreams
+Track: 7
+Date: 2015
+Genre: Pop
+Disc: 1
+AlbumArtist: Coldplay
+mtime: 1456602188
+song_end
+song_begin: 08-coldplay-army_of_one_x_marks_the_spot.flac
+Time: 377
+Artist: Coldplay
+Title: Army Of One / X Marks The Spot
+Album: A Head Full Of Dreams
+Track: 8
+Date: 2015
+Genre: Pop
+Disc: 1
+AlbumArtist: Coldplay
+mtime: 1456602206
+song_end
+song_begin: 09-coldplay-amazing_day.flac
+Time: 272
+Artist: Coldplay
+Title: Amazing Day
+Album: A Head Full Of Dreams
+Track: 9
+Date: 2015
+Genre: Pop
+Disc: 1
+AlbumArtist: Coldplay
+mtime: 1456602206
+song_end
+song_begin: 10-coldplay-colour_spectrum.flac
+Time: 61
+Artist: Coldplay
+Title: Colour Spectrum
+Album: A Head Full Of Dreams
+Track: 10
+Date: 2015
+Genre: Pop
+Disc: 1
+AlbumArtist: Coldplay
+mtime: 1456602200
+song_end
+song_begin: 11-coldplay-up_and_up.flac
+Time: 406
+Artist: Coldplay
+Title: Up&Up
+Album: A Head Full Of Dreams
+Track: 11
+Date: 2015
+Genre: Pop
+Disc: 1
+AlbumArtist: Coldplay
+mtime: 1456602206
+song_end
+playlist_begin: 00-coldplay-a_head_full_of_dreams-cd-flac-2015.m3u
+mtime: 1456601890
+playlist_end
+end: Rock/Coldplay
+directory: Imagine Dragons
+mtime: 1464241264
+begin: Rock/Imagine Dragons
+directory: 2012 - Night Visions
+mtime: 1464241264
+begin: Rock/Imagine Dragons/2012 - Night Visions
+song_begin: 01 Radioactive.flac
+Time: 187
+Artist: Imagine Dragons
+Title: Radioactive
+Album: Night Visions
+Date: 2012
+Track: 01
+Genre: Alternative
+mtime: 1456602806
+song_end
+song_begin: 02 Tiptoe.flac
+Time: 195
+Artist: Imagine Dragons
+Title: Tiptoe
+Album: Night Visions
+Date: 2012
+Track: 02
+Genre: Alternative
+mtime: 1456602772
+song_end
+song_begin: 03 It's Time.flac
+Time: 241
+Artist: Imagine Dragons
+Title: It's Time
+Album: Night Visions
+Date: 2012
+Track: 03
+Genre: Alternative
+mtime: 1456602776
+song_end
+song_begin: 04 Demons.flac
+Time: 178
+Artist: Imagine Dragons
+Title: Demons
+Album: Night Visions
+Date: 2012
+Track: 04
+Genre: Alternative
+mtime: 1456602806
+song_end
+song_begin: 05 On Top of the World.flac
+Time: 193
+Artist: Imagine Dragons
+Title: On Top of the World
+Album: Night Visions
+Date: 2012
+Track: 05
+Genre: Alternative
+mtime: 1456602776
+song_end
+song_begin: 06 Amsterdam.flac
+Time: 242
+Artist: Imagine Dragons
+Title: Amsterdam
+Album: Night Visions
+Date: 2012
+Track: 06
+Genre: Alternative
+mtime: 1456602786
+song_end
+song_begin: 07 Hear Me.flac
+Time: 236
+Artist: Imagine Dragons
+Title: Hear Me
+Album: Night Visions
+Date: 2012
+Track: 07
+Genre: Alternative
+mtime: 1456602800
+song_end
+song_begin: 08 Every Night.flac
+Time: 218
+Artist: Imagine Dragons
+Title: Every Night
+Album: Night Visions
+Date: 2012
+Track: 08
+Genre: Alternative
+mtime: 1456602784
+song_end
+song_begin: 09 Bleeding Out.flac
+Time: 224
+Artist: Imagine Dragons
+Title: Bleeding Out
+Album: Night Visions
+Date: 2012
+Track: 09
+Genre: Alternative
+mtime: 1456602782
+song_end
+song_begin: 10 Underdog.flac
+Time: 210
+Artist: Imagine Dragons
+Title: Underdog
+Album: Night Visions
+Date: 2012
+Track: 10
+Genre: Alternative
+mtime: 1456602806
+song_end
+song_begin: 11 Nothing Left to Say-Rocks.flac
+Time: 537
+Artist: Imagine Dragons
+Title: Nothing Left to Say/Rocks
+Album: Night Visions
+Date: 2012
+Track: 11
+Genre: Alternative
+mtime: 1456602788
+song_end
+end: Rock/Imagine Dragons/2012 - Night Visions
+directory: Smoke + Mirrors (Deluxe Edition)
+mtime: 1464241272
+begin: Rock/Imagine Dragons/Smoke + Mirrors (Deluxe Edition)
+song_begin: 01. Shots.flac
+Time: 233
+Album: Smoke + Mirrors (Deluxe Edition)
+AlbumArtist: Imagine Dragons
+Artist: Imagine Dragons
+Date: 2015
+Genre: Indie Rock
+Title: Shots
+Track: 01
+mtime: 1456602498
+song_end
+song_begin: 02. Gold.flac
+Time: 217
+Album: Smoke + Mirrors (Deluxe Edition)
+AlbumArtist: Imagine Dragons
+Artist: Imagine Dragons
+Date: 2015
+Genre: Indie Rock
+Title: Gold
+Track: 02
+mtime: 1456602560
+song_end
+song_begin: 03. Smoke And Mirrors.flac
+Time: 261
+Album: Smoke + Mirrors (Deluxe Edition)
+AlbumArtist: Imagine Dragons
+Artist: Imagine Dragons
+Date: 2015
+Genre: Indie Rock
+Title: Smoke And Mirrors
+Track: 03
+mtime: 1456602422
+song_end
+song_begin: 04. I'm So Sorry.flac
+Time: 231
+Album: Smoke + Mirrors (Deluxe Edition)
+AlbumArtist: Imagine Dragons
+Artist: Imagine Dragons
+Date: 2015
+Genre: Indie Rock
+Title: I'm So Sorry
+Track: 04
+mtime: 1456602478
+song_end
+song_begin: 05. I Bet My Life.flac
+Time: 195
+Album: Smoke + Mirrors (Deluxe Edition)
+AlbumArtist: Imagine Dragons
+Artist: Imagine Dragons
+Date: 2015
+Genre: Indie Rock
+Title: I Bet My Life
+Track: 05
+mtime: 1456602498
+song_end
+song_begin: 06. Polaroid.flac
+Time: 232
+Album: Smoke + Mirrors (Deluxe Edition)
+AlbumArtist: Imagine Dragons
+Artist: Imagine Dragons
+Date: 2015
+Genre: Indie Rock
+Title: Polaroid
+Track: 06
+mtime: 1456602558
+song_end
+song_begin: 07. Friction.flac
+Time: 202
+Album: Smoke + Mirrors (Deluxe Edition)
+AlbumArtist: Imagine Dragons
+Artist: Imagine Dragons
+Date: 2015
+Genre: Indie Rock
+Title: Friction
+Track: 07
+mtime: 1456602512
+song_end
+song_begin: 08. It Comes Back To You.flac
+Time: 218
+Album: Smoke + Mirrors (Deluxe Edition)
+AlbumArtist: Imagine Dragons
+Artist: Imagine Dragons
+Date: 2015
+Genre: Indie Rock
+Title: It Comes Back To You
+Track: 08
+mtime: 1456602464
+song_end
+song_begin: 09. Dream.flac
+Time: 259
+Album: Smoke + Mirrors (Deluxe Edition)
+AlbumArtist: Imagine Dragons
+Artist: Imagine Dragons
+Date: 2015
+Genre: Indie Rock
+Title: Dream
+Track: 09
+mtime: 1456602496
+song_end
+song_begin: 10. Trouble.flac
+Time: 193
+Album: Smoke + Mirrors (Deluxe Edition)
+AlbumArtist: Imagine Dragons
+Artist: Imagine Dragons
+Date: 2015
+Genre: Indie Rock
+Title: Trouble
+Track: 10
+mtime: 1456602466
+song_end
+song_begin: 11. Summer.flac
+Time: 219
+Album: Smoke + Mirrors (Deluxe Edition)
+AlbumArtist: Imagine Dragons
+Artist: Imagine Dragons
+Date: 2015
+Genre: Indie Rock
+Title: Summer
+Track: 11
+mtime: 1456602404
+song_end
+song_begin: 12. Hopeless Opus.flac
+Time: 242
+Album: Smoke + Mirrors (Deluxe Edition)
+AlbumArtist: Imagine Dragons
+Artist: Imagine Dragons
+Date: 2015
+Genre: Indie Rock
+Title: Hopeless Opus
+Track: 12
+mtime: 1456602552
+song_end
+song_begin: 13. The Fall.flac
+Time: 366
+Album: Smoke + Mirrors (Deluxe Edition)
+AlbumArtist: Imagine Dragons
+Artist: Imagine Dragons
+Date: 2015
+Genre: Indie Rock
+Title: The Fall
+Track: 13
+mtime: 1456602550
+song_end
+song_begin: 14. Thief.flac
+Time: 228
+Album: Smoke + Mirrors (Deluxe Edition)
+AlbumArtist: Imagine Dragons
+Artist: Imagine Dragons
+Date: 2015
+Genre: Indie Rock
+Title: Thief
+Track: 14
+mtime: 1456602446
+song_end
+song_begin: 15. The Unknown.flac
+Time: 205
+Album: Smoke + Mirrors (Deluxe Edition)
+AlbumArtist: Imagine Dragons
+Artist: Imagine Dragons
+Date: 2015
+Genre: Indie Rock
+Title: The Unknown
+Track: 15
+mtime: 1456602372
+song_end
+song_begin: 16. Second Chances.flac
+Time: 218
+Album: Smoke + Mirrors (Deluxe Edition)
+AlbumArtist: Imagine Dragons
+Artist: Imagine Dragons
+Date: 2015
+Genre: Indie Rock
+Title: Second Chances
+Track: 16
+mtime: 1456602564
+song_end
+song_begin: 17. Release.flac
+Time: 150
+Album: Smoke + Mirrors (Deluxe Edition)
+AlbumArtist: Imagine Dragons
+Artist: Imagine Dragons
+Date: 2015
+Genre: Indie Rock
+Title: Release
+Track: 17
+mtime: 1456602560
+song_end
+song_begin: 18. Warriors.flac
+Time: 171
+Album: Smoke + Mirrors (Deluxe Edition)
+AlbumArtist: Imagine Dragons
+Artist: Imagine Dragons
+Date: 2015
+Genre: Indie Rock
+Title: Warriors
+Track: 18
+mtime: 1456602536
+song_end
+playlist_begin: 00 - Smoke + Mirrors.m3u
+mtime: 1456601806
+playlist_end
+end: Rock/Imagine Dragons/Smoke + Mirrors (Deluxe Edition)
+end: Rock/Imagine Dragons
+directory: Nirvana - Nevermind
+mtime: 1464241276
+begin: Rock/Nirvana - Nevermind
+song_begin: 1 - Smells Like Teen Spirit.ogg
+Time: 301
+Title: Smells Like Teen Spirit
+Artist: Nirvana
+Track: 1
+Album: Nevermind
+MUSICBRAINZ_ALBUMID: 8e061dc4-790e-4587-ba53-011e7852f88d
+MUSICBRAINZ_ALBUMARTISTID: 5b11f4ce-a62d-471e-81fc-a69a8278c7da
+MUSICBRAINZ_ARTISTID: 5b11f4ce-a62d-471e-81fc-a69a8278c7da
+MUSICBRAINZ_TRACKID: 6da76448-982a-4a01-b65b-9a710301c9c9
+ArtistSort: Nirvana
+Date: 1991-01-01
+mtime: 1258157654
+song_end
+song_begin: 2 - In Bloom.ogg
+Time: 255
+Title: In Bloom
+Artist: Nirvana
+Track: 2
+Album: Nevermind
+MUSICBRAINZ_ALBUMID: 8e061dc4-790e-4587-ba53-011e7852f88d
+MUSICBRAINZ_ALBUMARTISTID: 5b11f4ce-a62d-471e-81fc-a69a8278c7da
+MUSICBRAINZ_ARTISTID: 5b11f4ce-a62d-471e-81fc-a69a8278c7da
+MUSICBRAINZ_TRACKID: 2042ce91-f5fe-4fce-b451-b3354843b193
+ArtistSort: Nirvana
+Date: 1991-01-01
+mtime: 1258157682
+song_end
+song_begin: 3 - Come as You Are.ogg
+Time: 219
+Title: Come as You Are
+Artist: Nirvana
+Track: 3
+Album: Nevermind
+MUSICBRAINZ_ALBUMID: 8e061dc4-790e-4587-ba53-011e7852f88d
+MUSICBRAINZ_ALBUMARTISTID: 5b11f4ce-a62d-471e-81fc-a69a8278c7da
+MUSICBRAINZ_ARTISTID: 5b11f4ce-a62d-471e-81fc-a69a8278c7da
+MUSICBRAINZ_TRACKID: b4184747-0157-41be-ae44-e3a6a0c13272
+ArtistSort: Nirvana
+Date: 1991-01-01
+mtime: 1258157706
+song_end
+song_begin: 4 - Breed.ogg
+Time: 184
+Title: Breed
+Artist: Nirvana
+Track: 4
+Album: Nevermind
+MUSICBRAINZ_ALBUMID: 8e061dc4-790e-4587-ba53-011e7852f88d
+MUSICBRAINZ_ALBUMARTISTID: 5b11f4ce-a62d-471e-81fc-a69a8278c7da
+MUSICBRAINZ_ARTISTID: 5b11f4ce-a62d-471e-81fc-a69a8278c7da
+MUSICBRAINZ_TRACKID: b4f0642e-05c5-4bc4-bf0c-95e67bfb3e99
+ArtistSort: Nirvana
+Date: 1991-01-01
+mtime: 1258157734
+song_end
+song_begin: 5 - Lithium.ogg
+Time: 257
+Title: Lithium
+Artist: Nirvana
+Track: 5
+Album: Nevermind
+MUSICBRAINZ_ALBUMID: 8e061dc4-790e-4587-ba53-011e7852f88d
+MUSICBRAINZ_ALBUMARTISTID: 5b11f4ce-a62d-471e-81fc-a69a8278c7da
+MUSICBRAINZ_ARTISTID: 5b11f4ce-a62d-471e-81fc-a69a8278c7da
+MUSICBRAINZ_TRACKID: 3f5647db-6f12-4c36-94ea-2d06f2c7e8f9
+ArtistSort: Nirvana
+Date: 1991-01-01
+mtime: 1258157762
+song_end
+song_begin: 6 - Polly.ogg
+Time: 177
+Title: Polly
+Artist: Nirvana
+Track: 6
+Album: Nevermind
+MUSICBRAINZ_ALBUMID: 8e061dc4-790e-4587-ba53-011e7852f88d
+MUSICBRAINZ_ALBUMARTISTID: 5b11f4ce-a62d-471e-81fc-a69a8278c7da
+MUSICBRAINZ_ARTISTID: 5b11f4ce-a62d-471e-81fc-a69a8278c7da
+MUSICBRAINZ_TRACKID: d8417d44-9324-43b8-838a-e1034ac11f8c
+ArtistSort: Nirvana
+Date: 1991-01-01
+mtime: 1258157784
+song_end
+song_begin: 7 - Territorial Pissings.ogg
+Time: 143
+Title: Territorial Pissings
+Artist: Nirvana
+Track: 7
+Album: Nevermind
+MUSICBRAINZ_ALBUMID: 8e061dc4-790e-4587-ba53-011e7852f88d
+MUSICBRAINZ_ALBUMARTISTID: 5b11f4ce-a62d-471e-81fc-a69a8278c7da
+MUSICBRAINZ_ARTISTID: 5b11f4ce-a62d-471e-81fc-a69a8278c7da
+MUSICBRAINZ_TRACKID: 120bdf8e-c760-4aaf-8e34-ddd1ab3be504
+ArtistSort: Nirvana
+Date: 1991-01-01
+mtime: 1258157800
+song_end
+song_begin: 8 - Drain You.ogg
+Time: 224
+Title: Drain You
+Artist: Nirvana
+Track: 8
+Album: Nevermind
+MUSICBRAINZ_ALBUMID: 8e061dc4-790e-4587-ba53-011e7852f88d
+MUSICBRAINZ_ALBUMARTISTID: 5b11f4ce-a62d-471e-81fc-a69a8278c7da
+MUSICBRAINZ_ARTISTID: 5b11f4ce-a62d-471e-81fc-a69a8278c7da
+MUSICBRAINZ_TRACKID: 4eb581fa-4080-4b0b-9ef0-2c8720c02190
+ArtistSort: Nirvana
+Date: 1991-01-01
+mtime: 1258157824
+song_end
+song_begin: 9 - Lounge Act.ogg
+Time: 157
+Title: Lounge Act
+Artist: Nirvana
+Track: 9
+Album: Nevermind
+MUSICBRAINZ_ALBUMID: 8e061dc4-790e-4587-ba53-011e7852f88d
+MUSICBRAINZ_ALBUMARTISTID: 5b11f4ce-a62d-471e-81fc-a69a8278c7da
+MUSICBRAINZ_ARTISTID: 5b11f4ce-a62d-471e-81fc-a69a8278c7da
+MUSICBRAINZ_TRACKID: 1e35bde3-37bd-431d-916a-c364e6440446
+ArtistSort: Nirvana
+Date: 1991-01-01
+mtime: 1258157840
+song_end
+song_begin: 10 - Stay Away.ogg
+Time: 212
+Title: Stay Away
+Artist: Nirvana
+Track: 10
+Album: Nevermind
+MUSICBRAINZ_ALBUMID: 8e061dc4-790e-4587-ba53-011e7852f88d
+MUSICBRAINZ_ALBUMARTISTID: 5b11f4ce-a62d-471e-81fc-a69a8278c7da
+MUSICBRAINZ_ARTISTID: 5b11f4ce-a62d-471e-81fc-a69a8278c7da
+MUSICBRAINZ_TRACKID: 6fb6fff0-a381-44be-8aa6-e3429a670e0b
+ArtistSort: Nirvana
+Date: 1991-01-01
+mtime: 1258157862
+song_end
+song_begin: 11 - On a Plain.ogg
+Time: 196
+Title: On a Plain
+Artist: Nirvana
+Track: 11
+Album: Nevermind
+MUSICBRAINZ_ALBUMID: 8e061dc4-790e-4587-ba53-011e7852f88d
+MUSICBRAINZ_ALBUMARTISTID: 5b11f4ce-a62d-471e-81fc-a69a8278c7da
+MUSICBRAINZ_ARTISTID: 5b11f4ce-a62d-471e-81fc-a69a8278c7da
+MUSICBRAINZ_TRACKID: f30831a3-a9de-41ba-86c8-f1cad625b305
+ArtistSort: Nirvana
+Date: 1991-01-01
+mtime: 1258157882
+song_end
+song_begin: 12 - Something in the Way - Endless, Nameless.ogg
+Time: 1235
+Title: Something in the Way / Endless, Nameless
+Artist: Nirvana
+Track: 12
+Album: Nevermind
+MUSICBRAINZ_ALBUMID: 8e061dc4-790e-4587-ba53-011e7852f88d
+MUSICBRAINZ_ALBUMARTISTID: 5b11f4ce-a62d-471e-81fc-a69a8278c7da
+MUSICBRAINZ_ARTISTID: 5b11f4ce-a62d-471e-81fc-a69a8278c7da
+MUSICBRAINZ_TRACKID: d506a8b2-4ba9-49b9-941f-40d1295ebd29
+ArtistSort: Nirvana
+Date: 1991-01-01
+mtime: 1258157978
+song_end
+end: Rock/Nirvana - Nevermind
+directory: Red Hot Chili Peppers - Californication Unmastered Mix
+mtime: 1464241260
+begin: Rock/Red Hot Chili Peppers - Californication Unmastered Mix
+song_begin: 01 I Like Dirt.flac
+Time: 162
+Track: 01/19
+Title: I Like Dirt
+Artist: Red Hot Chili Peppers
+Album: Californication Unmastered Mix
+AlbumArtist: Red Hot Chili Peppers
+Genre: Alternative
+mtime: 1415047292
+song_end
+song_begin: 02 Parallel Universe.flac
+Time: 274
+Track: 02/19
+Title: Parallel Universe
+Artist: Red Hot Chili Peppers
+Album: Californication Unmastered Mix
+AlbumArtist: Red Hot Chili Peppers
+Genre: Alternative
+mtime: 1415047292
+song_end
+song_begin: 03 Savior.flac
+Time: 310
+Track: 03/19
+Title: Savior
+Artist: Red Hot Chili Peppers
+Album: Californication Unmastered Mix
+AlbumArtist: Red Hot Chili Peppers
+Genre: Alternative
+mtime: 1415047292
+song_end
+song_begin: 04 Fat Dance.flac
+Time: 228
+Track: 04/19
+Title: Fat Dance
+Artist: Red Hot Chili Peppers
+Album: Californication Unmastered Mix
+AlbumArtist: Red Hot Chili Peppers
+Genre: Alternative
+mtime: 1415047292
+song_end
+song_begin: 05 Easily.flac
+Time: 234
+Track: 05/19
+Title: Easily
+Artist: Red Hot Chili Peppers
+Album: Californication Unmastered Mix
+AlbumArtist: Red Hot Chili Peppers
+Genre: Alternative
+mtime: 1415047292
+song_end
+song_begin: 06 Otherside.flac
+Time: 261
+Track: 06/19
+Title: Otherside
+Artist: Red Hot Chili Peppers
+Album: Californication Unmastered Mix
+AlbumArtist: Red Hot Chili Peppers
+Genre: Alternative
+mtime: 1415047292
+song_end
+song_begin: 07 Californication.flac
+Time: 338
+Track: 07/19
+Title: Californication
+Artist: Red Hot Chili Peppers
+Album: Californication Unmastered Mix
+AlbumArtist: Red Hot Chili Peppers
+Genre: Alternative
+mtime: 1415047292
+song_end
+song_begin: 08 Get On Top.flac
+Time: 203
+Track: 08/19
+Title: Get On Top
+Artist: Red Hot Chili Peppers
+Album: Californication Unmastered Mix
+AlbumArtist: Red Hot Chili Peppers
+Genre: Alternative
+mtime: 1415047292
+song_end
+song_begin: 09 Purple Stain.flac
+Time: 258
+Track: 09/19
+Title: Purple Stain
+Artist: Red Hot Chili Peppers
+Album: Californication Unmastered Mix
+AlbumArtist: Red Hot Chili Peppers
+Genre: Alternative
+mtime: 1415047292
+song_end
+song_begin: 10 Around The World.flac
+Time: 250
+Track: 10/19
+Title: Around The World
+Artist: Red Hot Chili Peppers
+Album: Californication Unmastered Mix
+AlbumArtist: Red Hot Chili Peppers
+Genre: Alternative
+mtime: 1415047292
+song_end
+song_begin: 11 Emit Remmus.flac
+Time: 245
+Track: 11/19
+Title: Emit Remmus
+Artist: Red Hot Chili Peppers
+Album: Californication Unmastered Mix
+AlbumArtist: Red Hot Chili Peppers
+Genre: Alternative
+mtime: 1415047292
+song_end
+song_begin: 12 This Velvet Glove.flac
+Time: 231
+Track: 12/19
+Title: This Velvet Glove
+Artist: Red Hot Chili Peppers
+Album: Californication Unmastered Mix
+AlbumArtist: Red Hot Chili Peppers
+Genre: Alternative
+mtime: 1415047292
+song_end
+song_begin: 13 Porcelain.flac
+Time: 170
+Track: 13/19
+Title: Porcelain
+Artist: Red Hot Chili Peppers
+Album: Californication Unmastered Mix
+AlbumArtist: Red Hot Chili Peppers
+Genre: Alternative
+mtime: 1415047292
+song_end
+song_begin: 14 Scar Tissue.flac
+Time: 225
+Track: 14/19
+Title: Scar Tissue
+Artist: Red Hot Chili Peppers
+Album: Californication Unmastered Mix
+AlbumArtist: Red Hot Chili Peppers
+Genre: Alternative
+mtime: 1415047292
+song_end
+song_begin: 15 Right On Time.flac
+Time: 117
+Track: 15/19
+Title: Right On Time
+Artist: Red Hot Chili Peppers
+Album: Californication Unmastered Mix
+AlbumArtist: Red Hot Chili Peppers
+Genre: Alternative
+mtime: 1415047292
+song_end
+song_begin: 16 How Strong.flac
+Time: 288
+Track: 16/19
+Title: How Strong
+Artist: Red Hot Chili Peppers
+Album: Californication Unmastered Mix
+AlbumArtist: Red Hot Chili Peppers
+Genre: Alternative
+mtime: 1415047292
+song_end
+song_begin: 17 Road Trippin'.flac
+Time: 212
+Track: 17/19
+Title: Road Trippin'
+Artist: Red Hot Chili Peppers
+Album: Californication Unmastered Mix
+AlbumArtist: Red Hot Chili Peppers
+Genre: Alternative
+mtime: 1415047292
+song_end
+song_begin: 18 Gong Li.flac
+Time: 227
+Track: 18/19
+Title: Gong Li
+Artist: Red Hot Chili Peppers
+Album: Californication Unmastered Mix
+AlbumArtist: Red Hot Chili Peppers
+Genre: Alternative
+mtime: 1415047292
+song_end
+song_begin: 19 Road Trippin' (Without Strings).flac
+Time: 241
+Track: 19/19
+Title: Road Trippin' (Without Strings)
+Artist: Red Hot Chili Peppers
+Album: Californication Unmastered Mix
+AlbumArtist: Red Hot Chili Peppers
+Genre: Alternative
+mtime: 1415047292
+song_end
+playlist_begin: RHCP-CU.m3u
+mtime: 1415049034
+playlist_end
+end: Rock/Red Hot Chili Peppers - Californication Unmastered Mix
+end: Rock
+directory: SoundTrack
+mtime: 1464241294
+begin: SoundTrack
+directory: Ennio Morricone - The Hateful Eight (2015)
+mtime: 1464241293
+begin: SoundTrack/Ennio Morricone - The Hateful Eight (2015)
+song_begin: 01 - Ennio Morricone - L'Ultima Diligenza Di Red Rock.flac
+Time: 453
+Album: Quentin Tarantino's The Hateful Eight
+AlbumArtist: VA
+AlbumArtist: VA
+Artist: Ennio Morricone
+Composer: Ennio Morricone
+Date: 2015
+Genre: Score
+Title: L'Ultima Diligenza Di Red Rock
+Track: 1
+mtime: 1451492068
+song_end
+song_begin: 02 - Ennio Morricone - Overture.flac
+Time: 192
+Album: Quentin Tarantino's The Hateful Eight
+AlbumArtist: VA
+AlbumArtist: VA
+Artist: Ennio Morricone
+Composer: Ennio Morricone
+Date: 2015
+Genre: Score
+Title: Overture
+Track: 2
+mtime: 1451492068
+song_end
+song_begin: 03 - Jennifer Jason Leigh, Kurt Russell, Samuel L. Jackson - Major Warren Meet Daisy Domergue.flac
+Time: 33
+Album: Quentin Tarantino's The Hateful Eight
+AlbumArtist: VA
+AlbumArtist: VA
+Artist: Jennifer Jason Leigh, Kurt Russell, Samuel L. Jackson
+Date: 2015
+Genre: Score
+Title: "Major Warren Meet Daisy Domergue"
+Track: 3
+mtime: 1451492068
+song_end
+song_begin: 04 - Ennio Morricone - Narratore Letterario.flac
+Time: 122
+Album: Quentin Tarantino's The Hateful Eight
+AlbumArtist: VA
+AlbumArtist: VA
+Artist: Ennio Morricone
+Composer: Ennio Morricone
+Date: 2015
+Genre: Score
+Title: Narratore Letterario
+Track: 4
+mtime: 1451492068
+song_end
+song_begin: 05 - The White Stripes - Apple Blossom.flac
+Time: 136
+Album: Quentin Tarantino's The Hateful Eight
+AlbumArtist: VA
+AlbumArtist: VA
+Artist: The White Stripes
+Date: 2015
+Genre: Score
+Title: Apple Blossom
+Track: 5
+mtime: 1451492068
+song_end
+song_begin: 06 - Tim Roth & Kurt Russell - Frontier Justice.flac
+Time: 112
+Album: Quentin Tarantino's The Hateful Eight
+AlbumArtist: VA
+AlbumArtist: VA
+Artist: Tim Roth & Kurt Russell
+Date: 2015
+Genre: Score
+Title: "Frontier Justice"
+Track: 6
+mtime: 1451492068
+song_end
+song_begin: 07 - Ennio Morricone - L'Ultima Diligenza Di Red Rock.flac
+Time: 158
+Album: Quentin Tarantino's The Hateful Eight
+AlbumArtist: VA
+AlbumArtist: VA
+Artist: Ennio Morricone
+Composer: Ennio Morricone
+Date: 2015
+Genre: Score
+Title: L'Ultima Diligenza Di Red Rock
+Track: 7
+mtime: 1451492068
+song_end
+song_begin: 08 - Ennio Morricone - Neve.flac
+Time: 737
+Album: Quentin Tarantino's The Hateful Eight
+AlbumArtist: VA
+AlbumArtist: VA
+Artist: Ennio Morricone
+Composer: Ennio Morricone
+Date: 2015
+Genre: Score
+Title: Neve
+Track: 8
+mtime: 1451492068
+song_end
+song_begin: 09 - Kurt Russell & Michael Madsen - This Here Is Daisy Domergue.flac
+Time: 63
+Album: Quentin Tarantino's The Hateful Eight
+AlbumArtist: VA
+AlbumArtist: VA
+Artist: Kurt Russell & Michael Madsen
+Date: 2015
+Genre: Score
+Title: "This Here Is Daisy Domergue"
+Track: 9
+mtime: 1451492068
+song_end
+song_begin: 10 - Ennio Morricone - Sei Cavalli.flac
+Time: 83
+Album: Quentin Tarantino's The Hateful Eight
+AlbumArtist: VA
+AlbumArtist: VA
+Artist: Ennio Morricone
+Composer: Ennio Morricone
+Date: 2015
+Genre: Score
+Title: Sei Cavalli
+Track: 10
+mtime: 1451492068
+song_end
+song_begin: 11 - Ennio Morricone - Raggi Di Sole Sulla Montagna.flac
+Time: 103
+Album: Quentin Tarantino's The Hateful Eight
+AlbumArtist: VA
+AlbumArtist: VA
+Artist: Ennio Morricone
+Composer: Ennio Morricone
+Date: 2015
+Genre: Score
+Title: Raggi Di Sole Sulla Montagna
+Track: 11
+mtime: 1451492068
+song_end
+song_begin: 12 - Samuel L. Jackson, Walton Goggins, Bruce Dern - Son Of The Bloody Nigger Killer Of Baton Rouge.flac
+Time: 165
+Album: Quentin Tarantino's The Hateful Eight
+AlbumArtist: VA
+AlbumArtist: VA
+Artist: Samuel L. Jackson, Walton Goggins, Bruce Dern
+Date: 2015
+Genre: Score
+Title: "Son Of The Bloody Nigger Killer Of Baton Rouge"
+Track: 12
+mtime: 1451492068
+song_end
+song_begin: 13 - Jennifer Jason Leigh - Jim Jones At Botany Bay.flac
+Time: 252
+Album: Quentin Tarantino's The Hateful Eight
+AlbumArtist: VA
+AlbumArtist: VA
+Artist: Jennifer Jason Leigh
+Date: 2015
+Genre: Score
+Title: Jim Jones At Botany Bay
+Track: 13
+mtime: 1451492068
+song_end
+song_begin: 14 - Ennio Morricone - Neve.flac
+Time: 127
+Album: Quentin Tarantino's The Hateful Eight
+AlbumArtist: VA
+AlbumArtist: VA
+Artist: Ennio Morricone
+Composer: Ennio Morricone
+Date: 2015
+Genre: Score
+Title: Neve
+Track: 14
+mtime: 1451492068
+song_end
+song_begin: 15 - Samuel L. Jackson, Demian Bichir, Walton Goggins - Uncle Charlie's Stew.flac
+Time: 103
+Album: Quentin Tarantino's The Hateful Eight
+AlbumArtist: VA
+AlbumArtist: VA
+Artist: Samuel L. Jackson, Demián Bichir, Walton Goggins
+Date: 2015
+Genre: Score
+Title: "Uncle Charlie's Stew"
+Track: 15
+mtime: 1451492068
+song_end
+song_begin: 16 - Ennio Morricone - I Quattro Passeggeri.flac
+Time: 110
+Album: Quentin Tarantino's The Hateful Eight
+AlbumArtist: VA
+AlbumArtist: VA
+Artist: Ennio Morricone
+Composer: Ennio Morricone
+Date: 2015
+Genre: Score
+Title: I Quattro Passeggeri
+Track: 16
+mtime: 1451492068
+song_end
+song_begin: 17 - Ennio Morricone - La Musica Prima Del Massacro.flac
+Time: 122
+Album: Quentin Tarantino's The Hateful Eight
+AlbumArtist: VA
+AlbumArtist: VA
+Artist: Ennio Morricone
+Composer: Ennio Morricone
+Date: 2015
+Genre: Score
+Title: La Musica Prima Del Massacro
+Track: 17
+mtime: 1451492068
+song_end
+song_begin: 18 - Ennio Morricone - L'Inferno Bianco.flac
+Time: 212
+Album: Quentin Tarantino's The Hateful Eight
+AlbumArtist: VA
+AlbumArtist: VA
+Artist: Ennio Morricone
+Composer: Ennio Morricone
+Date: 2015
+Genre: Score
+Title: L'Inferno Bianco
+Track: 18
+mtime: 1451492068
+song_end
+song_begin: 19 - Tim Roth, Walton Goggins, Kurt Russell - The Suggestive Oswaldo Mobray.flac
+Time: 49
+Album: Quentin Tarantino's The Hateful Eight
+AlbumArtist: VA
+AlbumArtist: VA
+Artist: Tim Roth, Walton Goggins, Kurt Russell
+Date: 2015
+Genre: Score
+Title: The Suggestive Oswaldo Mobray
+Track: 19
+mtime: 1451492068
+song_end
+song_begin: 20 - David Hess - Now You're All Alone.flac
+Time: 91
+Album: Quentin Tarantino's The Hateful Eight
+AlbumArtist: VA
+AlbumArtist: VA
+Artist: David Hess
+Date: 2015
+Genre: Score
+Title: Now You're All Alone
+Track: 20
+mtime: 1451492068
+song_end
+song_begin: 21 - Ennio Morricone - Sangue E Neve.flac
+Time: 126
+Album: Quentin Tarantino's The Hateful Eight
+AlbumArtist: VA
+AlbumArtist: VA
+Artist: Ennio Morricone
+Composer: Ennio Morricone
+Date: 2015
+Genre: Score
+Title: Sangue E Neve
+Track: 21
+mtime: 1451492068
+song_end
+song_begin: 22 - Ennio Morricone - L'Inferno Bianco.flac
+Time: 213
+Album: Quentin Tarantino's The Hateful Eight
+AlbumArtist: VA
+AlbumArtist: VA
+Artist: Ennio Morricone
+Composer: Ennio Morricone
+Date: 2015
+Genre: Score
+Title: L'Inferno Bianco
+Track: 22
+mtime: 1451492070
+song_end
+song_begin: 23 - Ennio Morricone - Neve.flac
+Time: 124
+Album: Quentin Tarantino's The Hateful Eight
+AlbumArtist: VA
+AlbumArtist: VA
+Artist: Ennio Morricone
+Composer: Ennio Morricone
+Date: 2015
+Genre: Score
+Title: Neve
+Track: 23
+mtime: 1451492070
+song_end
+song_begin: 24 - Walton Goggins, Jennifer Jason Leigh, Michael Madsen - Daisy's Speech.flac
+Time: 93
+Album: Quentin Tarantino's The Hateful Eight
+AlbumArtist: VA
+AlbumArtist: VA
+Artist: Walton Goggins, Jennifer Jason Leigh, Michael Madsen
+Date: 2015
+Genre: Score
+Title: Daisy's Speech
+Track: 24
+mtime: 1451492070
+song_end
+song_begin: 25 - Ennio Morricone - La Lettera Di Lincoln.flac
+Time: 103
+Album: Quentin Tarantino's The Hateful Eight
+AlbumArtist: VA
+AlbumArtist: VA
+Artist: Ennio Morricone
+Composer: Ennio Morricone
+Date: 2015
+Genre: Score
+Title: La Lettera Di Lincoln
+Track: 25
+mtime: 1451492070
+song_end
+song_begin: 26 - Ennio Morricone & Walter Goggins - La Lettera Di Lincoln.flac
+Time: 108
+Album: Quentin Tarantino's The Hateful Eight
+AlbumArtist: VA
+AlbumArtist: VA
+Artist: Ennio Morricone & Walter Goggins
+Composer: Ennio Morricone
+Date: 2015
+Genre: Score
+Title: La Lettera Di Lincoln
+Track: 26
+mtime: 1451492070
+song_end
+song_begin: 27 - Roy Orbison - There Won't Be Many Coming Home.flac
+Time: 166
+Album: Quentin Tarantino's The Hateful Eight
+AlbumArtist: VA
+AlbumArtist: VA
+Artist: Roy Orbison
+Composer: Bill Dees
+Date: 2015
+Genre: Score
+Title: There Won't Be Many Coming Home
+Track: 27
+mtime: 1451492070
+song_end
+song_begin: 28 - Ennio Morricone - La Puntura Della Morte.flac
+Time: 28
+Album: Quentin Tarantino's The Hateful Eight
+AlbumArtist: VA
+AlbumArtist: VA
+Artist: Ennio Morricone
+Composer: Ennio Morricone
+Date: 2015
+Genre: Score
+Title: La Puntura Della Morte
+Track: 28
+mtime: 1451492070
+song_end
+playlist_begin: Quentin Tarantino's The Hateful Eight.cue
+mtime: 1451429272
+playlist_end
+playlist_begin: 00. Ennio Morricone - The Hateful Eight (2015).m3u
+mtime: 1451491804
+playlist_end
+end: SoundTrack/Ennio Morricone - The Hateful Eight (2015)
+directory: Howard Shore
+mtime: 1464241315
+begin: SoundTrack/Howard Shore
+directory: 2001 - The Lord of the Rings - The Fellowship of the Ring
+mtime: 1464241304
+begin: SoundTrack/Howard Shore/2001 - The Lord of the Rings - The Fellowship of the Ring
+song_begin: 01. The Prophecy.flac
+Time: 236
+Title: The Prophecy
+Artist: Howard Shore
+Album: The Lord of the Rings: The Fellowship of the Ring
+Date: 2001
+Track: 01
+Genre: Soundtrack
+mtime: 1183822310
+song_end
+song_begin: 02. Concerning Hobbits.flac
+Time: 176
+Title: Concerning Hobbits
+Artist: Howard Shore
+Album: The Lord of the Rings: The Fellowship of the Ring
+Date: 2001
+Track: 02
+Genre: Soundtrack
+mtime: 1183822320
+song_end
+song_begin: 03. The Shadow Of The Past.flac
+Time: 213
+Title: The Shadow Of The Past
+Artist: Howard Shore
+Album: The Lord of the Rings: The Fellowship of the Ring
+Date: 2001
+Track: 03
+Genre: Soundtrack
+mtime: 1183822334
+song_end
+song_begin: 04. The Treason Of Isengard.flac
+Time: 241
+Title: The Treason Of Isengard
+Artist: Howard Shore
+Album: The Lord of the Rings: The Fellowship of the Ring
+Date: 2001
+Track: 04
+Genre: Soundtrack
+mtime: 1183822358
+song_end
+song_begin: 05. The Black Rider.flac
+Time: 169
+Title: The Black Rider
+Artist: Howard Shore
+Album: The Lord of the Rings: The Fellowship of the Ring
+Date: 2001
+Track: 05
+Genre: Soundtrack
+mtime: 1183822368
+song_end
+song_begin: 06. At The Sing Of The Prancing Pony.flac
+Time: 195
+Title: At The Sign Of The Prancing Pony
+Artist: Howard Shore
+Album: The Lord of the Rings: The Fellowship of the Ring
+Date: 2001-01-01
+Track: 06
+Genre: Soundtrack
+mtime: 1275260692
+song_end
+song_begin: 07. A Knife In The Dark.flac
+Time: 215
+Title: A Knife In The Dark
+Artist: Howard Shore
+Album: The Lord of the Rings: The Fellowship of the Ring
+Date: 2001
+Track: 07
+Genre: Soundtrack
+mtime: 1183822390
+song_end
+song_begin: 08. Flight To The Ford.flac
+Time: 255
+Title: Flight To The Ford
+Artist: Howard Shore
+Album: The Lord of the Rings: The Fellowship of the Ring
+Date: 2001
+Track: 08
+Genre: Soundtrack
+mtime: 1183822414
+song_end
+song_begin: 09. Many Meetings.flac
+Time: 186
+Title: Many Meetings
+Artist: Howard Shore
+Album: The Lord of the Rings: The Fellowship of the Ring
+Date: 2001
+Track: 09
+Genre: Soundtrack
+mtime: 1183822422
+song_end
+song_begin: 10. The Council Of Elrond (Featuring 'Aniron (Theme For Aragorn An.flac
+Time: 230
+Title: The Council Of Elrond (Featuring "Aniron (Theme For Aragorn An
+Artist: Howard Shore
+Album: The Lord of the Rings: The Fellowship of the Ring
+Date: 2001
+Track: 10
+Genre: Soundtrack
+mtime: 1183822442
+song_end
+song_begin: 11. The Ring Goes South.flac
+Time: 123
+Title: The Ring Goes South
+Artist: Howard Shore
+Album: The Lord of the Rings: The Fellowship of the Ring
+Date: 2001
+Track: 11
+Genre: Soundtrack
+mtime: 1183822448
+song_end
+song_begin: 12. A Journey In The Dark.flac
+Time: 261
+Title: A Journey In The Dark
+Artist: Howard Shore
+Album: The Lord of the Rings: The Fellowship of the Ring
+Date: 2001
+Track: 12
+Genre: Soundtrack
+mtime: 1183822472
+song_end
+song_begin: 13. The Brigde Of Khazad Dum.flac
+Time: 358
+Title: The Brigde Of Khazad Dum
+Artist: Howard Shore
+Album: The Lord of the Rings: The Fellowship of the Ring
+Date: 2001
+Track: 13
+Genre: Soundtrack
+mtime: 1183822504
+song_end
+song_begin: 14. Lothlorien.flac
+Time: 274
+Title: Lothlorien
+Artist: Howard Shore
+Album: The Lord of the Rings: The Fellowship of the Ring
+Date: 2001
+Track: 14
+Genre: Soundtrack
+mtime: 1183822528
+song_end
+song_begin: 15. The Great River.flac
+Time: 163
+Title: The Great River
+Artist: Howard Shore
+Album: The Lord of the Rings: The Fellowship of the Ring
+Date: 2001
+Track: 15
+Genre: Soundtrack
+mtime: 1183822536
+song_end
+song_begin: 16. Amon Hen.flac
+Time: 303
+Title: Amon Hen
+Artist: Howard Shore
+Album: The Lord of the Rings: The Fellowship of the Ring
+Date: 2001
+Track: 16
+Genre: Soundtrack
+mtime: 1183822560
+song_end
+song_begin: 17. The Breaking Of The Fellowship (Fran Walsh and Howard Shore).flac
+Time: 441
+Title: The Breaking Of The Fellowship (Fran Walsh and Howard Shore)
+Artist: Howard Shore
+Album: The Lord of the Rings: The Fellowship of the Ring
+Date: 2001
+Track: 17
+Genre: Soundtrack
+mtime: 1183822598
+song_end
+song_begin: 18. May It Be (Composed & Performed by Enya).flac
+Time: 258
+Title: May It Be (Composed & Performed by Enya)
+Artist: Howard Shore
+Album: The Lord of the Rings: The Fellowship of the Ring
+Date: 2001
+Track: 18
+Genre: Soundtrack
+mtime: 1183822622
+song_end
+end: SoundTrack/Howard Shore/2001 - The Lord of the Rings - The Fellowship of the Ring
+directory: 2002 - The Lord of the Rings - The Two Towers
+mtime: 1464241321
+begin: SoundTrack/Howard Shore/2002 - The Lord of the Rings - The Two Towers
+song_begin: 01. Foundations Of Stone.flac
+Time: 232
+Title: Foundations Of Stone
+Artist: Howard Shore
+Album: The Lord of the Rings: The Two Towers
+Date: 2002
+Track: 01
+Genre: Soundtrack
+mtime: 1183821480
+song_end
+song_begin: 02. The Taming Of Smeagol.flac
+Time: 169
+Title: The Taming Of Smeagol
+Artist: Howard Shore
+Album: The Lord of the Rings: The Two Towers
+Date: 2002
+Track: 02
+Genre: Soundtrack
+mtime: 1183821492
+song_end
+song_begin: 03. The Riders Of Rohan.flac
+Time: 246
+Title: The Riders Of Rohan
+Artist: Howard Shore
+Album: The Lord of the Rings: The Two Towers
+Date: 2002
+Track: 03
+Genre: Soundtrack
+mtime: 1183821512
+song_end
+song_begin: 04. The Passage Of The Marshes.flac
+Time: 167
+Title: The Passage Of The Marshes
+Artist: Howard Shore
+Album: The Lord of the Rings: The Two Towers
+Date: 2002
+Track: 04
+Genre: Soundtrack
+mtime: 1183821522
+song_end
+song_begin: 05. The Uruk-hai.flac
+Time: 179
+Title: The Uruk-hai
+Artist: Howard Shore
+Album: The Lord of the Rings: The Two Towers
+Date: 2002
+Track: 05
+Genre: Soundtrack
+mtime: 1183821532
+song_end
+song_begin: 06. The King Of The Golden Hall.flac
+Time: 230
+Title: The King Of The Golden Hall
+Artist: Howard Shore
+Album: The Lord of the Rings: The Two Towers
+Date: 2002
+Track: 06
+Genre: Soundtrack
+mtime: 1183821552
+song_end
+song_begin: 07. The Black Gate Is Closed.flac
+Time: 198
+Title: The Black Gate Is Closed
+Artist: Howard Shore
+Album: The Lord of the Rings: The Two Towers
+Date: 2002
+Track: 07
+Genre: Soundtrack
+mtime: 1183821562
+song_end
+song_begin: 08. Evenstar - featuring Isabel Bayrakdarian.flac
+Time: 196
+Title: Evenstar
+Title: featuring Isabel Bayrakdarian
+Artist: Howard Shore
+Album: The Lord of the Rings: The Two Towers
+Date: 2002
+Track: 08
+Genre: Soundtrack
+mtime: 1183821572
+song_end
+song_begin: 09. The White Rider.flac
+Time: 149
+Title: The White Rider
+Artist: Howard Shore
+Album: The Lord of the Rings: The Two Towers
+Date: 2002
+Track: 09
+Genre: Soundtrack
+mtime: 1183821594
+song_end
+song_begin: 10. Treebeard.flac
+Time: 164
+Title: Treebeard
+Artist: Howard Shore
+Album: The Lord of the Rings: The Two Towers
+Date: 2002
+Track: 10
+Genre: Soundtrack
+mtime: 1183821602
+song_end
+song_begin: 11. The Leave Taking.flac
+Time: 222
+Title: The Leave Taking
+Artist: Howard Shore
+Album: The Lord of the Rings: The Two Towers
+Date: 2002
+Track: 11
+Genre: Soundtrack
+mtime: 1183821614
+song_end
+song_begin: 12. Helm's Deep.flac
+Time: 234
+Title: Helm's Deep
+Artist: Howard Shore
+Album: The Lord of the Rings: The Two Towers
+Date: 2002
+Track: 12
+Genre: Soundtrack
+mtime: 1183821634
+song_end
+song_begin: 13. The Forbidden Pool.flac
+Time: 328
+Title: The Forbidden Pool
+Artist: Howard Shore
+Album: The Lord of the Rings: The Two Towers
+Date: 2002
+Track: 13
+Genre: Soundtrack
+mtime: 1183821660
+song_end
+song_begin: 14. Breath Of Life - featuring Sheila Chandra.flac
+Time: 308
+Title: Breath Of Life
+Title: featuring Sheila Chandra
+Artist: Howard Shore
+Album: The Lord of the Rings: The Two Towers
+Date: 2002
+Track: 14
+Genre: Soundtrack
+mtime: 1183821686
+song_end
+song_begin: 15. The Hornburg.flac
+Time: 277
+Title: The Hornburg
+Artist: Howard Shore
+Album: The Lord of the Rings: The Two Towers
+Date: 2002
+Track: 15
+Genre: Soundtrack
+mtime: 1183821710
+song_end
+song_begin: 16. Forth Eorlingas - featuring Ben Del Maestro.flac
+Time: 196
+Title: Forth Eorlingas
+Title: featuring Ben Del Maestro
+Artist: Howard Shore
+Album: The Lord of the Rings: The Two Towers
+Date: 2002
+Track: 16
+Genre: Soundtrack
+mtime: 1183821718
+song_end
+song_begin: 17. Isengard Unleashed - featuring Elizabeth Fraser & Ben Del Maestro.flac
+Time: 302
+Title: Isengard Unleashed
+Title: featuring Elizabeth Fraser & Ben Del Maestro
+Artist: Howard Shore
+Album: The Lord of the Rings: The Two Towers
+Date: 2002
+Track: 17
+Genre: Soundtrack
+mtime: 1183821746
+song_end
+song_begin: 18. Samwise The Brave.flac
+Time: 226
+Title: Samwise The Brave
+Artist: Howard Shore
+Album: The Lord of the Rings: The Two Towers
+Date: 2002
+Track: 18
+Genre: Soundtrack
+mtime: 1183821756
+song_end
+song_begin: 19. Gollum's Song - performed by Emiliana Torrini.flac
+Time: 352
+Title: Gollum's Song
+Title: performed by Emiliana Torrini
+Artist: Howard Shore
+Album: The Lord of the Rings: The Two Towers
+Date: 2002
+Track: 19
+Genre: Soundtrack
+mtime: 1183821788
+song_end
+end: SoundTrack/Howard Shore/2002 - The Lord of the Rings - The Two Towers
+directory: 2003 - The Lord of the Rings - The Return of the King
+mtime: 1464241313
+begin: SoundTrack/Howard Shore/2003 - The Lord of the Rings - The Return of the King
+song_begin: 01. A Storm Is Coming.flac
+Time: 173
+Title: A Storm Is Coming
+Artist: Howard Shore
+Album: The Lord of the Rings- The Return of the King
+Date: 2003
+Track: 01
+Genre: Soundtrack
+mtime: 1183821936
+song_end
+song_begin: 02. Hope And Memory.flac
+Time: 106
+Title: Hope And Memory
+Artist: Howard Shore
+Album: The Lord of the Rings- The Return of the King
+Date: 2003
+Track: 02
+Genre: Soundtrack
+mtime: 1183821942
+song_end
+song_begin: 03. Minas Tirith.flac
+Time: 218
+Title: Minas Tirith
+Artist: Howard Shore
+Album: The Lord of the Rings- The Return of the King
+Date: 2003
+Track: 03
+Genre: Soundtrack
+mtime: 1183821954
+song_end
+song_begin: 04. The White Tree.flac
+Time: 206
+Title: The White Tree
+Artist: Howard Shore
+Album: The Lord of the Rings- The Return of the King
+Date: 2003
+Track: 04
+Genre: Soundtrack
+mtime: 1183821964
+song_end
+song_begin: 05. The Steward Of Gondor.flac
+Time: 234
+Title: The Steward Of Gondor
+Artist: Howard Shore
+Album: The Lord of the Rings- The Return of the King
+Date: 2003
+Track: 05
+Genre: Soundtrack
+mtime: 1183821982
+song_end
+song_begin: 06. Minas Morgul.flac
+Time: 118
+Title: Minas Morgul
+Artist: Howard Shore
+Album: The Lord of the Rings- The Return of the King
+Date: 2003
+Track: 06
+Genre: Soundtrack
+mtime: 1183821988
+song_end
+song_begin: 07. The Ride Of The Rohirrim.flac
+Time: 129
+Title: The Ride Of The Rohirrim
+Artist: Howard Shore
+Album: The Lord of the Rings- The Return of the King
+Date: 2003
+Track: 07
+Genre: Soundtrack
+mtime: 1183821996
+song_end
+song_begin: 08. Twilight And Shadow.flac
+Time: 211
+Title: Twilight And Shadow
+Artist: Howard Shore
+Album: The Lord of the Rings- The Return of the King
+Date: 2003
+Track: 08
+Genre: Soundtrack
+mtime: 1183822006
+song_end
+song_begin: 09. Cirith Ungol.flac
+Time: 105
+Title: Cirith Ungol
+Artist: Howard Shore
+Album: The Lord of the Rings- The Return of the King
+Date: 2003
+Track: 09
+Genre: Soundtrack
+mtime: 1183822010
+song_end
+song_begin: 10. Anduril.flac
+Time: 156
+Title: Anduril
+Artist: Howard Shore
+Album: The Lord of the Rings- The Return of the King
+Date: 2003
+Track: 10
+Genre: Soundtrack
+mtime: 1183822018
+song_end
+song_begin: 11. Shelob's Lair.flac
+Time: 248
+Title: Shelob's Lair
+Artist: Howard Shore
+Album: The Lord of the Rings- The Return of the King
+Date: 2003
+Track: 11
+Genre: Soundtrack
+mtime: 1183822040
+song_end
+song_begin: 12. Ash And Smoke.flac
+Time: 205
+Title: Ash And Smoke
+Artist: Howard Shore
+Album: The Lord of the Rings- The Return of the King
+Date: 2003
+Track: 12
+Genre: Soundtrack
+mtime: 1183822052
+song_end
+song_begin: 13. The Fields Of The Pelennor.flac
+Time: 206
+Title: The Fields Of The Pelennor
+Artist: Howard Shore
+Album: The Lord of the Rings- The Return of the King
+Date: 2003
+Track: 13
+Genre: Soundtrack
+mtime: 1183822062
+song_end
+song_begin: 14. Hope Fails.flac
+Time: 141
+Title: Hope Fails
+Artist: Howard Shore
+Album: The Lord of the Rings- The Return of the King
+Date: 2003
+Track: 14
+Genre: Soundtrack
+mtime: 1183822068
+song_end
+song_begin: 15. The Black Gate Opens.flac
+Time: 242
+Title: The Black Gate Opens
+Artist: Howard Shore
+Album: The Lord of the Rings- The Return of the King
+Date: 2003
+Track: 15
+Genre: Soundtrack
+mtime: 1183822090
+song_end
+song_begin: 16. The End Of All Things.flac
+Time: 313
+Title: The End Of All Things
+Artist: Howard Shore
+Album: The Lord of the Rings- The Return of the King
+Date: 2003
+Track: 16
+Genre: Soundtrack
+mtime: 1183822118
+song_end
+song_begin: 17. The Return Of The King.flac
+Time: 615
+Title: The Return Of The King
+Artist: Howard Shore
+Album: The Lord of the Rings- The Return of the King
+Date: 2003
+Track: 17
+Genre: Soundtrack
+mtime: 1183822168
+song_end
+song_begin: 18. The Grey Havens.flac
+Time: 360
+Title: The Grey Havens
+Artist: Howard Shore
+Album: The Lord of the Rings- The Return of the King
+Date: 2003
+Track: 18
+Genre: Soundtrack
+mtime: 1183822196
+song_end
+song_begin: 19. Into The West.flac
+Time: 348
+Title: Into The West
+Artist: Howard Shore
+Album: The Lord of the Rings- The Return of the King
+Date: 2003
+Track: 19
+Genre: Soundtrack
+mtime: 1183822224
+song_end
+end: SoundTrack/Howard Shore/2003 - The Lord of the Rings - The Return of the King
+directory: 2012 - The Hobbit - An Unexpected Journey
+mtime: 1464241298
+begin: SoundTrack/Howard Shore/2012 - The Hobbit - An Unexpected Journey
+song_begin: 01 - My Dear Frodo.mp3
+Time: 484
+Artist: Howard Shore
+AlbumArtist: Howard Shore
+Title: My Dear Frodo
+Album: The Hobbit: An Unexpected Journey
+Track: 01/26
+Date: 2012
+Genre: Soundtrack
+mtime: 1354383870
+song_end
+song_begin: 02 - Old Friends.mp3
+Time: 270
+Artist: Howard Shore
+AlbumArtist: Howard Shore
+Title: Old Friends
+Album: The Hobbit: An Unexpected Journey
+Track: 02/26
+Date: 2012
+Genre: Soundtrack
+mtime: 1354383890
+song_end
+song_begin: 03 - An Unexpected Party.mp3
+Time: 233
+Artist: Howard Shore
+AlbumArtist: Howard Shore
+Title: An Unexpected Party
+Album: The Hobbit: An Unexpected Journey
+Track: 03/26
+Date: 2012
+Genre: Soundtrack
+mtime: 1354383906
+song_end
+song_begin: 04 - Axe or Sword.mp3
+Time: 359
+Artist: Howard Shore
+AlbumArtist: Howard Shore
+Title: Axe or Sword
+Album: The Hobbit: An Unexpected Journey
+Track: 04/26
+Date: 2012
+Genre: Soundtrack
+mtime: 1354383924
+song_end
+song_begin: 05 - Misty Mountains.mp3
+Time: 103
+Artist: Howard Shore
+AlbumArtist: Howard Shore
+Title: Misty Mountains
+Album: The Hobbit: An Unexpected Journey
+Track: 05/26
+Date: 2012
+Genre: Soundtrack
+mtime: 1354383946
+song_end
+song_begin: 06 - The Adventure Begins.mp3
+Time: 126
+Artist: Howard Shore
+AlbumArtist: Howard Shore
+Title: The Adventure Begins
+Album: The Hobbit: An Unexpected Journey
+Track: 06/26
+Date: 2012
+Genre: Soundtrack
+mtime: 1354383960
+song_end
+song_begin: 07 - The World is Ahead.mp3
+Time: 141
+Artist: Howard Shore
+AlbumArtist: Howard Shore
+Title: The World is Ahead
+Album: The Hobbit: An Unexpected Journey
+Track: 07/26
+Date: 2012
+Genre: Soundtrack
+mtime: 1354383974
+song_end
+song_begin: 08 - An Ancient Enemy.mp3
+Time: 299
+Artist: Howard Shore
+AlbumArtist: Howard Shore
+Title: An Ancient Enemy
+Album: The Hobbit: An Unexpected Journey
+Track: 08/26
+Date: 2012
+Genre: Soundtrack
+mtime: 1354383990
+song_end
+song_begin: 09 - Radagast the Brown.mp3
+Time: 295
+Artist: Howard Shore
+AlbumArtist: Howard Shore
+Title: Radagast the Brown
+Album: The Hobbit: An Unexpected Journey
+Track: 09/26
+Date: 2012
+Genre: Soundtrack
+mtime: 1354384014
+song_end
+song_begin: 10 - Roast Mutton.mp3
+Time: 244
+Artist: Howard Shore
+AlbumArtist: Howard Shore
+Title: Roast Mutton
+Album: The Hobbit: An Unexpected Journey
+Track: 10/26
+Date: 2012
+Genre: Soundtrack
+mtime: 1354384042
+song_end
+song_begin: 11 - A Troll Hoard.mp3
+Time: 160
+Artist: Howard Shore
+AlbumArtist: Howard Shore
+Title: A Troll Hoard
+Album: The Hobbit: An Unexpected Journey
+Track: 11/26
+Date: 2012
+Genre: Soundtrack
+mtime: 1354384062
+song_end
+song_begin: 12 - The Hill of Sorcery.mp3
+Time: 231
+Artist: Howard Shore
+AlbumArtist: Howard Shore
+Title: The Hill of Sorcery
+Album: The Hobbit: An Unexpected Journey
+Track: 12/26
+Date: 2012
+Genre: Soundtrack
+mtime: 1354384086
+song_end
+song_begin: 13 - Warga - Scouts.mp3
+Time: 183
+Artist: Howard Shore
+AlbumArtist: Howard Shore
+Title: Warga - Scouts
+Album: The Hobbit: An Unexpected Journey
+Track: 13/26
+Date: 2012
+Genre: Soundtrack
+mtime: 1354384102
+song_end
+song_begin: 14 - The Hidden Valley.mp3
+Time: 232
+Artist: Howard Shore
+AlbumArtist: Howard Shore
+Title: The Hidden Valley
+Album: The Hobbit: An Unexpected Journey
+Track: 14/26
+Date: 2012
+Genre: Soundtrack
+mtime: 1354383880
+song_end
+song_begin: 15 - Moon Runes.mp3
+Time: 200
+Artist: Howard Shore
+AlbumArtist: Howard Shore
+Title: Moon Runes
+Album: The Hobbit: An Unexpected Journey
+Track: 15/26
+Date: 2012
+Genre: Soundtrack
+mtime: 1354383898
+song_end
+song_begin: 16 - The Defiler.mp3
+Time: 75
+Artist: Howard Shore
+AlbumArtist: Howard Shore
+Title: The Defiler
+Album: The Hobbit: An Unexpected Journey
+Track: 16/26
+Date: 2012
+Genre: Soundtrack
+mtime: 1354383910
+song_end
+song_begin: 17 - The White Council.mp3
+Time: 440
+Artist: Howard Shore
+AlbumArtist: Howard Shore
+Title: The White Council
+Album: The Hobbit: An Unexpected Journey
+Track: 17/26
+Date: 2012
+Genre: Soundtrack
+mtime: 1354383942
+song_end
+song_begin: 18 - Over Hill.mp3
+Time: 225
+Artist: Howard Shore
+AlbumArtist: Howard Shore
+Title: Over Hill
+Album: The Hobbit: An Unexpected Journey
+Track: 18/26
+Date: 2012
+Genre: Soundtrack
+mtime: 1354383956
+song_end
+song_begin: 19 - A Thunder Battle.mp3
+Time: 235
+Artist: Howard Shore
+AlbumArtist: Howard Shore
+Title: A Thunder Battle
+Album: The Hobbit: An Unexpected Journey
+Track: 19/26
+Date: 2012
+Genre: Soundtrack
+mtime: 1354383970
+song_end
+song_begin: 20 - Under Hill.mp3
+Time: 115
+Artist: Howard Shore
+AlbumArtist: Howard Shore
+Title: Under Hill
+Album: The Hobbit: An Unexpected Journey
+Track: 20/26
+Date: 2012
+Genre: Soundtrack
+mtime: 1354383980
+song_end
+song_begin: 21 - Riddles in the Dark.mp3
+Time: 322
+Artist: Howard Shore
+AlbumArtist: Howard Shore
+Title: Riddles in the Dark
+Album: The Hobbit: An Unexpected Journey
+Track: 21/26
+Date: 2012
+Genre: Soundtrack
+mtime: 1354384004
+song_end
+song_begin: 22 - Brass Buttons.mp3
+Time: 458
+Artist: Howard Shore
+AlbumArtist: Howard Shore
+Title: Brass Buttons
+Album: The Hobbit: An Unexpected Journey
+Track: 22/26
+Date: 2012
+Genre: Soundtrack
+mtime: 1354384032
+song_end
+song_begin: 23 - Out of the Frying Pan.mp3
+Time: 356
+Artist: Howard Shore
+AlbumArtist: Howard Shore
+Title: Out of the Frying Pan
+Album: The Hobbit: An Unexpected Journey
+Track: 23/26
+Date: 2012
+Genre: Soundtrack
+mtime: 1354384056
+song_end
+song_begin: 24 - A Good Omen.mp3
+Time: 347
+Artist: Howard Shore
+AlbumArtist: Howard Shore
+Title: A Good Omen
+Album: The Hobbit: An Unexpected Journey
+Track: 24/26
+Date: 2012
+Genre: Soundtrack
+mtime: 1354384076
+song_end
+song_begin: 25 - Song of the Lonely Mountain.mp3
+Time: 250
+Artist: Howard Shore
+AlbumArtist: Howard Shore
+Title: Song of the Lonely Mountain
+Album: The Hobbit: An Unexpected Journey
+Track: 25/26
+Date: 2012
+Genre: Soundtrack
+mtime: 1354384094
+song_end
+song_begin: 26 - Dreaming of Bag End.mp3
+Time: 110
+Artist: Howard Shore
+AlbumArtist: Howard Shore
+Title: Dreaming of Bag End
+Album: The Hobbit: An Unexpected Journey
+Track: 26/26
+Date: 2012
+Genre: Soundtrack
+mtime: 1354384106
+song_end
+end: SoundTrack/Howard Shore/2012 - The Hobbit - An Unexpected Journey
+end: SoundTrack/Howard Shore
+directory: James Horner - Titanic
+mtime: 1464241284
+begin: SoundTrack/James Horner - Titanic
+song_begin: 01 - Never an Absolution.ogg
+Time: 183
+Title: Never an Absolution
+Artist: James Horner
+Album: Titanic
+Date: 1997
+Track: 01
+MUSICBRAINZ_ALBUMID: 859c931e-1117-450b-81a0-2a3b376b75a4
+MUSICBRAINZ_ALBUMARTISTID: 679ec43c-bc04-4bb0-b619-2da702a214ba
+MUSICBRAINZ_ARTISTID: 679ec43c-bc04-4bb0-b619-2da702a214ba
+MUSICBRAINZ_TRACKID: a7341828-c0c2-41d1-b6f3-9afcd7259f27
+ArtistSort: Horner, James
+mtime: 1257706926
+song_end
+song_begin: 02 - Distant Memories.ogg
+Time: 144
+Title: Distant Memories
+Artist: James Horner
+Album: Titanic
+Date: 1997
+Track: 02
+MUSICBRAINZ_ALBUMID: 859c931e-1117-450b-81a0-2a3b376b75a4
+MUSICBRAINZ_ALBUMARTISTID: 679ec43c-bc04-4bb0-b619-2da702a214ba
+MUSICBRAINZ_ARTISTID: 679ec43c-bc04-4bb0-b619-2da702a214ba
+MUSICBRAINZ_TRACKID: fa02e950-76aa-49de-8ece-a64cc17720e8
+ArtistSort: Horner, James
+mtime: 1257706944
+song_end
+song_begin: 03 - Southampton.ogg
+Time: 242
+Title: Southampton
+Artist: James Horner
+Album: Titanic
+Date: 1997
+Track: 03
+MUSICBRAINZ_ALBUMID: 859c931e-1117-450b-81a0-2a3b376b75a4
+MUSICBRAINZ_ALBUMARTISTID: 679ec43c-bc04-4bb0-b619-2da702a214ba
+MUSICBRAINZ_ARTISTID: 679ec43c-bc04-4bb0-b619-2da702a214ba
+MUSICBRAINZ_TRACKID: fe60daa3-b592-46e1-98e4-a3201ba73001
+ArtistSort: Horner, James
+mtime: 1257706974
+song_end
+song_begin: 04 - Rose.ogg
+Time: 172
+Title: Rose
+Artist: James Horner
+Album: Titanic
+Date: 1997
+Track: 04
+MUSICBRAINZ_ALBUMID: 859c931e-1117-450b-81a0-2a3b376b75a4
+MUSICBRAINZ_ALBUMARTISTID: 679ec43c-bc04-4bb0-b619-2da702a214ba
+MUSICBRAINZ_ARTISTID: 679ec43c-bc04-4bb0-b619-2da702a214ba
+MUSICBRAINZ_TRACKID: d7781a72-c707-4152-8307-af8673c41c45
+ArtistSort: Horner, James
+mtime: 1257706994
+song_end
+song_begin: 05 - Leaving Port.ogg
+Time: 206
+Title: Leaving Port
+Artist: James Horner
+Album: Titanic
+Date: 1997
+Track: 05
+MUSICBRAINZ_ALBUMID: 859c931e-1117-450b-81a0-2a3b376b75a4
+MUSICBRAINZ_ALBUMARTISTID: 679ec43c-bc04-4bb0-b619-2da702a214ba
+MUSICBRAINZ_ARTISTID: 679ec43c-bc04-4bb0-b619-2da702a214ba
+MUSICBRAINZ_TRACKID: a80a8f7c-809e-48c8-9bc1-b1c1c2f121a4
+ArtistSort: Horner, James
+mtime: 1257707018
+song_end
+song_begin: 06 - Take her to sea, Mr. Murdoch.ogg
+Time: 271
+Title: Take her to sea, Mr. Murdoch
+Artist: James Horner
+Album: Titanic
+Date: 1997
+Track: 06
+mtime: 1257708494
+song_end
+song_begin: 07 - Hard to Starboard.ogg
+Time: 412
+Title: Hard to Starboard
+Artist: James Horner
+Album: Titanic
+Date: 1997
+Track: 07
+mtime: 1257708658
+song_end
+song_begin: 08 - Unable to Stay, Unwilling to Leave.ogg
+Time: 236
+Title: Unable to Stay, Unwilling to Leave
+Artist: James Horner
+Album: Titanic
+Date: 1997
+Track: 08
+MUSICBRAINZ_ALBUMID: 859c931e-1117-450b-81a0-2a3b376b75a4
+MUSICBRAINZ_ALBUMARTISTID: 679ec43c-bc04-4bb0-b619-2da702a214ba
+MUSICBRAINZ_ARTISTID: 679ec43c-bc04-4bb0-b619-2da702a214ba
+MUSICBRAINZ_TRACKID: 6dae1a67-f0f3-41c2-82d5-d2a307a7cae3
+ArtistSort: Horner, James
+mtime: 1257707266
+song_end
+song_begin: 09 - The Sinking.ogg
+Time: 305
+Title: The Sinking
+Artist: James Horner
+Album: Titanic
+Date: 1997
+Track: 09
+MUSICBRAINZ_ALBUMID: 859c931e-1117-450b-81a0-2a3b376b75a4
+MUSICBRAINZ_ALBUMARTISTID: 679ec43c-bc04-4bb0-b619-2da702a214ba
+MUSICBRAINZ_ARTISTID: 679ec43c-bc04-4bb0-b619-2da702a214ba
+MUSICBRAINZ_TRACKID: db480f52-b423-406f-a8a2-79c8b59537cf
+ArtistSort: Horner, James
+mtime: 1257707300
+song_end
+song_begin: 10 - Death of Titanic.ogg
+Time: 506
+Title: Death of Titanic
+Artist: James Horner
+Album: Titanic
+Date: 1997
+Track: 10
+MUSICBRAINZ_ALBUMID: 859c931e-1117-450b-81a0-2a3b376b75a4
+MUSICBRAINZ_ALBUMARTISTID: 679ec43c-bc04-4bb0-b619-2da702a214ba
+MUSICBRAINZ_ARTISTID: 679ec43c-bc04-4bb0-b619-2da702a214ba
+MUSICBRAINZ_TRACKID: 27b60366-b32f-4bb2-bbf4-1b8edec68ccb
+ArtistSort: Horner, James
+mtime: 1257707350
+song_end
+song_begin: 11 - A Promise Kept.ogg
+Time: 363
+Title: A Promise Kept
+Artist: James Horner
+Album: Titanic
+Date: 1997
+Track: 11
+MUSICBRAINZ_ALBUMID: 859c931e-1117-450b-81a0-2a3b376b75a4
+MUSICBRAINZ_ALBUMARTISTID: 679ec43c-bc04-4bb0-b619-2da702a214ba
+MUSICBRAINZ_ARTISTID: 679ec43c-bc04-4bb0-b619-2da702a214ba
+MUSICBRAINZ_TRACKID: 402c2af7-997a-4ca3-91ea-484c9a628aa8
+ArtistSort: Horner, James
+mtime: 1257707386
+song_end
+song_begin: 12 - A Life So Changed.ogg
+Time: 133
+Title: A Life So Changed
+Artist: James Horner
+Album: Titanic
+Date: 1997
+Track: 12
+MUSICBRAINZ_ALBUMID: 859c931e-1117-450b-81a0-2a3b376b75a4
+MUSICBRAINZ_ALBUMARTISTID: 679ec43c-bc04-4bb0-b619-2da702a214ba
+MUSICBRAINZ_ARTISTID: 679ec43c-bc04-4bb0-b619-2da702a214ba
+MUSICBRAINZ_TRACKID: f57d5b1b-e88c-4c53-9ec1-81d4f0461441
+ArtistSort: Horner, James
+mtime: 1257707398
+song_end
+song_begin: 13 - An Ocean of Memories.ogg
+Time: 478
+Title: An Ocean of Memories
+Artist: James Horner
+Album: Titanic
+Date: 1997
+Track: 13
+MUSICBRAINZ_ALBUMID: 859c931e-1117-450b-81a0-2a3b376b75a4
+MUSICBRAINZ_ALBUMARTISTID: 679ec43c-bc04-4bb0-b619-2da702a214ba
+MUSICBRAINZ_ARTISTID: 679ec43c-bc04-4bb0-b619-2da702a214ba
+MUSICBRAINZ_TRACKID: e1ebf55e-4e86-484c-ae74-39540fd01fcb
+ArtistSort: Horner, James
+mtime: 1257707444
+song_end
+song_begin: 14 - My Heart Will Go On.ogg
+Time: 311
+Title: My Heart Will Go On
+Artist: James Horner
+Album: Titanic
+Date: 1997
+Track: 14
+mtime: 1257708326
+song_end
+song_begin: 15 - Hymn to the Sea.ogg
+Time: 386
+Title: Hymn to the Sea
+Artist: James Horner
+Album: Titanic
+Date: 1997
+Track: 15
+MUSICBRAINZ_ALBUMID: 859c931e-1117-450b-81a0-2a3b376b75a4
+MUSICBRAINZ_ALBUMARTISTID: 679ec43c-bc04-4bb0-b619-2da702a214ba
+MUSICBRAINZ_ARTISTID: 679ec43c-bc04-4bb0-b619-2da702a214ba
+MUSICBRAINZ_TRACKID: d34024eb-ad63-4f1c-a014-a709a40f7e9c
+ArtistSort: Horner, James
+mtime: 1257707610
+song_end
+end: SoundTrack/James Horner - Titanic
+directory: John Williams - Star Wars Episode III - Revenge of the Sith
+mtime: 1464241286
+begin: SoundTrack/John Williams - Star Wars Episode III - Revenge of the Sith
+song_begin: 1 - Star Wars - The Revenge of the Sith.ogg
+Time: 451
+Title: Star Wars / The Revenge of the Sith
+Artist: John Williams
+Track: 1
+Album: Star Wars Episode III - Revenge of the Sith
+ArtistSort: Williams, John
+Date: 2005-01-01
+mtime: 1258159098
+song_end
+song_begin: 2 - Anakin's Dream.ogg
+Time: 286
+Title: Anakin's Dream
+Artist: John Williams
+Track: 2
+Album: Star Wars Episode III - Revenge of the Sith
+ArtistSort: Williams, John
+Date: 2005-01-01
+mtime: 1258159128
+song_end
+song_begin: 3 - Battle of the Heroes.ogg
+Time: 222
+Title: Battle of the Heroes
+Artist: John Williams
+Track: 3
+Album: Star Wars Episode III - Revenge of the Sith
+ArtistSort: Williams, John
+Date: 2005-01-01
+mtime: 1258159152
+song_end
+song_begin: 4 - Anakin's Betrayal.ogg
+Time: 244
+Title: Anakin's Betrayal
+Artist: John Williams
+Track: 4
+Album: Star Wars Episode III - Revenge of the Sith
+ArtistSort: Williams, John
+Date: 2005-01-01
+mtime: 1258159176
+song_end
+song_begin: 5 - General Grievous.ogg
+Time: 247
+Title: General Grievous
+Artist: John Williams
+Track: 5
+Album: Star Wars Episode III - Revenge of the Sith
+ArtistSort: Williams, John
+Date: 2005-01-01
+mtime: 1258159202
+song_end
+song_begin: 6 - Palpatine's Teachings.ogg
+Time: 325
+Title: Palpatine's Teachings
+Artist: John Williams
+Track: 6
+Album: Star Wars Episode III - Revenge of the Sith
+ArtistSort: Williams, John
+Date: 2005-01-01
+mtime: 1258159234
+song_end
+song_begin: 7 - Grievous and the Droids.ogg
+Time: 208
+Title: Grievous and the Droids
+Artist: John Williams
+Track: 7
+Album: Star Wars Episode III - Revenge of the Sith
+ArtistSort: Williams, John
+Date: 2005-01-01
+mtime: 1258159254
+song_end
+song_begin: 8 - Padmé's Ruminations.ogg
+Time: 197
+Title: Padmé's Ruminations
+Artist: John Williams
+Track: 8
+Album: Star Wars Episode III - Revenge of the Sith
+ArtistSort: Williams, John
+Date: 2005-01-01
+mtime: 1258159272
+song_end
+song_begin: 9 - Anakin vs. Obi-Wan.ogg
+Time: 237
+Title: Anakin vs. Obi-Wan
+Artist: John Williams
+Track: 9
+Album: Star Wars Episode III - Revenge of the Sith
+ArtistSort: Williams, John
+Date: 2005-01-01
+mtime: 1258159294
+song_end
+song_begin: 10 - Anakin's Dark Deeds.ogg
+Time: 245
+Title: Anakin's Dark Deeds
+Artist: John Williams
+Track: 10
+Album: Star Wars Episode III - Revenge of the Sith
+ArtistSort: Williams, John
+Date: 2005-01-01
+mtime: 1258159316
+song_end
+song_begin: 11 - Enter Lord Vader.ogg
+Time: 254
+Title: Enter Lord Vader
+Artist: John Williams
+Track: 11
+Album: Star Wars Episode III - Revenge of the Sith
+ArtistSort: Williams, John
+Date: 2005-01-01
+mtime: 1258159340
+song_end
+song_begin: 12 - The Immolation Scene.ogg
+Time: 162
+Title: The Immolation Scene
+Artist: John Williams
+Track: 12
+Album: Star Wars Episode III - Revenge of the Sith
+ArtistSort: Williams, John
+Date: 2005-01-01
+mtime: 1258159356
+song_end
+song_begin: 13 - Grievous Speaks to Lord Sidious.ogg
+Time: 169
+Title: Grievous Speaks to Lord Sidious
+Artist: John Williams
+Track: 13
+Album: Star Wars Episode III - Revenge of the Sith
+ArtistSort: Williams, John
+Date: 2005-01-01
+mtime: 1258159370
+song_end
+song_begin: 14 - The Birth of the Twins - Padmé's Destiny.ogg
+Time: 217
+Title: The Birth of the Twins / Padmé's Destiny
+Artist: John Williams
+Track: 14
+Album: Star Wars Episode III - Revenge of the Sith
+ArtistSort: Williams, John
+Date: 2005-01-01
+mtime: 1258159390
+song_end
+song_begin: 15 - A New Hope - End Credits.ogg
+Time: 786
+Title: A New Hope / End Credits
+Artist: John Williams
+Track: 15
+Album: Star Wars Episode III - Revenge of the Sith
+ArtistSort: Williams, John
+Date: 2005-01-01
+mtime: 1258159456
+song_end
+end: SoundTrack/John Williams - Star Wars Episode III - Revenge of the Sith
+end: SoundTrack
+directory: Tamil
+mtime: 1465475191
+begin: Tamil
+directory: Ayutha Ezhuthu
+mtime: 1465467870
+begin: Tamil/Ayutha Ezhuthu
+song_begin: Dol Dol.flac
+Time: 234
+Album: Ayutha Ezhuthu
+Artist: Blazee & Shaheen
+Composer: A.R.Rahman
+Title: Dol Dol
+Date: 2004
+mtime: 1465467800
+song_end
+song_begin: Hey Goodbye Nanba II.flac
+Time: 295
+Artist: Sunitha Sarathy, Shankar Mahadevan, Lucky Ali & Karthik
+Composer: A.R.Rahman
+Title: Hey Goodbye Nanba
+Album: Ayutha Ezhuthu
+Date: 2004
+mtime: 1465467860
+song_end
+song_begin: Hey Goodbye Nanba.flac
+Time: 295
+Album: Ayutha Ezhuthu
+Artist: Sunitha Sarathy, Shankar Mahadevan, Lucky Ali & Karthik
+Composer: A.R.Rahman
+Title: Hey Goodbye Nanba
+Date: 2004
+mtime: 1465467850
+song_end
+song_begin: Jana Gana Mana.flac
+Time: 295
+Album: Ayutha Ezhuthu
+Artist: A.R.Rahman & Karthik
+Composer: A.R.Rahman
+Title: Jana Gana Mana
+Date: 2004
+mtime: 1465467863
+song_end
+song_begin: Nenjamellam.flac
+Time: 320
+Album: Ayutha Ezhuthu
+Artist: Adnan Sami & Sujatha
+Composer: A.R.Rahman
+Title: Nenjamellam
+Date: 2004
+mtime: 1465467864
+song_end
+song_begin: Sandakozhi.flac
+Time: 293
+Album: Ayutha Ezhuthu
+Artist: Madhushree & AR. Rahman
+Composer: A.R.Rahman
+Title: Sandakozhi
+Date: 2004
+mtime: 1465467867
+song_end
+song_begin: Yaakai Thiri.flac
+Time: 270
+Album: Ayutha Ezhuthu
+Artist: Sunitha Sarathy, AR. Rahman & Shalini Singh
+Composer: A.R.Rahman
+Title: Yaakai Thiri
+Date: 2004
+mtime: 1465467870
+song_end
+end: Tamil/Ayutha Ezhuthu
+directory: Boys
+mtime: 1465474984
+begin: Tamil/Boys
+song_begin: Ale Ale.flac
+Time: 388
+Album: Boys
+Artist: Karthik & Chitra Sivaraman
+Composer: A.R.Rahman
+Title: Ale Ale
+Date: 2003
+mtime: 1465474956
+song_end
+song_begin: Boom Boom.flac
+Time: 303
+Album: Boys
+Artist: Adnan Sami & Sadhana Sargam
+Composer: A.R.Rahman
+Title: Boom Boom
+Date: 2003
+mtime: 1465474965
+song_end
+song_begin: Dating.flac
+Time: 303
+Artist: Blaaze & Vasundhara Das
+Composer: A.R.Rahman
+Title: Dating Is A Fantasy
+Album: Boys
+Date: 2003
+mtime: 1465474961
+song_end
+song_begin: Girl Friend.flac
+Time: 304
+Album: Boys
+Artist: Karthik, Tippu & Timmy
+Composer: A.R.Rahman
+Title: Girl Friend
+Date: 2003
+mtime: 1465474978
+song_end
+song_begin: Maro Maro.flac
+Time: 342
+Album: Boys
+Artist: Karthik, Kunal, George, Anupama & Sunitha
+Composer: A.R.Rahman
+Title: Maro Maro
+Date: 2003
+mtime: 1465474984
+song_end
+song_begin: Please Sir.flac
+Time: 119
+Album: Boys
+Artist: Kunal, Clinton, Charan & Chinmayee
+Composer: A.R.Rahman
+Title: Please Sir
+Date: 2003
+mtime: 1465474940
+song_end
+song_begin: Saregame Secret Of Success.flac
+Time: 369
+Album: Boys
+Artist: Lucky Ali, Blaaze & Vasundhara Das
+Composer: A.R.Rahman
+Title: Saregame Secret Of Success
+Date: 2003
+mtime: 1465475005
+song_end
+end: Tamil/Boys
+directory: Kakka Kakka
+mtime: 1465475045
+begin: Tamil/Kakka Kakka
+song_begin: Kakka Kakka - 01 - Ennai Konjam.flac
+Time: 356
+Title: Ennai Konjam
+Artist: Tippu, Shalini Singh & Timmy
+Album: Kakka Kakka
+Genre: Soundtrack
+Composer: Harris Jayaraj
+Date: 2003
+Track: 01
+mtime: 1465475035
+song_end
+song_begin: Kakka Kakka - 02 - Ondra Iranda - I.flac
+Time: 293
+Title: Ondra Iranda - I
+Artist: Bombay Jayashree
+Album: Kakka Kakka
+Genre: Soundtrack
+Composer: Harris Jayaraj
+Date: 2003
+Track: 02
+mtime: 1465475040
+song_end
+song_begin: Kakka Kakka - 03 - Thoothu Varuma.flac
+Time: 282
+Title: Thoothu Varuma
+Artist: Sunitha Sarathy & Febimani
+Album: Kakka Kakka
+Genre: Soundtrack
+Composer: Harris Jayaraj
+Date: 2003
+Track: 03
+mtime: 1465475035
+song_end
+song_begin: Kakka Kakka - 04 - Oru Ooril.flac
+Time: 278
+Title: Oru Ooril
+Artist: Karthik
+Album: Kakka Kakka
+Genre: Soundtrack
+Composer: Harris Jayaraj
+Date: 2003
+Track: 04
+mtime: 1465475041
+song_end
+song_begin: Kakka Kakka - 05 - Uyire Uyirin.flac
+Time: 320
+Title: Uyire Uyirin
+Artist: K.K & Sunitha Sarathy
+Album: Kakka Kakka
+Genre: Soundtrack
+Composer: Harris Jayaraj
+Date: 2003
+Track: 05
+mtime: 1465475045
+song_end
+song_begin: Kakka Kakka - 06 - Ondra Iranda - II.flac
+Time: 329
+Title: Ondra Iranda - II
+Artist: Surya, Jothika & Bombay Jayashree
+Album: Kakka Kakka
+Genre: Soundtrack
+Composer: Harris Jayaraj
+Date: 2003
+Track: 06
+mtime: 1465475052
+song_end
+end: Tamil/Kakka Kakka
+directory: Nanban
+mtime: 1465460430
+begin: Tamil/Nanban
+song_begin: 01 - En Frienda Pola.flac
+Time: 240
+Title: En Frienda Pola
+Artist: Krish, Suchith Suresan
+AlbumArtist: Krish, Suchith Suresan
+Album: Nanban
+Genre: Tamil
+Date: 2012
+Track: 01
+mtime: 1465460382
+song_end
+song_begin: 02 - Heartiley Battery.flac
+Time: 338
+Title: Heartiley Battery
+Artist: Hemachandran, Mukesh
+AlbumArtist: Hemachandran, Mukesh
+Album: Nanban
+Genre: Tamil
+Date: 2012
+Track: 02
+mtime: 1465460418
+song_end
+song_begin: 03 - Askku Laska.flac
+Time: 384
+Title: Askku Laska
+Artist: Vijay Prakash, Chinmayi, Suvi (Rap Voice)
+AlbumArtist: Vijay Prakash, Chinmayi, Suvi (Rap Voice)
+Album: Nanban
+Genre: Tamil
+Date: 2012
+Track: 03
+mtime: 1465460429
+song_end
+song_begin: 04 - Endhan Kan Munney.flac
+Time: 133
+Title: Endhan Kan Munney
+Artist: Aalaap Raju
+AlbumArtist: Aalaap Raju
+Album: Nanban
+Genre: Tamil
+Date: 2012
+Track: 04
+mtime: 1465460412
+song_end
+song_begin: 05 - Irukkaannaa.flac
+Time: 313
+Title: Irukkaannaa
+Artist: Vijay Prakash, Javed Ali, Sunidhi Chauhan
+AlbumArtist: Vijay Prakash, Javed Ali, Sunidhi Chauhan
+Album: Nanban
+Genre: Tamil
+Date: 2012
+Track: 05
+mtime: 1465460429
+song_end
+song_begin: 06 - Nalla Nanban.flac
+Time: 264
+Title: Nalla Nanban
+Artist:  Ramakrishnan Murthy
+AlbumArtist:  Ramakrishnan Murthy
+Album: Nanban
+Genre: Tamil
+Date: 2012
+Track: 06
+mtime: 1465460426
+song_end
+end: Tamil/Nanban
+directory: Paiyaa
+mtime: 1465475110
+begin: Tamil/Paiyaa
+song_begin: 01 - Thuli Thuli.flac
+Time: 289
+Artist: Haricharan , Tanvi
+Title: Thuli Thuli
+Album: Paiyaa
+Date: 2009
+Track: 01
+mtime: 1465475067
+song_end
+song_begin: 02 - Poongatre Poongatre.flac
+Time: 326
+Artist: Benny Dayal
+Title: Poongatre Poongatre
+Album: Paiyaa
+Date: 2009
+Track: 02
+mtime: 1465475100
+song_end
+song_begin: 03 - Adada Mazhaida.flac
+Time: 272
+Artist: Rahul Nambiar , Saindhavi
+Title: Adada Mazhaida
+Album: Paiyaa
+Date: 2009
+Track: 03
+mtime: 1465475099
+song_end
+song_begin: 04 - Suthudhe Suthudhe.flac
+Time: 300
+Artist: Karthik , Sunitha Sarathy
+Title: Suthudhe Suthudhe
+Album: Paiyaa
+Date: 2009
+Track: 04
+mtime: 1465475110
+song_end
+song_begin: 05 - En Kadhal Solla.flac
+Time: 298
+Artist: Yuvan Shankar , Tanvi
+Title: En Kadhal Sollu
+Album: Paiyaa
+Date: 2009
+Track: 05
+mtime: 1465475105
+song_end
+end: Tamil/Paiyaa
+directory: Thozha-2016
+mtime: 1464241322
+begin: Tamil/Thozha-2016
+song_begin: Door No.mp3
+Time: 208
+Artist: Geetha Madhuri
+Title: Door No - TamilTunes.com
+Album: Thozha (2016)
+Date: 2016
+Composer: Gopi Sundar
+mtime: 1458131592
+song_end
+song_begin: Eifel Mele.mp3
+Time: 231
+Artist: Ranjith, Suchithra
+Title: Eifel Mele - TamilTunes.com
+Album: Thozha (2016)
+Date: 2016
+Composer: Gopi Sundar
+mtime: 1458131592
+song_end
+song_begin: Enaduyire.mp3
+Time: 130
+Artist: Vijay Prakash
+Title: Enaduyire - TamilTunes.com
+Album: Thozha (2016)
+Date: 2016
+Composer: Gopi Sundar
+mtime: 1458131592
+song_end
+song_begin: Nagarum.mp3
+Time: 285
+Artist: Karthik
+Title: Nagarum - TamilTunes.com
+Album: Thozha (2016)
+Date: 2016
+Composer: Gopi Sundar
+mtime: 1458131592
+song_end
+song_begin: O Baby Odathe .mp3
+Time: 159
+Artist: Shankar Mahadevan
+Title: O Baby Odathe - TamilTunes.com
+Album: Thozha (2016)
+Date: 2016
+mtime: 1458131592
+song_end
+song_begin: Puthitha.mp3
+Time: 285
+Artist: Karthik
+Title: Puthitha - TamilTunes.com
+Album: Thozha (2016)
+Date: 2016
+mtime: 1458131592
+song_end
+song_begin: Thozha.mp3
+Time: 290
+Artist: Anirudh Ravichandran, Haricharan
+Title: Thozha - TamilTunes.com
+Album: Thozha (2016)
+Date: 2016
+Composer: Gopi Sundar
+mtime: 1458131592
+song_end
+end: Tamil/Thozha-2016
+directory: Vaaranam Aayiram
+mtime: 1464241327
+begin: Tamil/Vaaranam Aayiram
+song_begin: Adiyae Kolluthey.flac
+Time: 318
+Album: Vaaranam Aayiram
+Artist: Krish, Benny Dayal, Shruthi Hassan
+Title: Adiyae Kolluthey
+Date: 2008
+Track: 1
+mtime: 1457705108
+song_end
+song_begin: Nenjukkul Peidhidum.flac
+Time: 372
+Album: Vaaranam Aayiram
+Artist: Hariharan, Devan, V.Prasanna
+Title: Nenjukkul Peidhidum
+Date: 2008
+Track: 2
+mtime: 1457705108
+song_end
+song_begin: Yethi Yethi.flac
+Time: 296
+Album: Vaaranam Aayiram
+Artist: Benny Dayal, Naresh Iyer, Solar Sai
+Title: Yethi Yethi
+Date: 2008
+Track: 3
+mtime: 1457705108
+song_end
+song_begin: Mundhinam.flac
+Time: 344
+Album: Vaaranam Aayiram
+Artist: Naresh Iyer, Prashanthini
+Title: Mundhinam
+Date: 2008
+Track: 4
+mtime: 1457705108
+song_end
+song_begin: Oh! Shanthi Shanthi.flac
+Time: 186
+Album: Vaaranam Aayiram
+Artist: Clinton, S.P.B.Charan
+Title: Oh! Shanthi Shanthi
+Date: 2008
+Track: 5
+mtime: 1457705108
+song_end
+song_begin: Ava Enna.flac
+Time: 321
+Album: Vaaranam Aayiram
+Artist: Karthik, V.Prasanna
+Title: Ava Enna
+Date: 2008
+Track: 6
+mtime: 1457705108
+song_end
+song_begin: Annul Maelae.flac
+Time: 323
+Album: Vaaranam Aayiram
+Artist: Sudha Raghunathan
+Title: Annul Maelae
+Date: 2008
+Track: 7
+mtime: 1457705108
+song_end
+end: Tamil/Vaaranam Aayiram
+directory: Virumandi
+mtime: 1465473396
+begin: Tamil/Virumandi
+song_begin: 1 - Kombula Poovae Sutti.flac
+Time: 301
+Album: Virumandi
+Artist: Kamal Hassan, Chorus
+Genre: Tamil Songs
+Title: Kombula Poovae Sutti
+AlbumArtist: Ilayaraja
+Composer: Ilayaraja
+Date: 2004
+Track: 1
+mtime: 1462109516
+song_end
+song_begin: 2 - Sandiyarae.flac
+Time: 189
+Album: Virumandi
+Artist: Shreya Ghoshal
+Genre: Tamil Songs
+Title: Sandiyarae
+AlbumArtist: Ilayaraja
+Composer: Ilayaraja
+Date: 2004
+Track: 2
+mtime: 1462109532
+song_end
+song_begin: 3 - Neththiyela Pottu Vai.flac
+Time: 62
+Album: Virumandi
+Artist: Thiruvudaiyan, Sukumar, Karunanithi, Chorus
+Genre: Tamil Songs
+Title: Neththiyela Pottu Vai
+AlbumArtist: Ilayaraja
+Composer: Ilayaraja
+Date: 2004
+Track: 3
+mtime: 1462109562
+song_end
+song_begin: 4 - Onnavida.flac
+Time: 386
+Album: Virumandi
+Artist: Kamal Hassan, Shreya Ghoshal
+Genre: Tamil Songs
+Title: Onnavida
+AlbumArtist: Ilayaraja
+Composer: Ilayaraja
+Date: 2004
+Track: 4
+mtime: 1462109578
+song_end
+song_begin: 5 - Karpagiragam Vittu Samy.flac
+Time: 201
+Album: Virumandi
+Artist: Ilayaraja, Kamal Hassan, Karthik, Tippu
+Genre: Tamil Songs
+Title: Karpagiragam Vittu Samy
+AlbumArtist: Ilayaraja
+Composer: Ilayaraja
+Date: 2004
+Track: 5
+mtime: 1462109600
+song_end
+song_begin: 6 - Maadavizhakkae Yaaru Ippo.flac
+Time: 215
+Album: Virumandi
+Artist: Kamal Hassan
+Genre: Tamil Songs
+Title: Maadavizhakkae Yaaru Ippo
+AlbumArtist: Ilayaraja
+Composer: Ilayaraja
+Date: 2004
+Track: 6
+mtime: 1462109616
+song_end
+song_begin: 7 - Karumathoor.flac
+Time: 116
+Album: Virumandi
+Artist: Thiruvudaiyan, Periyakaruppadevar
+Genre: Tamil Songs
+Title: Karumathoor
+AlbumArtist: Ilayaraja
+Composer: Ilayaraja
+Date: 2004
+Track: 7
+mtime: 1462109638
+song_end
+song_begin: 8 - Eesa Eeasaane.flac
+Time: 180
+Album: Virumandi
+Artist: Kamal Hassan, Chorus
+Genre: Tamil Songs
+Title: Eesa Eeasaane
+AlbumArtist: Ilayaraja
+Composer: Ilayaraja
+Date: 2004
+Track: 8
+mtime: 1462109656
+song_end
+end: Tamil/Virumandi
+directory: Yaaradi Nee Mohini
+mtime: 1465475244
+begin: Tamil/Yaaradi Nee Mohini
+song_begin: Nenjai Kasakki.flac
+Time: 311
+AlbumArtist: Kadhal Ithayam
+Composer: Yuvan Shankar Raja
+Artist: Suchitra & Udit Narayan
+Title: Nenjai Kasakki
+Album: Yaaradi Nee Mohini
+Date: 2008
+mtime: 1465475194
+song_end
+song_begin: Oh Baby.flac
+Time: 344
+Album: Yaaradi Nee Mohini
+AlbumArtist: Kadhal Ithayam
+Artist: Naveen, Hari Charan, Andre & Bhargavi
+Title: Oh Baby
+Composer: Yuvan Shankar Raja
+Date: 2008
+mtime: 1465475234
+song_end
+song_begin: Oru Naalukkul.flac
+Time: 345
+AlbumArtist: Kadhal Ithayam
+Artist: Karthik & Reeta
+Title: Oru Naalukkul
+Album: Yaaradi Nee Mohini
+Composer: Yuvan Shankar Raja
+Date: 2008
+mtime: 1465475241
+song_end
+song_begin: Venmegham Pennagha.flac
+Time: 280
+Title: Venmegham Pennagha
+Artist: Hariharan
+AlbumArtist: Kadhal Ithayam
+Composer: Yuvan Shankar Raja
+Album: Yaaradi Nee Mohini
+Date: 2008
+mtime: 1465475236
+song_end
+song_begin: Yengaeyo Paarththa Mayakkam.flac
+Time: 327
+AlbumArtist: Kadhal Ithayam
+Composer: Yuvan Shankar Raja
+Artist: Udit Narayan
+Title: Yengaeyo Paarththa Mayakkam
+Album: Yaaradi Nee Mohini
+Date: 2008
+mtime: 1465475244
+song_end
+end: Tamil/Yaaradi Nee Mohini
+directory: anniyan
+mtime: 1465461943
+begin: Tamil/anniyan
+song_begin: Anniyan - 01 - Kadhal Yaanai.flac
+Time: 354
+Album: Anniyan
+Artist: Nakul, Melwyn & G.V Prakash
+Genre: Soundtrack
+Title: Kadhal Yaanai
+Composer: Harris Jayaraj
+Date: 2005
+Track: 01
+mtime: 1465461905
+song_end
+song_begin: Anniyan - 02 - Adangkaaka.flac
+Time: 338
+Title: Adangkaaka
+Artist: Jessie Gift, Kay Kay, Shreya Goshal & Saindhavi
+Album: Anniyan
+Genre: Soundtrack
+Composer: Harris Jayaraj
+Date: 2005
+Track: 02
+mtime: 1465461939
+song_end
+song_begin: Anniyan - 03 - Iyengaru Vettu.flac
+Time: 374
+Title: Iyengaru Vettu
+Artist: Hariharan & Harini
+Album: Anniyan
+Genre: Soundtrack
+Composer: Harris Jayaraj
+Date: 2005
+Track: 03
+mtime: 1465461939
+song_end
+song_begin: Anniyan - 04 - Kannum Kannum.flac
+Time: 330
+Title: Kannum Kannum
+Artist: Leslie Lewis, Andrea & Vasundra Dass
+Album: Anniyan
+Genre: Soundtrack
+Composer: Harris Jayaraj
+Date: 2005
+Track: 04
+mtime: 1465461938
+song_end
+song_begin: Anniyan - 05 - Kumari.flac
+Time: 361
+Title: Kumari
+Artist: Shankar Mahadevan & Harini
+Album: Anniyan
+Genre: Soundtrack
+Composer: Harris Jayaraj
+Date: 2005
+Track: 05
+mtime: 1465461943
+song_end
+song_begin: Anniyan - 06 - Stranger In Black (Theme Music).flac
+Time: 165
+Title: Stranger In Black (Theme Music)
+Artist: Sunitha Sarathy & Chennai Chorale
+Album: Anniyan
+Genre: Soundtrack
+Composer: Harris Jayaraj
+Date: 2005
+Track: 06
+mtime: 1465461928
+song_end
+end: Tamil/anniyan
+directory: religious
+mtime: 1465477179
+begin: Tamil/religious
+song_begin: Tamil Muslim Songs Iraivanidam Kai by E M hanifa.mp3
+Time: 447
+mtime: 1465477179
+song_end
+song_begin: KANTHA SASTI KAVASAM.mp3
+Time: 1287
+Artist: mp3evo.com
+Title: Kantha Sasti Kavasam - (mp3evo.com)
+Album: mp3evo.com
+Genre: mp3evo.com
+Composer: mp3evo.com
+mtime: 1458130736
+song_end
+end: Tamil/religious
+end: Tamil

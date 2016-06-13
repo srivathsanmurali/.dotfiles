@@ -26,6 +26,9 @@ bindsym $mod+Return exec xfce4-terminal
 # kill focused window
 bindsym $mod+Shift+q kill
 
+# move workspace to the right
+bindsym $mod+n move workspace to output right
+bindsym $mod+Shift+n move workspace to output left
 # synapase launcher
 bindsym $mod+d exec synapse 
 
@@ -165,8 +168,32 @@ mode "resize" {
         bindsym Return mode "default"
         bindsym Escape mode "default"
 }
-
 bindsym $mod+r mode "resize"
+
+mode "music" {
+        # These bindings trigger as soon as you enter the resize mode
+
+        # Pressing left will shrink the window’s width.
+        # Pressing right will grow the window’s width.
+        # Pressing up will shrink the window’s height.
+        # Pressing down will grow the window’s height.
+        bindsym h exec "mpc prev"
+        bindsym j exec "ncmpcpp toggle"
+        bindsym k exec "ncmpcpp toggle" 
+        bindsym l exec "mpc next" 
+
+        # same bindings, but for the arrow keys
+        bindsym Left  exec "mpc prev"
+        bindsym Down  exec "ncmpcpp toggle"
+        bindsym Up    exec "ncmpcpp toggle" 
+        bindsym Right exec "mpc next" 
+
+        # back to normal: Enter or Escape
+        bindsym Return mode "default"
+        bindsym Escape mode "default"
+}
+bindsym Mod1+m mode "music"
+
 
 # Start i3bar to display a workspace bar (plus the system information i3status
 # finds out, if available)
@@ -205,9 +232,6 @@ exec --no-startup-id nm-applet &
 
 # Wallpaper
 exec --no-startup-id nitrogen --restore &
-
-# Welcome message
-exec 'notify-send "Hello, $USER"'
 
 # special programs
 assign [title="GL 3.0 Window"] $w3
