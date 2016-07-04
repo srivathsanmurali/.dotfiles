@@ -32,6 +32,8 @@ bindsym $mod+Shift+n move workspace to output left
 # synapase launcher
 bindsym $mod+d exec synapse 
 
+bindsym $mod+c exec chromium-browser
+
 # change focus
 bindsym $mod+h focus left
 bindsym $mod+j focus down
@@ -177,16 +179,16 @@ mode "music" {
         # Pressing right will grow the window’s width.
         # Pressing up will shrink the window’s height.
         # Pressing down will grow the window’s height.
-        bindsym h exec "mpc prev"
-        bindsym j exec "ncmpcpp toggle"
-        bindsym k exec "ncmpcpp toggle" 
-        bindsym l exec "mpc next" 
+        bindsym h exec "mpc prev", mode "default"
+        bindsym j exec "ncmpcpp toggle", mode "default"
+        bindsym k exec "ncmpcpp toggle" , mode "default"
+        bindsym l exec "mpc next" , mode "default"
 
         # same bindings, but for the arrow keys
-        bindsym Left  exec "mpc prev"
-        bindsym Down  exec "ncmpcpp toggle"
-        bindsym Up    exec "ncmpcpp toggle" 
-        bindsym Right exec "mpc next" 
+        bindsym Left  exec "mpc prev", mode "default"
+        bindsym Down  exec "ncmpcpp toggle", mode "default"
+        bindsym Up    exec "ncmpcpp toggle" , mode "default"
+        bindsym Right exec "mpc next" , mode "default"
 
         # back to normal: Enter or Escape
         bindsym Return mode "default"

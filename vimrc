@@ -42,7 +42,7 @@ set splitright
 
 " remove trailing whitespaces and ^M chars
 autocmd FileType c,cpp,java,php,js,python,twig,xml,yml autocmd BufWritePre <buffer> :call setline(1,map(getline(1,"$"),'substitute(v:val,"\\s\\+$","","")'))
-
+autocmd FileType python set shiftwidth=4
 " file specific settings
 autocmd BufRead,BufNewFile *.tex set modeline spelllang=en_gb spell wrap
 "--------
@@ -138,8 +138,8 @@ let g:NERDTreeMapActivateNode="<F4>"
 let g:NERDTreeMapOpenInTabSilent="<F3>"
 
 " Tab navigation like Firefox.
-nnoremap <C-t>     <Esc>:tabnew<CR>
-inoremap <C-t>     <Esc>:tabnew<CR>
+nnoremap <C-k>     <Esc>:tabnew<CR>
+inoremap <C-k>     <Esc>:tabnew<CR>
 noremap <C-l>      <Esc>:tabnext<CR>
 inoremap <C-l>      <Esc>:tabnext<CR>
 inoremap <C-h>      <Esc>:tabprev<CR>

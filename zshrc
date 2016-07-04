@@ -48,6 +48,8 @@ alias open="xdg-open"
 alias copy="xclip -sel clip"
 alias copyPWD="pwd | xclip -sel clip"
 alias music="ncmpcpp"
+alias pp='python -mjson.tool'
+alias tmux='TERM=screen-256color-bce tmux'
 
 #redwood
 alias develSetup='. ${HOME}/redwood_ws/devel_linux/setup.zsh'

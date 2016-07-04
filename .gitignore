@@ -1,0 +1,5 @@
+#mpd ignores
+mpd/mpd.db
+mpd/mpd.log
+mpd/mpdstate
+mpd/sticker.sql
