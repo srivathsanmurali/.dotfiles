@@ -44,7 +44,7 @@ set splitright
 autocmd FileType c,cpp,java,php,js,python,twig,xml,yml autocmd BufWritePre <buffer> :call setline(1,map(getline(1,"$"),'substitute(v:val,"\\s\\+$","","")'))
 autocmd FileType python set shiftwidth=4
 " file specific settings
-autocmd BufRead,BufNewFile *.tex set modeline spelllang=en_gb spell wrap
+autocmd BufRead,BufNewFile *.tex set modeline spelllang=en_gb spell wrap tw=80 wrapmargin=2
 "--------
 " PLUGINS
 "--------
@@ -97,7 +97,7 @@ set laststatus=2
 let g:airline_powerline_fonts=1
 let g:airline_right_sep='|'
 let g:airline#extensions#tabline#enabled = 1
-
+5
 " vim-fugitive for git
 Plugin 'tpope/vim-fugitive'
 
@@ -105,6 +105,10 @@ Plugin 'tpope/vim-fugitive'
 Plugin 'airblade/vim-gitgutter'
 highlight SignColumn ctermbg=None
 
+Plugin 'vim-scripts/Conque-GDB'
+let g:ConqueTerm_Color = 2         " 1: strip color after 200 lines, 2: always with color
+let g:ConqueTerm_CloseOnEnd = 1    " close conque when program ends running
+let g:ConqueTerm_StartMessages = 0 " display warning messages if conqueTerm is configured incorrectly 
 " nerd tree
 Plugin 'scrooloose/nerdtree'
 Plugin 'jistr/vim-nerdtree-tabs'
@@ -146,10 +150,10 @@ inoremap <C-h>      <Esc>:tabprev<CR>
 noremap <C-h>      <Esc>:tabprev<CR>
 
 
-noremap   <S-l>       <Esc><C-W><C-L><CR>
-inoremap  <S-l>       <Esc><C-W><C-L><CR>
-inoremap  <S-h>       <Esc><C-W><C-H><CR>
-noremap   <S-h>       <Esc><C-W><C-H><CR>
+" noremap   <C-S-l>       <Esc><C-W><C-L><CR>
+" inoremap  <C-S-l>       <Esc><C-W><C-L><CR>
+" inoremap  <C-S-h>       <Esc><C-W><C-H><CR>
+" noremap   <C-S-h>       <Esc><C-W><C-H><CR>
 
 " refresh hotkey
 :nnoremap <F5> :edit<CR>

@@ -27,7 +27,7 @@ bindsym $mod+Return exec xfce4-terminal
 bindsym $mod+Shift+q kill
 
 # move workspace to the right
-bindsym $mod+n move workspace to output right
+bindsym $mod+n move workspace to output down
 bindsym $mod+Shift+n move workspace to output left
 # synapase launcher
 bindsym $mod+d exec synapse 
