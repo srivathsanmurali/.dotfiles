@@ -69,15 +69,3 @@ if ask "Install symlink for .i3?" N; then
   ln -sf ${dir}/i3blocks.conf ~/.i3blocks.conf
 fi
 
-if ask "Install symlink for .mpd?" N; then
-  echo "mpd"
-  rm -rf ~/.mpd
-  ln -sf ${dir}/mpd ~/.mpd
-fi
-
-if ask "install symlink for .ncmpcpp?" N; then
-  echo "ncmpcpp"
-  rm -rf ~/.ncmpcpp
-  mkdir ~/.ncmpcpp
-  ln -sf ${dir}/ncmpcpp ~/.ncmpcpp/config
-fi
