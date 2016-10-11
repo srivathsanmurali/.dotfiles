@@ -1,6 +1,9 @@
-# Path to your oh-my-zsh installation.
-  export ZSH=/home/sri/.oh-my-zsh
+if [ ! -d "/home/sri/.oh-my-zsh" ]; then
+  git clone https://github.com/robbyrussell/oh-my-zsh.git ~/.oh-my-zsh
+fi
 
+# Path to your oh-my-zsh installation.
+export ZSH=/home/sri/.oh-my-zsh
 ZSH_THEME="sri"
 plugins=(git common-aliases)
 
@@ -92,4 +95,4 @@ function removeMonitor() {
 # source '/opt/google-cloud-sdk/completion.zsh.inc'
 
 #keyboard shit
-source ~/.Xinitrc
+source ~/.xinitrc
