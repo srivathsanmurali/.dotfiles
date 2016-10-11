@@ -12,7 +12,7 @@ set hidden
 " case insensitive search
 set ignorecase
 set smartcase
-set infercase
+set noinfercase
 
 " make backspace more sane
 set backspace=indent,eol,start
@@ -100,6 +100,9 @@ let g:airline#extensions#tabline#enabled = 1
 5
 " vim-fugitive for git
 Plugin 'tpope/vim-fugitive'
+
+" tabular
+Plugin 'godlygeek/tabular'
 
 " git gutter to track changes
 Plugin 'airblade/vim-gitgutter'

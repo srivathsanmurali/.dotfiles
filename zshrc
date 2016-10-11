@@ -5,7 +5,7 @@ ZSH_THEME="sri"
 plugins=(git common-aliases)
 
 # User configuration
-  export PATH="/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:$PATH"
+export PATH="/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:$PATH"
 # export MANPATH="/usr/local/man:$MANPATH"
 
 source $ZSH/oh-my-zsh.sh
@@ -18,7 +18,6 @@ export EDITOR='vim'
 alias zshconfig='vi ~/.zshrc'
 alias zshrefresh='source ~/.zshrc'
 alias vimconfig='vi ~/.vimrc'
-alias aconfig='vi ~/.config/awesome/rc.lua'
 alias i3config='vi ~/.i3/config'
 
 # git
@@ -52,20 +51,45 @@ alias music="ncmpcpp"
 alias pp='python -mjson.tool'
 alias tmux='TERM=screen-256color-bce tmux'
 
-#redwood
-alias develSetup='. ${HOME}/redwood_ws/devel_linux/setup.zsh'
-alias rwSetup='. ${HOME}/redwood_ws/RedwoodInternal/Redwood/setup.zsh'
+# use clang
+alias useClang='export CXX=/usr/bin/clang++-3.8; export CC=/usr/bin/clang-3.8;'
 
-#gcloud~redwood
-# The next line updates PATH for the Google Cloud SDK.
-source '/opt/google-cloud-sdk/path.zsh.inc'
-# The next line enables shell command completion for gcloud.
-source '/opt/google-cloud-sdk/completion.zsh.inc'
+alias kp="/home/sri/libsrc/kpcli.pl --kdb /home/sri/Dropbox/Security/KeepassMaster1.kdbx"
+
+# xrandr
+function addMonitor() {
+  if [ -n "$1" ]
+  then
+    echo adding "$1" to the right
+    xrandr --output "$1" --auto --right-of eDP1
+  else
+    echo adding DP2 to the right
+    xrandr --output DP2 --auto --right-of eDP1
+    #echo 'specify output id'
+  fi
+}
+function removeMonitor() {
+  if [ -n "$1" ]
+  then
+    echo removing "$1"
+    xrandr --output "$1" --off 
+  else
+    echo removing DP2
+    xrandr --output DP2 --off 
+    #echo 'specify output id'
+  fi
+}
+# #redwood
+# alias develSetup='. ${HOME}/redwood_ws/devel_linux/setup.zsh'
+# alias rwSetup='. ${HOME}/redwood_ws/RedwoodInternal/Redwood/setup.zsh'
+# 
+# #nomoko
+# alias runNomokoPipeline="cd /home/sri/nomoko_ws/projects/NomokoToolbox/ && python pipeline.py"
+# #gcloud~redwood
+# # The next line updates PATH for the Google Cloud SDK.
+# source '/opt/google-cloud-sdk/path.zsh.inc'
+# # The next line enables shell command completion for gcloud.
+# source '/opt/google-cloud-sdk/completion.zsh.inc'
 
 #keyboard shit
 source ~/.Xinitrc
-# ruby stuff
-#export PATH="$PATH:$HOME/.rvm/bin" # Add RVM to PATH for scripting
-export PATH="$HOME/.rbenv/bin:$PATH"
-eval "$(rbenv init -)"
-export PATH="$HOME/.rbenv/plugins/ruby-build/bin:$PATH"

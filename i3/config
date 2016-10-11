@@ -217,6 +217,7 @@ bar {
         #inactive_workspace  #131D24 #131D24 #999999
         #urgent_workspace  #999999 #999999 #B33A3A
     }
+    tray_output eDP1
 }
 
 # keyboard
