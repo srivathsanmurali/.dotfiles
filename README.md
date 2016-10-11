@@ -4,7 +4,7 @@
 sudo apt-get install stow 
 
 ## configs for common apps
-sudo apt-get install git vim zsh tmux
+sudo apt-get install git vim zsh tmux exuberant-ctags
 
 - stow git
 - stow vim

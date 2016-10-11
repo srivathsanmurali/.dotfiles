@@ -98,6 +98,7 @@ let g:airline_powerline_fonts=1
 let g:airline_right_sep='|'
 let g:airline#extensions#tabline#enabled = 1
 5
+
 " vim-fugitive for git
 Plugin 'tpope/vim-fugitive'
 
@@ -108,17 +109,17 @@ Plugin 'godlygeek/tabular'
 Plugin 'airblade/vim-gitgutter'
 highlight SignColumn ctermbg=None
 
-Plugin 'vim-scripts/Conque-GDB'
-let g:ConqueTerm_Color = 2         " 1: strip color after 200 lines, 2: always with color
-let g:ConqueTerm_CloseOnEnd = 1    " close conque when program ends running
-let g:ConqueTerm_StartMessages = 0 " display warning messages if conqueTerm is configured incorrectly 
 " nerd tree
 Plugin 'scrooloose/nerdtree'
+
 Plugin 'jistr/vim-nerdtree-tabs'
 let NERDTreeMinimalUI=1
 let NERDTreeIgnore=['^.git$', '\.pyc$', '\~$']
 autocmd vimenter * if !argc() | NERDTree | wincmd p | endif
 autocmd bufenter * if (winnr("$") == 1 && exists("b:NERDTreeType") && b:NERDTreeType == "primary") | q | endif
+
+" tabbar - use with ctags
+Plugin 'majutsushi/tagbar'
 
 " Trigger update after bundles loaded
 if vundleinstalled == 0
@@ -140,9 +141,10 @@ command Chmodx :!chmod a+x %
 map <C-n> :NERDTreeToggle<CR>
 :nnoremap <F2> :NERDTreeToggle<CR>
 :inoremap <F2> <Esc>:NERDTreeToggle<CR>
-map <F4> <ESC>:NERDTreeFind<CR>
-let g:NERDTreeMapActivateNode="<F4>"
 let g:NERDTreeMapOpenInTabSilent="<F3>"
+
+"tabbar
+map <F4> <ESC>:TagbarToggle<CR>
 
 " Tab navigation like Firefox.
 nnoremap <C-k>     <Esc>:tabnew<CR>
@@ -151,12 +153,6 @@ noremap <C-l>      <Esc>:tabnext<CR>
 inoremap <C-l>      <Esc>:tabnext<CR>
 inoremap <C-h>      <Esc>:tabprev<CR>
 noremap <C-h>      <Esc>:tabprev<CR>
-
-
-" noremap   <C-S-l>       <Esc><C-W><C-L><CR>
-" inoremap  <C-S-l>       <Esc><C-W><C-L><CR>
-" inoremap  <C-S-h>       <Esc><C-W><C-H><CR>
-" noremap   <C-S-h>       <Esc><C-W><C-H><CR>
 
 " refresh hotkey
 :nnoremap <F5> :edit<CR>
