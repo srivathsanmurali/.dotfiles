@@ -29,11 +29,12 @@ alias ga='git add'
 alias gap='git add -p'
 alias gc='git commit'
 alias gs='git status'
-alias gd='git diff'
+alias gd='git diff --color-words'
 alias gco='git checkout'
 alias gp='git push'
 alias gb='git branch'
 alias gcl='git clone'
+alias gl='git log --pretty=custom'
 
 # misc
 alias vi='vim'
@@ -53,6 +54,7 @@ alias copyPWD="pwd | xclip -sel clip"
 alias music="ncmpcpp"
 alias pp='python -mjson.tool'
 alias tmux='TERM=screen-256color-bce tmux'
+alias hgrep='history | grep '
 
 # use clang
 alias useClang='export CXX=/usr/bin/clang++-3.8; export CC=/usr/bin/clang-3.8;'

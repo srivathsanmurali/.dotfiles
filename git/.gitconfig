@@ -1,7 +1,48 @@
 [user]
 	email = srivathsan92@gmail.com
 	name = Srivathsan Murali
+
 [color]
-	ui = true
+	ui = always
+
 [push]
 	default = matching
+
+[alias]
+  # clone
+  cl = clone
+  rcl = clone --recursive
+
+  # checkout
+  co = checkout
+  cb = checkout -b
+
+  # diff
+  d = diff --color-words
+  dx = diff --cached
+
+  #submodule update
+  subpl = submodule update --init --recursive
+
+  # log
+  l = log --pretty=custom
+
+[core]
+  editor = vim
+  ignorecase = false
+  abbrev = 12
+
+[pretty]
+  # h -> abbrev hash
+  # d -> head, remote, branch
+  # ar -> relative data
+  # s -> commit message
+  # an -> author
+  custom = "%C(magenta)%h%C(red)%d %C(yellow)%ar \n\t%C(green)%s %C(yellow)(%an)"
+
+[merge]
+  tool = vimdiff
+
+[help]
+  #correct typos
+  autocorrect = 1
