@@ -186,3 +186,11 @@ set mouse=a
 " always show 10 lines above and below cursor
 set scrolloff=10
 
+"-------
+" SNIPS
+"-------
+" adds a brief block for doxy like comments
+function! Brief()
+  " ~/.vim/snips/briefSnipp.txt
+  r~/.vim/snips/briefSnipp.txt
+endfunction
