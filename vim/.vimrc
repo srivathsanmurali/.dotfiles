@@ -186,6 +186,9 @@ set mouse=a
 " always show 10 lines above and below cursor
 set scrolloff=10
 
+set colorcolumn=80
+"highlight colorcolumn ctermbg=grey guibg=orange
+
 "-------
 " SNIPS
 "-------
@@ -194,3 +197,4 @@ function! Brief()
   " ~/.vim/snips/briefSnipp.txt
   r~/.vim/snips/briefSnipp.txt
 endfunction
+command Br call Brief()
