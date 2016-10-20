@@ -1,9 +1,9 @@
-if [ ! -d "/home/sri/.oh-my-zsh" ]; then
+if [ ! -d "${HOME}/.oh-my-zsh" ]; then
   git clone https://github.com/robbyrussell/oh-my-zsh.git ~/.oh-my-zsh
 fi
 
 # Path to your oh-my-zsh installation.
-export ZSH=/home/sri/.oh-my-zsh
+export ZSH=${HOME}/.oh-my-zsh
 ZSH_THEME="sri"
 plugins=(git common-aliases)
 
