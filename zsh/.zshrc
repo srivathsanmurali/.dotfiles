@@ -43,6 +43,7 @@ alias sv="sudo vim"
 alias "cd.."="cd ../"
 alias cl=clear
 alias sagi="sudo apt-get install"
+alias sagr="sudo apt-get remove"
 alias asearch="apt-cache search"
 alias supdate="sudo apt-get update"
 alias grep="grep --color=auto"
@@ -55,6 +56,7 @@ alias music="ncmpcpp"
 alias pp='python -mjson.tool'
 alias tmux='TERM=screen-256color-bce tmux'
 alias hgrep='history | grep '
+alias ls='ls --color=auto'
 
 # use clang
 alias useClang='export CXX=/usr/bin/clang++-3.8; export CC=/usr/bin/clang-3.8;'
@@ -65,13 +67,17 @@ alias kp="/home/sri/libsrc/kpcli.pl --kdb /home/sri/Dropbox/Security/KeepassMast
 function addMonitor() {
   if [ -n "$1" ]
   then
-    echo adding "$1" to the right
-    xrandr --output "$1" --auto --right-of eDP1
+    mon="$1"
   else
-    echo adding DP2 to the right
-    xrandr --output DP2 --auto --right-of eDP1
-    #echo 'specify output id'
+    mon=DP2
   fi
+  if [ -n "$2" ]
+  then
+    dir="$2"
+  else
+    dir=--right-of
+  fi
+  xrandr --output $mon --auto $dir eDP1
 }
 function removeMonitor() {
   if [ -n "$1" ]
@@ -98,3 +104,10 @@ function removeMonitor() {
 
 #keyboard shit
 source ~/.xinitrc
+
+# virtualenv and virtualenvwrapper
+#export WORKON_HOME=$HOME/.virtualenvs
+#source /usr/local/bin/virtualenvwrapper.sh
+
+# nix package manager
+source /home/sri/.nix-profile/etc/profile.d/nix.sh
