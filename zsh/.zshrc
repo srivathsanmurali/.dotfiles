@@ -111,3 +111,6 @@ source ~/.xinitrc
 
 # nix package manager
 source /home/sri/.nix-profile/etc/profile.d/nix.sh
+
+# tmuxp
+DISABLE_AUTO_TITLE=true
