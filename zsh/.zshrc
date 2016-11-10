@@ -110,7 +110,7 @@ source ~/.xinitrc
 #source /usr/local/bin/virtualenvwrapper.sh
 
 # nix package manager
-source /home/sri/.nix-profile/etc/profile.d/nix.sh
+source ${HOME}/.nix-profile/etc/profile.d/nix.sh
 
 # tmuxp
 DISABLE_AUTO_TITLE=true

@@ -52,4 +52,4 @@ ZSH_THEME_GIT_TIME_SINCE_COMMIT_LONG="%{$fg[red]%}"
 ZSH_THEME_GIT_TIME_SINCE_COMMIT_NEUTRAL="%{$fg[white]%}"
 
 PROMPT='${ret_status} %{$fg[cyan]%}%c%{$reset_color%} $(git_prompt_info)'
-RPROMPT='$(_git_time_since_commit)'
+RPROMPT='$(_git_time_since_commit) $name'
