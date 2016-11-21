@@ -45,6 +45,7 @@ autocmd FileType c,cpp,java,php,js,python,twig,xml,yml autocmd BufWritePre <buff
 autocmd FileType python set shiftwidth=4
 " file specific settings
 autocmd BufRead,BufNewFile *.tex, *.md set modeline spelllang=en_gb spell wrap tw=80 wrapmargin=2
+
 "--------
 " PLUGINS
 "--------
@@ -163,7 +164,7 @@ noremap <C-h>      <Esc>:tabprev<CR>
 
 " setting up colors properly
 set t_Co=256
-colorscheme badwolf
+"colorscheme badwolf
 
 " show matching brackets
 set showmatch
@@ -186,9 +187,12 @@ set mouse=a
 " always show 10 lines above and below cursor
 set scrolloff=10
 
-set colorcolumn=80
 "highlight colorcolumn ctermbg=grey guibg=orange
+set colorcolumn=80
 
+" file search
+set path+=**
+set wildmenu
 "-------
 " SNIPS
 "-------

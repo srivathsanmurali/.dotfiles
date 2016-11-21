@@ -37,6 +37,7 @@ alias gcl='git clone'
 alias gl='git log --pretty=custom'
 
 # misc
+alias emacs='emacs -nw'
 alias vi='vim'
 alias v='vim'
 alias sv="sudo vim"
