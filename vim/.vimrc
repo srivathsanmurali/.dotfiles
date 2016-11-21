@@ -20,6 +20,7 @@ set backspace=indent,eol,start
 " searching
 set hlsearch
 set incsearch
+highligh Search ctermbg=Grey ctermfg=Black
 
 " use proper indents
 set shiftwidth=2
@@ -187,7 +188,7 @@ set mouse=a
 " always show 10 lines above and below cursor
 set scrolloff=10
 
-"highlight colorcolumn ctermbg=grey guibg=orange
+highlight colorcolumn ctermbg=grey guibg=orange
 set colorcolumn=80
 
 " file search
