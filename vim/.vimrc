@@ -20,7 +20,7 @@ set backspace=indent,eol,start
 " searching
 set hlsearch
 set incsearch
-highligh Search ctermbg=Grey ctermfg=Black
+"highligh Search ctermbg=Grey ctermfg=Black
 
 " use proper indents
 set shiftwidth=2
@@ -117,24 +117,28 @@ Plugin 'scrooloose/nerdtree'
 Plugin 'jistr/vim-nerdtree-tabs'
 let NERDTreeMinimalUI=1
 let NERDTreeIgnore=['^.git$', '\.pyc$', '\~$']
-autocmd vimenter * if !argc() | NERDTree | wincmd p | endif
-autocmd bufenter * if (winnr("$") == 1 && exists("b:NERDTreeType") && b:NERDTreeType == "primary") | q | endif
 
 " tabbar - use with ctags
 Plugin 'majutsushi/tagbar'
+let g:tagbar_sort=0
 
 " Trigger update after bundles loaded
 if vundleinstalled == 0
   PluginInstall
 endif
 filetype plugin indent on
-syntax on
+
+" grammer check
+Plugin 'LanguageTool'
+let g:languagetool_jar = "/home/sri/Downloads/lt/LanguageTool-3.5/languagetool-commandline.jar"
 
 "---------
 " COMMANDS
 "---------
 " toggle spellcheck
 command Spell :setlocal spell! spell?
+hi clear SpellBad
+hi SpellBad cterm=underline
 
 " make current buffer executable
 command Chmodx :!chmod a+x %
@@ -165,7 +169,7 @@ noremap <C-h>      <Esc>:tabprev<CR>
 
 " setting up colors properly
 set t_Co=256
-"colorscheme badwolf
+set background=dark
 
 " show matching brackets
 set showmatch
@@ -188,8 +192,8 @@ set mouse=a
 " always show 10 lines above and below cursor
 set scrolloff=10
 
-highlight colorcolumn ctermbg=grey guibg=orange
-set colorcolumn=80
+" highlight Overlength ctermbg=red ctermfg=white
+" match Overlength /\%81v.\+/
 
 " file search
 set path+=**

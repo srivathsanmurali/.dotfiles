@@ -21,7 +21,7 @@ font -misc-fixed-medium-r-normal--13-120-75-75-C-70-iso10646-1
 floating_modifier $mod
 
 # start a terminal
-bindsym $mod+Return exec xfce4-terminal 
+bindsym $mod+Return exec terminator
 
 # kill focused window
 bindsym $mod+Shift+q kill
@@ -31,8 +31,6 @@ bindsym $mod+n move workspace to output down
 bindsym $mod+Shift+n move workspace to output left
 # synapase launcher
 bindsym $mod+d exec synapse 
-
-bindsym $mod+c exec chromium-browser
 
 # change focus
 bindsym $mod+h focus left
@@ -88,16 +86,16 @@ bindsym $mod+a focus parent
 #bindsym $mod+d focus child
 
 # worspace names
-set $w1  "1:www "
-set $w2  "2:vim "
-set $w3  "3:term "
+set $w1  "1:web"
+set $w2  "2:vim"
+set $w3  "3:term"
 set $w4  "4"
 set $w5  "5"
 set $w6  "6"
 set $w7  "7"
 set $w8  "8"
-set $w9  "9:chat "
-set $w10 "10:music "
+set $w9  "9:chat"
+set $w10 "10:media"
 
 # switch to workspace
 bindsym $mod+1 workspace $w1 
@@ -135,18 +133,6 @@ bindsym $mod+Shift+e exec "i3-nagbar -t warning -m 'You pressed the exit shortcu
 # lock
 bindsym $mod+x exec i3lock --color 2f343f
 
-# system menu
-set $sysmenu "system: [l]ogout  [p]oweroff  [r]eboot"
-bindsym $mod+Delete      mode $sysmenu
-
-mode $sysmenu {
-    bindsym l         exit
-    bindsym p         exec shutdown -P now
-    bindsym r         exec shutdown -r now
-    bindsym Return    mode "default"
-    bindsym Escape    mode "default"
-}
-
 # resize window (you can also use the mouse for that)
 mode "resize" {
         # These bindings trigger as soon as you enter the resize mode
@@ -171,31 +157,6 @@ mode "resize" {
         bindsym Escape mode "default"
 }
 bindsym $mod+r mode "resize"
-
-mode "music" {
-        # These bindings trigger as soon as you enter the resize mode
-
-        # Pressing left will shrink the window’s width.
-        # Pressing right will grow the window’s width.
-        # Pressing up will shrink the window’s height.
-        # Pressing down will grow the window’s height.
-        bindsym h exec "mpc prev", mode "default"
-        bindsym j exec "ncmpcpp toggle", mode "default"
-        bindsym k exec "ncmpcpp toggle" , mode "default"
-        bindsym l exec "mpc next" , mode "default"
-
-        # same bindings, but for the arrow keys
-        bindsym Left  exec "mpc prev", mode "default"
-        bindsym Down  exec "ncmpcpp toggle", mode "default"
-        bindsym Up    exec "ncmpcpp toggle" , mode "default"
-        bindsym Right exec "mpc next" , mode "default"
-
-        # back to normal: Enter or Escape
-        bindsym Return mode "default"
-        bindsym Escape mode "default"
-}
-bindsym Mod1+m mode "music"
-
 
 # Start i3bar to display a workspace bar (plus the system information i3status
 # finds out, if available)

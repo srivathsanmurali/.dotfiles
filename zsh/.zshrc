@@ -91,6 +91,26 @@ function removeMonitor() {
     #echo 'specify output id'
   fi
 }
+
+function watchMarkdown() {
+  if [ -n "$2" ]
+  then
+    out=$2
+  else
+    out="dev.pdf"
+  fi
+  if [ -n "$1" ]
+  then
+    echo "Watching $1 for changes and pandoc to $out"
+    while true;
+    do
+      inotifywait -e modify $1;
+      pandoc $1 -o $out -V geometry:margin=1in;
+    done;
+  else
+    echo "Need input file"
+  fi
+}
 # #redwood
 # alias develSetup='. ${HOME}/redwood_ws/devel_linux/setup.zsh'
 # alias rwSetup='. ${HOME}/redwood_ws/RedwoodInternal/Redwood/setup.zsh'
