@@ -58,11 +58,36 @@ alias pp='python -mjson.tool'
 alias tmux='TERM=screen-256color-bce tmux'
 alias hgrep='history | grep '
 alias ls='ls --color=auto'
+alias matlab-cli='matlab -nodisplay -nosplash'
 
 # use clang
 alias useClang='export CXX=/usr/bin/clang++-3.8; export CC=/usr/bin/clang-3.8;'
 
 alias kp="/home/sri/libsrc/kpcli.pl --kdb /home/sri/Dropbox/Security/KeepassMaster1.kdbx"
+
+# #redwood
+alias develSetup='. ${HOME}/redwood_ws/devel_linux/setup.zsh'
+alias rwSetup='. ${HOME}/redwood_ws/RedwoodInternal/Redwood/setup.zsh'
+# 
+
+# #gcloud~redwood
+# # The next line updates PATH for the Google Cloud SDK.
+source '/opt/google-cloud-sdk/path.zsh.inc'
+# # The next line enables shell command completion for gcloud.
+source '/opt/google-cloud-sdk/completion.zsh.inc'
+
+#keyboard shit
+source ~/.xinitrc
+
+# virtualenv and virtualenvwrapper
+#export WORKON_HOME=$HOME/.virtualenvs
+#source /usr/local/bin/virtualenvwrapper.sh
+
+# nix package manager
+source ${HOME}/.nix-profile/etc/profile.d/nix.sh
+
+# tmuxp
+DISABLE_AUTO_TITLE=true
 
 # xrandr
 function addMonitor() {
@@ -78,7 +103,13 @@ function addMonitor() {
   else
     dir=--right-of
   fi
-  xrandr --output $mon --auto $dir eDP1
+  if [ -n "$3" ]
+  then
+    refmon="$1"
+  else
+    refmon=eDP1
+  fi
+  xrandr --output $mon --auto $dir $refmon
 }
 function removeMonitor() {
   if [ -n "$1" ]
@@ -111,27 +142,11 @@ function watchMarkdown() {
     echo "Need input file"
   fi
 }
-# #redwood
-# alias develSetup='. ${HOME}/redwood_ws/devel_linux/setup.zsh'
-# alias rwSetup='. ${HOME}/redwood_ws/RedwoodInternal/Redwood/setup.zsh'
-# 
-# #nomoko
-# alias runNomokoPipeline="cd /home/sri/nomoko_ws/projects/NomokoToolbox/ && python pipeline.py"
-# #gcloud~redwood
-# # The next line updates PATH for the Google Cloud SDK.
-# source '/opt/google-cloud-sdk/path.zsh.inc'
-# # The next line enables shell command completion for gcloud.
-# source '/opt/google-cloud-sdk/completion.zsh.inc'
 
-#keyboard shit
-source ~/.xinitrc
-
-# virtualenv and virtualenvwrapper
-#export WORKON_HOME=$HOME/.virtualenvs
-#source /usr/local/bin/virtualenvwrapper.sh
-
-# nix package manager
-source ${HOME}/.nix-profile/etc/profile.d/nix.sh
-
-# tmuxp
-DISABLE_AUTO_TITLE=true
+# display time in multiple countries
+function tz() {
+  echo "local         " `date`
+  echo "Zurich        " `TZ='Europe/Zurich' date`
+  echo "Pacific       " `TZ='America/Vancouver' date`
+  echo "Singapore     " `TZ='Asia/Singapore' date`
+}
