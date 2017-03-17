@@ -85,6 +85,13 @@ bindsym $mod+a focus parent
 # focus the child container
 #bindsym $mod+d focus child
 
+# media controls using mpd and ncmpcpp
+bindsym Mod1+shift+space exec "ncmpcpp toggle"
+bindsym Mod1+shift+l exec "ncmpcpp next"
+bindsym Mod1+shift+h exec "ncmpcpp prev"
+bindsym Mod1+shift+j exec "ncmpcpp pause"
+bindsym Mod1+shift+k exec "ncmpcpp play"
+
 # worspace names
 set $w1  "1:web"
 set $w2  "2:vim"

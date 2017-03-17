@@ -60,6 +60,13 @@ alias hgrep='history | grep '
 alias ls='ls --color=auto'
 alias matlab-cli='matlab -nodisplay -nosplash'
 
+# Music
+alias music="ncmpcpp"
+alias toggleMusic="ncmpcpp toggle"
+alias playMusic="ncmpcpp play"
+alias pauseMusic="ncmpcpp pause"
+alias stopusic="ncmpcpp stop"
+
 # use clang
 alias useClang='export CXX=/usr/bin/clang++-3.8; export CC=/usr/bin/clang-3.8;'
 

@@ -1,5 +1,4 @@
-# setting caps lock key to escape
-#setxkbmap -option caps:escape
-setxkbmap -option ctrl:nocaps
+#!/usr/bin/env bash
 
-[[ -f ~/.Xresources ]] && xrdb -merge -I$HOME ~/.Xresources
+# setting caps lock key to escape
+setxkbmap -option ctrl:nocaps

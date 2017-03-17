@@ -6,26 +6,21 @@ def getName():
     album = client.currentsong()['album']
 
     if album != '':
-        name = "'" + song + "' from " + album
+        name = song + ' - ' + album
     else:
         name = "'" + song + "'"
+    #name = song
     return name
 
 client = MPDClient()
 client.connect('localhost',6600)
 
-FA_PLAY = "<span font='FontAwesome'>\uf077</span>"
-#FA_PLAY = "<span font='FontAwesome'>\uf077</span>"
-
 if client.status()['state'] == 'play':
-    print 'You are listening to', getName()
+    print getName()
     #print "Playing '" , song, "' from", album
-elif client.status()['state'] == 'pause':
-    print 'Taking a break from listening to', getName()
+elif client.status()['state'] == 'pause' or client.status()['state'] == 'stop':
+    print '[', getName(), ']'
     #print song, '[', album, ']'
-else:
-    print "Bummer! No music playing"
-
 
 client.close()
 client.disconnect()
