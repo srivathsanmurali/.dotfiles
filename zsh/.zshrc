@@ -10,6 +10,8 @@ plugins=(git common-aliases)
 # User configuration
 export PATH="/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:$PATH"
 # export MANPATH="/usr/local/man:$MANPATH"
+export PATH=$PATH:$HOME/bin
+export ERL_LIBS=$ERL_LIBS:/home/sri/libsrc/nifty
 
 source $ZSH/oh-my-zsh.sh
 
@@ -76,6 +78,9 @@ alias kp="/home/sri/libsrc/kpcli.pl --kdb /home/sri/Dropbox/Security/KeepassMast
 alias develSetup='. ${HOME}/redwood_ws/devel_linux/setup.zsh'
 alias rwSetup='. ${HOME}/redwood_ws/RedwoodInternal/Redwood/setup.zsh'
 # 
+
+#completion files
+fpath=(~/.zsh $fpath)
 
 # #gcloud~redwood
 # # The next line updates PATH for the Google Cloud SDK.
