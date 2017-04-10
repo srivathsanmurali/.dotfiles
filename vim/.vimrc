@@ -3,6 +3,35 @@
 " use vim seting rather than vi setting
 set nocompatible
 
+"" ---------
+"" INTERFACE
+"" ---------
+
+" setting up colors properly
+set t_Co=256
+set background=dark
+
+" vert split 
+highlight VertSplit cterm=NONE ctermfg=white ctermbg=NONE
+highlight HorSplit cterm=NONE ctermfg=white ctermbg=NONE
+set fillchars+=vert:│
+
+" status line
+hi s1 ctermbg=black ctermfg=white
+set laststatus=2
+set statusline=%#s1#    " set hightlight
+set statusline+=%t      " tail of the filename
+set statusline+=%m      " modified flag
+set statusline+=%=      "left/right separator
+set statusline+=%y      "filetype
+set statusline+=%c,     "cursor column
+set statusline+=%l/%L   "cursor line/total lines
+set statusline+=\ %P    "percent through file
+
+" file search
+set path+=**
+set wildmenu
+
 " paste without indent
 set paste
 
@@ -40,6 +69,31 @@ set autoindent
 " open splits down and below
 set splitbelow
 set splitright
+
+" show matching brackets
+set showmatch
+
+" disable startup message
+set shortmess+=I
+
+" syntax highlighting
+syntax on
+
+" show line numbers
+set number
+
+" no line wrapping
+set wrap
+
+" use mouse
+set mouse=a
+
+" always show 10 lines above and below cursor
+set scrolloff=10
+
+"" highlight long statements
+highlight Overlength ctermbg=white ctermfg=black
+match Overlength /\%81v.\+/
 
 " remove trailing whitespaces and ^M chars
 autocmd FileType c,cpp,java,php,js,python,twig,xml,yml autocmd BufWritePre <buffer> :call setline(1,map(getline(1,"$"),'substitute(v:val,"\\s\\+$","","")'))
@@ -89,21 +143,6 @@ call vundle#rc()
 Plugin 'gmarik/vundle'
 
 " PLUGIN SETUP
-" vim themes
-Plugin 'flazz/vim-colorschemes'
-
-" using airline for better status line
-Plugin 'bling/vim-airline'
-Plugin 'vim-airline/vim-airline-themes'
-set laststatus=2
-let g:airline_powerline_fonts=1
-let g:airline_right_sep='|'
-let g:airline#extensions#tabline#enabled = 1
-5
-
-" vim-fugitive for git
-Plugin 'tpope/vim-fugitive'
-
 " tabular
 Plugin 'godlygeek/tabular'
 
@@ -118,19 +157,19 @@ Plugin 'jistr/vim-nerdtree-tabs'
 let NERDTreeMinimalUI=1
 let NERDTreeIgnore=['^.git$', '\.pyc$', '\~$']
 
+" Nerd tree commands
+map <C-n> :NERDTreeToggle<CR>
+
 " tabbar - use with ctags
 Plugin 'majutsushi/tagbar'
 let g:tagbar_sort=0
+map <C-t> :Tagbar<CR>
 
 " Trigger update after bundles loaded
 if vundleinstalled == 0
   PluginInstall
 endif
 filetype plugin indent on
-
-" grammer check
-Plugin 'LanguageTool'
-let g:languagetool_jar = "/home/sri/Downloads/lt/LanguageTool-3.5/languagetool-commandline.jar"
 
 "---------
 " COMMANDS
@@ -143,15 +182,6 @@ hi SpellBad cterm=underline
 " make current buffer executable
 command Chmodx :!chmod a+x %
 
-"Nerd tree
-map <C-n> :NERDTreeToggle<CR>
-:nnoremap <F2> :NERDTreeToggle<CR>
-:inoremap <F2> <Esc>:NERDTreeToggle<CR>
-let g:NERDTreeMapOpenInTabSilent="<F3>"
-
-"tabbar
-map <F4> <ESC>:TagbarToggle<CR>
-
 " Tab navigation like Firefox.
 nnoremap <C-k>     <Esc>:tabnew<CR>
 inoremap <C-k>     <Esc>:tabnew<CR>
@@ -160,44 +190,10 @@ inoremap <C-l>      <Esc>:tabnext<CR>
 inoremap <C-h>      <Esc>:tabprev<CR>
 noremap <C-h>      <Esc>:tabprev<CR>
 
-" refresh hotkey
-:nnoremap <F5> :edit<CR>
-:inoremap <F5> <Esc>:edit<CR>
-"----------
-" INTERFACE
-"---------
+map <C-b> :bn<CR>
+map <C-S-b> :bp<CR>
 
-" setting up colors properly
-set t_Co=256
-set background=dark
-
-" show matching brackets
-set showmatch
-
-" disable startup message
-set shortmess+=I
-
-" syntax highlighting
-syntax on
-
-" show line numbers
-set number
-
-" no line wrapping
-set wrap
-
-" use mouse
-set mouse=a
-
-" always show 10 lines above and below cursor
-set scrolloff=10
-
-" highlight Overlength ctermbg=red ctermfg=white
-" match Overlength /\%81v.\+/
-
-" file search
-set path+=**
-set wildmenu
+map <C-e> :E<CR>
 "-------
 " SNIPS
 "-------
