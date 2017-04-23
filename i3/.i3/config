@@ -35,7 +35,7 @@ bindsym $mod+Shift+q kill
 bindsym $mod+n move workspace to output down
 bindsym $mod+Shift+n move workspace to output left
 # synapase launcher
-bindsym $mod+d exec synapse 
+bindsym $mod+d exec dmenu_run
 
 # change focus
 bindsym $mod+h focus left
