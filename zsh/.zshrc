@@ -1,17 +1,9 @@
-if [ ! -d "${HOME}/.oh-my-zsh" ]; then
-  git clone https://github.com/robbyrussell/oh-my-zsh.git ~/.oh-my-zsh
-fi
 
 # Path to your oh-my-zsh installation.
-export ZSH=${HOME}/.oh-my-zsh
+export ZSH=${HOME}/.dotfiles/oh-my-zsh
+ZSH_CUSTOM=${HOME}/.dotfiles/zshCustom
 ZSH_THEME="sri"
 plugins=(git common-aliases)
-
-# User configuration
-export PATH="/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:$PATH"
-# export MANPATH="/usr/local/man:$MANPATH"
-export PATH=$PATH:$HOME/bin
-export ERL_LIBS=$ERL_LIBS:/home/sri/libsrc/nifty
 
 source $ZSH/oh-my-zsh.sh
 
@@ -68,19 +60,6 @@ alias toggleMusic="ncmpcpp toggle"
 alias playMusic="ncmpcpp play"
 alias pauseMusic="ncmpcpp pause"
 alias stopusic="ncmpcpp stop"
-
-# use clang
-alias useClang='export CXX=/usr/bin/clang++-3.8; export CC=/usr/bin/clang-3.8;'
-
-alias kp="/home/sri/libsrc/kpcli.pl --kdb /home/sri/Dropbox/Security/KeepassMaster1.kdbx"
-
-# #redwood
-alias develSetup='. ${HOME}/redwood_ws/devel_linux/setup.zsh'
-alias rwSetup='. ${HOME}/redwood_ws/RedwoodInternal/Redwood/setup.zsh'
-# 
-
-#completion files
-fpath=(~/.zsh $fpath)
 
 # tmuxp
 DISABLE_AUTO_TITLE=true
