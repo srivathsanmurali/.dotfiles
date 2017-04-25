@@ -82,22 +82,6 @@ alias rwSetup='. ${HOME}/redwood_ws/RedwoodInternal/Redwood/setup.zsh'
 #completion files
 fpath=(~/.zsh $fpath)
 
-# #gcloud~redwood
-# # The next line updates PATH for the Google Cloud SDK.
-source '/opt/google-cloud-sdk/path.zsh.inc'
-# # The next line enables shell command completion for gcloud.
-source '/opt/google-cloud-sdk/completion.zsh.inc'
-
-#keyboard shit
-source ~/.xinitrc
-
-# virtualenv and virtualenvwrapper
-#export WORKON_HOME=$HOME/.virtualenvs
-#source /usr/local/bin/virtualenvwrapper.sh
-
-# nix package manager
-source ${HOME}/.nix-profile/etc/profile.d/nix.sh
-
 # tmuxp
 DISABLE_AUTO_TITLE=true
 
