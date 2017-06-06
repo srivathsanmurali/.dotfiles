@@ -34,7 +34,7 @@ alias gl='git log --pretty=custom'
 alias emacs='emacs -nw'
 alias vi='vim'
 alias v='vim'
-alias sv="sudo vim"
+alias sv="sudoedit"
 alias "cd.."="cd ../"
 alias cl=clear
 alias sagi="sudo apt-get install"
