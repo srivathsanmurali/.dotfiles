@@ -170,6 +170,8 @@ Plugin 'majutsushi/tagbar'
 let g:tagbar_sort=0
 map <C-t> :Tagbar<CR>
 
+Plugin 'tpope/vim-fugitive'
+
 " Trigger update after bundles loaded
 if vundleinstalled == 0
   PluginInstall

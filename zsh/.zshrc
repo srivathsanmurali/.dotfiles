@@ -53,6 +53,7 @@ alias tmux='TERM=screen-256color-bce tmux'
 alias hgrep='history | grep '
 alias ls='ls --color=auto'
 alias matlab-cli='matlab -nodisplay -nosplash'
+alias mk9="make -j9"
 
 # Music
 alias music="ncmpcpp"
