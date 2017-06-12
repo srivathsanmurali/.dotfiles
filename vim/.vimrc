@@ -155,16 +155,6 @@ Plugin 'kien/ctrlp.vim'
 let g:ctrlp_map = '<c-p>'
 let g:ctrlp_cmd = 'CtrlP'
 
-" nerd tree
-"Plugin 'scrooloose/nerdtree'
-"
-"Plugin 'jistr/vim-nerdtree-tabs'
-"let NERDTreeMinimalUI=1
-"let NERDTreeIgnore=['^.git$', '\.pyc$', '\~$']
-
-" Nerd tree commands
-map <C-n> :NERDTreeToggle<CR>
-
 " tabbar - use with ctags
 Plugin 'majutsushi/tagbar'
 let g:tagbar_sort=0
