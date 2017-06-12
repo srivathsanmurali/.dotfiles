@@ -150,12 +150,17 @@ Plugin 'godlygeek/tabular'
 Plugin 'airblade/vim-gitgutter'
 highlight SignColumn ctermbg=None
 
-" nerd tree
-Plugin 'scrooloose/nerdtree'
+"control p
+Plugin 'kien/ctrlp.vim'
+let g:ctrlp_map = '<c-p>'
+let g:ctrlp_cmd = 'CtrlP'
 
-Plugin 'jistr/vim-nerdtree-tabs'
-let NERDTreeMinimalUI=1
-let NERDTreeIgnore=['^.git$', '\.pyc$', '\~$']
+" nerd tree
+"Plugin 'scrooloose/nerdtree'
+"
+"Plugin 'jistr/vim-nerdtree-tabs'
+"let NERDTreeMinimalUI=1
+"let NERDTreeIgnore=['^.git$', '\.pyc$', '\~$']
 
 " Nerd tree commands
 map <C-n> :NERDTreeToggle<CR>
