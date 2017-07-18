@@ -190,12 +190,12 @@ bar {
     colors {
         background    $barColor # #131D24
 
-        focused_workspace   #000000             #000000             $text-color
+        focused_workspace   $barColor           $barColor             $text-color
         active_workspace    $bg-color           $bg-color             $inactive-text-color
         inactive_workspace  $barColor  $barColor    $inactive-text-color
         urgent_workspace    $urgent-bg-color    $urgent-bg-color      $text-color
     }
-    output eDP1
+    #output eDP1
 }
 
 # keyboard
@@ -206,8 +206,9 @@ exec --no-startup-id setxkbmap -option caps:escape
 # not be running on a battery
 exec --no-startup-id xfsettingsd --sm-client-disable &
 exec --no-startup-id xfce4-volumed --no-daemon &
-exec --no-startup-id 'kill `pidof xfce4-volumed` ; mkdir -p /tmp/volumed && cd /tmp/volumed && nohup xfce4-volumed --no-daemon &'
-exec --no-startup-id volumeicon &
+#exec --no-startup-id 'kill `pidof xfce4-volumed` ; mkdir -p /tmp/volumed && cd /tmp/volumed && nohup xfce4-volumed --no-daemon &'
+#exec --no-startup-id volumeicon &
+exec --no-startup-id pa-applet &
 exec --no-startup-id xfce4-power-manager &
 exec --no-startup-id nm-applet &
 exec --no-startup-id source ~/.xinitrc

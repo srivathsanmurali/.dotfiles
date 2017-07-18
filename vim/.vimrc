@@ -162,6 +162,8 @@ map <C-t> :Tagbar<CR>
 
 Plugin 'tpope/vim-fugitive'
 
+Plugin 'rust-lang/rust.vim'
+
 " Trigger update after bundles loaded
 if vundleinstalled == 0
   PluginInstall

@@ -1,9 +1,14 @@
 
 # Path to your oh-my-zsh installation.
-export ZSH=${HOME}/.dotfiles/oh-my-zsh
+export ZSH=${HOME}/.oh-my-zsh
+# cloning oh-my-zsh if not found
+if [ ! -d "$ZSH" ]; then
+  git clone https://github.com/robbyrussell/oh-my-zsh.git ${ZSH}
+fi
+
 ZSH_CUSTOM=${HOME}/.dotfiles/zshCustom
 ZSH_THEME="sri"
-plugins=(git common-aliases)
+plugins=(git common-aliases rust)
 
 source $ZSH/oh-my-zsh.sh
 
@@ -97,6 +102,27 @@ function removeMonitor() {
     xrandr --output DP2 --off 
     #echo 'specify output id'
   fi
+}
+
+function startWork() {
+  echo "Adding monitor DP2-3"
+  xrandr --output DP2-3 --auto --right-of eDP1 --rotate left
+  echo "Adding monitor DP2-1"
+  xrandr --output DP2-1 --auto --right-of DP2-3 --rotate left
+  echo "Mounting sriData"
+  sudo systemctl start media-nomoko-sriData.mount
+  echo "Mounting slaveData"
+  sudo systemctl start media-nomoko-slaveData.mount
+}
+function stopWork() {
+  echo "Removing monitor DP2-3"
+  xrandr --output DP2-3 --off
+  echo "Removing monitor DP2-1"
+  xrandr --output DP2-1 --off
+  echo "Unmounting sriData"
+  sudo systemctl stop media-nomoko-sriData.mount
+  echo "Unmounting slaveData"
+  sudo systemctl stop media-nomoko-slaveData.mount
 }
 
 function watchMarkdown() {
