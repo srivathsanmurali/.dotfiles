@@ -21,6 +21,7 @@ alias zshconfig='vi ~/.zshrc'
 alias zshrefresh='source ~/.zshrc'
 alias vimconfig='vi ~/.vimrc'
 alias i3config='vi ~/.i3/config'
+alias nixconfig='sudoedit /etc/nixos/configuration.nix'
 
 # git
 alias g='git'
@@ -105,26 +106,12 @@ function removeMonitor() {
 }
 
 function startWork() {
-  echo "Mounting sriData"
-  sudo systemctl start media-nomoko-sriData.mount
-  echo "Mounting slaveData"
-  sudo systemctl start media-nomoko-slaveData.mount
-  #echo "Adding monitor DP2-3"
-  #xrandr --output DP2-3 --auto --right-of eDP1 --rotate left
-  #echo "Adding monitor DP2-1"
-  #xrandr --output DP2-1 --auto --right-of DP2-3 --rotate left
-  echo "Adding monitor DP2-3"
-  xrandr --output DP2-3 --auto --right-of eDP1
+  echo "Adding monitor DP2-1"
+  xrandr --output DP2-1 --auto --right-of eDP1
 }
 function stopWork() {
-  echo "Unmounting sriData"
-  sudo systemctl stop media-nomoko-sriData.mount
-  echo "Unmounting slaveData"
-  sudo systemctl stop media-nomoko-slaveData.mount
-  echo "Removing monitor DP2-3"
-  xrandr --output DP2-3 --off
-  #echo "Removing monitor DP2-1"
-  #xrandr --output DP2-1 --off
+  echo "Removing monitor DP2-1"
+  xrandr --output DP2-1 --off
 }
 
 function watchMarkdown() {
