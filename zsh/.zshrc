@@ -11,6 +11,7 @@ ZSH_THEME="sri"
 plugins=(git common-aliases rust)
 
 source $ZSH/oh-my-zsh.sh
+source $ZSH_CUSTOM/git-flow-completion.zsh
 
 # default editor as vim
 export EDITOR='vim'
