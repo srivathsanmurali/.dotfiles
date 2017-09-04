@@ -142,3 +142,8 @@ function tz() {
   echo "Pacific       " `TZ='America/Vancouver' date`
   echo "Singapore     " `TZ='Asia/Singapore' date`
 }
+
+function sshReady() {
+  eval "$(ssh-agent -s)"
+  ssh-add ~/.ssh/id_rsa
+}
