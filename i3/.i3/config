@@ -27,7 +27,7 @@ font -misc-fixed-medium-r-normal--13-120-75-75-C-70-iso10646-1
 floating_modifier $mod
 
 # start a terminal
-bindsym $mod+Return exec xfce4-terminal 
+bindsym $mod+Return exec konsole
 
 # kill focused window
 bindsym $mod+Shift+q kill
@@ -35,8 +35,6 @@ bindsym $mod+Shift+q kill
 # move workspace to the right
 bindsym $mod+n move workspace to output down
 bindsym $mod+Shift+n move workspace to output left
-# synapase launcher
-bindsym $mod+d exec dmenu_run
 
 # change focus
 bindsym $mod+h focus left
@@ -98,25 +96,6 @@ bindsym $mod+a focus parent
 # focus the child container
 #bindsym $mod+d focus child
 
-# media controls using mpd and ncmpcpp
-bindsym $modAlt+shift+space exec "ncmpcpp toggle"
-bindsym $modAlt+shift+l exec "ncmpcpp next"
-bindsym $modAlt+shift+h exec "ncmpcpp prev"
-bindsym $modAlt+shift+j exec "ncmpcpp pause"
-bindsym $modAlt+shift+k exec "ncmpcpp play"
-
-# worspace names
-#set $w1 1
-#set $w2 2
-#set $w3 3
-#set $w4 4
-#set $w5 5
-#set $w6 6
-#set $w7 7
-#set $w8 8
-#set $w9 9
-#set $w10 10
-
 # switch to workspace
 bindsym $mod+1 workspace "1"
 bindsym $mod+2 workspace "2"
@@ -150,8 +129,6 @@ bindsym $mod+Shift+c reload
 bindsym $mod+Shift+r restart
 # exit i3 (logs you out of your X session)
 bindsym $mod+Shift+e exec "i3-nagbar -t warning -m 'You pressed the exit shortcut. Do you really want to exit i3? This will end your X session.' -b 'Yes, exit i3' 'i3-msg exit'"
-# lock
-bindsym $mod+x exec i3lock --color 2f343f
 
 # resize window (you can also use the mouse for that)
 mode "resize" {
@@ -178,49 +155,26 @@ mode "resize" {
 }
 bindsym $mod+r mode "resize"
 
-# Start i3bar to display a workspace bar (plus the system information i3status
-# finds out, if available)
-bindsym $mod+m bar mode toggle
-bar {
-    #mode hide
-    modifier $modAlt
-    position top
-    #font pango:Convergence FontAwesome, Icons 9
-    status_command i3blocks
-    colors {
-        background    $barColor # #131D24
-
-        focused_workspace   $barColor           $barColor             $text-color
-        active_workspace    $bg-color           $bg-color             $inactive-text-color
-        inactive_workspace  $barColor  $barColor    $inactive-text-color
-        urgent_workspace    $urgent-bg-color    $urgent-bg-color      $text-color
-    }
-    #output eDP1
-}
-
-# keyboard
-exec --no-startup-id setxkbmap -option caps:escape
-
-# desktop applets
-# compton is started by a pm script because it should
-# not be running on a battery
-exec --no-startup-id xfsettingsd --sm-client-disable &
-exec --no-startup-id xfce4-volumed --no-daemon &
-#exec --no-startup-id 'kill `pidof xfce4-volumed` ; mkdir -p /tmp/volumed && cd /tmp/volumed && nohup xfce4-volumed --no-daemon &'
-#exec --no-startup-id volumeicon &
-exec --no-startup-id pa-applet &
-exec --no-startup-id xfce4-power-manager &
-exec --no-startup-id nm-applet &
-exec --no-startup-id source ~/.xinitrc
-exec --no-startup-id naturalscrolling&
-
 # Wallpaper
 exec --no-startup-id nitrogen --restore &
 
-# special programs
-assign [title="GL 3.0 Window"] $3
+# Starting things with i3
+# exec --no-startup-id xcompmgr -C &    # Bare compositor to allow transparency
+for_window [class="yakuake"] floating enable;
+for_window [class="konsole"] border pixel 1
 
-# remove title bar
-#for_window [class="^.*"] border pixel 1
-#new_window 1pixel
-for_window [class="^.*"] border pixel 1
+## Plasma Integration
+# Try to kill the wallpaper set by Plasma (it takes up the entire workspace and hides everythiing)
+exec --no-startup-id wmctrl -c Plasma
+for_window [title="Desktop — Plasma"] kill; floating enable; border none
+
+## Avoid tiling popups, dropdown windows from plasma
+# for the first time, manually resize them, i3 will remember the setting for floating windows
+for_window [class="plasmashell"] floating enable;
+for_window [class="Plasma"] floating enable; border none
+for_window [title="plasma-desktop"] floating enable; border none
+for_window [title="win7"] floating enable; border none
+for_window [class="krunner"] floating enable; border none
+for_window [class="Kmix"] floating enable; border none
+for_window [class="Klipper"] floating enable; border none
+for_window [class="Plasmoidviewer"] floating enable; border none
