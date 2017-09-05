@@ -7,7 +7,7 @@ if [ ! -d "$ZSH" ]; then
 fi
 
 ZSH_CUSTOM=${HOME}/.dotfiles/zshCustom
-ZSH_THEME="sri"
+ZSH_THEME="sriAvit"
 plugins=(git common-aliases rust)
 
 source $ZSH/oh-my-zsh.sh
