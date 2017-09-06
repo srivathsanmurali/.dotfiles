@@ -1,16 +1,16 @@
 # AVIT ZSH Theme
 
 local ret_status="%(?:%{$fg_bold[green]%}➜ :%{$fg_bold[red]%}➜ )"
-local name="%{$fg_bold[white]%}%n%{$fg_bold[cyan]%}@%m%{$reset_color%}" 
+local name="%{$fg_bold[white]%}%n%{$fg_bold[cyan]%}@%m%{$reset_color%}"
 
-local _current_dir="%{$fg_bold[cyan]%}%3~%{$reset_color%} "
+local _current_dir="%{$fg_bold[green]%}%3~%{$reset_color%} "
 
 function _current_dir() {
   local _max_pwd_length="65"
   if [[ $(echo -n $PWD | wc -c) -gt ${_max_pwd_length} ]]; then
-    echo "%{$fg_bold[cyan]%}%-2~ ... %3~%{$reset_color%} "
+    echo "%{$fg_bold[green]%}%-2~ ... %3~%{$reset_color%} "
   else
-    echo "%{$fg_bold[cyan]%}%~%{$reset_color%} "
+    echo "%{$fg_bold[green]%}%~%{$reset_color%} "
   fi
 }
 
@@ -46,10 +46,10 @@ function _git_time_since_commit() {
   fi
 }
 
-ZSH_THEME_GIT_PROMPT_PREFIX="%{$fg_bold[blue]%}git:(%{$fg[red]%}"
-ZSH_THEME_GIT_PROMPT_SUFFIX="%{$reset_color%} "
-ZSH_THEME_GIT_PROMPT_DIRTY="%{$fg[blue]%}) %{$fg[yellow]%}✗"
-ZSH_THEME_GIT_PROMPT_CLEAN="%{$fg[blue]%}) %{$fg[blue]%}✔ "
+ZSH_THEME_GIT_PROMPT_PREFIX="%{$fg[red]%}"
+ZSH_THEME_GIT_PROMPT_SUFFIX=" $(_git_time_since_commit) %{$reset_color%} | "
+ZSH_THEME_GIT_PROMPT_DIRTY="%{$fg[blue]%} %{$fg[yellow]%}✗"
+ZSH_THEME_GIT_PROMPT_CLEAN="%{$fg[blue]%} %{$fg[blue]%}✔ "
 
 # Colors vary depending on time lapsed.
 ZSH_THEME_GIT_TIME_SINCE_COMMIT_SHORT="%{$fg[green]%}"
@@ -63,5 +63,5 @@ ZSH_THEME_GIT_TIME_SINCE_COMMIT_NEUTRAL="%{$fg[white]%}"
 #export GREP_COLOR='1;33'
 
 PROMPT='
-${name} ${_current_dir} $(git_prompt_info)%{$reset_color%} $(_git_time_since_commit)%{$reset_color%}
+${_current_dir}%{$reset_color%} %{$fg_bold[blue]%}[ $(git_prompt_info)%{$reset_color%}${name}%{$reset_color%} %{$fg_bold[blue]%}]
 ${ret_status}%{$reset_color%}'
