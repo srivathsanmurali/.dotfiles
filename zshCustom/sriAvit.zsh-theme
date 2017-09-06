@@ -69,8 +69,6 @@ export LSCOLORS="exfxcxdxbxegedabagacad"
 export LS_COLORS='di=34;40:ln=35;40:so=32;40:pi=33;40:ex=31;40:bd=34;46:cd=34;43:su=0;41:sg=0;46:tw=0;42:ow=0;43:'
 export GREP_COLOR='1;33'
 
-PROMPT='${_current_dir} $(git_prompt_info)
-${ret_status}%{$resetcolor%} '
-
-RPROMPT='$(_git_time_since_commit) ${name}'
-
+PROMPT='
+${name} ${_current_dir} $(git_prompt_info)%{$reset_color%} $(_git_time_since_commit)%{$reset_color%}
+${ret_status}%{$reset_color%}'
