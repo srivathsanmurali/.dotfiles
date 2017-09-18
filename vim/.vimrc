@@ -9,7 +9,7 @@ set nocompatible
 
 " setting up colors properly
 set t_Co=256
-set background=dark
+set background=light
 
 " vert split 
 highlight VertSplit cterm=NONE ctermfg=white ctermbg=NONE
@@ -92,7 +92,7 @@ set mouse=a
 set scrolloff=10
 
 "" highlight long statements
-highlight Overlength ctermbg=None ctermfg=red
+highlight Overlength ctermbg=grey ctermfg=black
 match Overlength /\%81v.\+/
 
 " remove trailing whitespaces and ^M chars
