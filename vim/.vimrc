@@ -92,7 +92,7 @@ set mouse=a
 set scrolloff=10
 
 "" highlight long statements
-highlight Overlength ctermbg=white ctermfg=black
+highlight Overlength ctermbg=None ctermfg=red
 match Overlength /\%81v.\+/
 
 " remove trailing whitespaces and ^M chars
