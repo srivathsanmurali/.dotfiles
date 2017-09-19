@@ -167,6 +167,8 @@ Plugin 'rust-lang/rust.vim'
 Plugin 'rhysd/vim-clang-format'
 let g:clang_format#code_style = "mozilla"
 
+Plugin 'elixir-editors/vim-elixir'
+
 " Trigger update after bundles loaded
 if vundleinstalled == 0
   PluginInstall

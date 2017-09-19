@@ -8,7 +8,7 @@ fi
 
 ZSH_CUSTOM=${HOME}/.dotfiles/zshCustom
 ZSH_THEME="sriAvit"
-plugins=(git common-aliases rust)
+plugins=(git common-aliases rust fedora mix z)
 
 source $ZSH/oh-my-zsh.sh
 source $ZSH_CUSTOM/git-flow-completion.zsh
