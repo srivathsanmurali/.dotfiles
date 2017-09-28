@@ -1,6 +1,6 @@
 # AVIT ZSH Theme
 
-local ret_status="%(?:%{$fg_bold[green]%}➜ :%{$fg_bold[red]%}➜ )"
+local ret_status="%(?:%{$fg_bold[green]%}-> :%{$fg_bold[red]%}-> )"
 local name="%{$fg_bold[black]%}%n%{$reset_color%}@%m"
 
 local _current_dir="%{$fg_bold[black]%}%3~%{$reset_color%} "

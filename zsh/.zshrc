@@ -56,7 +56,7 @@ alias copy="xclip -sel clip"
 alias copyPWD="pwd | xclip -sel clip"
 alias music="ncmpcpp"
 alias pp='python -mjson.tool'
-alias tmux='TERM=screen-256color-bce tmux'
+#alias tmux='TERM=screen-256color-bce tmux'
 alias hgrep='history | grep '
 alias ls='ls --color=auto'
 alias matlab-cli='matlab -nodisplay -nosplash'
