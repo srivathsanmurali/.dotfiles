@@ -11,7 +11,10 @@ ZSH_THEME="sriAvit"
 plugins=(git common-aliases rust fedora mix z)
 
 source $ZSH/oh-my-zsh.sh
-source $ZSH_CUSTOM/git-flow-completion.zsh
+for i in `ls $ZSH_CUSTOM/scripts/`
+do
+source $ZSH_CUSTOM/scripts/$i;
+done;
 
 # default editor as vim
 export EDITOR='vim'
