@@ -9,7 +9,7 @@ set nocompatible
 
 " setting up colors properly
 set t_Co=256
-set background=light
+set background=dark
 
 " vert split 
 highlight VertSplit cterm=NONE ctermfg=white ctermbg=NONE
