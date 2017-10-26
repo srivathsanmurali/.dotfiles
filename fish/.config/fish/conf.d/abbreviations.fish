@@ -24,3 +24,4 @@ abbr cl clear
 abbr grep "grep --color=auto"
 abbr hgrep 'history | grep '
 abbr rm "rm -I"
+abbr time_it 'time -f "Elapsed time: %E"'
