@@ -104,6 +104,7 @@ autocmd BufRead,BufNewFile *.tex, *.md set modeline spelllang=en_gb spell wrap t
 "--------
 " PLUGINS
 "--------
+set shell=/bin/bash
 
 " VUNDLE SETUP
 " set backup and swap directories to avoid clutter
