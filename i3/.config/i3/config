@@ -165,6 +165,9 @@ exec --no-startup-id nitrogen --restore &
 # exec --no-startup-id xcompmgr -C &    # Bare compositor to allow transparency
 for_window [class="konsole"] border none
 
+# no border for firefox
+for_window [class="firefox"] border none
+
 ## Plasma Integration
 # Try to kill the wallpaper set by Plasma (it takes up the entire workspace and hides everythiing)
 exec --no-startup-id wmctrl -c Plasma
