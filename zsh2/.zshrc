@@ -145,8 +145,12 @@ function sshReady() {
   ssh-add ~/.ssh/id_rsa
 }
 
+function precmd() {
+  PSVAR=`git_prompt_precmd`
+}
+
 PROMPT='
-%n@%m %3~
+%n@%m %~ %v
 > '
 
 . $HOME/.asdf/asdf.sh
