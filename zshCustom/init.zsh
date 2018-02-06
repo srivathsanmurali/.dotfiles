@@ -3,11 +3,6 @@ do
 source $ZSH_CUSTOM/scripts/$i;
 done;
 
-for i in `ls $ZSH_CUSTOM/plugins/`
-do
-source $ZSH_CUSTOM/plugins/$i;
-done;
-
 fpath+="$ZSH_CUSTOM/completions"
 
 # default editor as vim
