@@ -19,3 +19,6 @@ DISABLE_AUTO_TITLE=true
 ## asdf
 . $HOME/.asdf/asdf.sh
 . $HOME/.asdf/completions/asdf.bash
+
+## setting theme
+. $ZSH_CUSTOM/my_themes/simple.zsh-theme
