@@ -73,7 +73,3 @@ function sshReady() {
   eval "$(ssh-agent -s)"
   ssh-add ~/.ssh/id_rsa
 }
-
-function precmd() {
-  PSVAR=`git_prompt_precmd`
-}

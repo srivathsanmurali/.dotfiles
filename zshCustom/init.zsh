@@ -19,7 +19,3 @@ DISABLE_AUTO_TITLE=true
 ## asdf
 . $HOME/.asdf/asdf.sh
 . $HOME/.asdf/completions/asdf.bash
-
-PROMPT='
-%n@%m %~ %v
-> '
