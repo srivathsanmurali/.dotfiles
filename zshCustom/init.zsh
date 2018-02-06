@@ -8,6 +8,8 @@ do
 source $ZSH_CUSTOM/plugins/$i;
 done;
 
+fpath+="$ZSH_CUSTOM/completions"
+
 # default editor as vim
 export EDITOR='vim'
 
