@@ -5,12 +5,6 @@ done;
 
 fpath+="$ZSH_CUSTOM/completions"
 
-# default editor as vim
-export EDITOR='vim'
-
-# tmuxp
-DISABLE_AUTO_TITLE=true
-
 ## asdf
 . $HOME/.asdf/asdf.sh
 . $HOME/.asdf/completions/asdf.bash
