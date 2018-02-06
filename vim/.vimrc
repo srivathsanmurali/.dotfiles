@@ -9,8 +9,8 @@ set nocompatible
 
 " setting up colors properly
 set t_Co=256
-colorscheme PaperColor
-set background=light
+" colorscheme PaperColor
+set background=dark
 
 " vert split 
 highlight VertSplit cterm=NONE ctermfg=white ctermbg=NONE
