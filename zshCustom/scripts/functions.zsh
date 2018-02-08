@@ -73,3 +73,7 @@ function sshReady() {
   eval "$(ssh-agent -s)"
   ssh-add ~/.ssh/id_rsa
 }
+
+function up() {
+  cd $(printf "%0.0s../" $(seq 1 $1));
+}
