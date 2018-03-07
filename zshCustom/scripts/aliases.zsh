@@ -17,7 +17,8 @@ alias gco='git checkout'
 alias gp='git push'
 alias gb='git branch'
 alias gcl='git clone'
-alias gl='git log --pretty=custom'
+alias gl='git l'
+alias gr='git gr'
 
 # misc
 alias emacs='emacs -nw'

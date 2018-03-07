@@ -15,7 +15,6 @@ set background=dark
 " vert split 
 highlight VertSplit cterm=NONE ctermfg=white ctermbg=NONE
 highlight HorSplit cterm=NONE ctermfg=white ctermbg=NONE
-set fillchars+=vert:│
 
 " status line
 hi s1 ctermbg=black ctermfg=white
@@ -170,6 +169,7 @@ Plugin 'rhysd/vim-clang-format'
 let g:clang_format#code_style = "mozilla"
 
 Plugin 'elixir-editors/vim-elixir'
+Plugin 'mhinz/vim-mix-format'
 
 " Trigger update after bundles loaded
 if vundleinstalled == 0

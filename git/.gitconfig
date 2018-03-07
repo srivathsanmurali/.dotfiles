@@ -25,8 +25,8 @@
   subpl = submodule update --init --recursive
 
   # log
-  l = log --pretty=custom
-  gr = log --graph --full-history --all --color --date=short --pretty=tformat:"%x1b[31m%h%x09%Cblue%cd%x1b[32m%d%x1b[0m%x20%s%x20%x1b[33m(%an)%x1b[0m"
+  l = log --pretty=custom2
+  gr = log --graph --full-history --all --color --date=short --pretty=custom2
 
 [core]
   editor = vim
@@ -40,6 +40,7 @@
   # s -> commit message
   # an -> author
   custom = "%C(magenta)%h%C(red)%d %C(yellow)%ar \n\t%C(green)%s %C(yellow)(%an)"
+  custom2 = "%x1b[31m%h%x09%Cblue%cd%x1b[32m%d%x1b[0m%x20%s%x20%x1b[33m(%an)%x1b[0m"
 
 [merge]
   tool = vimdiff
@@ -51,3 +52,4 @@
 	clean = git-lfs clean -- %f
 	smudge = git-lfs smudge -- %f
 	required = true
+	process = git-lfs filter-process
