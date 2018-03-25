@@ -27,7 +27,10 @@ Plug 'majutsushi/tagbar'
 let g:tagbar_sort=0
 map <C-t> :Tagbar<CR>
 
+
+" --------------------------
 " Languages specific plugins
+" --------------------------
 
 " rust plugin
 " provides -> sytax highlighting
