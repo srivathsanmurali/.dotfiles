@@ -1,52 +1,46 @@
-" VUNDLE SETUP
-" Switch filetype off for plugin/bundle loading
-filetype off
-filetype plugin indent off
-
-" For Vundle
-let bundledir = vimdir . 'bundle/'
-let vundledir = bundledir . 'vundle/'
-let vundleinstalled = 1
-
-if !isdirectory(vundledir)
-  let vundleinstalled = 0
-  execute 'silent !mkdir -p ' . bundledir
-  execute 'silent !git clone https://github.com/gmarik/vundle.git ' . vundledir
+" Plug setup
+if empty(glob('~/.vim/autoload/plug.vim'))
+  silent !curl -fLo ~/.vim/autoload/plug.vim --create-dirs
+    \ https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim
+  autocmd VimEnter * PlugInstall --sync | source $MYVIMRC
 endif
 
-set rtp+=~/.vim/bundle/vundle
-call vundle#rc()
-Plugin 'gmarik/vundle'
+" Specify a directory for plugins
+call plug#begin('~/.vim/plugged')
 
-" PLUGIN SETUP
+" Provides plug help
+Plug 'junegunn/vim-plug'
+
 " tabular
-Plugin 'godlygeek/tabular'
+Plug 'godlygeek/tabular'
 
 " git gutter to track changes
-Plugin 'airblade/vim-gitgutter'
-highlight SignColumn ctermbg=None
+Plug 'airblade/vim-gitgutter'
 
 "control p
-Plugin 'kien/ctrlp.vim'
+Plug 'kien/ctrlp.vim'
 let g:ctrlp_map = '<c-p>'
 let g:ctrlp_cmd = 'CtrlP'
 
 " tabbar - use with ctags
-Plugin 'majutsushi/tagbar'
+Plug 'majutsushi/tagbar'
 let g:tagbar_sort=0
 map <C-t> :Tagbar<CR>
 
-Plugin 'tpope/vim-fugitive'
+" Languages specific plugins
 
-Plugin 'rust-lang/rust.vim'
+" rust plugin
+" provides -> sytax highlighting
+Plug 'rust-lang/rust.vim', { 'for': 'rust' }
 
-Plugin 'rhysd/vim-clang-format'
+" clang-format for c++
+Plug 'rhysd/vim-clang-format'
 let g:clang_format#code_style = "mozilla"
 
-Plugin 'elixir-editors/vim-elixir'
-Plugin 'mhinz/vim-mix-format'
+" syntax highlighting for elixir
+Plug 'elixir-editors/vim-elixir', { 'for': 'elixir' }
+" uses mix format to format elixir code
+Plug 'mhinz/vim-mix-format', { 'for': 'elixir' }
 
-" Trigger update after bundles loaded
-if vundleinstalled == 0
-  PluginInstall
-endif
+" Initialize plugin system
+call plug#end()

@@ -7,6 +7,9 @@ set background=light
 highlight VertSplit cterm=NONE ctermfg=white ctermbg=NONE
 highlight HorSplit cterm=NONE ctermfg=white ctermbg=NONE
 
+" Git gutter column
+highlight SignColumn ctermbg=None
+
 " status line
 hi s1 ctermbg=209 ctermfg=white
 set laststatus=2
