@@ -11,16 +11,19 @@ highlight HorSplit cterm=NONE ctermfg=white ctermbg=NONE
 highlight SignColumn ctermbg=None
 
 " status line
-hi s1 ctermbg=209 ctermfg=white
+hi s1 ctermbg=white ctermfg=black
+hi s2 ctermbg=209 ctermfg=white
 set laststatus=2
-set statusline=%#s1#    " set hightlight
-set statusline+=%f      " tail of the filename
-set statusline+=%m      " modified flag
-set statusline+=%=      "left/right separator
-set statusline+=%y      "filetype
-set statusline+=%c,     "cursor column
-set statusline+=%l/%L   "cursor line/total lines
-set statusline+=\ %P    "percent through file
+set statusline=%#s1#          " set hightlight
+set statusline+=\ %t          " tail of the filename
+set statusline+=\ %m          " modified flag
+set statusline+=%#s2#          " set hightlight
+set statusline+=%=            "left/right separator
+set statusline+=%#s1#          " set hightlight
+set statusline+=\ %y          "filetype
+set statusline+=\ %p%%        "percent through file
+set statusline+=\ %l:%c       "cursor column
+set statusline+=\             "empty space
 
 " syntax highlighting
 syntax on

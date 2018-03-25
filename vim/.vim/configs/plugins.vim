@@ -11,11 +11,10 @@ call plug#begin('~/.vim/plugged')
 " Provides plug help
 Plug 'junegunn/vim-plug'
 
-" tabular
-Plug 'godlygeek/tabular'
-
 " git gutter to track changes
 Plug 'airblade/vim-gitgutter'
+" fugitive to work on git
+Plug 'tpope/vim-fugitive'
 
 "control p
 Plug 'kien/ctrlp.vim'
@@ -27,6 +26,10 @@ Plug 'majutsushi/tagbar'
 let g:tagbar_sort=0
 map <C-t> :Tagbar<CR>
 
+" Pandoc plugin
+Plug 'vim-pandoc/vim-pandoc', { 'for': 'markdown' }
+" tabular
+Plug 'godlygeek/tabular', { 'for': 'markdown' }
 
 " --------------------------
 " Languages specific plugins
@@ -37,7 +40,7 @@ map <C-t> :Tagbar<CR>
 Plug 'rust-lang/rust.vim', { 'for': 'rust' }
 
 " clang-format for c++
-Plug 'rhysd/vim-clang-format'
+Plug 'rhysd/vim-clang-format', { 'for': 'cpp' }
 let g:clang_format#code_style = "mozilla"
 
 " syntax highlighting for elixir
