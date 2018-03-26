@@ -1,5 +1,11 @@
 #mpd ignores
-mpd/mpd.db
-mpd/mpd.log
-mpd/mpdstate
-mpd/sticker.sql
+music/.config/mpd/database
+music/.config/mpd/log
+music/.config/mpd/state
+music/.config/mpd/sticker
+music/.ncmpcpp/error.log
+vim/.vim/.netrwhist
+vim/.vim/autoload/*
+vim/.vim/plugged/*
+vim/.vim/swaps/*
+vim/.vim/undos/*
