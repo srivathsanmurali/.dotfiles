@@ -9,9 +9,6 @@ source ~/.vim/configs/plugins.vim
 source ~/.vim/configs/filetype_specs.vim
 source ~/.vim/configs/commands.vim
 
-"--------
-" PLUGINS
-"--------
 set shell=/bin/bash
 
 " set backup and swap directories to avoid clutter
