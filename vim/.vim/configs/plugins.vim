@@ -31,9 +31,6 @@ Plug 'vim-pandoc/vim-pandoc', { 'for': 'markdown' }
 " tabular
 Plug 'godlygeek/tabular', { 'for': 'markdown' }
 
-" Indentation
-Plug 'yggdroot/indentline'
-
 " --------------------------
 " Languages specific plugins
 " --------------------------
