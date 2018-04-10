@@ -21,11 +21,6 @@ Plug 'kien/ctrlp.vim'
 let g:ctrlp_map = '<c-p>'
 let g:ctrlp_cmd = 'CtrlP'
 
-" tabbar - use with ctags
-Plug 'majutsushi/tagbar'
-let g:tagbar_sort=0
-map <C-t> :Tagbar<CR>
-
 " Pandoc plugin
 Plug 'vim-pandoc/vim-pandoc', { 'for': 'markdown' }
 " tabular
