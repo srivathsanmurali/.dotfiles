@@ -42,6 +42,7 @@ HEADER_EXTENSIONS = [
 
 HEADER_DIRECTORIES = [
         'include'
+        'src'
         ]
 
 BUILD_DIRECTORY = 'build';
