@@ -3,6 +3,11 @@
 set $mod    Mod4
 set $modAlt Mod1
 
+# gaps
+gaps inner 10
+# gaps outer 10
+smart_gaps on
+
 # testing fake outputs
 #fake-outputs 1600x900+0-700, 1600x1080+1600+0, 320x1080+3200+0
 #color
