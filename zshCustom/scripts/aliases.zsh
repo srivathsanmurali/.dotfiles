@@ -23,6 +23,7 @@ alias gl='git l'
 alias gr='git gr'
 
 # misc
+alias emptyDir='rm -rf *'
 alias emacs='emacs -nw'
 alias vi='vim'
 alias v='vim'

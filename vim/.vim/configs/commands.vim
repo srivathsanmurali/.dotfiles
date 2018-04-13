@@ -17,8 +17,8 @@ command Chmodx :!chmod a+x %
 "inoremap <C-h>      <Esc>:tabprev<CR>
 "noremap <C-h>      <Esc>:tabprev<CR>
 
-map <C-b> :bn<CR>
-map <C-S-b> :bp<CR>
+" map <C-b> :bn<CR>
+" map <C-S-b> :bp<CR>
 
 map <C-e> :E<CR>
 "-------

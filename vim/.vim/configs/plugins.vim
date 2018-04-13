@@ -33,6 +33,12 @@ let g:ycm_global_ycm_extra_conf = '~/.vim/.ycm_extra_conf.py'
 let g:ycm_add_preview_to_completeopt = 0
 let g:ycm_show_diagnostics_ui = 0
 set completeopt-=preview
+
+Plug 'jeetsukumaran/vim-buffergator'
+map <C-b> :BuffergatorToggle<CR>
+let g:buffergator_autoupdate = 1
+let g:buffergator_viewport_split_policy = "B"
+let g:buffergator_vsplit_size = 10
 " --------------------------
 " Languages specific plugins
 " --------------------------
