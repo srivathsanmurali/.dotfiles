@@ -37,8 +37,8 @@ set completeopt-=preview
 Plug 'jeetsukumaran/vim-buffergator'
 map <C-b> :BuffergatorToggle<CR>
 let g:buffergator_autoupdate = 1
-let g:buffergator_viewport_split_policy = "B"
-let g:buffergator_vsplit_size = 10
+let g:buffergator_viewport_split_policy = "N"
+let g:buffergator_vsplit_size = 3
 " --------------------------
 " Languages specific plugins
 " --------------------------
