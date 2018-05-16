@@ -1,0 +1,232 @@
+[colors]
+bg          = #222
+bg-alt	    = #444
+fg          = #dfdfdf
+fg-alt      =	#555
+primary     = #ffb52a
+secondary   = #e60053
+alert       = #bd2c40
+black       = #000
+white       = #fff
+red         = #f00
+blue        = #0f0
+green       = #00f
+
+[vars]
+monitor               = ${env:MONITOR}
+width                 = 100%
+height                = 14
+border-size           = 0
+border-color          = ${colors.bg-alt}
+padding-left          = 1
+padding-right         = 2
+module-margin-left    = 1
+module-margin-right   = 2
+
+[fonts]
+default = FiraCode:size=10;1
+awesome = 			FontAwesome:pixelsize=10;2
+
+[bar/tbar]
+; Confirguration Options
+monitor       = ${vars.monitor}
+width         = ${vars.width}
+height        = ${vars.height}
+fixed-center  = false
+bottom        = false
+;override-redirect = 		true
+;wm-restack = 			i3
+
+; Coloring
+background = ${colors.bg}
+foreground = ${colors.fg}
+
+; Border options
+border-size   = ${vars.border-size}
+border-color  =	${vars.border-color}
+
+; Padding options
+padding-left  = ${vars.padding-left}
+padding-right = ${vars.padding-right}
+
+; Fonts
+font-0 = ${fonts.default}
+font-1 = ${fonts.awesome}
+; font-1 =			${fonts.uni}
+; font-2 =			${fonts.siji}
+
+; Module Settings
+;
+; Module Magins
+module-margin-left  = ${vars.module-margin-left}
+module-margin-right = ${vars.module-margin-right}
+
+; What Modules go where?
+modules-left    = i3 xwindow
+modules-right   = mpd volume date time
+
+; Systray options
+tray-position = 		right
+;tray-padding =			2
+
+[module/mpd]
+type = internal/mpd
+
+host = 127.0.0.1
+port = 6600
+
+format-online = <icon-prev> <toggle> <icon-next> <label-time> | <label-song>
+
+label-song = %artist:0:30:...% - %title:0:30:...%
+
+format-offline-foreground = ${colors.red}
+label-offline =  mpd is offline
+
+icon-play = 
+icon-pause = 
+icon-stop = 
+icon-prev = 
+icon-next = 
+icon-seekb = 
+icon-seekf = 
+icon-random = 
+icon-repeat = 
+
+; Only applies if <bar-progress> is used
+bar-progress-width = 10
+bar-progress-indicator = |
+bar-progress-fill = ─
+bar-progress-empty = ─
+
+[module/xwindow]
+type = 				internal/xwindow
+label = 			%title:0:30:...%
+
+[module/i3]
+type            = internal/i3
+format          = <label-state> <label-mode>
+index-sort      = true
+wrapping-scroll = false
+strip-wsnumbers = true
+
+; Label Options
+;
+; Mode-unspecified options
+label-mode-padding = 		1
+label-mode-foreground = 	${colors.bg}
+label-mode-background =		${colors.fg}
+
+; Focused options
+; label-focused = 		%name% %icon%
+label-focused = 		%name%
+label-focused-background =	${colors.bg}
+label-focused-foreground =	${colors.fg}
+label-focused-padding =		1
+
+; Unfocused options
+label-unfocused = 		%name%
+label-unfocused-background =	${colors.bg}
+label-unfocused-foreground =	${colors.fg-alt}
+label-unfocused-padding = 	1
+
+; Visible options
+label-visible = 		%name%
+label-visible-background =	${colors.bg}
+label-visible-foreground =	${colors.fg}
+label-visible-padding = 	1
+
+; Urgent options
+label-urgent = 			%name%
+label-urgent-background =	${colors.bg}
+label-urgent-foreground =	${colors.alert}
+label-urgent-padding =		1
+
+; Workspace options
+; ws-icon-# = 			#;icon
+ws-icon-0       =	1;
+ws-icon-1       =	2;
+ws-icon-2       =	3;
+ws-icon-3       =	4;
+ws-icon-4       =	5;
+ws-icon-5       =	6;
+ws-icon-6       =	7;
+ws-icon-7       =	8;
+ws-icon-8       =	9;
+ws-icon-9       =	10;
+ws-icon-default = +
+
+[module/time]
+type = internal/date
+interval = 1
+
+time = %H:%M:%S
+label = %time%
+
+format = "%{F#888ca6}%{F-} <label>"
+format-foreground = ${colors.fg}
+
+[module/date]
+type = internal/date
+interval = 1
+
+date = "%m/%d/%Y"
+label = %date%
+
+format = "%{F#4e5166}%{F-} <label>"
+format-foreground = ${colors.fg}
+
+[module/eth]
+type = 				internal/network
+interface = 			enp2s0
+interval = 			3.0
+
+; Format options
+format-connected = 		<label-connected>
+format-disconnected = 		<label-disconnected>
+
+; Label options
+label-connected = 		%essid%
+label-disconnected =
+
+[module/volume]
+type = 				internal/volume
+master-soundcard = 		default
+speaker-soundcard = 		default
+headphone-soundcard =		default
+master-mixer = 			Master
+mapping = 			true
+
+; Formatting options
+format-volume = 		<label-volume> <bar-volume>
+
+; Label options
+label-volume = 			VOL
+label-volume-foreground = 	${colors.fg}
+label-muted = 			Muted
+label-muted-foreground = 	${colors.fg-alt}
+
+; Bar options
+bar-volume-width = 		10
+bar-volume-indicator =
+bar-volume-fill = 		—
+bar-volume-empty = 		—
+bar-volume-gradient = 		false
+bar-volume-fill-font = 		2
+bar-volume-empty-font = 	2
+; Bar-volume coloring
+bar-volume-foreground-0 = 	#55aa55
+bar-volume-foreground-1 = 	#55aa55
+bar-volume-foreground-3 = 	#55aa55
+bar-volume-foreground-4 = 	#55aa55
+bar-volume-foreground-5 = 	#f5a70a
+bar-volume-foreground-6 = 	#ff5555
+bar-volume-empty-foreground = 	${colors.fg-alt}
+
+[settings]
+screenchange-reload = true
+
+[global/wm]
+margin-top = 5
+margin-bottom = 5
+
+; vim:ft=dosini

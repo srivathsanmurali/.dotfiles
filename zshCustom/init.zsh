@@ -11,3 +11,4 @@ fpath+="$ZSH_CUSTOM/completions"
 
 ## setting theme
 . $ZSH_CUSTOM/my_themes/simple.zsh-theme
+

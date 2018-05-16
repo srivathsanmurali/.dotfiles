@@ -89,6 +89,7 @@ Color=66,66,66
 Color=251,0,122
 
 [General]
+Blur=false
 Description=Srinator
 Opacity=1
 Wallpaper=

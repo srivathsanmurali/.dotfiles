@@ -4,9 +4,9 @@ set $mod    Mod4
 set $modAlt Mod1
 
 # gaps
-#gaps inner 10
-# gaps outer 10
-#smart_gaps on
+gaps inner 5
+gaps outer 5
+smart_gaps on
 
 # testing fake outputs
 #fake-outputs 1920x1080+0+420, 1080x1520+1920+0, 1080x400+1920+1520 
@@ -168,10 +168,20 @@ exec --no-startup-id nitrogen --restore &
 
 # Starting things with i3
 # exec --no-startup-id xcompmgr -C &    # Bare compositor to allow transparency
-for_window [class="konsole"] border 1px
+#for_window [class="konsole"] border 1px
 
 # no border for firefox
-for_window [class="firefox"] border none
+#for_window [class="firefox"] border none
+
+for_window [class="^.*"] border pixel 1
+
+# nofocus for notifications
+#no_focus [window_role="pop-up"]
+no_focus [window_type="notification"]
+
+bar {
+    i3bar_command $HOME/.config/polybar/launch.sh
+}
 
 ## Plasma Integration
 # Try to kill the wallpaper set by Plasma (it takes up the entire workspace and hides everythiing)
