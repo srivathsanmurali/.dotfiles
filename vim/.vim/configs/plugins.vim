@@ -35,7 +35,7 @@ let g:ycm_show_diagnostics_ui = 0
 set completeopt-=preview
 
 Plug 'jeetsukumaran/vim-buffergator'
-map <C-b> :BuffergatorToggle<CR>
+map <C-b> :BuffergatorOpen<CR>
 let g:buffergator_autoupdate = 1
 let g:buffergator_viewport_split_policy = "N"
 let g:buffergator_vsplit_size = 3
