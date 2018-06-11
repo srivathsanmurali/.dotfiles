@@ -39,6 +39,8 @@ map <C-b> :BuffergatorOpen<CR>
 let g:buffergator_autoupdate = 1
 let g:buffergator_viewport_split_policy = "N"
 let g:buffergator_vsplit_size = 3
+
+Plug 'pboettch/vim-cmake-syntax', { 'for': 'cmake'}
 " --------------------------
 " Languages specific plugins
 " --------------------------

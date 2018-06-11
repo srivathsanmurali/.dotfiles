@@ -77,3 +77,10 @@ function sshReady() {
 function up() {
   cd $(printf "%0.0s../" $(seq 1 $1));
 }
+
+function gReview() {
+  for currHash in `git --no-pager log --reverse --pretty=format:"%h" $1..$2`; do
+    echo $currHash
+    git show -p $currHash
+  done
+}
