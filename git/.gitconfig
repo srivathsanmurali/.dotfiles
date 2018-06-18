@@ -6,7 +6,7 @@
 	ui = always
 
 [push]
-	default = matching
+	default = upstream
 
 [alias]
   # clone
