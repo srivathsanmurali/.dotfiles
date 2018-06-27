@@ -21,6 +21,11 @@ command Chmodx :!chmod a+x %
 " map <C-S-b> :bp<CR>
 
 map <C-e> :E<CR>
+
+" Copy to clipboardd
+nnoremap <S-y> "+y
+vnoremap <S-y> "+y
+
 "-------
 " SNIPS
 "-------
