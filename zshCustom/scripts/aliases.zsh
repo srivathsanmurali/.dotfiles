@@ -48,6 +48,7 @@ alias supdate="sudo apt-get update"
 alias sv="sudoedit"
 alias v='vim'
 alias vi='vim'
+alias todo='. $ZSH_CUSTOM/bin/todo'
 
 # Music
 alias music="ncmpcpp"
