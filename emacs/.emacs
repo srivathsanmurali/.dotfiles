@@ -8,6 +8,7 @@
 		     evil
 		     evil-leader
 		     helm
+		     hemisu-theme
 		    ))
 
 (add-to-list 'package-archives '("org" . "http://orgmode.org/elpa/"))
@@ -74,11 +75,20 @@
 (customize-set-variable 'menu-bar-mode nil)
 
 ;; theme
-(load-theme 'spacemacs-light t)
+(load-theme 'hemisu-light t)
+;; (load-theme 'spacemacs-light t)
 ;; (load-theme 'dracula t)
 
-;; backups
+(setq-default indent-tabs-mode nil)
 
+(defun four-spaces ()
+  "inserts four spaces"
+  (interactive);
+  (insert "    "))
+
+(global-set-key (kdb "<tab>") 'four-spaces)
+
+;; backups
 (setq
    backup-by-copying t      ; don't clobber symlinks
    backup-directory-alist
