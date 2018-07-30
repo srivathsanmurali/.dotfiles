@@ -2,39 +2,58 @@
 ;; Sri's config
 ;; ------------
 
-; package archives
-(require 'package)
-(setq package-list '(
-		     evil
-		     evil-leader
-		     helm
-		     hemisu-theme
-		    ))
-
-(add-to-list 'package-archives '("org" . "http://orgmode.org/elpa/"))
-(add-to-list 'package-archives '("melpa" . "http://melpa.org/packages/"))
-(add-to-list 'package-archives '("melpa-stable" . "http://stable.melpa.org/packages/"))
-
-(setq package-enable-at-startup nil)
 (package-initialize)
 
+(menu-bar-mode -1)
+(tool-bar-mode -1)
+(scroll-bar-mode -1)
+(tooltip-mode -1)
+(setq initial-scratch-message "")
+
+;; Don't load old .elc files when the .el file is newer
+(setq load-prefer-newer t)
+(setq inhibit-startup-screen t)
+(setq user-full-name "Srivathsan Murali"
+      user-mail-address "sri@vathsan.com")
+
+; package archives
+(require 'package)
+(setq package-enable-at-startup nil
+      package-archives
+      '(("melpa"           . "http://melpa.org/packages/")
+        ("gnu" . "http://elpa.gnu.org/packages/")
+        ("org" . "http://orgmode.org/elpa/"))
+      package-user-dir "~/.emacs.d/elpa/")
+
+(unless (package-installed-p 'use-package)
+  (package-refresh-contents)
+  (package-install 'use-package))
+
+(eval-when-compile
+  (require 'use-package))
+
 ; evil mode
-(require 'evil)
-(evil-mode t)
-(setq evil-vsplit-window-right t)
+(use-package evil
+  :ensure t
+  :config
+  (evil-mode t)
+  (setq evil-vsplit-window-right t))
 
-(require 'evil-leader)
-(global-evil-leader-mode)
-(evil-leader/set-leader "<SPC>")
+(use-package evil-leader
+  :ensure t
+  :after evil
+  :config
+  (global-evil-leader-mode)
+  (evil-leader/set-leader "<SPC>"))
 
-
-(require 'helm)
-
-(setq custom-file "~/.emacs.d/custom.el")
-(load custom-file)
+(use-package helm
+  :ensure t
+  :config
+  (helm-mode t))
 
 (use-package neotree
   :ensure t
+  :after evil
   :config
 
     (evil-leader/set-key
@@ -56,38 +75,54 @@
 
       (define-key evil-normal-state-local-map (kbd "RET") 'neotree-enter))))
 
+(use-package projectile
+  :ensure t
+  :defer 5
+  :config
+  (projectile-mode t))
+
+;; themes
+(use-package solarized-theme
+  :ensure t
+  :config
+  (load-theme 'solarized-light t))
+
+(use-package monokai-theme
+  :disabled
+  :ensure t
+  :config
+  (load-theme 'monokai t))
+
+(use-package hemisu-theme
+  :disabled
+  :ensure t
+  :config
+  (load-theme 'hemisu-dark t))
+
+(use-package habamax-theme
+  :disabled
+  :ensure t
+  :config
+  (setq habamax-theme-variable-heading-heights nil)
+  (load-theme 'habamax t))
+
 ;; ---------
 ;; languages
 ;; ---------
 
 ;; elixir
-(require 'elixir-mode)
-(elixir-mode)
+(use-package elixir-mode
+  :ensure t)
+
+(use-package alchemist
+  :ensure t
+  :config
+  (alchemist-mode t)
+  (setq alchemist-mix-command "/home/sri/.asdf/shims/mix"))
 
 ;; ---------
 ;; Interface
 ;; ---------
-
-;; remove the splash screen
-(setq inhibit-splash-screen t)
-
-;; Remove the menu bar
-(customize-set-variable 'menu-bar-mode nil)
-
-;; theme
-(load-theme 'hemisu-light t)
-;; (load-theme 'spacemacs-light t)
-;; (load-theme 'dracula t)
-
-(setq-default indent-tabs-mode nil)
-
-(defun four-spaces ()
-  "inserts four spaces"
-  (interactive);
-  (insert "    "))
-
-(global-set-key (kdb "<tab>") 'four-spaces)
-
 ;; backups
 (setq
    backup-by-copying t      ; don't clobber symlinks
@@ -97,3 +132,19 @@
    kept-new-versions 6
    kept-old-versions 2
    version-control t)       ; use versioned backupsk
+
+(setq custom-file "~/.emacs.d/custom.el")
+(load custom-file)
+
+;; answer with y or n
+(defalias 'yes-or-no-p 'y-or-n-p)
+
+(setq-default indent-tabs-mode nil)
+
+;; show coloumn number
+(column-number-mode t)
+
+;; Don't beep at me
+(setq visible-bell t)
+
+
