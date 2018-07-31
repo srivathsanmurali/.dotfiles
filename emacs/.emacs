@@ -112,7 +112,7 @@
 
 ;; elixir
 (use-package elixir-mode
-  :ensure t)
+  :mode "\\.ex\\'")
 
 (use-package alchemist
   :ensure t
