@@ -37,6 +37,7 @@
   :ensure t
   :config
   (evil-mode t)
+  (setq evil-split-window-below t)
   (setq evil-vsplit-window-right t))
 
 (use-package evil-leader
@@ -80,6 +81,18 @@
   :defer 5
   :config
   (projectile-mode t))
+
+(use-package magit
+  :ensure t)
+
+(use-package evil-magit
+  :ensure t)
+
+(use-package org
+  :ensure t)
+
+(use-package org-evil
+  :after (:all evil org))
 
 ;; themes
 (use-package solarized-theme
