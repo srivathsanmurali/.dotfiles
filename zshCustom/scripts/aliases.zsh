@@ -31,6 +31,7 @@ alias cl=clear
 alias copy="xclip -sel clip"
 alias copyPWD="pwd | xclip -sel clip"
 alias emacs='emacs -nw'
+alias ec='emacsclient'
 alias emptyDir='rm -rf *'
 alias grep="grep --color=auto"
 alias hgrep='history | grep '

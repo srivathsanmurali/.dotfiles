@@ -91,14 +91,18 @@
 (use-package org
   :ensure t)
 
-(use-package org-evil
-  :after (:all evil org))
-
 ;; themes
 (use-package solarized-theme
+  :disabled
   :ensure t
   :config
   (load-theme 'solarized-light t))
+
+(use-package oceanic-theme
+  :disabled
+  :ensure t
+  :config
+  (load-theme 'oceanic t))
 
 (use-package monokai-theme
   :disabled
@@ -110,7 +114,12 @@
   :disabled
   :ensure t
   :config
-  (load-theme 'hemisu-dark t))
+  (load-theme 'hemisu-light t))
+
+(use-package xresources-theme 
+  :ensure t
+  :config
+  (load-theme 'xresources t))
 
 (use-package habamax-theme
   :disabled
@@ -118,6 +127,12 @@
   :config
   (setq habamax-theme-variable-heading-heights nil)
   (load-theme 'habamax t))
+
+(use-package smart-mode-line
+  :ensure t
+  :config
+  (sml/setup)
+  (setq sml/theme 'light))
 
 ;; ---------
 ;; languages
