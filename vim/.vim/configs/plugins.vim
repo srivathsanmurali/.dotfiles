@@ -45,7 +45,7 @@ Plug 'pboettch/vim-cmake-syntax', { 'for': 'cmake'}
 
 Plug 'itchyny/lightline.vim'
 let g:lightline = {
-      \ 'colorscheme': 'PaperColor light',
+      \ 'colorscheme': 'PaperColor',
       \ }
 set noshowmode
 " --------------------------
