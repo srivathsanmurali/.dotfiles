@@ -42,6 +42,12 @@ let g:buffergator_viewport_split_policy = "N"
 let g:buffergator_vsplit_size = 3
 
 Plug 'pboettch/vim-cmake-syntax', { 'for': 'cmake'}
+
+Plug 'itchyny/lightline.vim'
+let g:lightline = {
+      \ 'colorscheme': 'PaperColor light',
+      \ }
+set noshowmode
 " --------------------------
 " Languages specific plugins
 " --------------------------

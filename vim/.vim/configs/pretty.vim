@@ -1,6 +1,6 @@
 " setting up colors properly
 set t_Co=256
-" colorscheme PaperColor
+colorscheme PaperColor
 set background=light
 
 " vert split 
