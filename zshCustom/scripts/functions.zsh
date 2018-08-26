@@ -84,3 +84,6 @@ function gReview() {
     git show -p $currHash
   done
 }
+function gShowSelected() {
+  git show $(git log --no-color --oneline | fzf | awk '{print $1}')
+}

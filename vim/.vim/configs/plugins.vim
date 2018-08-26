@@ -27,6 +27,8 @@ Plug 'vim-pandoc/vim-pandoc', { 'for': 'markdown' }
 " tabular
 Plug 'godlygeek/tabular', { 'for': 'markdown' }
 
+Plug 'plasticboy/vim-markdown', { 'for': 'markdown' }
+
 Plug 'valloric/youcompleteme'
 let g:ycm_global_ycm_extra_conf = '~/.vim/.ycm_extra_conf.py'
 " let g:ycm_autoclose_preview_window_after_completion = 1
@@ -48,6 +50,8 @@ let g:lightline = {
       \ 'colorscheme': 'PaperColor',
       \ }
 set noshowmode
+
+Plug 'scrooloose/nerdcommenter'
 " --------------------------
 " Languages specific plugins
 " --------------------------
