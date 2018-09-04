@@ -4,3 +4,8 @@ source $ZSH_CUSTOM/init.zsh
 
 [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
 [ -f ~/.zsh_local ] && source ~/.zsh_local
+
+# elixir iex history
+export ERL_AFLAGS="-kernel shell_history enabled"
+export ECTO_EDITOR=kwrite
+export ELIXIR_EDITOR=kwrite
