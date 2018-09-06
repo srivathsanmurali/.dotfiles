@@ -1,8 +1,3 @@
-# Import colorscheme from 'wal' asynchronously
-# &   # Run the process in the background.
-# ( ) # Hide shell job control messages.
-(cat ~/.cache/wal/sequences &)
-
 ZSH_CUSTOM=${HOME}/.dotfiles/zshCustom
 
 . $ZSH_CUSTOM/init.zsh
