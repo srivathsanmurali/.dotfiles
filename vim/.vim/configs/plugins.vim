@@ -16,11 +16,11 @@ Plug 'airblade/vim-gitgutter'
 " fugitive to work on git
 Plug 'tpope/vim-fugitive'
 
-"control p
-Plug 'kien/ctrlp.vim'
-let g:ctrlp_map = '<c-p>'
-let g:ctrlp_cmd = 'CtrlP'
-let g:ctrlp_user_command = ['.git/', 'git --git-dir=%s/.git ls-files -oc --exclude-standard']
+" fzf
+Plug 'junegunn/fzf', { 'dir': '~/.fzf', 'do': './install --all' }
+Plug 'junegunn/fzf.vim'
+nnoremap <C-p> <Esc>:GFiles<CR>
+inoremap <C-p> <Esc>:GFiles<CR>
 
 " Pandoc plugin
 Plug 'vim-pandoc/vim-pandoc', { 'for': 'markdown' }
@@ -29,7 +29,7 @@ Plug 'godlygeek/tabular', { 'for': 'markdown' }
 
 Plug 'plasticboy/vim-markdown', { 'for': 'markdown' }
 
-Plug 'valloric/youcompleteme'
+Plug 'Valloric/YouCompleteMe', { 'do': './install.py' }
 let g:ycm_global_ycm_extra_conf = '~/.vim/.ycm_extra_conf.py'
 " let g:ycm_autoclose_preview_window_after_completion = 1
 " let g:ycm_autoclose_preview_window_after_insertion = 1
@@ -52,6 +52,7 @@ let g:lightline = {
 set noshowmode
 
 Plug 'scrooloose/nerdcommenter'
+Plug 'vim-scripts/DoxygenToolkit.vim'
 " --------------------------
 " Languages specific plugins
 " --------------------------
