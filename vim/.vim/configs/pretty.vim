@@ -1,8 +1,3 @@
-" setting up colors properly
-set t_Co=256
-colorscheme PaperColor
-set background=light
-
 " vert split 
 highlight VertSplit cterm=NONE ctermfg=white ctermbg=NONE
 highlight HorSplit cterm=NONE ctermfg=white ctermbg=NONE

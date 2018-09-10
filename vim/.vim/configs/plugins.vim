@@ -46,13 +46,16 @@ let g:buffergator_vsplit_size = 3
 Plug 'pboettch/vim-cmake-syntax', { 'for': 'cmake'}
 
 Plug 'itchyny/lightline.vim'
-let g:lightline = {
-      \ 'colorscheme': 'PaperColor',
-      \ }
+" let g:lightline = {
+"       \ 'colorscheme': 'PaperColor',
+"       \ }
 set noshowmode
 
 Plug 'scrooloose/nerdcommenter'
 Plug 'vim-scripts/DoxygenToolkit.vim'
+
+" Plug 'sonph/onehalf', {'rtp': 'vim/'}
+Plug 'sickill/vim-monokai'
 " --------------------------
 " Languages specific plugins
 " --------------------------
@@ -72,3 +75,8 @@ Plug 'mhinz/vim-mix-format', { 'for': 'elixir' }
 
 " Initialize plugin system
 call plug#end()
+" colorscheme onehalflight
+" setting up colors properly
+set t_Co=256
+set background=dark
+colorscheme monokai
