@@ -50,6 +50,8 @@ alias sv="sudoedit"
 alias v='vim'
 alias vi='vim'
 alias todo='. $ZSH_CUSTOM/bin/todo'
+alias pbcopy='xclip -selection clipboard'
+alias pbpaste='xclip -selection clipboard -o'
 
 # Music
 alias music="ncmpcpp"
