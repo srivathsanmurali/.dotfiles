@@ -21,6 +21,8 @@ Plug 'junegunn/fzf', { 'dir': '~/.fzf', 'do': './install --all' }
 Plug 'junegunn/fzf.vim'
 nnoremap <C-p> <Esc>:GFiles<CR>
 inoremap <C-p> <Esc>:GFiles<CR>
+nnoremap <C-d> <Esc>:Files<CR>
+inoremap <C-d> <Esc>:Files<CR>
 
 " Pandoc plugin
 Plug 'vim-pandoc/vim-pandoc', { 'for': 'markdown' }
