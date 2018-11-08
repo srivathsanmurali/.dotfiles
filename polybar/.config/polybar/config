@@ -13,7 +13,7 @@ blue        = #0f0
 green       = #00f
 
 [vars]
-monitor               = ${env:MONITOR}
+monitor               = ${env:MONITOR:DVI-D-0}
 width                 = 100%
 height                = 14
 border-size           = 0
@@ -67,8 +67,7 @@ modules-right   = pulseaudio date time
 
 ; Systray options
 tray-position = right
-tray-padding = 0
-tray-transparent = false
+tray-padding = 2
 tray-detached = false
 
 [module/xwindow]
@@ -81,7 +80,6 @@ format          = <label-state> <label-mode>
 index-sort      = true
 wrapping-scroll = false
 strip-wsnumbers = true
-pin-workspaces  = true
 
 ; Label Options
 ;
