@@ -33,9 +33,8 @@ monitor       = ${vars.monitor}
 width         = ${vars.width}
 height        = ${vars.height}
 fixed-center  = false
-bottom        = false
+bottom        = false 
 ;override-redirect = 		true
-;wm-restack = 			i3
 
 ; Coloring
 background = ${colors.bg}
@@ -63,40 +62,14 @@ module-margin-right = ${vars.module-margin-right}
 
 ; What Modules go where?
 modules-left    = i3 xwindow
-modules-right   = mpd volume date time
+modules-center  =
+modules-right   = pulseaudio date time 
 
 ; Systray options
-tray-position = 		right
-;tray-padding =			2
-
-[module/mpd]
-type = internal/mpd
-
-host = 127.0.0.1
-port = 6600
-
-format-online = <icon-prev> <toggle> <icon-next> <label-time> | <label-song>
-
-label-song = %artist:0:30:...% - %title:0:30:...%
-
-format-offline-foreground = ${colors.red}
-label-offline =  mpd is offline
-
-icon-play = 
-icon-pause = 
-icon-stop = 
-icon-prev = 
-icon-next = 
-icon-seekb = 
-icon-seekf = 
-icon-random = 
-icon-repeat = 
-
-; Only applies if <bar-progress> is used
-bar-progress-width = 10
-bar-progress-indicator = |
-bar-progress-fill = ─
-bar-progress-empty = ─
+tray-position = right
+tray-padding = 0
+tray-transparent = false
+tray-detached = false
 
 [module/xwindow]
 type = 				internal/xwindow
@@ -108,6 +81,7 @@ format          = <label-state> <label-mode>
 index-sort      = true
 wrapping-scroll = false
 strip-wsnumbers = true
+pin-workspaces  = true
 
 ; Label Options
 ;
@@ -188,13 +162,19 @@ format-disconnected = 		<label-disconnected>
 label-connected = 		%essid%
 label-disconnected =
 
-[module/volume]
-type = 				internal/volume
-master-soundcard = 		default
-speaker-soundcard = 		default
-headphone-soundcard =		default
-master-mixer = 			Master
-mapping = 			true
+[module/pulseaudio]
+type = internal/pulseaudio
+; Sink to be used, if it exists (find using `pacmd list-sinks`, name field)
+; If not, uses default sink
+sink = default 
+
+; Use PA_VOLUME_UI_MAX (~153%) if true, or PA_VOLUME_NORM (100%) if false
+; Default: true
+use-ui-max = true
+
+; Interval for volume increase/decrease (in percent points) (unreleased)
+; Default: 5
+interval = 5
 
 ; Formatting options
 format-volume = 		<label-volume> <bar-volume>

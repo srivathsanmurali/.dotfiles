@@ -179,9 +179,7 @@ for_window [class="^.*"] border pixel 1
 #no_focus [window_role="pop-up"]
 no_focus [window_type="notification"]
 
-bar {
-    i3bar_command $HOME/.config/polybar/launch.sh
-}
+exec_always --no-startup-id $HOME/.config/polybar/launch.sh
 
 ## Plasma Integration
 # Try to kill the wallpaper set by Plasma (it takes up the entire workspace and hides everythiing)
