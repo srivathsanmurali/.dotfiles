@@ -197,3 +197,6 @@ for_window [class="Kmix"] floating enable; border none
 for_window [class="Klipper"] floating enable; border none
 for_window [class="Plasmoidviewer"] floating enable; border none
 for_window [class="Seafile"] floating enable; border none
+
+exec --no-startup-id xrandr --output HDMI-0 --rotate left --output DVI-D-0 --rotate --left
+exec --no-startup-id setxkbmap -option ctrl:nocaps

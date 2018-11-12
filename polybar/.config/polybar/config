@@ -141,7 +141,7 @@ format-foreground = ${colors.fg}
 type = internal/date
 interval = 1
 
-date = "%m/%d/%Y"
+date = "%A, %d %B %Y"
 label = %date%
 
 format = "%{F#4e5166}%{F-} <label>"
