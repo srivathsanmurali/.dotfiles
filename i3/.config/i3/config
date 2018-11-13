@@ -4,8 +4,8 @@ set $mod    Mod4
 set $modAlt Mod1
 
 # gaps
-gaps inner 5
-gaps outer 5
+gaps inner 3
+#gaps outer 3
 smart_gaps on
 
 # testing fake outputs
@@ -33,6 +33,8 @@ floating_modifier $mod
 
 # synapse
 bindsym $mod+d exec "rofi -show combi -combi-modi 'drun,ssh,run' -show-icons"
+
+bindsym $mod+Pause exec "i3lock -c 000000"
 
 # start a terminal
 bindsym $mod+Return exec konsole
@@ -197,6 +199,7 @@ for_window [class="Kmix"] floating enable; border none
 for_window [class="Klipper"] floating enable; border none
 for_window [class="Plasmoidviewer"] floating enable; border none
 for_window [class="Seafile"] floating enable; border none
+for_window [class="Pavucontrol"] floating enable; border none;
 
 exec --no-startup-id xrandr --output HDMI-0 --rotate left --output DVI-D-0 --rotate --left
 exec --no-startup-id setxkbmap -option ctrl:nocaps
