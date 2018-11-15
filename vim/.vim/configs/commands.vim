@@ -33,3 +33,11 @@ vnoremap <S-y> "+y
 " editing the configuration files
 nnoremap <leader>ev :e ~/.vim/configs<cr>
 nnoremap <leader>sv :source $MYVIMRC<cr>
+
+nnoremap <leader>b    <Esc>:vsplit<CR>
+inoremap <leader>b    <Esc>:vsplit<CR>
+nnoremap <leader>v    <Esc>:split<CR>
+inoremap <leader>v    <Esc>:split<CR>
+
+nnoremap <leader>p    <Esc>:GFiles<CR>
+inoremap <leader>p    <Esc>:GFiles<CR>
