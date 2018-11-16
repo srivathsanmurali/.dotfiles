@@ -136,6 +136,8 @@ bindsym $mod+Shift+minus move scratchpad
 # Show the first scratchpad window
 bindsym $mod+minus scratchpad show
 
+bindsym $mod+x nop
+
 # float conatiners
 for_window [class="Orage"] floating enable
 
