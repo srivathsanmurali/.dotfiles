@@ -63,12 +63,29 @@ module-margin-right = ${vars.module-margin-right}
 ; What Modules go where?
 modules-left    = i3 xwindow
 modules-center  =
-modules-right   = pulseaudio date time 
+modules-right   = wireless pulseaudio date time 
 
 ; Systray options
 tray-position = right
 tray-padding = 2
 tray-detached = false
+
+[module/wireless]
+type = internal/network
+interface = wlan1
+
+interval = 3.0
+
+format-connected = <label-connected>
+
+label-connected = %essid%(%downspeed%)
+label-connected-foreground = #eefafafa
+
+format-disconnected = <label-disconnected>
+
+label-disconnected = not connected
+label-disconnected-foreground = #66ffffff
+
 
 [module/xwindow]
 type = 				internal/xwindow
