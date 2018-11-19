@@ -36,6 +36,8 @@ bindsym $mod+d exec "rofi -show combi -combi-modi 'drun,ssh,run' -show-icons"
 
 bindsym Control+mod1+l exec "i3lock -c 000000"
 
+bindsym Print exec spectacle 
+
 # start a terminal
 bindsym $mod+Return exec konsole
 
