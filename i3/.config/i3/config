@@ -34,7 +34,7 @@ floating_modifier $mod
 # synapse
 bindsym $mod+d exec "rofi -show combi -combi-modi 'drun,ssh,run' -show-icons"
 
-bindsym $mod+Pause exec "i3lock -c 000000"
+bindsym Control+mod1+l exec "i3lock -c 000000"
 
 # start a terminal
 bindsym $mod+Return exec konsole
