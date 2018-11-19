@@ -13,5 +13,10 @@ DISPLAY1="$(xrandr -q | grep 'DVI' | cut -d ' ' -f1)"
 DISPLAY2="$(xrandr -q | grep 'HDMI' | cut -d ' ' -f1)"
 [[ ! -z $DISPLAY2 ]] && MONITOR=$DISPLAY2 polybar tbar -q&
 
+DISPLAY3="$(xrandr -q | grep 'eDP' | cut -d ' ' -f1)"
+[[ ! -z "$DISPLAY3" ]] && MONITOR="$DISPLAY3" polybar tbar -q&
+
+
 echo $DISPLAY1
 echo $DISPLAY2
+echo $DISPLAY3
