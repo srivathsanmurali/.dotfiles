@@ -35,6 +35,7 @@ floating_modifier $mod
 bindsym $mod+d exec "rofi -show combi -combi-modi 'drun,ssh,run' -show-icons"
 
 bindsym Control+mod1+l exec "i3lock -c 000000"
+bindsym Control+mod1+p exec "i3lock -c 000000; systemctl suspend"
 
 bindsym Print exec spectacle 
 
