@@ -6,8 +6,8 @@ done;
 fpath+="$ZSH_CUSTOM/completions"
 
 ## asdf
-. $HOME/.asdf/asdf.sh
-. $HOME/.asdf/completions/asdf.bash
+[ -f $HOME/.asdf/asdf.sh ] && source $HOME/.asdf/asdf.sh
+[ -f $HOME/.asdf/completions/asdf.bash ] && source $HOME/.asdf/completions/asdf.bash
 
 # elixir iex history
 export ERL_AFLAGS="-kernel shell_history enabled"
