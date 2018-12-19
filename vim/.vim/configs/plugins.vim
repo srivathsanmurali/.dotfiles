@@ -90,5 +90,6 @@ call plug#end()
 " colorscheme onehalflight
 " setting up colors properly
 set t_Co=256
-set background=light
-colorscheme PaperColor 
+" set background=light
+"colorscheme PaperColor 
+set background=dark
