@@ -85,6 +85,8 @@ Plug 'elixir-editors/vim-elixir', { 'for': 'elixir' }
 " uses mix format to format elixir code
 Plug 'mhinz/vim-mix-format', { 'for': 'elixir' }
 
+Plug 'srivathsanmurali/OpenAPIValidate.vim'
+
 " Initialize plugin system
 call plug#end()
 " colorscheme onehalflight
