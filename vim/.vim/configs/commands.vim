@@ -41,3 +41,5 @@ inoremap <leader>v    <Esc>:split<CR>
 
 nnoremap <leader>p    <Esc>:GFiles<CR>
 inoremap <leader>p    <Esc>:GFiles<CR>
+
+nnoremap <C-a> ggVGG"+y
