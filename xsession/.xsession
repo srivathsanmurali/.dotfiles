@@ -11,7 +11,6 @@ xset -b
 setxkbmap -option ctrl:nocaps
 
 # rotate the right monitor
-# xrandr --output HDMI-0 --rotate left
 
 export XDG_CURRENT_DESKTOP=KDE
 

@@ -213,6 +213,5 @@ for_window [class="Seafile"] floating enable; border none
 for_window [class="Pavucontrol"] floating enable; border none;
 
 exec_always --no-startup-id dunst
-exec --no-startup-id xrandr --output HDMI-0 --rotate left --output DVI-D-0 --rotate --left
 exec --no-startup-id setxkbmap -option ctrl:nocaps
 exec --no-startup-id xautolock -detectsleep -time 10 -locker "i3lock -c 000000" -notify 30 -notifier "notify-send -u critical -t 100000 -- 'Locking screen in 340 second'"
