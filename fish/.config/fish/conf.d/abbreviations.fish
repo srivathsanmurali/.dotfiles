@@ -1,5 +1,5 @@
 # config abbr
-abbr fishConfig 'vim ~/.config/fish/config.fish'
+abbr fishConfig 'vim ~/.dotfiles/fish/.config/fish/config.fish'
 
 # git abbr
 abbr g 'git'
@@ -14,6 +14,7 @@ abbr gb 'git branch'
 abbr gcl 'git clone'
 abbr gl 'git log --pretty=custom'
 abbr ggr 'git gr'
+abbr gr 'git log --oneline --graph'
 
 # misc
 abbr vi 'vim'
