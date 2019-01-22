@@ -192,8 +192,6 @@ for_window [class="^.*"] border pixel 1
 #no_focus [window_role="pop-up"]
 no_focus [window_type="notification"]
 
-exec_always --no-startup-id $HOME/.config/polybar/launch.sh
-
 # assigns
 assign [class="Thunderbird"] 10
 
@@ -214,8 +212,13 @@ for_window [class="Klipper"] floating enable; border none
 for_window [class="Plasmoidviewer"] floating enable; border none
 for_window [class="Seafile"] floating enable; border none
 for_window [class="Pavucontrol"] floating enable; border none;
+for_window [class="Spotify"] move to scratchpad 
 
 exec_always --no-startup-id dunst
 exec_always --no-startup-id thunderbird
+exec_always --no-startup-id $HOME/.config/polybar/launch.sh
+exec_always --no-startup-id nm-applet
+exec_always --no-startup-id spotify
+
 exec --no-startup-id setxkbmap -option ctrl:nocaps
 exec --no-startup-id xautolock -detectsleep -time 10 -locker "i3lock -c 000000" -notify 30 -notifier "notify-send -u critical -t 100000 -- 'Locking screen in 340 second'"
