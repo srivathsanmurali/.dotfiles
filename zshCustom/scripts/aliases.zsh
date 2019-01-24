@@ -52,6 +52,7 @@ alias vi='vim'
 alias todo='. $ZSH_CUSTOM/bin/todo'
 alias pbcopy='xclip -selection clipboard'
 alias pbpaste='xclip -selection clipboard -o'
+alias pjson='python -m json.tool'
 
 # Music
 alias music="ncmpcpp"
