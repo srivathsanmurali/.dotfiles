@@ -89,5 +89,3 @@ Plug 'srivathsanmurali/OpenAPIValidate.vim'
 
 " Initialize plugin system
 call plug#end()
-" colorscheme onehalflight
-" setting up colors properly

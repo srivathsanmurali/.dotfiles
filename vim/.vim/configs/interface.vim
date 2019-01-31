@@ -1,9 +1,5 @@
 " Srivathsan's interface settings
 
-set t_Co=256
-set background=light
-colorscheme onehalflight 
-
 " use vim seting rather than vi setting
 set nocompatible
 

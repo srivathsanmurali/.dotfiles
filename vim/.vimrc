@@ -3,9 +3,9 @@
 " disable startup message
 set shortmess+=I
 
+source ~/.vim/configs/plugins.vim
 source ~/.vim/configs/pretty.vim
 source ~/.vim/configs/interface.vim
-source ~/.vim/configs/plugins.vim
 source ~/.vim/configs/filetype_specs.vim
 source ~/.vim/configs/commands.vim
 
