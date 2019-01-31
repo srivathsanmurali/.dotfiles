@@ -1,5 +1,9 @@
 " Srivathsan's interface settings
 
+set t_Co=256
+set background=light
+colorscheme onehalflight 
+
 " use vim seting rather than vi setting
 set nocompatible
 
@@ -34,7 +38,7 @@ set showmatch
 set backspace=indent,eol,start
 
 " show line numbers
-set number
+set nonumber
 
 " no line wrapping
 set wrap
@@ -49,6 +53,7 @@ set scrolloff=10
 highlight Overlength ctermbg=grey ctermfg=black
 match Overlength /\%81v.\+/
 
+highlight Visual ctermbg=black ctermfg=white
 " -----------
 " Indentation
 " -----------

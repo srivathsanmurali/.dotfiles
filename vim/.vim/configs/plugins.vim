@@ -56,7 +56,7 @@ set noshowmode
 Plug 'scrooloose/nerdcommenter'
 Plug 'vim-scripts/DoxygenToolkit.vim'
 
-" Plug 'sonph/onehalf', {'rtp': 'vim/'}
+Plug 'sonph/onehalf', {'rtp': 'vim/'}
 " Plug 'sickill/vim-monokai'
 
 Plug 'NLKNguyen/papercolor-theme'
@@ -91,6 +91,3 @@ Plug 'srivathsanmurali/OpenAPIValidate.vim'
 call plug#end()
 " colorscheme onehalflight
 " setting up colors properly
-set t_Co=256
-set background=dark
-" colorscheme PaperColor 

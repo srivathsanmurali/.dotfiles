@@ -35,7 +35,8 @@ floating_modifier $mod
 bindsym $mod+d exec "rofi -show combi -combi-modi 'drun,ssh,run' -show-icons"
 
 bindsym Control+mod1+l exec "i3lock -c 000000"
-bindsym Control+mod1+p exec "i3lock -c 000000; systemctl suspend"
+#bindsym Control+mod1+p exec "i3lock -c 000000; systemctl suspend"
+bindsym Control+mod1+p exec ~/.config/i3/scripts/power_options.sh
 
 bindsym Print exec spectacle 
 
@@ -140,6 +141,14 @@ bindsym $mod+Shift+minus move scratchpad
 bindsym $mod+minus scratchpad show
 
 bindsym $mod+x nop
+
+bindsym XF86MonBrightnessUp exec "light -A 10"
+bindsym XF86MonBrightnessDown exec "light -U 10"
+
+# Pulse Audio controls
+bindsym XF86AudioRaiseVolume exec --no-startup-id pactl set-sink-volume 0 +5% #increase sound volume
+bindsym XF86AudioLowerVolume exec --no-startup-id pactl set-sink-volume 0 -5% #decrease sound volume
+bindsym XF86AudioMute exec --no-startup-id pactl set-sink-mute 0 toggle # mute sound
 
 # float conatiners
 for_window [class="Orage"] floating enable
