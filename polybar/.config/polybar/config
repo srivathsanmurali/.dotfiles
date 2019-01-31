@@ -15,7 +15,7 @@ green       = #00f
 [vars]
 monitor               = ${env:MONITOR:DVI-D-0}
 width                 = 100%
-height                = 14
+height                = 20
 border-size           = 0
 border-color          = ${colors.bg-alt}
 padding-left          = 1
