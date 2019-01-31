@@ -48,8 +48,6 @@ set scrolloff=10
 "" highlight long statements
 highlight Overlength ctermbg=grey ctermfg=black
 match Overlength /\%81v.\+/
-
-highlight Visual ctermbg=black ctermfg=white
 " -----------
 " Indentation
 " -----------

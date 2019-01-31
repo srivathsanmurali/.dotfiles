@@ -62,7 +62,7 @@ module-margin-right = ${vars.module-margin-right}
 
 ; What Modules go where?
 modules-left    = i3 xwindow
-modules-center  =
+modules-center  = battery1 battery2
 modules-right   = wireless pulseaudio date time 
 
 ; Systray options
@@ -90,6 +90,20 @@ label-disconnected-foreground = #66ffffff
 [module/xwindow]
 type = 				internal/xwindow
 label = 			%title:0:30:...%
+
+[module/battery1]
+type = internal/battery
+full-at = 99
+battery = BAT0
+adaptor = ADP1
+
+[module/battery2]
+type = internal/battery
+full-at = 99
+battery = BAT1
+adaptor = ADP1
+
+poll-interval = 5
 
 [module/i3]
 type            = internal/i3
