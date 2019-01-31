@@ -1,11 +1,11 @@
 [Background]
-Color=250,250,250
+Color=255,255,255
 
 [BackgroundFaint]
-Color=250,250,250
+Color=255,255,255
 
 [BackgroundIntense]
-Color=250,250,250
+Color=255,255,255
 
 [Color0]
 Color=56,58,66
@@ -89,6 +89,7 @@ Color=56,58,66
 Color=56,58,66
 
 [General]
+Blur=false
 Description=One Half Light
 Opacity=1
 Wallpaper=

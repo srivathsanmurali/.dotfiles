@@ -97,11 +97,21 @@ full-at = 99
 battery = BAT0
 adaptor = ADP1
 
+format-charging = <label-charging>
+format-discharging = <label-discharging>
+label-charging = [%percentage%%]
+label-discharging = %percentage%%
+
 [module/battery2]
 type = internal/battery
 full-at = 99
 battery = BAT1
 adaptor = ADP1
+
+format-charging = <label-charging>
+format-discharging = <label-discharging>
+label-charging = [%percentage%%]
+label-discharging = %percentage%%
 
 poll-interval = 5
 
