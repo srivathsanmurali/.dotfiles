@@ -10,8 +10,6 @@ xset -b
 # set caps lock to ctrl key.
 setxkbmap -option ctrl:nocaps
 
-# rotate the right monitor
-
 export XDG_CURRENT_DESKTOP=KDE
 
 export SSH_ASKPASS=/usr/lib/ssh/ksshaskpass

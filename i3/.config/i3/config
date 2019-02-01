@@ -222,6 +222,7 @@ for_window [class="Plasmoidviewer"] floating enable; border none
 for_window [class="Seafile"] floating enable; border none
 for_window [class="Pavucontrol"] floating enable; border none;
 for_window [class="Spotify"] move to scratchpad 
+for_window [class="nitrogen"] floating enable;
 
 exec_always --no-startup-id dunst
 exec_always --no-startup-id thunderbird

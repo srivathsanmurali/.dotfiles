@@ -59,15 +59,6 @@ Plug 'vim-scripts/DoxygenToolkit.vim'
 Plug 'sonph/onehalf', {'rtp': 'vim/'}
 " Plug 'sickill/vim-monokai'
 
-Plug 'NLKNguyen/papercolor-theme'
-let g:PaperColor_Theme_Options = {
-  \   'theme': {
-  \     'default': {
-  \       'transparent_background': 1
-  \     }
-  \   }
-  \ }
-
 " --------------------------
 " Languages specific plugins
 " --------------------------
