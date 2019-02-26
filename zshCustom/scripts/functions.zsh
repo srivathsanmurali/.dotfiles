@@ -87,3 +87,9 @@ function gReview() {
 function gShowSelected() {
   git show $(git log --no-color --oneline | fzf | awk '{print $1}')
 }
+
+function vimSessionSelect() {
+  sessionFile="~/.vim/sessions/$(ls ~/.vim/sessions/ | fzf)"
+  vim -S $sessionFile
+}
+

@@ -49,6 +49,7 @@ alias supdate="sudo apt-get update"
 alias sv="sudoedit"
 alias v='vim'
 alias vi='vim'
+alias vims='vimSessionSelect'
 alias todo='. $ZSH_CUSTOM/bin/todo'
 alias pbcopy='xclip -selection clipboard'
 alias pbpaste='xclip -selection clipboard -o'

@@ -9,4 +9,5 @@ vim/.vim/autoload/*
 vim/.vim/plugged/*
 vim/.vim/swaps/*
 vim/.vim/undos/*
+vim/.vim/sessions/*
 i3/.config/i3/logfile

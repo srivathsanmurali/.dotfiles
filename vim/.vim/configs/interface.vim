@@ -66,3 +66,4 @@ set softtabstop=2
 " enable auto intend
 set autoindent
 
+let g:sessions_dir = '~/.vim/sessions'
