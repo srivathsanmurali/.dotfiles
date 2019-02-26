@@ -78,5 +78,7 @@ Plug 'mhinz/vim-mix-format', { 'for': 'elixir' }
 
 Plug 'srivathsanmurali/OpenAPIValidate.vim'
 
+Plug 'zhamlin/tiler.vim'
+
 " Initialize plugin system
 call plug#end()
