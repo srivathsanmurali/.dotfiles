@@ -14,14 +14,14 @@ hi SpellBad cterm=underline
 command! Chmodx :!chmod a+x %
 
 " Tab navigation like Firefox.
-nnoremap  <C-h>     <Esc><C-w>h<CR>
-inoremap  <C-h>     <Esc><C-w>h<CR>
-nnoremap  <C-k>     <Esc><C-w>k<CR>
-inoremap  <C-k>     <Esc><C-w>k<CR>
-noremap   <C-l>     <Esc><C-w>l<CR>
-inoremap  <C-l>     <Esc><C-w>l<CR>
-inoremap  <C-j>     <Esc><C-w>j<CR>
-noremap   <C-j>     <Esc><C-w>j<CR>
+nnoremap  <C-h>     <Esc><C-w>h
+inoremap  <C-h>     <Esc><C-w>h
+nnoremap  <C-k>     <Esc><C-w>k
+inoremap  <C-k>     <Esc><C-w>k
+noremap   <C-l>     <Esc><C-w>l
+inoremap  <C-l>     <Esc><C-w>l
+inoremap  <C-j>     <Esc><C-w>j
+noremap   <C-j>     <Esc><C-w>j
 
 nnoremap <leader>n  <Esc>:TilerNew<CR>
 nnoremap <leader>m  <Esc>:TilerNew<CR>:GFiles<CR>
