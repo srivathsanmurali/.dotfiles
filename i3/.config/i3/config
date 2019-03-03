@@ -226,7 +226,6 @@ for_window [class="Pavucontrol"] floating enable; border none;
 for_window [class="nitrogen"] floating enable;
 
 exec_always --no-startup-id dunst
-exec_always --no-startup-id thunderbird
 exec_always --no-startup-id $HOME/.config/polybar/launch.sh
 exec_always --no-startup-id nm-applet
 exec_always --no-startup-id spotify
