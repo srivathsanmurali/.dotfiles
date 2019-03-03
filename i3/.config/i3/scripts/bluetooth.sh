@@ -17,5 +17,11 @@ disconnect
 connect 04:52:C7:F0:8E:16 
 EOF
     ;;
+  "disconnect")
+    bluetoothctl << EOF
+power on
+disconnect
+EOF
+    ;;
 esac
 
