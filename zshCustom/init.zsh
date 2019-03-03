@@ -14,5 +14,7 @@ export ERL_AFLAGS="-kernel shell_history enabled"
 export ECTO_EDITOR=kwrite
 export ELIXIR_EDITOR=kwrite
 
+export PATH=$PATH:~/.local/bin
+
 ## setting theme
 . $ZSH_CUSTOM/my_themes/simple.zsh-theme
