@@ -1,5 +1,5 @@
 #!/bin/bash
-result=$(echo -n "tp_music|qc_35" | rofi -sep '|' -dmenu)
+result=$(echo -n "tp_music|qc_35|disconnect" | rofi -sep '|' -dmenu)
 
 case "$result" in
   "tp_music")
