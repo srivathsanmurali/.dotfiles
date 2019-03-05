@@ -63,7 +63,7 @@ module-margin-right = ${vars.module-margin-right}
 ; What Modules go where?
 modules-left    = i3 xwindow
 modules-center  = battery1 battery2
-modules-right   = wireless pulseaudio date time 
+modules-right   = bluetooth wireless pulseaudio date time 
 
 ; Systray options
 tray-position = right
@@ -113,6 +113,11 @@ format-discharging = <label-discharging>
 label-charging = [%percentage%%]
 label-discharging = %percentage%%
 
+poll-interval = 5
+
+[module/bluetooth]
+type = custom/script
+exec = echo "info" | bluetoothctl | grep Name: | cut -d':' -f2
 poll-interval = 5
 
 [module/i3]
