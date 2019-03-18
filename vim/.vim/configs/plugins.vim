@@ -39,11 +39,6 @@ let g:ycm_add_preview_to_completeopt = 0
 let g:ycm_show_diagnostics_ui = 0
 set completeopt-=preview
 
-Plug 'jeetsukumaran/vim-buffergator'
-let g:buffergator_autoupdate = 1
-let g:buffergator_viewport_split_policy = "N"
-let g:buffergator_vsplit_size = 3
-
 Plug 'pboettch/vim-cmake-syntax', { 'for': 'cmake'}
 
 Plug 'itchyny/lightline.vim'
