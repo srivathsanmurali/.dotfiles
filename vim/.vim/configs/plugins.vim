@@ -58,6 +58,7 @@ Plug 'vim-scripts/DoxygenToolkit.vim'
 
 Plug 'sonph/onehalf', {'rtp': 'vim/'}
 " Plug 'sickill/vim-monokai'
+Plug 'crusoexia/vim-monokai'
 
 " --------------------------
 " Languages specific plugins
