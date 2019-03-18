@@ -46,3 +46,6 @@ nnoremap <leader>p    <Esc>:GFiles<CR>
 inoremap <leader>p    <Esc>:GFiles<CR>
 
 nnoremap <C-a> ggVGG"+y
+
+" TODO(sri): Buffergator automatically maps <leader>b to 
+" Buffergator Open. Need to figure out a way to change that.
