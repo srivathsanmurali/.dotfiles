@@ -48,3 +48,8 @@ inoremap <leader>p    <Esc>:GFiles<CR>
 nnoremap <C-a> ggVGG"+y
 
 nnoremap <leader>b :Buffers<CR>
+
+nnoremap <leader>t :tabnew<CR>
+nnoremap J :tabprev<CR>
+nnoremap K :tabprev<CR>
+
