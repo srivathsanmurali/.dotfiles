@@ -38,6 +38,7 @@ bindsym Control+mod1+l exec "i3lock -c 000000"
 #bindsym Control+mod1+p exec "i3lock -c 000000; systemctl suspend"
 bindsym Control+mod1+p exec ~/.config/i3/scripts/power_options.sh
 bindsym Control+mod1+b exec ~/.config/i3/scripts/bluetooth.sh
+bindsym Control+mod1+s exec "rofi -show ssh"
 
 bindsym Print exec spectacle 
 
