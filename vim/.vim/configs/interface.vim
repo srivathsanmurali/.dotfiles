@@ -34,7 +34,7 @@ set showmatch
 set backspace=indent,eol,start
 
 " show line numbers
-set nonumber
+set number
 
 " no line wrapping
 set wrap

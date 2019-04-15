@@ -53,3 +53,5 @@ nnoremap <leader>t :tabnew<CR>
 nnoremap J :tabprev<CR>
 nnoremap K :tabprev<CR>
 
+nnoremap <C-t> :Tags<CR>
+inoremap <C-t> :Tags<CR>
