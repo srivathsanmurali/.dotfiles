@@ -3,6 +3,7 @@ music/.config/mpd/database
 music/.config/mpd/log
 music/.config/mpd/state
 music/.config/mpd/sticker
+music/.config/mpd/pid
 music/.ncmpcpp/error.log
 vim/.vim/.netrwhist
 vim/.vim/autoload/*
