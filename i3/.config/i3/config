@@ -41,6 +41,9 @@ bindsym Control+mod1+b exec ~/.config/i3/scripts/bluetooth.sh
 bindsym Control+mod1+s exec "rofi -show ssh"
 bindsym $mod+Shift+p exec "~/.local/bin/passmenu"
 
+# music
+bindsym $mod+p exec "/usr/bin/mpc toggle"
+
 bindsym Print exec spectacle 
 
 # start a terminal
@@ -230,7 +233,6 @@ for_window [class="nitrogen"] floating enable;
 exec_always --no-startup-id dunst
 exec_always --no-startup-id $HOME/.config/polybar/launch.sh
 exec_always --no-startup-id nm-applet
-exec_always --no-startup-id spotify
 
 exec --no-startup-id setxkbmap -option ctrl:nocaps
 exec --no-startup-id xautolock -detectsleep -time 10 -locker "i3lock -c 000000" -notify 30 -notifier "notify-send -u critical -t 100000 -- 'Locking screen in 340 second'"
