@@ -1,6 +1,7 @@
 [user]
 	email = srivathsan92@gmail.com
 	name = Srivathsan Murali
+	signingkey = EC0A67FF
 
 [color]
 	ui = always
