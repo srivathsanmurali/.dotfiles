@@ -7,5 +7,5 @@ function precmd() {
   PSVAR=`git_prompt_info`
 }
 
-PROMPT='%2d~> '
+PROMPT='%2~> '
 RPROMPT='%v'
