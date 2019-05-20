@@ -17,4 +17,4 @@ export ELIXIR_EDITOR=kwrite
 export PATH=$PATH:~/.local/bin
 
 ## setting theme
-. $ZSH_CUSTOM/my_themes/simple.zsh-theme
+. $ZSH_CUSTOM/my_themes/simple2.zsh-theme
