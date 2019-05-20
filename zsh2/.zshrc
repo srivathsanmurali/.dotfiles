@@ -10,4 +10,4 @@ export ERL_AFLAGS="-kernel shell_history enabled"
 export ECTO_EDITOR=kwrite
 export ELIXIR_EDITOR=kwrite
 
-export BROWSER=firefox
+export BROWSER=qutebrowser
