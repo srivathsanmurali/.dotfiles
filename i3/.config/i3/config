@@ -44,6 +44,8 @@ bindsym $mod+Shift+p exec "~/.local/bin/passmenu"
 # music
 bindsym $mod+p exec "/usr/bin/mpc toggle"
 
+bindsym $mod+Shift+b exec "/usr/bin/qutebrowser"
+
 bindsym Print exec spectacle 
 
 # start a terminal
