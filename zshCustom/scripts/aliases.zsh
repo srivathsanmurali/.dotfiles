@@ -61,7 +61,3 @@ alias pauseMusic="ncmpcpp pause"
 alias playMusic="ncmpcpp play"
 alias stopusic="ncmpcpp stop"
 alias toggleMusic="ncmpcpp toggle"
-
-if type lsd >/dev/null 2>/dev/null; then
-  alias ls='lsd'
-fi;
