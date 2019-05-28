@@ -15,6 +15,7 @@ export ECTO_EDITOR=kwrite
 export ELIXIR_EDITOR=kwrite
 
 export PATH=$PATH:~/.local/bin
+export MANPATH=$MANPATH:~/.local/share/man/
 
 ## setting theme
 . $ZSH_CUSTOM/my_themes/simple2.zsh-theme
