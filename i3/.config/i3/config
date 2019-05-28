@@ -33,6 +33,7 @@ floating_modifier $mod
 
 # synapse
 bindsym $mod+d exec "rofi -show combi -combi-modi 'drun,ssh,run' -show-icons"
+bindsym $mod+Shift+d exec "~/.local/bin/pdf_search"
 
 bindsym Control+mod1+l exec "i3lock -c 000000"
 #bindsym Control+mod1+p exec "i3lock -c 000000; systemctl suspend"
