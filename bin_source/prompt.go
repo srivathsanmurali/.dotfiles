@@ -18,15 +18,13 @@ func main() {
 		if i == len(parts)-1 {
 			fmt.Printf("%s", part)
 		} else {
-			if len(part) != 0 {
-        if(part[0] == '.') {
-          fmt.Printf("%c%c/", '.', part[1])
-        } else {
-				  fmt.Printf("%c/", part[0])
-        }
-			} else {
+      if len(part) == 0 {
 				fmt.Printf("/")
-			}
+      } else if(part[0] == '.') {
+        fmt.Printf("%c%c/", '.', part[1])
+      } else {
+				fmt.Printf("%c/", part[0])
+      }
 		}
 	}
 }
