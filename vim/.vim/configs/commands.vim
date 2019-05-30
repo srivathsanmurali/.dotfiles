@@ -57,3 +57,5 @@ nnoremap <C-t> :Tags<CR>
 inoremap <C-t> :Tags<CR>
 
 set tags=./tags
+
+nnoremap Q <Nop>
