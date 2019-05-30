@@ -12,7 +12,7 @@ source ~/.vim/configs/commands.vim
 set shell=/bin/bash
 
 " set backup and swap directories to avoid clutter
-let vimdir = expand('~/.vim/')
+let vimdir = expand('~/.cache/vim/')
 let swpdir = vimdir . 'swaps/'
 let bkpdir = vimdir . 'backups/'
 let unddir = vimdir . 'undos/'
