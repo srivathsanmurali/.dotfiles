@@ -55,3 +55,5 @@ nnoremap K :tabprev<CR>
 
 nnoremap <C-t> :Tags<CR>
 inoremap <C-t> :Tags<CR>
+
+set tags=./tags
