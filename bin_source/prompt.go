@@ -19,7 +19,11 @@ func main() {
 			fmt.Printf("%s", part)
 		} else {
 			if len(part) != 0 {
-				fmt.Printf("%c/", part[0])
+        if(part[0] == '.') {
+          fmt.Printf("%c%c/", '.', part[1])
+        } else {
+				  fmt.Printf("%c/", part[0])
+        }
 			} else {
 				fmt.Printf("/")
 			}
