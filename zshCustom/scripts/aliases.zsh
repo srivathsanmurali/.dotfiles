@@ -2,7 +2,7 @@
 # configs
 alias i3config='vi ~/.config/i3/config'
 alias nixconfig='sudoedit /etc/nixos/configuration.nix'
-alias vimconfig='vi ~/.vimrc'
+alias vimconfig='vi ~/.dotfiles/vim/'
 alias zshconfig='vi ~/.dotfiles/zshCustom'
 alias zshrefresh='source ~/.zshrc'
 
