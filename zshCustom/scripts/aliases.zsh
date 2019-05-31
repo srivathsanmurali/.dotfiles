@@ -5,6 +5,7 @@ alias nixconfig='sudoedit /etc/nixos/configuration.nix'
 alias vimconfig='vi ~/.dotfiles/vim/'
 alias zshconfig='vi ~/.dotfiles/zshCustom'
 alias zshrefresh='source ~/.zshrc'
+alias muttconfig='vi ~/.config/mutt/'
 
 # git
 alias g='git'
@@ -54,6 +55,9 @@ alias todo='. $ZSH_CUSTOM/bin/todo'
 alias pbcopy='xclip -selection clipboard'
 alias pbpaste='xclip -selection clipboard -o'
 alias pjson='python -m json.tool'
+
+alias neomutt='neomutt -F ~/.config/mutt/muttrc'
+alias mutt='neomutt -F ~/.config/mutt/muttrc'
 
 # Music
 alias music="ncmpcpp"
