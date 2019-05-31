@@ -1,0 +1,33 @@
+# general settings
+auto-reload yes
+
+# external browser
+browser "/usr/bin/qutebrowser %u"
+macro m set browser "/usr/bin/vlc %u"; open-in-browser ; set browser "/usr/local/bin/qutebrowser %u" 
+
+# highlights
+highlight article "^(Title):.*$" blue default
+highlight article "https?://[^ ]+" red default
+highlight article "\\[image\\ [0-9]+\\]" green default
+
+
+# navigation
+goto-next-feed no
+
+# unbind keys
+unbind-key j
+unbind-key k
+unbind-key J
+unbind-key K
+
+bind-key j down feedlist
+bind-key k up feedlist
+bind-key j next articlelist
+bind-key k prev articlelist
+bind-key J next-feed articlelist
+bind-key K prev-feed articlelist
+bind-key j down article
+bind-key k up article
+
+# misc
+confirm-exit no
