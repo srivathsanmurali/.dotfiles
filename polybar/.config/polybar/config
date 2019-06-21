@@ -62,7 +62,7 @@ module-margin-right = ${vars.module-margin-right}
 
 ; What Modules go where?
 modules-left    = i3 xwindow
-modules-center  = battery1 battery2
+modules-center  = musictitle
 modules-right   = bluetooth wireless pulseaudio date time 
 
 ; Systray options
@@ -193,6 +193,12 @@ label = %date%
 
 format = "%{F#4e5166}%{F-} <label>"
 format-foreground = ${colors.fg}
+
+[module/musictitle]
+type = custom/script
+exec = mpc current -f "%album% - %title%"
+interval = 5
+click-left = mpc toggle
 
 [module/eth]
 type = 				internal/network
