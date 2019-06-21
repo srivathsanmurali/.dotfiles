@@ -197,8 +197,10 @@ format-foreground = ${colors.fg}
 [module/musictitle]
 type = custom/script
 exec = mpc current -f "%album% - %title%"
-interval = 5
-click-left = mpc toggle
+interval = 1
+click-left = mpc prev 
+click-right = mpc next 
+click-middle = mpc toggle
 
 [module/eth]
 type = 				internal/network
