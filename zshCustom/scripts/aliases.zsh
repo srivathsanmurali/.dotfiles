@@ -61,8 +61,8 @@ alias mutt='neomutt -F ~/.config/mutt/muttrc'
 
 # Music
 alias music="ncmpcpp"
-alias playlist="mpc playlist"
 alias pauseMusic="ncmpcpp pause"
 alias playMusic="ncmpcpp play"
 alias stopusic="ncmpcpp stop"
 alias toggleMusic="ncmpcpp toggle"
+alias playlist="~/.local/bin/mpc_playlist | less"

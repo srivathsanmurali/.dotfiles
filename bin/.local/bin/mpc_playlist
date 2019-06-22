@@ -1,0 +1,5 @@
+#!/bin/sh
+current=`mpc current -f "%album% - %title%"`
+
+mpc playlist -f "%album% - %title%" \
+| sed "s/$current/$(tput setaf 2)&$(tput sgr0)/g"
