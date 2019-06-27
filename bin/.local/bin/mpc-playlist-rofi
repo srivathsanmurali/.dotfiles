@@ -1,6 +1,6 @@
 #!/bin/sh
 
-ROFI="rofi -dmenu -p 'Track:'"
+ROFI="rofi -dmenu -i -p 'Track:'"
 format="%album% - %title%"
 TITLE=$(mpc playlist -f "$format" | $ROFI);
 if [ "$TITLE" == "" ]; then exit; fi
