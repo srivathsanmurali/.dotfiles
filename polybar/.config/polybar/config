@@ -1,3 +1,5 @@
+; vim:ft=dosini
+
 [colors]
 bg          = #222
 bg-alt	    = #444
@@ -62,8 +64,50 @@ module-margin-right = ${vars.module-margin-right}
 
 ; What Modules go where?
 modules-left    = i3 xwindow
-modules-center  = musictitle
+modules-center  = mpd 
 modules-right   = bluetooth wireless pulseaudio date time 
+
+; Systray options
+tray-position = right
+tray-padding = 2
+tray-detached = false
+
+[bar/tbar2]
+; Confirguration Options
+monitor       = ${vars.monitor}
+width         = ${vars.width}
+height        = ${vars.height}
+fixed-center  = false
+bottom        = false 
+;override-redirect = 		true
+
+; Coloring
+background = ${colors.bg}
+foreground = ${colors.fg}
+
+; Border options
+border-size   = ${vars.border-size}
+border-color  =	${vars.border-color}
+
+; Padding options
+padding-left  = ${vars.padding-left}
+padding-right = ${vars.padding-right}
+
+; Fonts
+font-0 = ${fonts.default}
+font-1 = ${fonts.awesome}
+; font-1 =			${fonts.uni}
+; font-2 =			${fonts.siji}
+
+; Module Settings
+;
+; Module Magins
+module-margin-left  = ${vars.module-margin-left}
+module-margin-right = ${vars.module-margin-right}
+
+; What Modules go where?
+modules-left    = i3 xwindow
+modules-right   = date time 
 
 ; Systray options
 tray-position = right
@@ -255,6 +299,24 @@ bar-volume-foreground-5 = 	#f5a70a
 bar-volume-foreground-6 = 	#ff5555
 bar-volume-empty-foreground = 	${colors.fg-alt}
 
+[module/mpd]
+type = internal/mpd
+format-online = <label-song>  <icon-prev> <icon-stop> <toggle> <icon-next> <bar-progress>
+
+icon-prev = 
+icon-stop = 
+icon-play = 
+icon-pause = 
+icon-next = 
+
+label-song-maxlen = 25
+label-song-ellipsis = true
+
+bar-progress-width = 45
+bar-progress-indicator = |
+bar-progress-fill = ─
+bar-progress-empty = ─
+
 [settings]
 screenchange-reload = true
 
@@ -262,4 +324,3 @@ screenchange-reload = true
 margin-top = 5
 margin-bottom = 5
 
-; vim:ft=dosini
