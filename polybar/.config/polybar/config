@@ -26,8 +26,8 @@ module-margin-left    = 1
 module-margin-right   = 2
 
 [fonts]
-default = FiraCode:size=10;1
-awesome = 			FontAwesome:pixelsize=10;2
+default = "Fira Code:size=10;1"
+awesome = "FontAwesome:pixelsize=10;2"
 
 [bar/tbar]
 ; Confirguration Options
@@ -301,14 +301,14 @@ bar-volume-empty-foreground = 	${colors.fg-alt}
 
 [module/mpd]
 type = internal/mpd
-format-online = <label-song>  <icon-prev> <icon-stop> <toggle> <icon-next> <bar-progress>
+format-online = <label-song> <bar-progress> <icon-prev> <icon-stop> <toggle> <icon-next>
 label-song = %album% - %title%
 
-icon-prev = 
-icon-stop = 
-icon-play = 
-icon-pause = 
-icon-next = 
+icon-prev = prev
+icon-stop = stop
+icon-play = play
+icon-pause = pause
+icon-next = next
 
 label-song-maxlen = 40
 label-song-ellipsis = true
