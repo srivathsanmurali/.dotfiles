@@ -1,0 +1,8 @@
+#!/bin/sh
+
+ROFI="rofi -dmenu -p 'Track:'"
+format="%album% - %title%"
+TITLE=$(mpc playlist -f "$format" | $ROFI);
+if [ "$TITLE" == "" ]; then exit; fi
+POS=$(mpc playlist -f "$format" | grep -n "$TITLE" | awk -F: '{print $1}')
+mpc play $POS

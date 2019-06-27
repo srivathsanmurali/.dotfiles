@@ -44,6 +44,7 @@ bindsym $mod+Shift+p exec "~/.local/bin/passmenu"
 
 # music
 bindsym $mod+p exec "/usr/bin/mpc toggle"
+bindsym $mod+m exec "${HOME}/.local/bin/mpc-playlist-rofi"
 
 bindsym $mod+Shift+b exec "/usr/bin/qutebrowser"
 
