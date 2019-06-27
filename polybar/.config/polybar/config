@@ -64,8 +64,7 @@ module-margin-right = ${vars.module-margin-right}
 
 ; What Modules go where?
 modules-left    = i3 xwindow
-modules-center  = mpd 
-modules-right   = bluetooth wireless pulseaudio date time 
+modules-right   = mpd bluetooth wireless pulseaudio date time 
 
 ; Systray options
 tray-position = right
@@ -133,7 +132,8 @@ label-disconnected-foreground = #66ffffff
 
 [module/xwindow]
 type = 				internal/xwindow
-label = 			%title:0:30:...%
+label = 			%title%
+label-maxlen = 30
 
 [module/battery1]
 type = internal/battery
@@ -302,6 +302,7 @@ bar-volume-empty-foreground = 	${colors.fg-alt}
 [module/mpd]
 type = internal/mpd
 format-online = <label-song>  <icon-prev> <icon-stop> <toggle> <icon-next> <bar-progress>
+label-song = %album% - %title%
 
 icon-prev = 
 icon-stop = 
@@ -309,7 +310,7 @@ icon-play = 
 icon-pause = 
 icon-next = 
 
-label-song-maxlen = 25
+label-song-maxlen = 40
 label-song-ellipsis = true
 
 bar-progress-width = 45
