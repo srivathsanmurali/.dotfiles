@@ -43,8 +43,21 @@ bindsym Control+mod1+s exec "rofi -show ssh"
 bindsym $mod+Shift+p exec "~/.local/bin/passmenu"
 
 # music
-bindsym $mod+p exec "/usr/bin/mpc toggle"
-bindsym $mod+m exec "${HOME}/.local/bin/mpc-playlist-rofi"
+#bindsym $mod+p exec "/usr/bin/mpc toggle"
+#bindsym $mod+m exec "${HOME}/.local/bin/mpc-playlist-rofi"
+
+set $mode_mpd "MPD: [p]lay/[p]ause [n]ext [b]ack play[l]ist"
+bindsym $mod+m mode $mode_mpd
+mode $mode_mpd {
+  bindsym p exec mpc toggle; mode "default"
+  bindsym n exec mpc next; mode "default"
+  bindsym b exec mpc prev; mode "default"
+  bindsym l exec "${HOME}/.local/bin/mpc-playlist-rofi"; mode "default"
+
+  # back to normal: Enter or Escape
+  bindsym Return mode "default"
+  bindsym Escape mode "default"
+}
 
 bindsym $mod+Shift+b exec "/usr/bin/qutebrowser"
 
