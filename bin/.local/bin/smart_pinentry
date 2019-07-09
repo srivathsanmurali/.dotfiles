@@ -1,0 +1,12 @@
+#!/bin/sh
+set -eu
+
+PINENTRY_TERMINAL='/usr/bin/pinentry-curses'
+PINENTRY_X11='/usr/bin/pinentry-qt5'
+
+# Action happens below!
+if [ -n "${DISPLAY-}" -a -z "${TERM-}" ]; then
+    exec "$PINENTRY_X11" "$@"
+else
+    exec "$PINENTRY_TERMINAL" "$@"
+fi
