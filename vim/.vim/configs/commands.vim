@@ -50,7 +50,7 @@ nnoremap <C-a> ggVGG"+y
 nnoremap <leader>b :Buffers<CR>
 
 nnoremap <leader>t :tabnew<CR>
-nnoremap J :tabprev<CR>
+nnoremap J :tabnext<CR>
 nnoremap K :tabprev<CR>
 
 nnoremap <C-t> :Tags<CR>
