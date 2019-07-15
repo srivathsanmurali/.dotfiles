@@ -3,7 +3,7 @@ highlight VertSplit cterm=NONE ctermfg=white ctermbg=NONE
 highlight HorSplit cterm=NONE ctermfg=white ctermbg=NONE
 
 " Git gutter column
-highlight SignColumn ctermbg=None
+" highlight SignColumn ctermbg=None
 
 " status line
 hi s1 ctermbg=white ctermfg=black

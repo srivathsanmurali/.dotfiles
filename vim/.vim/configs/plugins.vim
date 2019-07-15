@@ -12,7 +12,7 @@ call plug#begin('~/.vim/plugged')
 Plug 'junegunn/vim-plug'
 
 " git gutter to track changes
-Plug 'airblade/vim-gitgutter'
+"Plug 'airblade/vim-gitgutter'
 " fugitive to work on git
 Plug 'tpope/vim-fugitive'
 
