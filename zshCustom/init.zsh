@@ -3,6 +3,10 @@ do
 source $ZSH_CUSTOM/scripts/$i;
 done;
 
+## activate completions
+autoload -Uz compinit
+compinit
+
 fpath+="$ZSH_CUSTOM/completions"
 
 ## asdf
