@@ -54,6 +54,8 @@ Plug 'sonph/onehalf', {'rtp': 'vim/'}
 " Plug 'sickill/vim-monokai'
 Plug 'crusoexia/vim-monokai'
 
+Plug 'jeetsukumaran/vim-buffergator'
+
 " --------------------------
 " Languages specific plugins
 " --------------------------

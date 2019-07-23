@@ -47,7 +47,10 @@ inoremap <leader>p    <Esc>:GFiles<CR>
 
 nnoremap <C-a> ggVGG"+y
 
-nnoremap <leader>b :Buffers<CR>
+nnoremap <leader>b :BuffergatorToggle<CR>
+let g:buffergator_autoupdate = 1
+let g:buffergator_viewport_split_policy = "N"
+let g:buffergator_vsplit_size = 3
 
 nnoremap <leader>t :tabnew<CR>
 nnoremap J :tabnext<CR>
