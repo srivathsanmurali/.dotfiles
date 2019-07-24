@@ -70,11 +70,64 @@ function pull() {
   esac
 }
 
+# thanks Irm
+function url_encode() {
+  hexdump -v -e '1/1 "%02x\t"' -e '1/1 "%_c\n"' <<< "$*" \
+    | LANG=C awk '
+      $1 == "20"                    { printf("%s", "+"); next }
+      $1 ~  /0[adAD]/               {                    next }
+      $2 ~  /^[a-zA-Z0-9.*()\/_-]$/ { printf("%s", $2);  next }
+                                    { printf("%%%s", $1)      }
+    '
+}
+
+function rpc_search() {
+  # avoid printf because url_encode outputs "%"
+	search_url="$AUR_GIT_SERVER/rpc/?v=5&by=name&type=search&arg=$(url_encode "$1")"
+
+	# only show 5 results
+	curl --silent --fail $search_url | parse_rpc | sort_rpc | cleanup_rpc | head -n 10
+}
+
+function cleanup_rpc() {
+  cut -d'|' -f 1,2 | sed 's/|/ - /g'
+}
+
+function sort_rpc() {
+  sort -t '|' -k3rn
+}
+
+function parse_rpc() {
+	awk -F '[^\\\\]"' -v RS='{"|,"|"}' '
+    function unstring(str) {
+      sub(/[^:]+:/, ""  , str) # remove prefix
+      gsub(/\\\"/ , "\"", str) # un-escape quotes
+      gsub(/\\\// , "/" , str) # un-escape urls
+      gsub(/%/    , "%%", str) # escape percents for printf
+      gsub(/\|/   , "/" , str) # replace pipe (our own field sep)
+      gsub(/"$/   , ""  , str) # remove extra trailing quote
+      if(substr(str, 1, 1) == "\"")
+        return substr(str, 2, length(str)) # unquote value
+      else
+        return str
+    }
+    /Name":/        { printf "\033[01;34m%s\033[0m",    unstring($0) }
+    /Description":/ { printf "|%s",   unstring($0) }
+    /NumVotes":/    { printf "|%s\n",   unstring($0) }
+  '
+#/URL":/         { printf "\033[01;32m%s\033[0m\n\n",   unstring($0) }
+}
+
 case "$1" in
   "ls")
   shift
   list $@
   ;;
+
+	"search")
+	shift
+	rpc_search $@
+	;;
   
   "clone")
   shift
