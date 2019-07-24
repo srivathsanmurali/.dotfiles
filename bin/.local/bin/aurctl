@@ -11,6 +11,7 @@ $(tput setaf 4)aurctl - Aur helper$(tput sgr0)
   $(tput setaf 2)ls$(tput sgr0)            List source packages
   $(tput setaf 2)ls -b$(tput sgr0)         List built packages
   $(tput setaf 2)ls -i$(tput sgr0)         List installed packages
+  $(tput setaf 2)search [pkg]$(tput sgr0)  Install package
   $(tput setaf 2)down [pkg]$(tput sgr0)    Install package
   $(tput setaf 2)pull [pkg]$(tput sgr0)    Pull from packages repo
   $(tput setaf 2)pull all$(tput sgr0)      Pull all source repos 
