@@ -1,0 +1,40 @@
+# vim: set ft=conf!
+
+# Wallpaper
+exec --no-startup-id nitrogen --restore &
+
+for_window [class="^.*"] border pixel 1
+
+# nofocus for notifications
+#no_focus [window_role="pop-up"]
+no_focus [window_type="notification"]
+
+# assigns
+assign [class="Thunderbird"] 10
+
+## Plasma Integration
+# Try to kill the wallpaper set by Plasma (it takes up the entire workspace and hides everythiing)
+exec --no-startup-id wmctrl -c Plasma
+for_window [title="Desktop — Plasma"] kill; floating enable; border none
+
+## Avoid tiling popups, dropdown windows from plasma
+# for the first time, manually resize them, i3 will remember the setting for floating windows
+for_window [class="plasmashell"] floating enable;
+for_window [class="Plasma"] floating enable; border none
+for_window [title="plasma-desktop"] floating enable; border none
+for_window [title="win7"] floating enable; border none
+for_window [class="krunner"] floating enable; border none
+for_window [class="Kmix"] floating enable; border none
+for_window [class="Klipper"] floating enable; border none
+for_window [class="Plasmoidviewer"] floating enable; border none
+for_window [class="Seafile"] floating enable; border none
+for_window [class="Pavucontrol"] floating enable; border none;
+# for_window [class="Spotify"] move to scratchpad 
+for_window [class="nitrogen"] floating enable;
+
+exec_always --no-startup-id dunst
+exec_always --no-startup-id $HOME/.config/polybar/launch.sh
+exec_always --no-startup-id nm-applet
+
+exec --no-startup-id setxkbmap -option ctrl:nocaps
+exec --no-startup-id xautolock -detectsleep -time 10 -locker "i3lock -c 000000" -notify 30 -notifier "notify-send -u critical -t 100000 -- 'Locking screen in 340 second'"

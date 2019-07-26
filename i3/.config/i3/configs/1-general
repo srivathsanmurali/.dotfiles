@@ -1,0 +1,25 @@
+# vim: set ft=conf
+# General setup
+
+set $mod    Mod4
+set $modAlt Mod1
+
+# gaps
+gaps inner 3
+smart_gaps on
+
+#color
+set $barColor             #2f343f
+set $bg-color             #2f343f
+set $inactive-bg-color    #2f343f
+set $text-color           #fdf4f5
+set $inactive-text-color  #676E7D
+set $urgent-bf-color      #E53935
+
+# window colors
+client.focused            $bg-color           $bg-color             $text-color           #00ff00
+client.unfocused          $inactive-bg-color  $inactive-bg-color    $inactive-text-color  #00ff00
+client.focused_inactive   $inactive-bg-color  $inactive-bg-color    $inactive-text-color  #00ff00
+client.urgent             $urgent-bg-color    $urgent-bg-color      $text-color           #00ff00
+
+font -misc-fixed-medium-r-normal--13-120-75-75-C-70-iso10646-1
