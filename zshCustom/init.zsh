@@ -23,3 +23,8 @@ export MANPATH=$MANPATH:~/.local/share/man/
 
 ## setting theme
 . $ZSH_CUSTOM/my_themes/simple2.zsh-theme
+
+## rg 
+if hash rg 2>/dev/null; then
+  export FZF_DEFAULT_COMMNAD='rg --files --no-ignore --hidden --follow --glob "!.git/*"'
+fi
