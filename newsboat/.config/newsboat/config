@@ -1,9 +1,7 @@
 # general settings
 auto-reload yes
 
-# external browser
-browser "/usr/bin/qutebrowser %u"
-macro m set browser "/usr/bin/vlc %u"; open-in-browser ; set browser "/usr/local/bin/qutebrowser %u" 
+external-url-viewer "urlscan -dc -r 'linkhandler {}'"
 
 # highlights
 highlight article "^(Title):.*$" blue default
@@ -11,23 +9,59 @@ highlight article "https?://[^ ]+" red default
 highlight article "\\[image\\ [0-9]+\\]" green default
 
 
+#color listnormal bldefault
+color listfocus yellow default
+color listnormal_unread cyan default
+color listfocus_unread magenta default bold
+color info white cyan bold
+#color article cyan default
+
 # navigation
 goto-next-feed no
 
 # unbind keys
-unbind-key j
-unbind-key k
-unbind-key J
-unbind-key K
+# unbind-key j
+# unbind-key k
+# unbind-key J
+# unbind-key K
+# 
+# bind-key j down feedlist
+# bind-key k up feedlist
+# bind-key j next articlelist
+# bind-key k prev articlelist
+# bind-key J next-feed articlelist
+# bind-key K prev-feed articlelist
+# bind-key j down article
+# bind-key k up article
 
-bind-key j down feedlist
-bind-key k up feedlist
+bind-key j down
+bind-key k up
 bind-key j next articlelist
 bind-key k prev articlelist
 bind-key J next-feed articlelist
 bind-key K prev-feed articlelist
-bind-key j down article
-bind-key k up article
+bind-key G end
+bind-key g home
+bind-key d pagedown
+bind-key u pageup
+bind-key l open
+bind-key h quit
+bind-key a toggle-article-read
+bind-key n next-unread
+bind-key N prev-unread
+bind-key D pb-download
+bind-key U show-urls
+bind-key x pb-delete
+bind-key ^t next-unread
 
 # misc
 confirm-exit no
+
+browser linkhandler
+macro , open-in-browser
+macro t set browser "tsp youtube-dl --add-metadata -ic"; open-in-browser ; set browser linkhandler
+macro a set browser "tsp youtube-dl --add-metadata -xic -f bestaudio/best"; open-in-browser ; set browser linkhandler
+macro v set browser "tsp mpv"; open-in-browser ; set browser linkhandler
+macro w set browser "firefox"; open-in-browser ; set browser linkhandler
+macro c set browser "wl-copy"; open-in-browser ; set browser linkhandler
+

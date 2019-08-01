@@ -1,11 +1,14 @@
-https://drewdevault.com/feed.xml
-https://jameshfisher.com/feed.xml
-https://blog.matejc.com/rss.xml
-https://www.kovach.me/rss.xml
-https://mropert.github.io/feed.xml
-https://vector-of-bool.github.io/feed.xml
-https://www.bfilipek.com/feeds/posts/default
-https://aishpant.dev/index.xml
-http://jasonwryan.com/atom.xml
-https://www.jakerobers.com/feed.xml
-https://emersion.fr/blog/rss.xml
+# tech blogs
+https://drewdevault.com/feed.xml "tech" "blog"
+https://blog.matejc.com/rss.xml "tech" "blog"
+https://mropert.github.io/feed.xml "tech" "blog" "cpp"
+https://vector-of-bool.github.io/feed.xml "tech" "blog" "cpp"
+https://www.bfilipek.com/feeds/posts/default "tech" "blog" "cpp"
+https://www.jakerobers.com/feed.xml "tech" "blog"
+http://lukesmith.xyz/rss.xml "tech" "blog"
+
+## tech
+https://www.archlinux.org/feeds/news/ "tech"
+
+## youtube
+https://www.youtube.com/feeds/videos.xml?channel_id=UCDYZxJE8kLZ-o6nL8E1bXdQ "yt"
