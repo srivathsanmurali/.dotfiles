@@ -19,21 +19,7 @@ color info white cyan bold
 # navigation
 goto-next-feed no
 
-# unbind keys
-# unbind-key j
-# unbind-key k
-# unbind-key J
-# unbind-key K
-# 
-# bind-key j down feedlist
-# bind-key k up feedlist
-# bind-key j next articlelist
-# bind-key k prev articlelist
-# bind-key J next-feed articlelist
-# bind-key K prev-feed articlelist
-# bind-key j down article
-# bind-key k up article
-
+# bindings
 bind-key j down
 bind-key k up
 bind-key j next articlelist
