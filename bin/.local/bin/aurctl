@@ -16,6 +16,7 @@ $(tput setaf 4)aurctl - Aur helper$(tput sgr0)
   $(tput setaf 2)pull [pkg]$(tput sgr0)    Pull from packages repo
   $(tput setaf 2)pull all$(tput sgr0)      Pull all source repos 
   $(tput setaf 2)rm [pkg]$(tput sgr0)      Remove pkg source dir
+  $(tput setaf 2)build [pkg]$(tput sgr0)     Build package using makepkg 
   $(tput setaf 2)help$(tput sgr0)          Print this
 EOF
 }
@@ -120,6 +121,12 @@ function parse_rpc() {
 #/URL":/         { printf "\033[01;32m%s\033[0m\n\n",   unstring($0) }
 }
 
+function build() {
+  [ ! -d $SOURCE_DIR/$1 ] && echo "$1 not available in Packages" && exit 1
+
+  (cd $SOURCE_DIR/$1 && makepkg -sri)
+}
+
 case "$1" in
   "ls")
   shift
@@ -144,6 +151,11 @@ case "$1" in
   "rm")
   shift
   remove $@
+  ;;
+
+  "build")
+  shift
+  build $@
   ;;
 
   "help"|"")
