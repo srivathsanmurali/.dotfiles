@@ -7,18 +7,6 @@ https://www.bfilipek.com/feeds/posts/default "tech" "blog" "cpp"
 https://www.jakerobers.com/feed.xml "tech" "blog"
 http://lukesmith.xyz/rss.xml "tech" "blog"
 http://www.kroah.com/log/index.rss "tech" "blog"
-
-## tech
 https://www.archlinux.org/feeds/news/ "tech"
 https://ownyourbits.com/feed/ "tech"
-
-## youtube
-https://www.youtube.com/feeds/videos.xml?channel_id=UCDYZxJE8kLZ-o6nL8E1bXdQ "yt" # Many A True Nerd
-https://www.youtube.com/feeds/videos.xml?channel_id=UCpXBGqwsBkpvcYjsJBQ7LEQ "yt" # Critical Role
-https://www.youtube.com/feeds/videos.xml?channel_id=UCoxcjq-8xIDTYp3uz647V5A "yt" # Numberphile
-https://www.youtube.com/feeds/videos.xml?channel_id=UCaqcvH8EvUtePORpN03jLMg "yt" # iqsquared
-https://www.youtube.com/feeds/videos.xml?channel_id=UCmX3073pl-9ASXYaWDrEAHw "yt" # Stephen Howson
-https://www.youtube.com/feeds/videos.xml?channel_id=UC0l2QTnO1P2iph-86HHilMQ "yt" # ElixirConf
-https://www.youtube.com/feeds/videos.xml?channel_id=UCfPUcG3oCmXEYgdFuwlFh8w "yt" # Dingo Doodles
-https://www.youtube.com/feeds/videos.xml?channel_id=UCUpkp-6fXuG9dqfoJ99XTmw "yt" # Puffin Forest
-https://www.youtube.com/feeds/videos.xml?channel_id=UCPzFLpOblZEaIx2lpym1l1A "yt" # Alex
+https://qua.name/antolius/feed/
