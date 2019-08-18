@@ -10,6 +10,13 @@
 	default = upstream
 
 [alias]
+  # add
+  a = add
+  ap = add --patch
+
+  # status
+  s = status
+  
   # clone
   cl = clone
   rcl = clone --recursive
@@ -20,7 +27,7 @@
 
   # diff
   d = diff --color-words
-  dx = diff --cached
+  dx = diff --color-words --cached
 
   #submodule update
   subpl = submodule update --init --recursive
