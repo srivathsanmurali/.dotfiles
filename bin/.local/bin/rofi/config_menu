@@ -1,0 +1,5 @@
+#!/bin/sh
+
+selected_config=$(find .config/ -type f | rofi -dmenu -i -p "Config File:")
+[ -z $selected_config ] && exit 0;
+/usr/bin/konsole -e "vim $selected_config"
