@@ -1,5 +1,7 @@
 #!/bin/sh
 
-selected_config=$(find .config/ -type f | rofi -dmenu -i -p "Config File:")
+selected_config=$(find "$DOTFILES/" -type f \
+                  | sed "s@$DOTFILES/@@" \
+                  | rofi -dmenu -i -p "Config File")
 [ -z $selected_config ] && exit 0;
-/usr/bin/konsole -e "vim $selected_config"
+/usr/bin/konsole -e "vim $DOTFILES/$selected_config"
