@@ -1,0 +1,4 @@
+#!/bin/sh
+
+selected_config=$(find .config/ -type f | dmenu)
+/usr/bin/konsole -e "vim $selected_config"
