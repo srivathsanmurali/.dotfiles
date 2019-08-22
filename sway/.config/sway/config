@@ -1,0 +1,203 @@
+# vim: ft=conf:
+set $mod Mod4
+set $left h
+set $down j
+set $up k
+set $right l
+set $term "/usr/bin/konsole"
+set $term2 "/usr/bin/st"
+
+output eDP-1 {
+  mode 1920x1080@60Hz
+  background ${HOME}/Pictures/stag.jpeg fill
+}
+
+# disable output while lid is down
+# bindswitch lid:on output $laptop disable
+# bindswitch lid:off output $laptop enable
+
+# wallpaper
+
+# keyboard settings
+input * xkb_layout "us"
+input * xkb_options "ctrl:nocaps"
+
+# Major bindings
+## Terminal
+bindsym $mod+Return exec $term
+bindsym $mod+Shift+Return exec $term2
+
+## App kill/launch
+bindsym $mod+Shift+q kill
+bindsym $mod+d exec "rofi -show combi -combi-modi 'drun,ssh,run' -show-icons"
+
+## sway session
+bindsym $mod+Shift+r reload
+bindsym $mod+Shift+e exec prompt_menu "Do you really want to exit sway?" "swaymsg exit"
+
+## lock
+bindsym Control+mod1+l exec "swaylock -e -c 000000"
+
+## screenshot
+bindsym Print exec swayshot
+bindsym Mod1+Print exec swayshot window
+bindsym Shift+Print exec swayshot region
+
+## other
+bindsym Control+mod1+p exec "power_options.sh"
+bindsym Control+mod1+s exec "rofi -show ssh"
+bindsym $mod+Shift+p exec "pass_menu"
+
+# Moving around:
+## move to near workspace
+bindsym $mod+Tab workspace next
+bindsym $mod+Shift+Tab workspace prev
+
+# floating
+floating_modifier $mod normal
+
+## Move your focus around
+bindsym $mod+$left focus left
+bindsym $mod+$down focus down
+bindsym $mod+$up focus up
+bindsym $mod+$right focus right
+## or use $mod+[up|down|left|right]
+bindsym $mod+Left focus left
+bindsym $mod+Down focus down
+bindsym $mod+Up focus up
+bindsym $mod+Right focus right
+
+## _move_ the focused window with the same, but add Shift
+bindsym $mod+Shift+$left move left
+bindsym $mod+Shift+$down move down
+bindsym $mod+Shift+$up move up
+bindsym $mod+Shift+$right move right
+## ditto, with arrow keys
+bindsym $mod+Shift+Left move left
+bindsym $mod+Shift+Down move down
+bindsym $mod+Shift+Up move up
+bindsym $mod+Shift+Right move right
+
+## switch to workspace
+bindsym $mod+1 workspace 1
+bindsym $mod+2 workspace 2
+bindsym $mod+3 workspace 3
+bindsym $mod+4 workspace 4
+bindsym $mod+5 workspace 5
+bindsym $mod+6 workspace 6
+bindsym $mod+7 workspace 7
+bindsym $mod+8 workspace 8
+bindsym $mod+9 workspace 9
+bindsym $mod+0 workspace 10
+## move focused container to workspace
+bindsym $mod+Shift+1 move container to workspace 1
+bindsym $mod+Shift+2 move container to workspace 2
+bindsym $mod+Shift+3 move container to workspace 3
+bindsym $mod+Shift+4 move container to workspace 4
+bindsym $mod+Shift+5 move container to workspace 5
+bindsym $mod+Shift+6 move container to workspace 6
+bindsym $mod+Shift+7 move container to workspace 7
+bindsym $mod+Shift+8 move container to workspace 8
+bindsym $mod+Shift+9 move container to workspace 9
+bindsym $mod+Shift+0 move container to workspace 10
+
+# Switch the current container between different layout styles
+bindsym $mod+s layout stacking
+bindsym $mod+w layout tabbed
+bindsym $mod+e layout toggle split
+
+# Layout stuff:
+bindsym $mod+b splith
+bindsym $mod+v splitv
+
+# Make the current focus fullscreen
+bindsym $mod+f fullscreen
+
+# Toggle the current focus between tiling and floating mode
+bindsym $mod+Shift+space floating toggle
+
+# Swap focus between the tiling area and the floating area
+bindsym $mod+space focus mode_toggle
+
+# sticky
+bindsym $mod+x sticky toggle
+
+# move focus to the parent container
+bindsym $mod+a focus parent
+
+# Scratchpad:
+bindsym $mod+Shift+minus move scratchpad
+bindsym $mod+minus scratchpad show
+
+# mako
+bindsym $mod+m exec "/usr/bin/makoctl dismiss --all"
+
+# Resizing containers:
+mode "resize" {
+    # left will shrink the containers width
+    # right will grow the containers width
+    # up will shrink the containers height
+    # down will grow the containers height
+    bindsym $left resize shrink width 10px
+    bindsym $down resize grow height 10px
+    bindsym $up resize shrink height 10px
+    bindsym $right resize grow width 10px
+
+    # ditto, with arrow keys
+    bindsym Left resize shrink width 10px
+    bindsym Down resize grow height 10px
+    bindsym Up resize shrink height 10px
+    bindsym Right resize grow width 10px
+
+    # return to default mode
+    bindsym Return mode "default"
+    bindsym Escape mode "default"
+}
+bindsym $mod+r mode "resize"
+
+set $dmenu_mode "rofi: [c]onfig | [m]ount | [u]mount | [w]ifi | [p]df"
+bindsym $mod+p mode $dmenu_mode
+mode $dmenu_mode {
+  bindsym c exec "config_menu"; mode "default"
+  bindsym m exec "mount_menu"; mode "default"
+  bindsym u exec "umount_menu"; mode "default"
+  bindsym w exec "networkmanager_dmenu"; mode "default"
+  bindsym p exec "pdf_search"; mode "default"
+
+  bindsym Return mode "default"
+  bindsym Escape mode "default"
+}
+
+bar {
+    position top
+    swaybar_command waybar
+}
+
+#color
+set $barColor             #2f343f
+set $bg-color             #2f343f
+set $inactive-bg-color    #2f343f
+set $text-color           #fdf4f5
+set $inactive-text-color  #676E7D
+set $urgent-bf-color      #E53935
+
+# window colors
+client.focused            $bg-color           $bg-color             $text-color           #00ff00   $bg-color
+client.unfocused          $inactive-bg-color  $inactive-bg-color    $inactive-text-color  #00ff00   $inactive-bg-color
+client.focused_inactive   $inactive-bg-color  $inactive-bg-color    $inactive-text-color  #00ff00   $inactive-bg-color
+client.urgent             #E53935   #E53935 $text-color           #00ff00   #E53935
+
+## light
+bindsym XF86MonBrightnessUp exec "light -A 10"
+bindsym XF86MonBrightnessDown exec "light -U 10"
+
+# Pulse Audio controls
+bindsym XF86AudioRaiseVolume exec --no-startup-id pactl set-sink-volume 0 +5% #increase sound volume
+bindsym XF86AudioLowerVolume exec --no-startup-id pactl set-sink-volume 0 -5% #decrease sound volume
+bindsym XF86AudioMute exec --no-startup-id pactl set-sink-mute 0 toggle # mute sound
+bindsym XF86AudioMicMute exec pactl set-source-mute @DEFAULT_SOURCE@ toggle
+
+gaps inner 5
+smart_gaps on
+
+for_window [class="^.*"] border pixel 1
