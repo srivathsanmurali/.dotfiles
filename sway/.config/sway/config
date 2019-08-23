@@ -9,7 +9,7 @@ set $term2 "/usr/bin/st"
 
 output eDP-1 {
   mode 1920x1080@60Hz
-  background ${HOME}/Pictures/stag.jpeg fill
+  background ${HOME}/.config/wall.jpg fill
 }
 
 # disable output while lid is down
@@ -200,4 +200,4 @@ bindsym XF86AudioMicMute exec pactl set-source-mute @DEFAULT_SOURCE@ toggle
 gaps inner 5
 smart_gaps on
 
-for_window [class="^.*"] border pixel 1
+default_border none
