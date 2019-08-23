@@ -11,7 +11,7 @@ Check your internet connection, if pacman is already running, or run update manu
 
 if pacman -Qu | grep -v "\[ignored\]"
 then
-	notify-send -t 3000 "🎁 Repository Sync" "Sync complete. Updates available."
+	notify-send "🎁 Repository Sync" "Sync complete. Updates available."
 else
-	notify-send -t 3000 "📦 Repository Sync"  "Sync complete. No new packages for update."
+	notify-send "📦 Repository Sync"  "Sync complete. No new packages for update."
 fi
