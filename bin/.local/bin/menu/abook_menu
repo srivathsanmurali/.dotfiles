@@ -1,14 +1,20 @@
 #!/bin/sh
 
+rofi_cmd='rofi -dmenu -i -matching fuzzy'
+
 selected_name=$(
   cat ~/.abook/addressbook \
   | grep "name=" \
   | sed "s/name=//g" \
-  | rofi -dmenu -i
+  | $rofi_cmd
 )
 
 [ -z "$selected_name" ] && exit 0;
-email=$(abook --mutt-query "$selected_name" | tail -n1 | awk '{print $1}')
+email=$(abook --mutt-query "$selected_name" | awk '{if(NR>1) print $1}')
+
+if [ $(echo -e "$email" | wc --words) -gt 1 ]; then
+  email=$(echo "$email" | $rofi_cmd)
+fi
 
 wl-copy "$email"
 
