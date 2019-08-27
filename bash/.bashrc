@@ -16,7 +16,7 @@ prompt_cmd() {
 PROMPT_COMMAND=prompt_cmd
 
 # any local config
-[ -f $HOME/.bash_local ] && source $HOME.bash_local
+[ -f $HOME/.bash_local ] && source $HOME/.bash_local
 
 # aliases
 ## vim: set ft=bash:
