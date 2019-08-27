@@ -155,9 +155,10 @@ mode "resize" {
 }
 bindsym $mod+r mode "resize"
 
-set $dmenu_mode "rofi: [c]onfig | [m]ount | [u]mount | [w]ifi | [p]df"
+set $dmenu_mode "rofi: [a]book | [c]onfig | [m]ount | [u]mount | [w]ifi | [p]df"
 bindsym $mod+p mode $dmenu_mode
 mode $dmenu_mode {
+  bindsym a exec "abook_menu"; mode "default"
   bindsym c exec "config_menu"; mode "default"
   bindsym m exec "mount_menu"; mode "default"
   bindsym u exec "umount_menu"; mode "default"

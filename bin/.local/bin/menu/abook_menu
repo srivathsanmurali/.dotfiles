@@ -1,0 +1,15 @@
+#!/bin/sh
+
+selected_name=$(
+  cat ~/.abook/addressbook \
+  | grep "name=" \
+  | sed "s/name=//g" \
+  | rofi -dmenu -i
+)
+
+[ -z "$selected_name" ] && exit 0;
+email=$(abook --mutt-query "$selected_name" | tail -n1 | awk '{print $1}')
+
+wl-copy "$email"
+
+notify-send -t 2000 "Email address copied to clipboard"
