@@ -63,3 +63,8 @@
 	smudge = git-lfs smudge -- %f
 	process = git-lfs filter-process
 	required = true
+
+[sendemail]
+  smtpserver = /usr/bin/msmtp
+  smtpserveroption=-a
+  smtpserveroption=personal
