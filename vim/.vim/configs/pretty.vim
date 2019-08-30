@@ -24,8 +24,8 @@ set statusline+=\             "empty space
 syntax on
 
 set t_Co=256
-set background=light
-colorscheme onehalflight
+set background=dark
+colorscheme monokai
 
 " --------------
 " netrw settings
