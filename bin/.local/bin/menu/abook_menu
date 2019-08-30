@@ -1,4 +1,5 @@
 #!/bin/sh
+## require abook
 
 rofi_cmd='rofi -dmenu -i -matching fuzzy'
 
@@ -15,6 +16,8 @@ email=$(abook --mutt-query "$selected_name" | awk '{if(NR>1) print $1}')
 if [ $(echo -e "$email" | wc --words) -gt 1 ]; then
   email=$(echo "$email" | $rofi_cmd)
 fi
+
+[ -z "$email" ] && exit 0;
 
 wl-copy "$email"
 
