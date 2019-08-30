@@ -1,0 +1,9 @@
+#!/bin/sh
+! echo "$1" && notify-send -t 5000 "You need to provide a url/path" && exit
+curl $1 | khal import --batch -
+
+if [ $? -eq 0 ]; then
+  notify-send -t 5000 "Event added to calendar"
+else
+  notify-send -t 5000 "Event was not added to calednar"
+fi
