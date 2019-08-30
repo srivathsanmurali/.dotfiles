@@ -24,6 +24,7 @@ alias swayconfig="vi ~/.config/sway/config"
 alias vimconfig="vi ~/.dotfiles/vim"
 alias bashconfig="vi ~/.dotfiles/vim"
 alias refresh="source ~/.bashrc"
+alias abook="abook --datafile ~/.local/share/abook/addressbook"
 
 # git
 alias g='git'
