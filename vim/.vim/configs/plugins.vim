@@ -56,6 +56,8 @@ Plug 'crusoexia/vim-monokai'
 
 Plug 'jeetsukumaran/vim-buffergator'
 
+Plug 'dylanaraps/wal.vim'
+
 " --------------------------
 " Languages specific plugins
 " --------------------------

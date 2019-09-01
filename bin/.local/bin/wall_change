@@ -1,0 +1,19 @@
+#!/bin/sh
+## script to automate wall change and pywal updates
+
+if [ -z $1]; then
+  echo "Wallpaper path must be provided"
+  exit 1;
+fi
+image_path=$(realpath "$1")
+shift
+
+echo "Wallpaper: $image_path"
+
+echo "Copying $image_path -> ${HOME}/config/wall.jpg"
+cp $image_path ~/.config/wall.jpg
+
+echo "Calling pywal"
+wal -i $image_path $@
+
+echo "Everything Done"
