@@ -54,6 +54,7 @@ alias playlist="~/.local/bin/mpc_playlist | less -r"
 alias v='vim'
 alias vi='vim'
 alias pjson='python -mjson.tool'
+alias r='ranger'
 
 ## load with config
 alias neomutt='neomutt -F ~/.config/mutt/muttrc'

@@ -1,7 +1,7 @@
 #!/bin/sh 
 
 export DOTFILES=${HOME}/.dotfiles
-export BROWSER=chromium
+export BROWSER=firefox
 export PATH=$PATH:$(du "${DOTFILES}/bin/.local/bin/" \
                     | cut -f2 \
                     | tr '\n' ':' \
