@@ -21,13 +21,18 @@ which_todo() {
   todo=$(cat "$todo_file" | fzf -i --prompt="notes on todo: ")
   [ -z "$todo" ] && exit 0;
 }
-
-notes_todo() {
-  which_todo
-  note_name=$(echo "$todo" | sed 's/\s/-/g')
-  note_path="$todo_data_dir/notes/$note_name.md"
-  
+note_vars() {
+  note_name=$(echo "$1" | sed 's/\s/-/g')
+  note_path="$todo_data_dir/notes/$1.md"
+}
+make_note() {
   [ ! -f $note_path ] && echo "# $todo" > $note_path
+}
+
+open_note() {
+  which_todo
+  note_vars $todo
+  make_note
   vim $note_path
 }
 
@@ -39,8 +44,7 @@ del_todo() {
     echo "todo deleted"
   fi
 
-  note_name=$(echo "$todo" | sed 's/\s/-/g')
-  note_path="$todo_data_dir/notes/$note_name.md"
+  note_vars
 
   [ -f "$note_path" ] && rm "$note_path"
 }
@@ -81,7 +85,7 @@ case "$action" in
     list_todos
     ;;
   notes|n)
-    notes_todo
+    open_note 
     ;;
   *)
     print_help
