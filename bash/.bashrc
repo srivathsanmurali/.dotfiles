@@ -25,6 +25,7 @@ alias vimconfig="vi ~/.dotfiles/vim"
 alias bashconfig="vi ~/.dotfiles/vim"
 alias refresh="source ~/.bashrc"
 alias abook="abook --datafile ~/.local/share/abook/addressbook"
+alias notes='vim ~/notes'
 
 # git
 alias g='git'
