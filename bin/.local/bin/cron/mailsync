@@ -1,0 +1,18 @@
+#!/bin/sh
+
+# check if user is logged in 
+pgrep -u "$USER" >/dev/null \
+|| { echo "$USER not logged in; sync will not run"; exit ; }
+
+# chech if mbsync is already running
+pgrep -x mbsync >/dev/null \
+&& { echo "mbsync is already running"; exit ; }
+
+# check for internet connection
+ping -q -c 1 1.1.1.1 > /dev/null \
+|| { notify-send -t 3000 "Mailsync" "No internet connection"; exit ; }
+
+# fetch all emails
+/usr/bin/mbsync -c ~/.config/mbsync/config -a
+
+notify-send -t 1000 "Mailsync" "All accounts synced"
