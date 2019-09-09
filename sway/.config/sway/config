@@ -6,17 +6,11 @@ set $up k
 set $right l
 set $term "/usr/bin/konsole"
 set $term2 "/usr/bin/st"
-
-output eDP-1 {
-  mode 1920x1080@60Hz
-  background ${HOME}/.config/wall.jpg fill
-}
-
 # disable output while lid is down
 # bindswitch lid:on output $laptop disable
 # bindswitch lid:off output $laptop enable
 
-# wallpaper
+include "${HOME}/.config/sway/system"
 
 # keyboard settings
 input * xkb_layout "us"
@@ -24,8 +18,8 @@ input * xkb_options "ctrl:nocaps"
 
 # Major bindings
 ## Terminal
-bindsym $mod+Return exec $term
-bindsym $mod+Shift+Return exec $term2
+bindsym $mod+Return exec $term2
+bindsym $mod+Shift+Return exec $term
 
 ## App kill/launch
 bindsym $mod+Shift+q kill
