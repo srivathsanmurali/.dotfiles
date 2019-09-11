@@ -5,7 +5,7 @@ set $down j
 set $up k
 set $right l
 set $term "/usr/bin/konsole"
-set $term2 "/usr/bin/st"
+set $term2 "/usr/local/bin/st"
 # disable output while lid is down
 # bindswitch lid:on output $laptop disable
 # bindswitch lid:off output $laptop enable

@@ -82,6 +82,10 @@ function gReview() {
   done
 }
 
+sri_clone() {
+  git clone git@github.com:srivathsanmurali/$1.git  
+}
+
 # config for application
 ## asdf
 [ -f $HOME/.asdf/asdf.sh ] && source $HOME/.asdf/asdf.sh

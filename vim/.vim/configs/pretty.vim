@@ -24,7 +24,7 @@ set statusline+=\             "empty space
 syntax on
 
 set t_Co=256
-colorscheme wal
+"colorscheme wal
 
 " --------------
 " netrw settings
