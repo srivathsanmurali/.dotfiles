@@ -48,6 +48,7 @@ alias lsa='ls -lah'
 alias l='ls -lah'
 alias ll='ls -lh'
 alias la='ls -lAh'
+alias mbsync='mbsync -c "$HOME/.config/mbsync/config"'
 
 ## applications
 alias music="ncmpcpp"
@@ -56,6 +57,7 @@ alias v='vim'
 alias vi='vim'
 alias pjson='python -mjson.tool'
 alias r='ranger'
+alias unused_pkgs='pacman -Qdtq'
 
 ## load with config
 alias neomutt='neomutt -F ~/.config/mutt/muttrc'
