@@ -36,4 +36,7 @@ echo "Opacity=${term_opacity}" >> "$term_cs_path"
 echo "setting vim colorschme"
 cat "$wal_vim_path" > "$vim_color_path"
 
+echo "setting the changes for all monitors"
+monitors_wall
+
 echo "Everything Done"

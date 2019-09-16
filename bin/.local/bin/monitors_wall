@@ -1,0 +1,2 @@
+monitors=$(swaymsg -r -t get_outputs | grep name | awk '{print $2'} | sed -e 's/\"//g' -e 's/,//g')
+for i in $monitors; do swaymsg output "$i" background ~/.config/wall.jpg fill; done
