@@ -58,6 +58,7 @@ alias vi='vim'
 alias pjson='python -mjson.tool'
 alias r='ranger'
 alias unused_pkgs='pacman -Qdtq'
+alias t='transmission-remote-cli'
 
 ## load with config
 alias neomutt='neomutt -F ~/.config/mutt/muttrc'
