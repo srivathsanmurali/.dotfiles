@@ -10,4 +10,4 @@ echo "Wallpaper: $image_path"
 echo "Copying $image_path -> ${HOME}/config/wall.jpg"
 cp $image_path ~/.config/wall.jpg
 
-monitors_wall
+"$HOME/.local/bin/monitors_wall"

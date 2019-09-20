@@ -10,7 +10,7 @@ shopt -s autocd # cd into direcotry like zsh
 HISTSIZE= HISTFILESIZE= # Infinite history
 
 prompt_cmd() {
-  cur_dir=$($HOME/.local/bin/prompt)
+  cur_dir=$($HOME/.local/bin/tools/prompt)
   PS1="$cur_dir> "
 }
 PROMPT_COMMAND=prompt_cmd
@@ -25,7 +25,6 @@ alias vimconfig="vi ~/.dotfiles/vim"
 alias bashconfig="vi ~/.dotfiles/vim"
 alias refresh="source ~/.bashrc"
 alias abook="abook --datafile ~/.local/share/abook/addressbook"
-alias notes='vim ~/notes'
 
 # git
 alias g='git'
