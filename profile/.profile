@@ -17,3 +17,5 @@ export SSH_AUTH_SOCK
 ssh-add </dev/null
 
 [ -f ~/.bashrc ] && source ~/.bashrc
+
+setsid wallpaper_loop >/dev/null 2>&1 </dev/null &
