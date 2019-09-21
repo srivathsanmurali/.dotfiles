@@ -11,7 +11,7 @@ HISTSIZE= HISTFILESIZE= # Infinite history
 
 prompt_cmd() {
   cur_dir=$($HOME/.local/bin/tools/prompt)
-  PS1="$cur_dir> "
+  PS1="\u@\h:$cur_dir$ "
 }
 PROMPT_COMMAND=prompt_cmd
 
