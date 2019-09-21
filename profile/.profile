@@ -18,4 +18,4 @@ ssh-add </dev/null
 
 [ -f ~/.bashrc ] && source ~/.bashrc
 
-setsid wallpaper_loop >/dev/null 2>&1 </dev/null &
+[ ! $(pgrep wallpaper_loop) ] && setsid wallpaper_loop >/dev/null 2>&1 </dev/null &
