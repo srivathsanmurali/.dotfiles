@@ -32,7 +32,7 @@ nnoremap <leader><leader>  <Esc>:TilerFocus<CR>
 " map <C-b> :bn<CR>
 " map <C-S-b> :bp<CR>
 
-nnoremap <C-e> :E<CR>
+nnoremap <C-e> :Explore<CR>
 
 " Copy to clipboard
 nnoremap <S-y> "+y
