@@ -11,8 +11,16 @@ echo "Wallpaper: $image_path"
 echo "Copying $image_path -> ${HOME}/config/wall.jpg"
 cp $image_path ~/.config/wall.jpg
 
-echo "Setting the wallpaper in sway"
-monitors=$(/usr/bin/swaymsg -r -t get_outputs | grep name | awk '{print $2'} | sed -e 's/\"//g' -e 's/,//g')
-for i in $monitors; do /usr/bin/swaymsg output "$i" background ~/.config/wall.jpg fill; done
+case "$XDG_SESSION_TYPE" in
+  "x11")
+    echo "Setting the wallpaper in i3";
+    feh --bg-fill "$HOME/.config/wall.jpg"
+    ;;
+  "wayland") 
+    echo "Setting the wallpaper in sway";
+    monitors=$(/usr/bin/swaymsg -r -t get_outputs | grep name | awk '{print $2'} | sed -e 's/\"//g' -e 's/,//g');
+    for i in $monitors; do /usr/bin/swaymsg output "$i" background ~/.config/wall.jpg fill; done;
+    ;;
+esac
 
 
