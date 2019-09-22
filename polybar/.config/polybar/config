@@ -64,7 +64,7 @@ module-margin-right = ${vars.module-margin-right}
 
 ; What Modules go where?
 modules-left    = i3 xwindow
-modules-right   = mpd bluetooth wireless pulseaudio date time 
+modules-right   = mpd wireless pulseaudio date time 
 
 ; Systray options
 tray-position = right

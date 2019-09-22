@@ -5,16 +5,16 @@
 # ==============
 
 # start a terminal
-bindsym $mod+Return exec konsole
+bindsym $mod+Return exec st
 
 # launchers
 bindsym $mod+d exec "rofi -show combi -combi-modi 'drun,ssh,run' -show-icons"
 bindsym $mod+Shift+d exec "~/.local/bin/pdf_search"
 bindsym Control+mod1+l exec "i3lock -c 000000"
-bindsym Control+mod1+p exec ~/.local/bin/power_options.sh
+bindsym Control+mod1+p exec "power_options.sh"
 bindsym Control+mod1+b exec ~/.config/i3/scripts/bluetooth.sh
 bindsym Control+mod1+s exec "rofi -show ssh"
-bindsym $mod+Shift+p exec "~/.local/bin/passmenu"
+bindsym $mod+Shift+p exec "pass_menu"
 
 # print screen
 bindsym Print exec spectacle 
@@ -29,11 +29,11 @@ bindsym XF86AudioLowerVolume exec --no-startup-id pactl set-sink-volume 0 -5% #d
 bindsym XF86AudioMute exec --no-startup-id pactl set-sink-mute 0 toggle # mute sound
 
 # reload the configuration file
-bindsym $mod+Shift+c exec --no-startup-id cat ~/.config/i3/configs/* > ~/.config/i3/config && i3-msg reload
+bindsym $mod+Shift+c exec --no-startup-id ~/.config/i3/digest.sh && i3-msg reload
 # restart i3 inplace (preserves your layout/session, can be used to upgrade i3)
-bindsym $mod+Shift+r exec --no-startup-id cat ~/.config/i3/configs/* > ~/.config/i3/config && i3-msg restart
+bindsym $mod+Shift+r exec --no-startup-id ~/.config/i3/digest.sh && i3-msg restart
 # exit i3 (logs you out of your X session)
-bindsym $mod+Shift+e exec "i3-nagbar -t warning -m 'You pressed the exit shortcut. Do you really want to exit i3? This will end your X session.' -b 'Yes, exit i3' 'i3-msg exit'"
+bindsym $mod+Shift+e exec prompt_menu "Do you really want to exit i3?" "i3-msg exit"
 
 # Workspace Control
 # =================
