@@ -48,6 +48,7 @@ alias l='ls -lah'
 alias ll='ls -lh'
 alias la='ls -lAh'
 alias mbsync='mbsync -c "$HOME/.config/mbsync/config"'
+alias todo="note open todo"
 
 ## applications
 alias music="ncmpcpp"
