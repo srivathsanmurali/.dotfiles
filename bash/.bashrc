@@ -64,6 +64,17 @@ alias neomutt='neomutt -F ~/.config/mutt/muttrc'
 alias mutt='neomutt -F ~/.config/mutt/muttrc'
 
 # Functions
+todo() {
+  while getopts "eh" option $*; do
+    case "$option" in
+      e)
+        note open todo
+        return
+        ;;
+    esac
+  done
+  note cat todo
+}
 up() {
   cd $(printf "%0.0s../" $(seq 1 $1));
 }
@@ -103,3 +114,4 @@ export ERL_AFLAGS="-kernel shell_history enabled"
 export ECTO_EDITOR=vim
 export ELIXIR_EDITOR=vim
 
+todo
