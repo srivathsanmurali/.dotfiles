@@ -22,7 +22,7 @@ PROMPT_COMMAND=prompt_cmd
 ## vim: set ft=bash:
 alias swayconfig="vi ~/.config/sway/config"
 alias vimconfig="vi ~/.dotfiles/vim"
-alias bashconfig="vi ~/.dotfiles/vim"
+alias bashconfig="vi ~/.dotfiles/bash"
 alias refresh="source ~/.bashrc"
 alias abook="abook --datafile ~/.local/share/abook/addressbook"
 
@@ -48,7 +48,6 @@ alias l='ls -lah'
 alias ll='ls -lh'
 alias la='ls -lAh'
 alias mbsync='mbsync -c "$HOME/.config/mbsync/config"'
-alias todo="note open todo"
 
 ## applications
 alias music="ncmpcpp"
