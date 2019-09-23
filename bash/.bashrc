@@ -94,8 +94,6 @@ sri_clone() {
 [ -f $HOME/.asdf/asdf.sh ] && source $HOME/.asdf/asdf.sh
 [ -f $HOME/.asdf/completions/asdf.bash ] && source $HOME/.asdf/completions/asdf.bash
 
-## fzf
-[ -f ~/.fzf.bash ] && source ~/.fzf.bash
 ## use rg if available
 if hash rg 2>/dev/null; then
   export FZF_DEFAULT_COMMNAD='rg --files --no-ignore --hidden --follow --glob "!.git/*"'

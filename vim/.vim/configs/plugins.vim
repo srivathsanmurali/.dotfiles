@@ -17,7 +17,7 @@ Plug 'junegunn/vim-plug'
 Plug 'tpope/vim-fugitive'
 
 " fzf
-Plug 'junegunn/fzf', { 'dir': '~/.fzf', 'do': './install --all' }
+" Install fzf in your system
 Plug 'junegunn/fzf.vim'
 nnoremap <C-p> <Esc>:GFiles<CR>
 inoremap <C-p> <Esc>:GFiles<CR>
