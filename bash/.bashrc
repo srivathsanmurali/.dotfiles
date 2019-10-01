@@ -7,7 +7,11 @@
 
 stty -ixon # Disable ctrl-s and ctrl-q
 shopt -s autocd # cd into direcotry like zsh
-HISTSIZE= HISTFILESIZE= # Infinite history
+
+HISTCONTROL=ignoredups:erasedups # no duplicates
+HISTSIZE=
+HISTFILESIZE= # Infinite history
+shopt -s histappend
 
 prompt_cmd() {
   cur_dir=$($HOME/.local/bin/tools/prompt)
@@ -52,12 +56,16 @@ alias mbsync='mbsync -c "$HOME/.config/mbsync/config"'
 ## applications
 alias music="ncmpcpp"
 alias playlist="~/.local/bin/mpc_playlist | less -r"
-alias v='vim'
-alias vi='vim'
 alias pjson='python -mjson.tool'
 alias r='ranger'
 alias unused_pkgs='pacman -Qdtq'
 alias t='transmission-remote-cli'
+alias v='vim'
+alias vi='vim'
+
+if hash nvim > /dev/null 2>&1; then
+  alias vim='nvim' 
+fi
 
 ## load with config
 alias neomutt='neomutt -F ~/.config/mutt/muttrc'
@@ -87,6 +95,9 @@ sshReady() {
 gShowSelected() {
   git show $(git log --no-color --oneline | fzf | awk '{print $1}')
 }
+config() {
+  vim $(find ~/.dotfiles/bin/.local/bin/ -type f | fzf)
+}
 
 function gReview() {
   for currHash in `git --no-pager log --reverse --pretty=format:"%h" $1..$2`; do
@@ -101,8 +112,10 @@ sri_clone() {
 
 # config for application
 ## asdf
-[ -f $HOME/.asdf/asdf.sh ] && source $HOME/.asdf/asdf.sh
-[ -f $HOME/.asdf/completions/asdf.bash ] && source $HOME/.asdf/completions/asdf.bash
+[ -f /opt/asdf/asdf.sh ] && source /opt/asdf/asdf.sh
+[ -f /opt/asdf/completions/asdf.bash ] && source /opt/asdf/completions/asdf.bash
+
+[ -f /usr/share/fzf/key-bindings.bash ] && source /usr/share/fzf/key-bindings.bash
 
 ## use rg if available
 if hash rg 2>/dev/null; then
