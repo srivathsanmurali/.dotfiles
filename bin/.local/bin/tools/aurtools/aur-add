@@ -1,0 +1,24 @@
+#!/bin/sh
+
+set -uo pipefail
+trap 's=$?; echo "$0: Error on line "$LINENO": $BASH_COMMAND"; exit $s' ERR
+
+REMOTE_PATH="sol.vathsan.com:/var/www/arch-repo-x86_64"
+LOCAL_PATH="/home/localpkgs"
+REPO_NAME="sillyshrimp"
+
+mkdir -p "$LOCAL_PATH"
+
+rsync -azP "$REMOTE_PATH/$REPO_NAME".{db,files}.tar.xz "$LOCAL_PATH/"
+ln -sf "$REPO_NAME.db.tar.xz" "$LOCAL_PATH/$REPO_NAME.db"
+ln -sf "$REPO_NAME.files.tar.xz" "$LOCAL_PATH/$REPO_NAME.files"
+
+rm -f "$LOCAL_PATH/"*.pkg.tar.xz
+
+aur sync -d "$REPO_NAME" --root "$LOCAL_PATH" -c "$@" || true
+
+rsync -azP --copy-links "$LOCAL_PATH/"*.pkg.tar.xz \
+                   "$LOCAL_PATH/$REPO_NAME".{db,files}{,.tar.xz} \
+                   "$REMOTE_PATH/"
+
+rm -f "$LOCAL_PATH/"*.pkg.tar.xz
