@@ -4,11 +4,15 @@
     "height": 20,
     "modules-left": ["sway/workspaces", "sway/mode", "sway/window"],
     "modules-center": [],
-    "modules-right": ["mpd", "pulseaudio", "network", "backlight", "battery", "battery#bat2", "clock", "tray"],
+    "modules-right": ["custom/playerctl", "pulseaudio", "network", "backlight", "battery", "battery#bat2", "clock", "tray"],
     
     // Modules configuration
     "sway/mode": {
       "format": "<span style=\"italic\">{}</span>"
+    },
+    "custom/playerctl": {
+      "exec": "playerctl metadata title",
+      "interval": 1
     },
     "mpd": {
       "format": "{stateIcon} {consumeIcon}{randomIcon}{repeatIcon}{singleIcon}{album} - {title} ({elapsedTime:%M:%S}/{totalTime:%M:%S}) ",
