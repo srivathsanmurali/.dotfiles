@@ -30,4 +30,3 @@ set t_Co=256
 " netrw settings
 " --------------
 let g:netrw_banner = 0         " removes the banner
-let g:netrw_liststyle = 1      " produces tree style output
