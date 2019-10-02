@@ -36,6 +36,9 @@
   l = log --pretty=custom2
   gr = log --graph --full-history --all --color --date=short --pretty=custom2
 
+  # prune
+  po = remote prune origin
+
 [core]
   editor = vim
   ignorecase = false
