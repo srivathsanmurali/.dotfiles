@@ -17,6 +17,10 @@ case "$XDG_SESSION_TYPE" in
     feh --bg-fill "$HOME/.config/wall.jpg"
     ;;
   "wayland") 
+    if [ -z "$SWAYSOCK" ]; then
+      export SWAYSOCK=/run/user/$(id -u)/sway-ipc.$(id -u).$(pgrep -x sway).sock
+    fi
+    
     echo "Setting the wallpaper in sway";
     monitors=$(/usr/bin/swaymsg -r -t get_outputs | grep name | awk '{print $2'} | sed -e 's/\"//g' -e 's/,//g');
     for i in $monitors; do /usr/bin/swaymsg output "$i" background ~/.config/wall.jpg fill; done;

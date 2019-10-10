@@ -1,5 +1,9 @@
 #!/bin/sh
 
+if [ -z "$SWAYSOCK" ]; then
+  export SWAYSOCK=/run/user/$(id -u)/sway-ipc.$(id -u).$(pgrep -x sway).sock
+fi
+
 # check if user is logged in 
 pgrep -u "$USER" >/dev/null \
 || { echo "$USER not logged in; sync will not run"; exit ; }
