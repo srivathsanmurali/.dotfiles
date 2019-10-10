@@ -95,7 +95,7 @@ sshReady() {
 gShowSelected() {
   git show $(git log --no-color --oneline | fzf | awk '{print $1}')
 }
-config() {
+script() {
   vim $(find ~/.dotfiles/bin/.local/bin/ -type f | fzf)
 }
 
@@ -104,6 +104,14 @@ function gReview() {
     echo $currHash
     git show -p $currHash
   done
+}
+
+function gco_diff() {
+  git checkout $(git diff --name-only | fzf)
+}
+
+function gco_cached() {
+  git checkout $(git diff --name-only --cached | fzf)
 }
 
 sri_clone() {
