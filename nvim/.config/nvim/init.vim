@@ -20,7 +20,7 @@ set splitbelow    "split below
 set splitright    "split right
 set hlsearch      "higlight search
 set incsearch     "incremental search
-set showmatch     "show matching brackets
+"set showmatch     "show matching brackets
 set shiftwidth=2  "indent by 2 spaces
 set expandtab     "expand tabs to spaces
 set tabstop=2     "each tab is 2 spaces
