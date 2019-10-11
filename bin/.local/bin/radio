@@ -5,11 +5,11 @@ function service_myradio() {
 }
 
 case "$1" in
-  start)
+  start|on)
     mpc play
     service_myradio start
     ;;
-  stop)
+  stop|off)
     mpc stop
     service_myradio stop
     ;;
