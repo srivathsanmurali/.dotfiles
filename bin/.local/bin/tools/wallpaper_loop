@@ -2,9 +2,5 @@
 
 WallpaperDir=${WallpaperDir:-"$HOME/Pictures/Wallpapers/"}
 
-while true; do
 random_wallpaper=$(ls $WallpaperDir/**/*.jpg | shuf | head -n1)
-wall_change "$random_wallpaper"
-
-sleep 5m
-done
+"${HOME}/.local/bin/tools/wall_change" "$random_wallpaper"
