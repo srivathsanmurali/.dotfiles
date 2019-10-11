@@ -158,7 +158,7 @@ mode "resize" {
 }
 bindsym $mod+r mode "resize"
 
-set $dmenu_mode "rofi: [a]book | [c]onfig | [m]ount | [u]mount | [w]ifi | [p]df"
+set $dmenu_mode "rofi: [a]book | [c]onfig | [m]ount | [u]mount | [w]ifi | [p]df | [r]adio"
 bindsym $mod+p mode $dmenu_mode
 mode $dmenu_mode {
   bindsym a exec "abook_menu"; mode "default"
@@ -167,6 +167,7 @@ mode $dmenu_mode {
   bindsym u exec "umount_menu"; mode "default"
   bindsym w exec "networkmanager_dmenu"; mode "default"
   bindsym p exec "pdf_search"; mode "default"
+  bindsym r exec "mpc_playlist_select"; mode "default"
 
   bindsym Return mode "default"
   bindsym Escape mode "default"

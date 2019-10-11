@@ -1,0 +1,23 @@
+#!/bin/sh
+
+function service_myradio() {
+  systemctl --user $1 myradio.service
+}
+
+case "$1" in
+  start)
+    mpc play
+    service_myradio start
+    ;;
+  stop)
+    mpc stop
+    service_myradio stop
+    ;;
+  pause)
+    mpc pause
+    service_myradio stop
+    ;;
+  *)
+    service_myradio status
+    ;;
+esac
