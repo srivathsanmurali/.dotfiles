@@ -2,14 +2,14 @@
 ## script to automate wall change and pywal updates
 
 if [ -z $1 ]; then
-  image_path="~/.config/wall.jpg"
+  image_path="$HOME/.config/wall.jpg"
 else 
   image_path=$(realpath "$1")
 fi
 
 echo "Wallpaper: $image_path"
 echo "Copying $image_path -> ${HOME}/config/wall.jpg"
-cp $image_path ~/.config/wall.jpg
+cp $image_path "${HOME}/.config/wall.jpg"
 
 case "$XDG_SESSION_TYPE" in
   "x11")
@@ -23,7 +23,7 @@ case "$XDG_SESSION_TYPE" in
     
     echo "Setting the wallpaper in sway";
     monitors=$(/usr/bin/swaymsg -r -t get_outputs | grep name | awk '{print $2'} | sed -e 's/\"//g' -e 's/,//g');
-    for i in $monitors; do /usr/bin/swaymsg output "$i" background ~/.config/wall.jpg fill; done;
+    for i in $monitors; do /usr/bin/swaymsg output "$i" background "$HOME/.config/wall.jpg" fill; done;
     ;;
 esac
 

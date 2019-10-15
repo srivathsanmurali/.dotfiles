@@ -4,6 +4,19 @@ function service_myradio() {
   systemctl --user $1 myradio.service
 }
 
+function toggle_radio(){
+  case "$(service_myradio is-active)" in
+    active)
+      mpc pause
+      service_myradio stop
+      ;;
+    *)
+      mpc play 
+      service_myradio start
+      ;;
+  esac
+}
+
 case "$1" in
   start|on)
     mpc play
@@ -16,6 +29,9 @@ case "$1" in
   pause)
     mpc pause
     service_myradio stop
+    ;;
+  toggle|play-pause)
+    toggle_radio
     ;;
   *)
     service_myradio status
