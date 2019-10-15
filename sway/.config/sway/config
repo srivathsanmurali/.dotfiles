@@ -202,10 +202,14 @@ bindsym XF86AudioLowerVolume exec --no-startup-id pactl set-sink-volume 0 -5% #d
 bindsym XF86AudioMute exec --no-startup-id pactl set-sink-mute 0 toggle # mute sound
 bindsym XF86AudioMicMute exec pactl set-source-mute @DEFAULT_SOURCE@ toggle
 
-bindsym $mod+f9 exec playerctl prev
-bindsym $mod+f10 exec playerctl play-pause
-bindsym $mod+f11 exec playerctl stop
-bindsym $mod+f12 exec playerctl next
+#bindsym $mod+f9 exec playerctl prev
+#bindsym $mod+f10 exec playerctl play-pause
+#bindsym $mod+f11 exec playerctl stop
+#bindsym $mod+f12 exec playerctl next
+bindsym $mod+f9 exec mpc prev
+bindsym $mod+f10 exec radio toggle
+bindsym $mod+f11 exec radio stop
+bindsym $mod+f12 exec mpc next
 
 gaps inner 5
 smart_gaps on
