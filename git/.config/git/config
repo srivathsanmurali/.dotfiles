@@ -71,3 +71,4 @@
   smtpserver = /usr/bin/msmtp
   smtpserveroption=-a
   smtpserveroption=personal
+	annotate = yes
