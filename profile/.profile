@@ -18,4 +18,3 @@ ssh-add </dev/null
 
 [ -d "$HOME/.local/share/go" ] && export GOPATH="$HOME/.local/share/go"
 [ -f ~/.bashrc ] && source ~/.bashrc
-[ ! $(pgrep wallpaper_loop) ] && setsid wallpaper_loop >/dev/null 2>&1 </dev/null &
