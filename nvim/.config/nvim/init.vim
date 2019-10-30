@@ -93,6 +93,8 @@ let g:buffergator_autoupdate = 1
 let g:buffergator_viewport_split_policy = "N"
 let g:buffergator_vsplit_size = 3
 
+nnoremap <leader>g :Rg
+
 nnoremap <leader>t :tabnew<CR>
 nnoremap J :tabnext<CR>
 nnoremap K :tabprev<CR>
