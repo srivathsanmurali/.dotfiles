@@ -4,6 +4,6 @@
 
 file="$HOME/.dotfiles/bin/.local/bin/$1" 
 
-vim "$file"
+${EDITOR} "$file"
 chmod +x "$file"
 (cd ~/.dotfiles && stow bin)

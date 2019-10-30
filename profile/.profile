@@ -7,7 +7,7 @@ export PATH=$PATH:$(du "${DOTFILES}/bin/.local/bin/" \
                     | tr '\n' ':' \
                     | sed -e "s@.dotfiles/bin/@@g" -e "s/:*$//")
 export MANPATH=$MANPATH:~/.local/share/man/
-export EDITOR=vim
+export EDITOR=nvim
 export TERMINAL=st
 export READER=zathura
 

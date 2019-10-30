@@ -96,7 +96,7 @@ gShowSelected() {
   git show $(git log --no-color --oneline | fzf | awk '{print $1}')
 }
 script() {
-  vim $(find ~/.dotfiles/bin/.local/bin/ -type f | fzf)
+  nvim $(find ~/.dotfiles/bin/.local/bin/ -type f | fzf)
 }
 
 function gReview() {
