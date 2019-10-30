@@ -167,7 +167,7 @@ mode $dmenu_mode {
   bindsym u exec "umount_menu"; mode "default"
   bindsym w exec "networkmanager_dmenu"; mode "default"
   bindsym p exec "pdf_search"; mode "default"
-  bindsym r exec "mpc_playlist_select"; mode "default"
+  bindsym r exec "radio_album_select"; mode "default"
 
   bindsym Return mode "default"
   bindsym Escape mode "default"
