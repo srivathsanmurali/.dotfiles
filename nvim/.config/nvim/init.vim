@@ -42,13 +42,14 @@ endif
 
 call plug#begin('~/.local/share/nvim/plugged')
 Plug 'tpope/vim-fugitive'
+Plug 'airblade/vim-gitgutter'
 Plug 'plasticboy/vim-markdown', { 'for': 'markdown' }
 Plug 'editorconfig/editorconfig-vim'
 Plug 'jeetsukumaran/vim-buffergator'
 Plug 'elixir-editors/vim-elixir', { 'for': 'elixir' }
 Plug 'mhinz/vim-mix-format', { 'for': 'elixir' }
+Plug 'fatih/vim-go', { 'for': 'go' }
 Plug 'godlygeek/tabular'
-
 
 Plug 'junegunn/fzf.vim'    
 nnoremap <C-p> <Esc>:GFiles<CR>
@@ -96,8 +97,6 @@ let g:buffergator_vsplit_size = 3
 nnoremap <leader>g :Rg
 
 nnoremap <leader>t :tabnew<CR>
-nnoremap J :tabnext<CR>
-nnoremap K :tabprev<CR>
 
 nnoremap <C-t> :Tags<CR>
 inoremap <C-t> :Tags<CR>
