@@ -15,6 +15,7 @@ set hidden      "hidden buffers
 set ignorecase
 set smartcase
 set noinfercase
+set number
 
 set splitbelow    "split below
 set splitright    "split right
