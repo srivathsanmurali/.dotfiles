@@ -63,6 +63,7 @@ alias unused_pkgs='pacman -Qdtq'
 alias t='transmission-remote-cli'
 alias v='vim'
 alias vi='vim'
+alias yt='newsboat -u ~/.config/newsboat/yt_urls -c ~/.cache/yt_newsboat'
 
 if hash nvim > /dev/null 2>&1; then
   alias vim='nvim' 

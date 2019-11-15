@@ -1,0 +1,3 @@
+#!/usr/bin/env sh
+RSSFILE="$HOME/.config/newsboat/yt_urls"
+echo "https://www.youtube.com/feeds/videos.xml?channel_id=$1 # $2" >> $RSSFILE
