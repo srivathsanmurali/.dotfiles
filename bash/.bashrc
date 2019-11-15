@@ -74,6 +74,12 @@ alias neomutt='neomutt -F ~/.config/mutt/muttrc'
 alias mutt='neomutt -F ~/.config/mutt/muttrc'
 
 # Functions
+lid() {
+  case "$1" in
+    disable|off) swaymsg output eDP-1 disable;;
+    enable|on) swaymsg output eDP-1 enable;;
+  esac
+}
 todo() {
   while getopts "eh" option $*; do
     case "$option" in
