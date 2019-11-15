@@ -181,16 +181,17 @@ bar {
 
 #color
 set $barColor             #2f343f
-set $bg-color             #2f343f
+set $bg-color             #909099
 set $inactive-bg-color    #2f343f
+set $inactive-focused-color #2f343f
 set $text-color           #fdf4f5
 set $inactive-text-color  #676E7D
-set $urgent-bf-color      #E53935
+set $urgent-bf-color      #E53935 
 
 # window colors
 client.focused            $bg-color           $bg-color             $text-color           #00ff00   $bg-color
 client.unfocused          $inactive-bg-color  $inactive-bg-color    $inactive-text-color  #00ff00   $inactive-bg-color
-client.focused_inactive   $inactive-bg-color  $inactive-bg-color    $inactive-text-color  #00ff00   $inactive-bg-color
+client.focused_inactive   $inactive-focused-color $inactive-focused-color $inactive-text-color  #00ff00   $inactive-bg-color
 client.urgent             #E53935   #E53935 $text-color           #00ff00   #E53935
 
 ## light
@@ -215,5 +216,5 @@ bindsym $mod+f12 exec mpc next
 gaps inner 5
 smart_gaps on
 
-default_border none
+default_border pixel 1
 exec_always wall_change
