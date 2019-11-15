@@ -2,10 +2,10 @@
 
 export DOTFILES=${HOME}/.dotfiles
 export BROWSER=firefox
-export PATH=$PATH:$(du "${DOTFILES}/bin/.local/bin/" \
+export PATH=$(du "${DOTFILES}/bin/.local/bin/" \
                     | cut -f2 \
                     | tr '\n' ':' \
-                    | sed -e "s@.dotfiles/bin/@@g" -e "s/:*$//")
+                    | sed -e "s@.dotfiles/bin/@@g" -e "s/:*$//"):$PATH
 export MANPATH=$MANPATH:~/.local/share/man/
 export EDITOR=nvim
 export TERMINAL=st
