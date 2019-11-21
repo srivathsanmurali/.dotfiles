@@ -143,4 +143,3 @@ export ERL_AFLAGS="-kernel shell_history enabled"
 export ECTO_EDITOR=vim
 export ELIXIR_EDITOR=vim
 
-khal list --notstarted -f "{start-time}-{end-time} {title} [{location}]"
