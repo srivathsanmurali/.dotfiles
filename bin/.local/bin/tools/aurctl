@@ -1,7 +1,7 @@
 #!/bin/bash
 # vim: set ft=sh!
 
-SOURCE_DIR="${HOME}/Packages"
+SOURCE_DIR="/opt/aur"
 PKGDEST="/srv/pkgs"
 AUR_GIT_SERVER="https://aur.archlinux.org"
 
