@@ -7,11 +7,9 @@ function service_myradio() {
 function toggle_radio(){
   case "$(service_myradio is-active)" in
     active)
-      mpc pause
       service_myradio stop
       ;;
     *)
-      mpc play 
       service_myradio start
       ;;
   esac
@@ -19,15 +17,12 @@ function toggle_radio(){
 
 case "$1" in
   start|on)
-    mpc play
     service_myradio start
     ;;
   stop|off)
-    mpc stop
     service_myradio stop
     ;;
   pause)
-    mpc pause
     service_myradio stop
     ;;
   toggle|play-pause)
