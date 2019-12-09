@@ -65,6 +65,11 @@ alias v='vim'
 alias vi='vim'
 alias yt='newsboat -u ~/.config/newsboat/yt_urls -c ~/.cache/yt_newsboat'
 
+alias weather='curl wttr.in'
+cheat() {
+  curl "cheat.sh/%1"
+}
+
 if hash nvim > /dev/null 2>&1; then
   alias vim='nvim' 
 fi
@@ -142,4 +147,3 @@ fi
 export ERL_AFLAGS="-kernel shell_history enabled"
 export ECTO_EDITOR=vim
 export ELIXIR_EDITOR=vim
-
