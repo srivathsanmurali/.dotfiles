@@ -216,5 +216,5 @@ bindsym $mod+f12 exec mpc next
 gaps inner 5
 smart_gaps on
 
-default_border pixel 1
+default_border pixel 3
 exec_always wall_change
