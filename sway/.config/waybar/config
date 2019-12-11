@@ -1,91 +1,60 @@
 {
   "layer": "bottom",
     "position": "top",
-    "height": 20,
-    "modules-left": ["sway/workspaces", "sway/mode", "sway/window"],
-    "modules-center": [],
-    "modules-right": ["custom/playerctl", "pulseaudio", "network", "backlight", "battery", "battery#bat2", "clock", "tray"],
-    
-    // Modules configuration
+    "height": 24,
+    "modules-left": ["sway/workspaces"],
+    "modules-center": ["clock"],
+    "modules-right": ["network", "pulseaudio", "battery"],
+    "sway/window": {
+      "max-length": -1
+    },
+    "sway/workspaces": {
+      "disable-markup": true,
+      "disable-scroll": true
+    },
+    "custom/separator": {
+      "format": "   ",
+      "interval": "once",
+      "tooltip": false
+    },
     "sway/mode": {
-      "format": "<span style=\"italic\">{}</span>"
-    },
-    "custom/playerctl": {
-      "exec": "playerctl metadata title",
-      "interval": 1
-    },
-    "mpd": {
-      "format": "{stateIcon} {consumeIcon}{randomIcon}{repeatIcon}{singleIcon}{album} - {title} ({elapsedTime:%M:%S}/{totalTime:%M:%S}) ",
-      "format-disconnected": "Disconnected ",
-      "format-stopped": "{consumeIcon}{randomIcon}{repeatIcon}{singleIcon}Stopped ",
-      "unknown-tag": "N/A",
-      "interval": 2,
-      "consume-icons": {
-        "on": " "
-      },
-      "random-icons": {
-        "off": "<span color=\"#f53c3c\"></span> ",
-        "on": " "
-      },
-      "repeat-icons": {
-        "on": " "
-      },
-      "single-icons": {
-        "on": "1 "
-      },
-      "state-icons": {
-        "paused": "",
-        "playing": ""
-      },
-      "tooltip-format": "MPD (connected)",
-      "tooltip-format-disconnected": "MPD (disconnected)"
-    },
-    "tray": {
-      // "icon-size": 21,
-      "spacing": 10
+      "format": " {} "
     },
     "clock": {
-      "interval": 60,
-      "format": "{:%d-%m-%Y | %H:%M}",
-      "tooltip-format": "{:%d-%m-%Y | %H:%M}"
+      "format": "{:%a, %b %d %I:%M%P}",
+      "tooltip": false
     },
     "backlight": {
-      // "device": "acpi_video1",
-      "format": "{percent}% {icon}",
-      "format-icons": ["", ""]
+      "format": ""
     },
     "battery": {
+      "bat": "BAT0",
       "states": {
-        // "good": 95,
         "warning": 30,
         "critical": 15
       },
-      "format": "{capacity}% {icon}",
-      "format-charging": "{capacity}% ",
-      "format-plugged": "{capacity}% ",
-      "format-alt": "{time} {icon}",
-      // "format-good": "", // An empty format will hide the module
-      // "format-full": "",
-      "format-icons": ["", "", "", "", ""]
+      "tooltip": false,
+      "format-icons": ["", "", "", "", ""],
+      "format": "{icon} {capacity}%",
+      "format-charging": " {capacity}%"
     },
     "battery#bat2": {
       "bat": "BAT2"
     },
     "network": {
-      "interface": "wlp3s0*", // (Optional) To force the use of this interface
-      "format-wifi": "{essid} ({signalStrength}%) ",
-      "format-ethernet": "{ifname}: {ipaddr}/{cidr} ",
-      "format-linked": "{ifname} (No IP) ",
-      "format-disconnected": "Disconnected ⚠",
-      "format-alt": "{ifname}: {ipaddr}/{cidr}"
+      "format-wifi": " {essid}",
+      "format-disconnected": " disconnected",
+      "format-ethernet": " wired",
+      "tooltip": false
     },
     "pulseaudio": {
-      // "scroll-step": 1, // %, can be a float
-      "format": "{volume}% {icon} {format_source}",
-      "format-bluetooth": "{volume}% {icon} {format_source}",
-      "format-muted": " {format_source}",
-      "format-source": "{volume}% ",
-      "format-source-muted": "",
+      "format-icons": ["", "", "", "", ""],
+      "format": "{icon} {volume}%",
+      "format-bluetooth": "{icon}",
+      "format-muted": "",
+      "tooltip": false,
+      "on-scroll-up": "",
+      "on-scroll-down": "",
       "format-icons": {
         "headphones": "",
         "handsfree": "",
@@ -96,5 +65,25 @@
         "default": ["", "", ""]
       },
       "on-click": "pavucontrol"
+    },
+    "pulseaudio#mic": {
+      "format": "{format_source}",
+      "tooltip": false,
+      "format-source": "",
+      "format-source-muted": "",
+      "on-scroll-up": "",
+      "on-scroll-down": ""
+    },
+    "temperature": {
+      "hwmon-path": "/sys/class/hwmon/hwmon4/temp1_input",
+      "format-icons": ["", "", "", "", ""],
+      "format": "{icon}"
+    },
+    "idle_inhibitor": {
+      "format": "{icon}",
+      "format-icons": {
+        "activated": "",
+        "deactivated": ""
+      }
     }
 }
