@@ -4,8 +4,8 @@ set $left h
 set $down j
 set $up k
 set $right l
-set $term "/usr/bin/konsole"
-set $term2 "/usr/local/bin/st"
+set $term2 "/usr/bin/alacritty"
+set $term "/usr/local/bin/st"
 # disable output while lid is down
 set $laptop eDP-1
 bindswitch lid:on output $laptop disable
