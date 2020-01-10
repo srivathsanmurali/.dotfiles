@@ -1,15 +1,7 @@
 #mpd ignores
-music/.config/mpd/database
-music/.config/mpd/log
-music/.config/mpd/state
-music/.config/mpd/sticker
-music/.config/mpd/pid
-music/.ncmpcpp/error.log
-vim/.vim/.netrwhist
-vim/.vim/autoload/*
-vim/.vim/plugged/*
-vim/.vim/swaps/*
-vim/.vim/undos/*
-vim/.vim/sessions/*
-vim/.vim/colors/wal.vim
-i3/.config/i3/logfile
+.config/mpd/database
+.config/mpd/log
+.config/mpd/state
+.config/mpd/sticker
+.config/mpd/pid
+.config/i3/logfile

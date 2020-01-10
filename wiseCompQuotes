@@ -1,3 +1,0 @@
-In cuda, Use structures of arrays not arrays of structures.
-Always write tests
-Setup a CI for every project
