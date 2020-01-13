@@ -1,7 +1,1 @@
-#mpd ignores
-.config/mpd/database
-.config/mpd/log
-.config/mpd/state
-.config/mpd/sticker
-.config/mpd/pid
-.config/i3/logfile
+*
