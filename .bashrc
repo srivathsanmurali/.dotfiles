@@ -14,7 +14,7 @@ HISTFILESIZE= # Infinite history
 shopt -s histappend
 
 prompt_cmd() {
-  cur_dir=$($HOME/.local/bin/tools/prompt)
+  cur_dir=$($HOME/.local/bin/$(uname -m)/prompt)
   #PS1="$(tput bold)$(tput setaf 1)[$(tput setaf 3)\u$(tput setaf 5)@$(tput setaf 4)\h $(tput setaf 6)$cur_dir$(tput setaf 1)]$ $(tput sgr0)"
   PS1="[\u@\h $cur_dir]$ "
 }
@@ -56,7 +56,6 @@ alias mbsync='mbsync -c "$HOME/.config/mbsync/config"'
 
 ## applications
 alias music="ncmpcpp"
-alias playlist="~/.local/bin/mpc_playlist | less -r"
 alias pjson='python -mjson.tool'
 alias r='ranger'
 alias unused_pkgs='pacman -Qdtq'

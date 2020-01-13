@@ -1,11 +1,7 @@
 #!/bin/sh 
 
-export DOTFILES=${HOME}/.dotfiles
-export BROWSER=firefox
-export PATH=$(du "${DOTFILES}/bin/.local/bin/" \
-                    | cut -f2 \
-                    | tr '\n' ':' \
-                    | sed -e "s@.dotfiles/bin/@@g" -e "s/:*$//"):$PATH
+export BROWSER=chromium
+export PATH="$HOME/.local/bin/$(hostname):$HOME/.local/bin/$(uname -m):$HOME/.local/bin/:$PATH"
 export MANPATH=$MANPATH:~/.local/share/man/
 export EDITOR=nvim
 export TERMINAL=st

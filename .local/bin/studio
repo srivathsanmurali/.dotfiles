@@ -1,0 +1,21 @@
+#!/bin/sh
+
+[ -e ~/.config/studio.conf ] && . ~/.config/studio.conf
+
+if [ "$1" == "play" ]
+then
+    if [ -e "$XDG_RUNTIME_DIR/studio.fifo" ]
+    then
+        echo quit > "$XDG_RUNTIME_DIR/studio.fifo"
+        rm "$XDG_RUNTIME_DIR/studio.fifo"
+    else
+        mkfifo "$XDG_RUNTIME_DIR/studio.fifo"
+        mpv --input-file="$XDG_RUNTIME_DIR/studio.fifo" --no-audio-display --quiet \
+            "$STUDIO_URL/stream/stream256.opus" > /dev/null < /dev/null &
+    fi
+fi
+
+if [ "$1" == "skip" ]
+then
+    curl -s "$STUDIO_URL/api/skip"
+fi

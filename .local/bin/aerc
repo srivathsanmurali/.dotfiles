@@ -1,0 +1,2 @@
+#!/bin/sh
+$HOME/code/aerc/aerc "$@" >>/tmp/aerc.log 2>>/tmp/aerc.error

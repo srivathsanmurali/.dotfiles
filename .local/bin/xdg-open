@@ -1,0 +1,15 @@
+#!/bin/sh
+case "${1%%:*}" in
+	http|https)
+		exec $BROWSER "$1"
+		;;
+  *.pdf)
+    exec zathura "$1"
+    ;;
+	mailto)
+		exec aerc "$1"
+		;;
+	*)
+		exec /usr/bin/xdg-open "$@"
+		;;
+esac

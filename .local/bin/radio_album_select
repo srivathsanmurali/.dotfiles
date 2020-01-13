@@ -1,9 +1,0 @@
-#!/bin/sh
-
-albums=$(ssh sol.vathsan.com 'cat albums' | sed 1d)
-selected_album=$(printf "all\n$albums\n" | rofi -dmenu -i)
-case "$selected_album" in
-  "") exit 0;;
-  "all") mpc clear; mpc ls | mpc add; radio on ;;
-  *) mpc clear; mpc add "$selected_album"; radio on;;
-esac

@@ -1,8 +1,0 @@
-#!/bin/sh
-
-[ -z "$1" ] && echo "provide list of files" && exit 1
-
-for s in "$@"; do
-  echo "$s"
-  mpg123 -q --no-control --loop -1 --name $(basename "$s") "$s" /dev/null 2>&1 &
-done
