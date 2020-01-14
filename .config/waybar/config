@@ -3,14 +3,19 @@
     "position": "top",
     "height": 24,
     "modules-left": ["sway/workspaces"],
-    "modules-center": ["clock"],
-    "modules-right": ["network", "pulseaudio", "battery"],
+    "modules-center": ["custom/studio"],
+    "modules-right": ["network", "pulseaudio", "battery", "clock"],
     "sway/window": {
       "max-length": -1
     },
     "sway/workspaces": {
       "disable-markup": true,
       "disable-scroll": true
+    },
+    "custom/studio": {
+      "exec": "/home/sri/.local/bin/studio_playing",
+      "exec_if": "/usr/bin/ping -q -c 1 1.1.1.1 > /dev/null",
+      "interval": 10
     },
     "custom/separator": {
       "format": "   ",

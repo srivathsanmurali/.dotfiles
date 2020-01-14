@@ -1,0 +1,6 @@
+#!/bin/sh
+[ -e ~/.config/studio.conf ] && . ~/.config/studio.conf
+
+/usr/bin/curl -s -L "${STUDIO_URL}/api/playing" \
+| /usr/bin/jq '.title + " - " + .album + " (" + .artist + ")"' \
+| /usr/bin/jq --raw-output '@html'
