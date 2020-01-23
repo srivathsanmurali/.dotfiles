@@ -26,6 +26,7 @@ set shiftwidth=2  "indent by 2 spaces
 set expandtab     "expand tabs to spaces
 set tabstop=2     "each tab is 2 spaces
 set autoindent    "autoindent code
+set syntax=off
 
 " highlight long statements
 highlight Overlength ctermbg=gray ctermfg=black

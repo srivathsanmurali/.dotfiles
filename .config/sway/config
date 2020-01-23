@@ -45,8 +45,8 @@ bindsym $mod+Shift+p exec "pass_menu"
 
 # Moving around:
 ## move to near workspace
-bindsym $mod+Tab workspace next
-bindsym $mod+Shift+Tab workspace prev
+bindsym $mod+Tab exec aworkspace switch
+bindsym $mod+Shift+Tab exec aworkspace move
 
 # floating
 floating_modifier $mod normal
@@ -126,7 +126,6 @@ bindsym $mod+space focus mode_toggle
 # sticky
 bindsym $mod+x sticky toggle
 
-# move focus to the parent container
 bindsym $mod+a focus parent
 
 # Scratchpad:
@@ -218,4 +217,4 @@ smart_gaps on
 
 default_border pixel 3
 exec_always wall_change
-exec_always pkill kanshi; exec kanshi
+exec startup sway
