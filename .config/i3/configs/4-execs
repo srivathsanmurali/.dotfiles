@@ -13,7 +13,7 @@ for_window [class="Pavucontrol"] floating enable; border none;
 for_window [class="nitrogen"] floating enable;
 
 exec_always --no-startup-id dunst
-exec_always --no-startup-id $HOME/.config/polybar/launch.sh
+exec_always --no-startup-id "polybar_launch"
 exec_always --no-startup-id compton
 
 exec --no-startup-id setxkbmap -option ctrl:nocaps
