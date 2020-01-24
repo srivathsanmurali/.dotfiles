@@ -1,0 +1,3 @@
+#!/bin/sh
+
+scanimage --format png --resolution=600 --mode=Lineart > "$1"
