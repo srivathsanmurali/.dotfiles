@@ -4,7 +4,7 @@ case "${1%%:*}" in
 		exec $BROWSER "$1"
 		;;
   *.pdf)
-    exec zathura "$1"
+    exec $READER "$1"
     ;;
 	mailto)
 		exec aerc "$1"
