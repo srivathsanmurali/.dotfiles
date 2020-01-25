@@ -1,2 +1,0 @@
-#!/bin/sh
-GIT_DIR=~/.local/share/dotfiles.git GIT_WORK_TREE=~ /usr/bin/git "$@"

@@ -1,0 +1,3 @@
+#!/bin/sh
+DOTSDIR=${DOTSDIR:="$HOME/.dotfiles"}
+find "$DOTSDIR/.local/bin/" -type f | fzf -m | xargs -or $EDITOR
