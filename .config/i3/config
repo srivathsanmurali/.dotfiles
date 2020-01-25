@@ -227,7 +227,7 @@ mode $dmenu_mode {
 # vim: set ft=conf!
 
 # Wallpaper
-for_window [class="^.*"] border pixel 1
+for_window [class="^.*"] border pixel 3
 
 # nofocus for notifications
 no_focus [window_type="notification"]
