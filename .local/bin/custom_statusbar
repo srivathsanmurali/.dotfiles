@@ -1,9 +1,18 @@
 #!/bin/sh
+[ -e ~/.config/studio.conf ] && . ~/.config/studio.conf
+
 while true
 do
-  now_playing=$(studio_playing)
-  time=$(date +"%A, %b %d %0I:%M%p")
+  now_playing=$(
+    curl -sL "${STUDIO_URL}/api/playing" \
+    | jq --raw-output '"♫ " +  .album[0:20] + " - " + .title + " (" + .artist[0:20] + ")"'
+  )
+  time=" $(date +'%A, %b %d %0I:%M%p')"
+  network=$(nmcli device status | grep "\bconnected\b" | awk '{print $4}')
+  if [ -n "${network}" ]; then
+    network=" ${network}"
+  fi
 
-  printf "%s %s\n" "${now_playing}" "${time}"
+  printf "%s %s %s \n" "${now_playing}" "${network}" "${time}"
   sleep 10
 done

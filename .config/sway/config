@@ -158,16 +158,14 @@ mode "resize" {
 }
 bindsym $mod+r mode "resize"
 
-set $dmenu_mode "rofi: [a]book | [c]onfig | [m]ount | [u]mount | [w]ifi | [p]df | [r]adio"
+set $dmenu_mode "rofi: [a]book | [m]ount | [u]mount | [w]ifi | [p]df"
 bindsym $mod+p mode $dmenu_mode
 mode $dmenu_mode {
   bindsym a exec "abook_menu"; mode "default"
-  bindsym c exec "config_menu"; mode "default"
   bindsym m exec "mount_menu"; mode "default"
   bindsym u exec "umount_menu"; mode "default"
   bindsym w exec "networkmanager_dmenu"; mode "default"
   bindsym p exec "pdf_search"; mode "default"
-  bindsym r exec "radio_album_select"; mode "default"
 
   bindsym Return mode "default"
   bindsym Escape mode "default"
