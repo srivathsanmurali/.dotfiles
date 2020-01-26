@@ -1,0 +1,6 @@
+#!/bin/sh
+swaymsg workspace 1
+swaymsg exec qutebrowser
+swaymsg workspace 10
+swaymsg exec "$TERMINAL -e aerc"
+swaymsg workspace 1
