@@ -13,6 +13,19 @@ do
     network=" ${network}"
   fi
 
-  printf "%s %s %s \n" "${now_playing}" "${network}" "${time}"
+  battery=$(
+    cat /sys/class/power_supply/BAT*/capacity \
+    | awk '{sum+=$NF} END {print int(sum/NR)}'
+  )
+
+  if [ $(cat /sys/class/power_supply/AC/online) == 1 ]; then
+    battery=" ${battery}"
+  fi
+
+  if [ -z "$battery" ]; then
+    printf "%s %s %s \n" "${now_playing}" "${network}" "${time}"
+  else
+    printf "%s %s %s %s \n" "${now_playing}" "${network}" "$battery" "${time}"
+  fi
   sleep 10
 done
