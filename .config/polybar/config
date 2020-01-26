@@ -121,7 +121,7 @@ interval = 3.0
 
 format-connected = <label-connected>
 
-label-connected = %essid%(%downspeed%)
+label-connected = %essid%
 label-connected-foreground = #eefafafa
 
 format-disconnected = <label-disconnected>

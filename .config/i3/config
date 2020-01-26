@@ -214,7 +214,6 @@ set $dmenu_mode "rofi: [a]book | [c]onfig | [m]ount | [u]mount | [w]ifi | [p]df"
 bindsym $mod+p mode $dmenu_mode
 mode $dmenu_mode {
   bindsym a exec "abook_menu"; mode "default"
-  bindsym c exec "config_menu"; mode "default"
   bindsym m exec "mount_menu"; mode "default"
   bindsym u exec "umount_menu"; mode "default"
   bindsym w exec "networkmanager_dmenu"; mode "default"
@@ -222,6 +221,15 @@ mode $dmenu_mode {
 
   bindsym Return mode "default"
   bindsym Escape mode "default"
+}
+
+bar {
+    position top
+    status_command custom_statusbar
+    font -misc-fixed-medium-r-normal--13-120-75-75-C-70-iso10646-1
+    font InputMono 10, Awesome 10 
+    strip_workspace_numbers yes
+    tray_output primary
 }
 
 # vim: set ft=conf!
@@ -239,7 +247,6 @@ for_window [class="Pavucontrol"] floating enable; border none;
 for_window [class="nitrogen"] floating enable;
 
 exec_always --no-startup-id dunst
-exec_always --no-startup-id "polybar_launch"
 exec_always --no-startup-id compton
 
 exec --no-startup-id setxkbmap -option ctrl:nocaps

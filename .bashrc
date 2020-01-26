@@ -30,6 +30,7 @@ alias vimconfig="vi ~/.dotfiles/vim"
 alias bashconfig="vi ~/.dotfiles/bash"
 alias refresh="source ~/.bashrc"
 alias abook="abook --datafile ~/.local/share/abook/addressbook"
+alias cc="calcurse -C ~/.config/calcurse -D ~/.cache/calcurse"
 
 # git
 alias g='git'
