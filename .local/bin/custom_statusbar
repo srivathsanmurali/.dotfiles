@@ -1,0 +1,9 @@
+#!/bin/sh
+while true
+do
+  now_playing=$(studio_playing)
+  time=$(date +"%A, %b %d %0I:%M%p")
+
+  printf "%s %s\n" "${now_playing}" "${time}"
+  sleep 10
+done
