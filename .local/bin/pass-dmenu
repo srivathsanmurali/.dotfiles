@@ -1,0 +1,13 @@
+#!/bin/sh
+set -e
+target=$(
+  find ~/.password-store/ -type f -name '*.gpg'\
+  | sed -re "s/\.gpg$//" \
+  | sed -re "s/^.*\/.password-store\///" \
+  | dmenu -l 5
+)
+old=$(wl-paste || true)
+wl-copy $(pass $target)
+notify-send -u critical -t 45000 "Password in clipboard" "Your $target password is currently in your clipboard."
+sleep 45
+wl-copy "$old"
