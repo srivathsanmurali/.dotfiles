@@ -1,31 +1,61 @@
 #!/bin/sh
 [ -e ~/.config/studio.conf ] && . ~/.config/studio.conf
 
-while true
-do
-  now_playing=$(
-    curl -sL "${STUDIO_URL}/api/playing" \
-    | jq --raw-output '"♫ " +  .album[0:20] + " - " + .title + " (" + .artist[0:20] + ")"'
-  )
-  time=" $(date +'%A, %b %d %0I:%M%p')"
-  network=$(nmcli device status | grep "\bconnected\b" | awk '{print $4}')
-  if [ -n "${network}" ]; then
-    network=" ${network}"
-  fi
 
-  battery=$(
+now_playing() {
+  curl -sL "${STUDIO_URL}/api/playing" \
+  | jq -j --raw-output '"♫ " +  .album[0:20] + " - " + .title + " (" + .artist[0:20] + ")"'
+}
+
+time_now() {
+  echo -n " $(date +'%A, %b %d %0I:%M%p')"
+}
+
+network() {
+  nw=$(
+    nmcli device status \
+    | grep "\bconnected\b" \
+    | awk '{ for(i=4; i<NF; i++) printf "%s",$i OFS; if(NF) printf "%s",$NF; printf ORS}' \
+    | paste -sd', '
+  )
+  
+  if [ -n "${nw}" ]; then
+    nw=" ${nw}"
+  fi
+  echo -n "$nw"
+}
+
+get_battery_icon() {
+  if [ $(cat /sys/class/power_supply/AC/online) == 1 ]; then
+    echo -n " "
+  elif [ "$1" -gt 95 ]; then
+    echo -n " "
+  elif [ "$1" -gt 75 ]; then
+    echo -n " "
+  elif [ "$1" -gt 50 ]; then
+    echo -n " "
+  elif [ "$1" -gt 25 ]; then
+    echo -n " "
+  else
+    echo -n " "
+  fi
+}
+
+battery() {
+  batcap=$(
     cat /sys/class/power_supply/BAT*/capacity \
     | awk '{sum+=$NF} END {print int(sum/NR)}'
   )
-
-  if [ $(cat /sys/class/power_supply/AC/online) == 1 ]; then
-    battery=" ${battery}"
-  fi
-
-  if [ -z "$battery" ]; then
-    printf "%s %s %s \n" "${now_playing}" "${network}" "${time}"
+  
+  if [ -n "$batcap" ]; then
+    echo -n "$(get_battery_icon "$batcap")${batcap}"
   else
-    printf "%s %s %s %s \n" "${now_playing}" "${network}" "$battery" "${time}"
+    echo -n ""
   fi
+}
+
+while true
+do
+  printf "%s %s %s %s \n" "$(now_playing)" "$(network)" "$(battery)" "$(time_now)"
   sleep 10
 done
