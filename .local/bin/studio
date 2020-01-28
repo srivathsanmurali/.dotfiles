@@ -2,15 +2,17 @@
 
 [ -e ~/.config/studio.conf ] && . ~/.config/studio.conf
 
+fifo_path="${HOME}/.cache/studio.fifo"
+
 if [ "$1" == "play" ]
 then
-    if [ -e "$XDG_RUNTIME_DIR/studio.fifo" ]
+    if [ -e "$fifo_path" ]
     then
-        echo quit > "$XDG_RUNTIME_DIR/studio.fifo"
-        rm "$XDG_RUNTIME_DIR/studio.fifo"
+        echo quit > "$fifo_path"
+        rm "$fifo_path"
     else
-        mkfifo "$XDG_RUNTIME_DIR/studio.fifo"
-        mpv --input-file="$XDG_RUNTIME_DIR/studio.fifo" --no-audio-display --quiet \
+        mkfifo "$fifo_path"
+        mpv --input-file="$fifo_path" --no-audio-display --quiet \
             "$STUDIO_URL/stream/stream256.opus" > /dev/null < /dev/null &
     fi
 fi

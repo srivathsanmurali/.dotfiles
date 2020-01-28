@@ -3,8 +3,17 @@
 
 
 now_playing() {
-  curl -sL "${STUDIO_URL}/api/playing" \
-  | jq -j --raw-output '"♫ " +  .album[0:20] + " - " + .title + " (" + .artist[0:20] + ")"'
+  listening=""
+  if [ -e "$HOME/.cache/studio.fifo" ]; then
+    listening=""
+  fi
+
+  np=$(
+    curl -sL "${STUDIO_URL}/api/playing" \
+    | jq -j --raw-output '.album[0:20] + " - " + .title + " (" + .artist[0:20] + ")"'
+  )
+
+  echo -n "♫ $listening $np"
 }
 
 time_now() {
@@ -15,8 +24,10 @@ network() {
   nw=$(
     nmcli device status \
     | grep "\bconnected\b" \
-    | awk '{ for(i=4; i<NF; i++) printf "%s",$i OFS; if(NF) printf "%s",$NF; printf ORS}' \
-    | paste -sd', '
+    | tr -s ' '\
+    | cut -d ' ' -f4- \
+    | awk 'ORS="| "' \
+    | sed 's/| $//g'
   )
   
   if [ -n "${nw}" ]; then
