@@ -52,6 +52,15 @@ get_battery_icon() {
   fi
 }
 
+get_bluetooth() {
+  connected_device=$(bluetoothctl info | grep Name | cut -d: -f2- | xargs)
+  if [ -n "$connected_device" ]; then
+    echo -n " $connected_device"
+  else
+    echo -n ""
+  fi
+}
+
 battery() {
   batcap=$(
     cat /sys/class/power_supply/BAT*/capacity \
@@ -67,6 +76,6 @@ battery() {
 
 while true
 do
-  printf "%s %s %s %s \n" "$(now_playing)" "$(network)" "$(battery)" "$(time_now)"
+  printf "%s %s %s %s %s \n" "$(now_playing)" "$(get_bluetooth)" "$(network)" "$(battery)" "$(time_now)"
   sleep 10
 done
