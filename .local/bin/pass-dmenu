@@ -7,7 +7,7 @@ target=$(
   | dmenu -l 5
 )
 old=$(wl-paste || true)
-wl-copy $(pass $target)
+wl-copy $(pass show $target | head -n1)
 notify-send -u critical -t 45000 "Password in clipboard" "Your $target password is currently in your clipboard."
 sleep 45
 wl-copy "$old"
