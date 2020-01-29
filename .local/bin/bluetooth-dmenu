@@ -1,0 +1,34 @@
+#!/bin/sh
+set -e
+
+connected_device=$(bluetoothctl info | grep Name | cut -d: -f2- | xargs)
+devices=$(bluetoothctl devices | cut -d' ' -f3-)
+if [ -n "$connected_device" ]; then
+  devices=$(
+    sed 's/'"$connected_device"'/'"**$connected_device**"'/g'\ <<< $devices
+  )
+fi
+
+target=$(dmenu -i -p "Devices:" <<< $devices)
+echo $target
+
+case $target in
+  "")
+    exit
+    ;;
+  "**$connected_device**")
+    target="$connected_device"
+    action="disconnect"
+    ;;
+  *)
+    action="connect"
+    ;;
+esac
+
+mac_address=$(
+  bluetoothctl devices\
+  | grep "$target"\
+  | cut -d' ' -f2
+)
+
+bluetoothctl "$action" "$mac_address"
