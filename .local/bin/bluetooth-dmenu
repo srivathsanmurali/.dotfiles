@@ -31,4 +31,11 @@ mac_address=$(
   | cut -d' ' -f2
 )
 
+notify-send -t 1000 "Bluteooth" "Attempting to $action with $target"
 bluetoothctl "$action" "$mac_address"
+
+if [ $? == 0 ]; then
+  notify-send "Bluteooth" "Successfully ${action}ed with $target"
+else
+  notify-send "Bluteooth" "Failted to ${action} with $target"
+fi
