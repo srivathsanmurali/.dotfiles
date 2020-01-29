@@ -13,7 +13,11 @@ now_playing() {
     | jq -j --raw-output '.album[0:20] + " - " + .title + " (" + .artist[0:20] + ")"'
   )
 
-  echo -n "♫ $listening $np"
+  if [ -n "$np" ]; then
+    echo -n "$listening $np"
+  else
+    echo -n ""
+  fi
 }
 
 time_now() {
