@@ -1,20 +1,20 @@
 #!/bin/sh
 ## require abook
 
-rofi_cmd='rofi -dmenu -i -matching fuzzy'
+rofi_cmd='dmenu -i -l5'
 
 selected_name=$(
   cat ~/.local/share/abook/addressbook \
   | grep "name=" \
   | sed "s/name=//g" \
-  | $rofi_cmd
+  | $rofi_cmd -p "Name:"
 )
 
 [ -z "$selected_name" ] && exit 0;
 email=$(abook --datafile ~/.local/share/abook/addressbook --mutt-query "$selected_name" | awk '{if(NR>1) print $1}')
 
 if [ $(echo -e "$email" | wc --words) -gt 1 ]; then
-  email=$(echo "$email" | $rofi_cmd)
+  email=$(echo "$email" | $rofi_cmd -p "Email:")
 fi
 
 [ -z "$email" ] && exit 0;

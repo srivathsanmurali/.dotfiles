@@ -24,7 +24,8 @@ bindsym $mod+Shift+Return exec $term
 
 ## App kill/launch
 bindsym $mod+Shift+q kill
-bindsym $mod+d exec "rofi -show combi -combi-modi 'drun,ssh,run' -show-icons"
+#bindsym $mod+d exec "rofi -show combi -combi-modi 'drun,ssh,run' -show-icons"
+bindsym $mod+d exec "dmenu_run"
 
 ## sway session
 bindsym $mod+Shift+r reload
