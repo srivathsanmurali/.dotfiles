@@ -1,0 +1,6 @@
+#!/bin/sh
+if [ $(command -v bemenu) ]; then
+  bemenu $@
+else
+  dmenu $@
+fi
