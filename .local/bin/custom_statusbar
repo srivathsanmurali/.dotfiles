@@ -20,6 +20,21 @@ now_playing() {
   fi
 }
 
+get_volume() {
+  volume=$(volctl status)
+  if [ "$volume" = "mute" ]; then
+    volume=" $volume"
+  elif [ "$volume" -gt 66 ]; then
+    volume=" $volume"
+  elif [ "$volume" -gt 33 ]; then
+    volume=" $volume"
+  else
+    volume=" $volume"
+  fi
+
+  echo -n "$volume"
+}
+
 time_now() {
   echo -n " $(date +'%A, %b %d %0I:%M%p')"
 }
@@ -80,6 +95,6 @@ battery() {
 
 while true
 do
-  printf "%s %s %s %s %s \n" "$(now_playing)" "$(get_bluetooth)" "$(network)" "$(battery)" "$(time_now)"
+  printf "%s %s %s %s %s %s \n" "$(now_playing)" "$(get_bluetooth)" "$(network)" "$(get_volume)" "$(battery)" "$(time_now)"
   sleep 10
 done
