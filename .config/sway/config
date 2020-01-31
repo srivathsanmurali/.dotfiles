@@ -135,6 +135,9 @@ bindsym $mod+minus scratchpad show
 # mako
 bindsym $mod+m exec "/usr/bin/makoctl dismiss --all"
 
+bindsym $mod+Prior workspace prev
+bindsym $mod+Next workspace next
+
 # Resizing containers:
 mode "resize" {
     # left will shrink the containers width
