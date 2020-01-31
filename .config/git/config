@@ -1,14 +1,12 @@
 [user]
 	email = sri@vathsan.com
 	name = Srivathsan Murali
-	signingkey = EC0A67FF
-
 [color]
 	ui = always
-
 [push]
 	default = upstream
-
+[pull]
+  rebase=true
 [alias]
   # add
   a = add
@@ -38,7 +36,6 @@
 
   # prune
   po = remote prune origin
-
 [core]
   editor = vim
   ignorecase = false
@@ -59,14 +56,11 @@
 [help]
   #correct typos
   autocorrect = 1
-[http]
-	sslVerify = false
 [filter "lfs"]
 	clean = git-lfs clean -- %f
 	smudge = git-lfs smudge -- %f
 	process = git-lfs filter-process
 	required = true
-
 [sendemail]
   smtpserver = /usr/bin/msmtp
   smtpserveroption=-a
