@@ -1,0 +1,9 @@
+#!/bin/sh
+set -e
+selection=$(echo -en "play\nskip\n" | dmenu)
+
+case $selection in
+  play) studio play;;
+  skip) studio skip;;
+  *) exit 1;;
+esac
