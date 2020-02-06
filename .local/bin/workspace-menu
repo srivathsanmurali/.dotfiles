@@ -1,0 +1,24 @@
+#!/bin/sh
+
+set -e
+
+TMUX_DIR="$HOME/.local/share/tmux"
+
+list_sessions() {
+  for file in $TMUX_DIR/*; do
+    session_name=$(basename "$file")
+    if $(tmux has-session -t $session_name 2>/dev/null); then
+      echo "**$session_name**"
+    else
+      echo "$session_name"
+    fi
+  done
+}
+
+target=$(
+  dmenu -p "workspace" <<< $(list_sessions) \
+  | sed "s/\*//g"
+)
+
+
+$TERMINAL -e "${TMUX_DIR}/$target"
