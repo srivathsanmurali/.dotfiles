@@ -54,8 +54,6 @@ Plug 'fatih/vim-go', { 'for': 'go' }
 Plug 'godlygeek/tabular'
 
 Plug 'junegunn/fzf.vim'    
-nnoremap <C-p> <Esc>:GFiles<CR>
-inoremap <C-p> <Esc>:GFiles<CR> "fzf file launcher
 
 Plug 'itchyny/lightline.vim'
 let g:lightline = { 'colorscheme': 'PaperColor' }
@@ -99,6 +97,8 @@ let g:buffergator_vsplit_size = 3
 nnoremap <leader>g :Rg<space>
 
 nnoremap <leader>t :tabnew<CR>
+
+nnoremap <leader>p <Esc>:GFiles<CR>
 
 nnoremap <C-t> :Tags<CR>
 inoremap <C-t> :Tags<CR>
