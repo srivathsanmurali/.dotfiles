@@ -162,14 +162,24 @@ mode "resize" {
 }
 bindsym $mod+r mode "resize"
 
-set $dmenu_mode "rofi: [a]book | [b]luetooth | [m]ount | [u]mount | [w]ifi | [p]df | [s]tudio | w[o]rkspaces"
-bindsym $mod+p mode $dmenu_mode
-mode $dmenu_mode {
-  bindsym a exec "abook_menu"; mode "default"
+set $dmenu_settings_mode "[b]luetooth | [m]ount | [u]mount | [n]etwork | [w]allpaper"
+bindsym $mod+o mode $dmenu_settings_mode
+
+mode $dmenu_settings_mode {
   bindsym b exec "bluetooth-dmenu"; mode "default"
   bindsym m exec "mount_menu"; mode "default"
   bindsym u exec "umount_menu"; mode "default"
-  bindsym w exec "networkmanager_dmenu"; mode "default"
+  bindsym n exec "networkmanager_dmenu"; mode "default"
+  bindsym w exec "wallpaper-dmenu"; mode "default"
+  
+  bindsym Return mode "default"
+  bindsym Escape mode "default"
+}
+
+set $dmenu_mode "[a]book | [p]df | [s]tudio | w[o]rkspaces"
+bindsym $mod+p mode $dmenu_mode
+mode $dmenu_mode {
+  bindsym a exec "abook_menu"; mode "default"
   bindsym p exec "pdf_search"; mode "default"
   bindsym s exec "studio_menu"; mode "default"
   bindsym o exec "workspace-menu"; mode "default"
