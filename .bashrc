@@ -32,6 +32,7 @@ alias bashconfig="vi ~/.dotfiles/bash"
 alias refresh="source ~/.bashrc"
 alias abook="abook --datafile ~/.local/share/abook/addressbook"
 alias cc="calcurse -C ~/.config/calcurse -D ~/.cache/calcurse"
+alias ws="workspace-menu -s"
 
 # git
 alias g='git'

@@ -15,10 +15,20 @@ list_sessions() {
   done
 }
 
-target=$(
-  dmenu -p "workspace" <<< $(list_sessions) \
-  | sed "s/\*//g"
-)
+case "$1" in
+  "-s")
+    target=$(
+    fzf --prompt "workspace " <<< $(list_sessions) \
+      | sed "s/\*//g"
+    )
+    source "${TMUX_DIR}/$target"
+    ;;
+  *)
+    target=$(
+    dmenu -p "workspace" <<< $(list_sessions) \
+      | sed "s/\*//g"
+    )
+    $TERMINAL -e "${TMUX_DIR}/$target"
+    ;;
+esac
 
-
-$TERMINAL -e "${TMUX_DIR}/$target"
