@@ -176,10 +176,11 @@ mode $dmenu_settings_mode {
   bindsym Escape mode "default"
 }
 
-set $dmenu_mode "[a]book | [p]df | [s]tudio | w[o]rkspaces"
+set $dmenu_mode "[a]book | [b]ookmarks | [p]df | [s]tudio | w[o]rkspaces"
 bindsym $mod+p mode $dmenu_mode
 mode $dmenu_mode {
   bindsym a exec "abook_menu"; mode "default"
+  bindsym b exec "bookmarks-menu"; mode "default"
   bindsym p exec "pdf_search"; mode "default"
   bindsym s exec "studio_menu"; mode "default"
   bindsym o exec "workspace-menu"; mode "default"
