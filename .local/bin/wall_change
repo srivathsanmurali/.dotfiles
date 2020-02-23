@@ -1,14 +1,20 @@
 #!/bin/sh
 ## script to automate wall change and pywal updates
+WallpaperDir=${WallpaperDir:-"$HOME/Pictures/Wallpapers"}
 
 if [ -z $1 ]; then
-  image_path="$HOME/.config/wall.jpg"
+  image_path=$(
+    fd -e jpg -e png '' $WallpaperDir \
+    | shuf \
+    | head -n1
+  )
+  echo "$image_path"
 else 
   image_path=$(realpath "$1")
 fi
 
 echo "Wallpaper: $image_path"
-echo "Copying $image_path -> ${HOME}/config/wall.jpg"
+echo "Copying $image_path -> ${HOME}/.config/wall.jpg"
 cp $image_path "${HOME}/.config/wall.jpg"
 
 case "$XDG_SESSION_TYPE" in
@@ -26,5 +32,5 @@ case "$XDG_SESSION_TYPE" in
     for i in $monitors; do /usr/bin/swaymsg output "$i" background "$HOME/.config/wall.jpg" fill; done;
     ;;
 esac
-
+echo "Done"
 
