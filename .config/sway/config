@@ -189,6 +189,17 @@ mode $dmenu_mode {
   bindsym Escape mode "default"
 }
 
+set $dnd_mode "[p]laylist | [s]ong_select"
+bindsym $mod+u mode $dnd_mode
+mode $dnd_mode {
+  bindsym p exec "select_mpc_playlist"; mode "default"
+  bindsym s exec "get_mpc_song_path"
+
+
+  bindsym Return mode "default"
+  bindsym Escape mode "default"
+}
+
 bar {
     status_command custom_statusbar
     font InputMono 10

@@ -31,4 +31,3 @@ case "$1" in
     $TERMINAL -e "${TMUX_DIR}/$target"
     ;;
 esac
-

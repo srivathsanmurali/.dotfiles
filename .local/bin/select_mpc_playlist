@@ -1,0 +1,9 @@
+#!/bin/sh
+
+set -e
+playlist=$(mpc lsplaylists | dmenu -i -l 10)
+mpc clear
+mpc load "$playlist"
+mpc repeat on
+mpc random on
+mpc play
