@@ -26,7 +26,6 @@ set shiftwidth=2  "indent by 2 spaces
 set expandtab     "expand tabs to spaces
 set tabstop=2     "each tab is 2 spaces
 set autoindent    "autoindent code
-set syntax=off
 
 " highlight long statements
 highlight Overlength ctermbg=gray ctermfg=black
@@ -46,6 +45,8 @@ call plug#begin('~/.local/share/nvim/plugged')
 Plug 'tpope/vim-fugitive'
 Plug 'airblade/vim-gitgutter'
 Plug 'plasticboy/vim-markdown', { 'for': 'markdown' }
+let g:vim_markdown_toc_autofit = 1
+
 Plug 'editorconfig/editorconfig-vim'
 Plug 'jeetsukumaran/vim-buffergator'
 Plug 'elixir-editors/vim-elixir', { 'for': 'elixir' }
@@ -59,6 +60,7 @@ Plug 'itchyny/lightline.vim'
 let g:lightline = { 'colorscheme': 'PaperColor' }
 set noshowmode "lightline already shows the mode
 
+Plug 'preservim/nerdcommenter'
 call plug#end()
 
 " --------------------
