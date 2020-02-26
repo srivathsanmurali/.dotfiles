@@ -1,6 +1,6 @@
 #!/bin/sh 
 
-export BROWSER=chromium
+export BROWSER=firefox
 export PATH="$HOME/.local/bin/$(hostname):$HOME/.local/bin/$(uname -m):$HOME/.local/bin/:$PATH"
 export MANPATH=$MANPATH:~/.local/share/man/
 export EDITOR=nvim
