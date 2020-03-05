@@ -4,4 +4,4 @@ swaymsg exec "$BROWSER"
 swaymsg workspace 10
 swaymsg exec "$TERMINAL -e aerc"
 swaymsg workspace 1
-swaymsg output eDP-1 scale 2
+swaymsg output eDP-1 scale 1
