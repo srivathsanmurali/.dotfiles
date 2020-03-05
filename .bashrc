@@ -108,7 +108,7 @@ sshReady() {
 }
 
 gShowSelected() {
-  git show $(git log --no-color --oneline | fzf | awk '{print $1}')
+  git show $(git log --pretty=simplelog | fzf | awk '{print $1}')
 }
 script() {
   nvim $(find ~/.dotfiles/bin/.local/bin/ -type f | fzf)
