@@ -51,6 +51,7 @@ Plug 'editorconfig/editorconfig-vim'
 Plug 'jeetsukumaran/vim-buffergator'
 Plug 'elixir-editors/vim-elixir', { 'for': 'elixir' }
 Plug 'mhinz/vim-mix-format', { 'for': 'elixir' }
+Plug 'rhysd/vim-clang-format'
 Plug 'fatih/vim-go', { 'for': 'go' }
 Plug 'godlygeek/tabular'
 
