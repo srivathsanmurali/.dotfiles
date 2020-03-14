@@ -22,6 +22,16 @@ autoload -Uz compinit && compinit
 setopt prompt_subst
 PROMPT='[$(prompt)]$ '
 
+git_prompt() {
+  ref=$(git symbolic-ref HEAD 2>/dev/null | cut -d'/' -f3-)
+  if [ -z "$ref" ]; then
+    echo ""
+  else
+    echo "[$ref]"
+  fi
+}
+RPROMPT='$(git_prompt)'
+
 # basic
 alias refresh="source $HOME/.zshrc"
 
