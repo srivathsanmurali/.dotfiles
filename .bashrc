@@ -110,9 +110,6 @@ sshReady() {
 gShowSelected() {
   git show $(git log --pretty=simplelog | fzf | awk '{print $1}')
 }
-script() {
-  nvim $(find ~/.dotfiles/bin/.local/bin/ -type f | fzf)
-}
 
 function gReview() {
   for currHash in `git --no-pager log --reverse --pretty=format:"%h" $1..$2`; do
@@ -149,3 +146,5 @@ fi
 export ERL_AFLAGS="-kernel shell_history enabled"
 export ECTO_EDITOR=vim
 export ELIXIR_EDITOR=vim
+
+complete -C /usr/bin/mc mc
