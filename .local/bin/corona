@@ -1,0 +1,2 @@
+#!/bin/sh
+/usr/bin/curl "https://covid19.mathdro.id/api/countries/${1:-Switzerland}" | jq
