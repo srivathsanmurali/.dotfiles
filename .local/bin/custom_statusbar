@@ -93,9 +93,13 @@ battery() {
   fi
 }
 
+corona() {
+  cat /tmp/corona |
+  jq --raw-output '"Corona [ \(.confirmed.value)  \(.recovered.value)  \(.deaths.value)]"'
+}
+
 while true
 do
-  #printf "%s %s %s %s %s %s \n" "$(now_playing)" "$(get_bluetooth)" "$(network)" "$(get_volume)" "$(battery)" "$(time_now)"
-  printf "%s %s %s %s %s \n" "$(get_bluetooth)" "$(network)" "$(get_volume)" "$(battery)" "$(time_now)"
+  printf "%s %s %s %s %s %s \n" "$(corona)" "$(get_bluetooth)" "$(network)" "$(get_volume)" "$(battery)" "$(time_now)"
   sleep 10
 done
