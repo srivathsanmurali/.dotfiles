@@ -57,7 +57,7 @@ bindsym Control+$mod+k move workspace to output up
 bindsym Control+$mod+j move workspace to output down
 bindsym Control+$mod+h move workspace to output left
 bindsym Control+$mod+l move workspace to output right
-bindsym $mod+Shift+n move workspace to output left
+bindsym $mod+Shift+n move workspace to output up
 bindsym $mod++n move workspace to output right
 
 ## Move your focus around
@@ -247,4 +247,4 @@ smart_gaps on
 
 default_border pixel 3
 exec_always wall_change
-exec startup sway
+exec_always startup sway
