@@ -16,12 +16,6 @@ scrolling:
   # scrolled when scrollback is enabled (history > 0).
   multiplier: 3
 
-  # Automatically scroll to the bottom when new text is written
-  # to the terminal.
-  auto_scroll: false
-
-tabspaces: 8
-
 draw_bold_text_with_bright_colors: true
 
 font:
