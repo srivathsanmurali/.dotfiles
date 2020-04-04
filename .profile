@@ -12,6 +12,8 @@ eval $(systemctl --user show-environment | grep SSH_AUTH_SOCK)
 export SSH_AUTH_SOCK
 ssh-add </dev/null
 
+setxkbmap -option ctrl:nocaps
+
 [ -d "$HOME/.local/share/go" ] && export GOPATH="$HOME/.local/share/go"
 [ -f ~/.bashrc ] && source ~/.bashrc
 [ -f ~/.config/profile_local ] && source ~/.config/profile_local

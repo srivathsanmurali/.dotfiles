@@ -46,6 +46,7 @@ Plug 'tpope/vim-fugitive'
 Plug 'airblade/vim-gitgutter'
 Plug 'plasticboy/vim-markdown', { 'for': 'markdown' }
 let g:vim_markdown_toc_autofit = 1
+Plug 'junegunn/goyo.vim'
 
 Plug 'editorconfig/editorconfig-vim'
 Plug 'jeetsukumaran/vim-buffergator'
@@ -109,3 +110,6 @@ inoremap <C-t> :Tags<CR>
 set tags=./tags
 
 nnoremap Q <Nop>
+
+"" Autocmd
+autocmd FileType markdown setlocal wrap textwidth=72 
