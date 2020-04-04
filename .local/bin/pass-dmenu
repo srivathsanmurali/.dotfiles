@@ -4,7 +4,7 @@ target=$(
   find ~/.password-store/ -type f -name '*.gpg'\
   | sed -re "s/\.gpg$//" \
   | sed -re "s/^.*\/.password-store\///" \
-  | dmenu -l 5
+  | dmenu -l 15
 )
 old=$(wl-paste || true)
 wl-copy $(pass show $target | head -n1)

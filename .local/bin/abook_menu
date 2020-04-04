@@ -1,7 +1,7 @@
 #!/bin/sh
 ## require abook
 
-rofi_cmd='dmenu -i -l 5'
+rofi_cmd='dmenu -i -l 10'
 
 selected_name=$(
   cat ~/.local/share/abook/addressbook \
