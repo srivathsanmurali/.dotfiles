@@ -15,5 +15,4 @@ ssh-add </dev/null
 setxkbmap -option ctrl:nocaps
 
 [ -d "$HOME/.local/share/go" ] && export GOPATH="$HOME/.local/share/go"
-[ -f ~/.bashrc ] && source ~/.bashrc
 [ -f ~/.config/profile_local ] && source ~/.config/profile_local
