@@ -245,6 +245,7 @@ no_focus [window_type="notification"]
 for_window [class="Seafile"] floating enable; border none
 for_window [class="Pavucontrol"] floating enable; border none;
 for_window [class="nitrogen"] floating enable;
+for_window [title="Microsoft Teams Notification"] floating enable;
 
 exec_always --no-startup-id dunst
 exec_always --no-startup-id compton
