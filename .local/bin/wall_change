@@ -3,11 +3,7 @@
 WallpaperDir=${WallpaperDir:-"$HOME/Pictures/Wallpapers"}
 
 if [ -z $1 ]; then
-  image_path=$(
-    fd -e jpg -e png '' $WallpaperDir \
-    | shuf \
-    | head -n1
-  )
+  image_path=$(fd -e jpg -e png '' $WallpaperDir | shuf -n1)
   echo "$image_path"
 else 
   image_path=$(realpath "$1")
