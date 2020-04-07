@@ -95,7 +95,7 @@ battery() {
 
 corona() {
   cat /tmp/corona |
-  jq --raw-output '"Corona [ \(.confirmed.value)  \(.recovered.value)  \(.deaths.value)]"'
+  jq --raw-output '"Corona [ \(.confirmed.value)  \(.deaths.value)]"'
 }
 
 while true

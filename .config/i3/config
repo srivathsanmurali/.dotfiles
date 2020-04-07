@@ -226,8 +226,8 @@ mode $dmenu_mode {
 bar {
     position top
     status_command custom_statusbar
-    font -misc-fixed-medium-r-normal--13-120-75-75-C-70-iso10646-1
-    font InputMono 10, Awesome 10 
+    font pango:InputMono, Awesome 10 
+    #font pango:DejaVu Sans Mono, Awesome 10
     strip_workspace_numbers yes
     tray_output primary
 }
