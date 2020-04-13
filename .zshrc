@@ -81,7 +81,7 @@ function sshReady() {
 }
 
 function gShowSelected() {
-  git show $(git log --pretty=simplelog | fzf | awk '{print $1}')
+  git show $(git log --pretty=simplelog | fzf --ansi | awk '{print $1}') | less -R
 }
 
 ## Command history configuration
