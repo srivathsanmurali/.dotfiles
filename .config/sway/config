@@ -248,3 +248,5 @@ smart_gaps on
 default_border pixel 3
 exec_always wall_change
 exec_always startup sway
+
+for_window [title="Microsoft Teams Notification"] floating enable; 
