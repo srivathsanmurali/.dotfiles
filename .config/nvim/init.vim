@@ -93,7 +93,8 @@ let mapleader=" "
 nnoremap <leader>ev :e ~/.config/nvim/init.vim<cr>
 nnoremap <leader>sv :source ~/.config/nvim/init.vim<cr>
 
-nnoremap <leader>b :BuffergatorToggle<CR>
+" nnoremap <leader>b :BuffergatorToggle<CR>
+nnoremap <leader>b :Buffers<CR>
 let g:buffergator_autoupdate = 1
 let g:buffergator_viewport_split_policy = "N"
 let g:buffergator_vsplit_size = 3
