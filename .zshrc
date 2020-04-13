@@ -20,7 +20,7 @@ autoload -Uz compinit && compinit
 
 ## PROMPT
 setopt prompt_subst
-PROMPT='[$(prompt)]$ '
+PROMPT='[%m $(prompt)]$ '
 
 git_prompt() {
   ref=$(git symbolic-ref HEAD 2>/dev/null | cut -d'/' -f3-)
