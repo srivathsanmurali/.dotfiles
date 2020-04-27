@@ -40,7 +40,7 @@ bindsym Mod1+Print exec swayshot window
 bindsym Shift+Print exec swayshot region
 
 ## other
-bindsym Control+mod1+p exec "power_options.sh"
+bindsym Control+mod1+delete exec "power_options.sh"
 bindsym Control+mod1+s exec "rofi -show ssh"
 bindsym $mod+Shift+p exec "pass-dmenu"
 
@@ -249,4 +249,5 @@ default_border pixel 3
 exec_always wall_change
 exec_always startup sway
 
-for_window [title="Microsoft Teams Notification"] floating enable; 
+for_window [title="Microsoft Teams Notification"] floating enable
+assign [app_id="mpv"] → mpv

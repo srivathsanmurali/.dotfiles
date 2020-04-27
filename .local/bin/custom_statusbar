@@ -41,12 +41,12 @@ time_now() {
 
 network() {
   nw=$(
-    nmcli device status \
-    | grep "\bconnected\b" \
-    | tr -s ' '\
-    | cut -d ' ' -f4- \
-    | awk 'ORS="| "' \
-    | sed 's/| $//g'
+    nmcli device status |
+      grep -E "\b(tun|wifi)\b.*\bconnected\b" |
+      tr -s ' ' |
+      cut -d ' ' -f4- |
+      awk 'ORS="| "' |
+      sed 's/| $//g'
   )
   
   if [ -n "${nw}" ]; then
