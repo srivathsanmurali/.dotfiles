@@ -3,4 +3,4 @@ set -eou pipefail
 
 WORK_NOTE_PATH="$HOME/.local/share/work_notes"
 printf "\n---\n# $(date -u +"%Y-%m-%dT%H:%M:%SZ")\n\n" >>"$WORK_NOTE_PATH"
-vim + "$WORK_NOTE_PATH"
+"$EDITOR" + "$WORK_NOTE_PATH"
