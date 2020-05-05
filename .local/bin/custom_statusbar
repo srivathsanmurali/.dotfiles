@@ -3,18 +3,15 @@
 
 
 now_playing() {
-  listening=""
-  if [ -e "$HOME/.cache/studio.fifo" ]; then
-    listening=""
+  if ! $(systemctl --user is-active sol_tunnel.service > /dev/null); then
+    echo -n ""
+    return
   fi
-
-  np=$(
-    curl -sL "${STUDIO_URL}/api/playing" \
-    | jq -j --raw-output '.album[0:20] + " - " + .title + " (" + .artist[0:20] + ")"'
-  )
+  
+  np=$(studio current)
 
   if [ -n "$np" ]; then
-    echo -n "$listening $np"
+    echo -n " $np"
   else
     echo -n ""
   fi
@@ -100,6 +97,6 @@ corona() {
 
 while true
 do
-  printf "%s %s %s %s %s %s \n" "$(corona)" "$(get_bluetooth)" "$(network)" "$(get_volume)" "$(battery)" "$(time_now)"
+  printf "%s %s %s %s %s %s %s \n" "$(corona)" "$(now_playing)" "$(get_bluetooth)" "$(network)" "$(get_volume)" "$(battery)" "$(time_now)"
   sleep 10
 done

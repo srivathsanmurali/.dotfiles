@@ -24,7 +24,7 @@ bindsym $mod+Shift+Return exec $term
 
 ## App kill/launch
 bindsym $mod+Shift+q kill
-bindsym $mod+d exec "rofi -show combi -combi-modi 'drun,run' -show-icons"
+bindsym $mod+d exec "rofi -show combi -combi-modi 'drun,run' -show-icons -run-command 'swaymsg exec {cmd}'"
 # bindsym $mod+d exec "dmenu_run"
 
 ## sway session
@@ -134,7 +134,7 @@ bindsym $mod+Shift+minus move scratchpad
 bindsym $mod+minus scratchpad show
 
 # mako
-bindsym $mod+m exec "/usr/bin/makoctl dismiss --all"
+bindsym $mod+Shift+m exec "/usr/bin/makoctl dismiss --all"
 
 bindsym $mod+Prior workspace prev
 bindsym $mod+Next workspace next
@@ -189,12 +189,13 @@ mode $dmenu_mode {
   bindsym Escape mode "default"
 }
 
-set $dnd_mode "[p]laylist | [s]ong_select"
-bindsym $mod+u mode $dnd_mode
-mode $dnd_mode {
-  bindsym p exec "select_mpc_playlist"; mode "default"
-  bindsym s exec "get_mpc_song_path"
-
+set $music_menu "[p]lay | [s]kip | play[l]ists | [a]lbums"
+bindsym $mod+m mode $music_menu
+mode $music_menu {
+  bindsym a exec "studio albums"; mode "default"
+  bindsym p exec "studio play"; mode "default"
+  bindsym s exec "studio skip"; mode "default"
+  bindsym l exec "studio playlist"; mode "default"
 
   bindsym Return mode "default"
   bindsym Escape mode "default"
@@ -250,4 +251,3 @@ exec_always wall_change
 exec_always startup sway
 
 for_window [title="Microsoft Teams Notification"] floating enable
-assign [app_id="mpv"] → mpv

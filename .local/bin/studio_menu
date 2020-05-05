@@ -1,9 +1,8 @@
 #!/bin/sh
 set -e
-selection=$(echo -en "play\nskip\n" | dmenu)
+selection=$(echo -en "play\nskip\nplaylist\nalbums" | dmenu)
 
 case $selection in
-  play) studio play;;
-  skip) studio skip;;
+  play|skip|playlist|albums) studio $selection;;
   *) exit 1;;
 esac
