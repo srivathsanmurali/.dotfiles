@@ -1,0 +1,21 @@
+#!/bin/sh
+
+set -eo pipefail
+
+url="$1"
+
+if [ -z "$url" ]; then
+  printf "Usage: $0 <playlist_id>\n"
+  exit 1
+fi
+
+yt_urls="$HOME/.config/newsboat/yt_urls"
+playlist_name=$(
+curl "$url" -so - |
+  grep -iPo '(?<=<title>)(.*)(?=</title>)' |
+  sed -E "s# - YouTube##g"
+)
+playlist_id=$(echo -n "$url" | sed 's/.*list=//g')
+printf "http://podtube.aquacash5.com/playlist/$playlist_id # $playlist_name\n" >> $yt_urls
+
+notify-send -t 3000 "Youtube tracker" "Playlist \"$playlist_name\" added to yt_urls."

@@ -24,7 +24,7 @@ stop_play() {
 
 start_play() {
   mkfifo "$fifo_path"
-  mpv --input-file="$fifo_path" --keep-open=always --no-audio-display --quiet \
+  mpv --input-file="$fifo_path" --idle --no-audio-display --quiet \
     "$STUDIO_URL" > /dev/null < /dev/null &
 }
 

@@ -251,3 +251,6 @@ exec_always wall_change
 exec_always startup sway
 
 for_window [title="Microsoft Teams Notification"] floating enable
+assign [title="mpv"] mpv
+
+for_window [title=".*"] title_format %title (class=%class app_id=%app_id instance=%instance shell=%shell)
