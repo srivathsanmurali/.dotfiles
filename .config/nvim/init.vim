@@ -113,4 +113,6 @@ set tags=./tags
 nnoremap Q <Nop>
 
 "" Autocmd
-autocmd FileType markdown setlocal wrap textwidth=72 
+autocmd FileType markdown setlocal tw=80 et ts=2 sw=2
+autocmd FileType go setlocal noet ts=4 sw=4
+autocmd FileType python setlocal et ts=4 sw=4
