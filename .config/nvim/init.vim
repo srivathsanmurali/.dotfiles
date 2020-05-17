@@ -22,9 +22,9 @@ set splitright    "split right
 set hlsearch      "higlight search
 set incsearch     "incremental search
 "set showmatch     "show matching brackets
-set shiftwidth=2  "indent by 2 spaces
-set expandtab     "expand tabs to spaces
-set tabstop=2     "each tab is 2 spaces
+set shiftwidth=4  "indent by 2 spaces
+set tabstop=4     
+set noexpandtab
 set autoindent    "autoindent code
 
 " highlight long statements
@@ -113,6 +113,23 @@ set tags=./tags
 nnoremap Q <Nop>
 
 "" Autocmd
+" text
 autocmd FileType markdown setlocal tw=80 et ts=2 sw=2
+autocmd FileType text setlocal tw=80
+autocmd FileType mail setlocal noautoindent
+
+" config
+autocmd FileType yaml setlocal et ts=2 sw=2
+autocmd FileType meson setlocal noet ts=2 sw=2
+
+" languages
 autocmd FileType go setlocal noet ts=4 sw=4
 autocmd FileType python setlocal et ts=4 sw=4
+autocmd FileType elixir setlocal et ts=2 sw=2
+autocmd FileType c setlocal noet ts=4 sw=4 tw=80
+autocmd FileType h setlocal noet ts=4 sw=4 tw=80
+autocmd FileType cpp setlocal noet ts=4 sw=4 tw=80
+autocmd FileType html setlocal et ts=2 sw=2
+
+augroup filetypedetect
+  autocmd BufRead,BufNewFile *qutebrowser-editor-* set ts=4 sw=4 et
