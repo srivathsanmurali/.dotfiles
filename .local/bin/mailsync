@@ -18,5 +18,3 @@ ping -q -c 1 1.1.1.1 > /dev/null \
 
 # fetch all emails
 /usr/bin/mbsync -c ~/.config/mbsync/config -a
-
-notify-send -t 1000 "Mailsync" "All accounts synced"

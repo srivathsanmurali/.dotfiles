@@ -1,6 +1,17 @@
 #!/bin/sh
 [ -e ~/.config/studio.conf ] && . ~/.config/studio.conf
 
+unread() {
+	inbox_dir="${XDG_DATA_DIR:-$HOME/.local/share}/mail/$1/INBOX"
+	find "$inbox_dir" -iname '*2,' -type f | wc -l
+}
+
+mail() {
+	unread_personal=$(unread "personal")
+	unread_work=$(unread "work")
+
+	echo -n " $unread_personal  $unread_work"
+}
 
 now_playing() {
   if ! $(systemctl --user is-active sol_tunnel.service > /dev/null); then
@@ -97,6 +108,6 @@ corona() {
 
 while true
 do
-  printf "%s %s %s %s %s %s %s \n" "$(corona)" "$(now_playing)" "$(get_bluetooth)" "$(network)" "$(get_volume)" "$(battery)" "$(time_now)"
+	printf "%s %s %s %s %s %s %s %s \n" "$(corona)" "$(mail)" "$(now_playing)" "$(get_bluetooth)" "$(network)" "$(get_volume)" "$(battery)" "$(time_now)"
   sleep 10
 done
