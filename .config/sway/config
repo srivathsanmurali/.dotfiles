@@ -24,8 +24,8 @@ bindsym $mod+Shift+Return exec $term
 
 ## App kill/launch
 bindsym $mod+Shift+q kill
-bindsym $mod+d exec "rofi -show combi -combi-modi 'drun,run' -show-icons -run-command 'swaymsg exec {cmd}'"
-# bindsym $mod+d exec "dmenu_run"
+#bindsym $mod+d exec "rofi -show combi -combi-modi 'drun,run' -show-icons -run-command 'swaymsg exec {cmd}'"
+bindsym $mod+d exec "dmenu_run"
 
 ## sway session
 bindsym $mod+Shift+r reload
@@ -212,6 +212,7 @@ bar {
     position top
     strip_workspace_numbers yes
     wrap_scroll yes
+    tray_output $laptop
 }
 
 #color
