@@ -81,7 +81,6 @@ inoremap  <C-l>     <Esc><C-w>l
 inoremap  <C-j>     <Esc><C-w>j
 noremap   <C-j>     <Esc><C-w>j
 nnoremap  <C-e>     :Explore<CR>
-nnoremap <C-a> ggVGG "select everything
 
 " Copy to clipboard
 nnoremap <S-y> "+y
