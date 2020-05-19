@@ -16,10 +16,23 @@ c.fonts.tabs = "9pt monospace"
 c.fonts.prompts = "9pt san-serif"
 c.fonts.completion.entry= "9pt monospace"
 
+c.colors.statusbar.normal.bg = "#333"
+c.colors.statusbar.url.success.https.fg = "white"
+c.colors.tabs.even.fg = "#888"
+c.colors.tabs.even.bg = "#333"
+c.colors.tabs.odd.fg = "#888"
+c.colors.tabs.odd.bg = "#333"
+c.colors.tabs.selected.odd.bg = "#285577"
+c.colors.tabs.selected.even.bg = "#285577"
+c.colors.messages.error.fg = c.colors.statusbar.normal.fg
+c.colors.messages.warning.fg = c.colors.statusbar.normal.fg
+c.colors.prompts.fg = c.colors.statusbar.normal.fg
+
 c.editor.command = ['alacritty', '-e', 'nvim', '{}' ]
 
 c.scrolling.smooth = False
 
+c.url.default_page = "http://duckduckgo.com"
 c.url.searchengines = {
     "DEFAULT": "https://duckduckgo.com/?q={}",
     "aw": "https://wiki.archlinux.org/?search={}",
@@ -27,19 +40,44 @@ c.url.searchengines = {
     "r": "https://reddit.com/r/{}",
 }
 
-c.content.javascript.enabled = True
+c.content.javascript.enabled = False 
+
+js_whitelist = [
+    "*://localhost/*",
+    "*://127.0.0.1/*",
+    "*://github.com/*",
+    "*://news.ycombinator.com/*",
+    "*://duckduckgo.com/*",
+    "*://*.youtube.com/*",
+    "*://translate.google.com/*",
+    "*://darksky.net/*",
+    "*://saturn:32400/*",
+]
+
+for site in js_whitelist:
+    with config.pattern(site) as p:
+        p.content.javascript.enabled = True
 
 c.content.notifications: {
     'https://old.reddit.com': 'false',
     'https://www.reddit.com': 'false',
 }
 
+unbinds = ["gO"]
+for key in unbinds:
+    config.unbind(key)
+
 binds = {
-    '<Ctrl-o>': 'hint links spawn --detach mpv --force-window yes {hint-url}',
-    'gF': 'spawn --userscript openfeeds',
-    'yl': 'hint links yank',
-    'jq': 'spawn --userscript format_json',
     'q': 'tab-close',
+    ',p': 'spawn --userscript qute-pass --dmenu-invocation dmenu',
+    '<Ctrl-o>': 'hint links spawn --detach mpv --force-window yes {hint-url}',
+    '<Ctrl-k>': 'open-editor',
+    'gF': 'spawn --userscript openfeeds',
+    'gO': 'set-cmd-text :open -t {url:pretty}',
+    
+    'xjp': 'spawn --userscript format_json',
+    "xjn": "set content.javascript.enabled true",
+    "xjf": "set content.javascript.enabled false",
 }
 
 for key, value in binds.items():
