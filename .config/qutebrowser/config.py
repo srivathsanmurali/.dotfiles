@@ -24,6 +24,8 @@ c.colors.tabs.odd.fg = "#888"
 c.colors.tabs.odd.bg = "#333"
 c.colors.tabs.selected.odd.bg = "#285577"
 c.colors.tabs.selected.even.bg = "#285577"
+c.colors.tabs.pinned.selected.odd.bg = "#285577"
+c.colors.tabs.pinned.selected.even.bg = "#285577"
 c.colors.messages.error.fg = c.colors.statusbar.normal.fg
 c.colors.messages.warning.fg = c.colors.statusbar.normal.fg
 c.colors.prompts.fg = c.colors.statusbar.normal.fg
@@ -40,10 +42,11 @@ c.url.searchengines = {
     "r": "https://reddit.com/r/{}",
 }
 
-c.content.javascript.enabled = False 
+c.content.javascript.enabled = False
 
 js_whitelist = [
     "*://localhost/*",
+    "*://localhost:*/*",
     "*://127.0.0.1/*",
     "*://github.com/*",
     "*://news.ycombinator.com/*",
@@ -51,7 +54,24 @@ js_whitelist = [
     "*://*.youtube.com/*",
     "*://translate.google.com/*",
     "*://darksky.net/*",
+    "*://*.hex.pm/*",
+    "*://*.hexdocs.pm/*",
+    
+    "*://*.sr.ht/*",
+
+    # Work
+    "*://*.nomoko.world/*",
+    "*://*.nomoko.lan/*",
+    
+    # My servers
+    "*://*.vathsan.com/*",
     "*://saturn:32400/*",
+    
+    "*://*.mastodon.social/*",
+    "*://*.reddit.com/*",
+    
+    "*://*.dndbeyond.com/*",
+    "*://*.roll20.net/*",
 ]
 
 for site in js_whitelist:
@@ -78,6 +98,10 @@ binds = {
     'xjp': 'spawn --userscript format_json',
     "xjn": "set content.javascript.enabled true",
     "xjf": "set content.javascript.enabled false",
+
+    'zd': 'config-cycle content.user_stylesheets ./css/darculized-all-sites.css ""',
+    
+    ';M': 'hint links spawn --detach /usr/bin/mpv --save-position-on-quit {hint-url}',
 }
 
 for key, value in binds.items():
