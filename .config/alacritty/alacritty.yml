@@ -28,7 +28,7 @@ font:
   italic:
     family: InputMono
     #family: FiraCode
-  size: 8.0
+  size: 9.0
 
   # Offset is the extra space around each character. offset.y can be thought of
   # as modifying the linespacing, and offset.x as modifying the letter spacing.
@@ -44,39 +44,120 @@ font:
     y: 0
 
 # Colors (Blood Moon)
-colors:
-  # Default colors
-  primary:
-    background: '0x121212'
-    foreground: '0xbbbbbb'
+schemes:
+  blood_moon: &blood_moon
+    # Default colors
+    primary:
+      background: '0x121212'
+      foreground: '0xbbbbbb'
 
-  # Normal colors
-  normal:
-    black:   '0x121212'
-    red:     '0xfa2573'
-    green:   '0x98e123'
-    yellow:  '0xdfd460'
-    blue:    '0x1080d0'
-    magenta: '0x8700ff'
-    cyan:    '0x43a8d0'
-    white:   '0xbbbbbb'
+    # Normal colors
+    normal:
+      black:   '0x121212'
+      red:     '0xfa2573'
+      green:   '0x98e123'
+      yellow:  '0xdfd460'
+      blue:    '0x1080d0'
+      magenta: '0x8700ff'
+      cyan:    '0x43a8d0'
+      white:   '0xbbbbbb'
 
-  # Bright colors
-  bright:
-    black:   '0x555555'
-    red:     '0xf6669d'
-    green:   '0xb1e05f'
-    yellow:  '0xfff26d'
-    blue:    '0x00afff'
-    magenta: '0xaf87ff'
-    cyan:    '0x51ceff'
-    white:   '0xffffff'
+    # Bright colors
+    bright:
+      black:   '0x555555'
+      red:     '0xf6669d'
+      green:   '0xb1e05f'
+      yellow:  '0xfff26d'
+      blue:    '0x00afff'
+      magenta: '0xaf87ff'
+      cyan:    '0x51ceff'
+      white:   '0xffffff'
+
+  ir_black: &ir_black
+    primary:
+      background: '#000000'
+      foreground: '#ffffff'
+
+    cursor:
+      text: '#ffffff'
+      cursor: '#ffffff'
+
+    # Normal colors
+    normal:
+      black:   '#4e4e4e'
+      red:     '#ff6c60'
+      green:   '#a8ff60'
+      yellow:  '#ffffb6'
+      blue:    '#96cbfe'
+      magenta: '#ff73fd'
+      cyan:    '#c6c5fe'
+      white:   '#eeeeee'
+
+    # Bright colors
+    bright:
+      black:   '#7c7c7c'
+      red:     '#ffb6b0'
+      green:   '#ceffab'
+      yellow:  '#ffffcb'
+      blue:    '#b5dcfe'
+      magenta: '#ff9cfe'
+      cyan:    '#dfdffe'
+      white:   '#ffffff'
+
+  one_half: &one_half
+    primary:
+      background: '0xffffff'
+      foreground: '0x383a42'
+
+    normal:
+      black: '0x383a42'
+      red: '0xe45649'
+      green: '0x50a14f'
+      yellow: '0xc18401'
+      blue: '0x0184bc'
+      magenta: '0xa626a4'
+      cyan: '0x0997b3'
+      white: '0xffffff'
+
+    bright:
+      black: '0x383a42'
+      red: '0xe45649'
+      green: '0x50a14f'
+      yellow: '0xc18401'
+      blue: '0x0184bc'
+      magenta: '0xa626a4'
+      cyan: '0x0997b3'
+      white: '0xffffff'
+
+  one_half_dark: &one_half_dark
+    primary:
+      background: '0x282c34'
+      foreground: '0xdcdfe4'
+    normal:
+      black: '0x282c34'
+      red: '0xe06c75'
+      green: '0x98c379'
+      yellow: '0xe5c07b'
+      blue: '0x61afef'
+      magenta: '0xc678dd'
+      cyan: '0x56b6c2'
+      white: '0xdcdfe4'
+    bright:
+      black: '0x282c34'
+      red: '0xe06c75'
+      green: '0x98c379'
+      yellow: '0xe5c07b'
+      blue: '0x61afef'
+      magenta: '0xc678dd'
+      cyan: '0x56b6c2'
+      white: '0xdcdfe4'
+
+colors: *one_half
+#background_opacity: 0.9
 
 visual_bell:
   animation: EaseOutExpo
   duration: 0 # disabled
-
-background_opacity: 0.9 
 
 # Mouse bindings
 #
