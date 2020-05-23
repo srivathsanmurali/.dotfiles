@@ -25,7 +25,7 @@ bindsym $mod+Shift+Return exec $term
 ## App kill/launch
 bindsym $mod+Shift+q kill
 #bindsym $mod+d exec "rofi -show combi -combi-modi 'drun,run' -show-icons -run-command 'swaymsg exec {cmd}'"
-bindsym $mod+d exec "dmenu_run"
+bindsym $mod+d exec "dmenu-frecency"
 
 ## sway session
 bindsym $mod+Shift+r reload
@@ -249,7 +249,7 @@ bindsym $mod+f10 exec radio toggle
 bindsym $mod+f11 exec radio stop
 bindsym $mod+f12 exec mpc next
 
-gaps inner 5
+#gaps inner 5
 smart_gaps on
 
 default_border pixel 3
