@@ -1,4 +1,4 @@
 #!/bin/sh
 #prompts a yes no question and executes a command on yes
 
-[ $(echo -e "No\nYes" | rofi -dmenu -i -p "$1") == "Yes" ] && $2
+[ $(echo -e "No\nYes" | dmenu -i -p "$1") == "Yes" ] && $2
