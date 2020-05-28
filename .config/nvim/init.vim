@@ -142,7 +142,7 @@ autocmd FileType markdown setlocal tw=80 et ts=2 sw=2
 autocmd FileType text setlocal tw=80
 autocmd FileType mail setlocal noautoindent
 autocmd FileType html setlocal et ts=2 sw=2
-autocmd FileType sh setlocal et ts=4 sw=4
+autocmd FileType sh setlocal noet ts=4 sw=4
 autocmd FileType yaml setlocal et ts=2 sw=2
 autocmd FileType meson setlocal noet ts=2 sw=2
 autocmd FileType go setlocal noet ts=4 sw=4
