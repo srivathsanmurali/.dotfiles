@@ -1,0 +1,11 @@
+#!/bin/sh
+
+lock() {
+	/usr/bin/swaylock -f -e -i "$HOME/.config/wall.jpg"
+}
+
+if [ -z "$1" ]; then
+	lock
+elif [ "$1" = "suspend" ]; then
+	lock && systemctl suspend
+fi

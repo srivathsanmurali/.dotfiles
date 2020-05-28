@@ -1,0 +1,11 @@
+#!/bin/sh
+
+lock() {
+	/usr/bin/i3lock -c 000000"
+}
+
+if [ -z "$1" ]; then
+	lock
+elif [ "$1" = "suspend" ]; then
+	lock && systemctl suspend
+fi

@@ -32,7 +32,7 @@ bindsym $mod+Shift+r reload
 bindsym $mod+Shift+e exec prompt_menu "Do you really want to exit sway?" "swaymsg exit"
 
 ## lock
-bindsym Control+mod1+l exec "swaylock -e -i $HOME/.config/wall.jpg"
+bindsym Control+mod1+l exec "lock"
 
 ## screenshot
 bindsym Print exec swayshot
