@@ -1,0 +1,24 @@
+#!/bin/sh
+
+set -e
+
+WALLPAPER_DIR="${HOME}/Pictures/Wallpapers/"
+WALLURL="$1"
+
+if [ -z "$WALLURL" ]; then
+	notify-send -t 5000 "dlwallpaper" "No url provided"
+	exit 1
+fi
+
+tempfile=$(mktemp -u)
+wget -qO "$tempfile" "$WALLURL"
+
+wall_name=$(printf "" | dmenu -p 'Enter wallpaper name')
+
+case "$(file -b --mime-type $tempfile)" in
+	image/jpeg) mv "$tempfile" "${WALLPAPER_DIR}/${wall_name}.jpg";;
+	image/png) mv "$tempfile" "${WALLPAPER_DIR}/${wall_name}.png";;
+	*) convert "$tempfile" "${WALLPAPER_DIR}/${wall_name}.png";;
+esac
+
+notify-send "dlwallpaper" "Wallpaper downloaded to $wall_name"
