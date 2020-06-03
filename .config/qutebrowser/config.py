@@ -42,7 +42,7 @@ c.url.searchengines = {
     "r": "https://reddit.com/r/{}",
 }
 
-c.content.javascript.enabled = False
+c.content.javascript.enabled = True
 
 js_whitelist = [
     "*://localhost/*",
