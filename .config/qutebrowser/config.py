@@ -116,4 +116,5 @@ c.aliases = {
     'jq': 'spawn --userscript format_json',
     'yt_playlist': 'hint links spawn --detach ~/.local/bin/track_yt_playlist {hint-url}',
     'mpv': 'hint links spawn --detach /usr/bin/mpv --save-position-on-quit {hint-url}',
+    'dlwallpaper': 'hint links spawn --detach ~/.local/bin/dlwallpaper {hint-url}',
 }
