@@ -1,36 +1,24 @@
 {
   "layer": "bottom",
     "position": "top",
-    "height": 24,
-    "modules-left": ["sway/workspaces"],
-    "modules-center": ["custom/studio"],
+    "height": 24, 
+    "modules-left": ["sway/workspaces", "sway/mode"],
+    "modules-center": ["sway/window"],
     "modules-right": ["network", "pulseaudio", "battery", "clock"],
     "sway/window": {
-      "max-length": -1
+	  "format": "{}",
+      "max-length": 50
     },
     "sway/workspaces": {
       "disable-markup": true,
-      "disable-scroll": true
-    },
-    "custom/studio": {
-      "exec": "/home/sri/.local/bin/studio_playing",
-      "exec_if": "/usr/bin/ping -q -c 1 1.1.1.1 > /dev/null",
-      "interval": 10
-    },
-    "custom/separator": {
-      "format": "   ",
-      "interval": "once",
-      "tooltip": false
+      "disable-scroll": false 
     },
     "sway/mode": {
-      "format": " {} "
+      "format": " {}"
     },
     "clock": {
-      "format": "{:%a, %b %d %I:%M%P}",
+      "format": "{:%a, %b %d %I:%M %p}",
       "tooltip": false
-    },
-    "backlight": {
-      "format": ""
     },
     "battery": {
       "bat": "BAT0",
@@ -58,8 +46,8 @@
       "format-bluetooth": "{icon}",
       "format-muted": "",
       "tooltip": false,
-      "on-scroll-up": "",
-      "on-scroll-down": "",
+      "on-scroll-up": "volctl up",
+      "on-scroll-down": "volctl down",
       "format-icons": {
         "headphones": "",
         "handsfree": "",

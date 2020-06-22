@@ -8,9 +8,9 @@ unread() {
 
 mail() {
 	unread_personal=$(unread "personal")
-	unread_work=$(unread "work")
+	#unread_work=$(unread "work")
 
-	echo -n " $unread_personal  $unread_work"
+	echo -n " $unread_personal"
 }
 
 now_playing() {
