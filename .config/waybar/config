@@ -4,11 +4,16 @@
     "height": 24, 
     "modules-left": ["sway/workspaces", "sway/mode"],
     "modules-center": ["sway/window"],
-    "modules-right": ["network", "pulseaudio", "battery", "clock"],
+    "modules-right": ["custom/maildir", "network", "pulseaudio", "battery", "clock"],
     "sway/window": {
 	  "format": "{}",
       "max-length": 50
     },
+	"custom/maildir": {
+	  "exec": "~/.local/bin/maildir_new",
+	  "format": "{}",
+	  "interval": "10"
+	},
     "sway/workspaces": {
       "disable-markup": true,
       "disable-scroll": false 
@@ -21,7 +26,6 @@
       "tooltip": false
     },
     "battery": {
-      "bat": "BAT0",
       "states": {
         "warning": 30,
         "critical": 15
@@ -29,10 +33,8 @@
       "tooltip": false,
       "format-icons": ["", "", "", "", ""],
       "format": "{icon} {capacity}%",
-      "format-charging": " {capacity}%"
-    },
-    "battery#bat2": {
-      "bat": "BAT2"
+      "format-charging": " {capacity}%",
+	  "interval": "10"
     },
     "network": {
       "format-wifi": " {essid}",
@@ -57,7 +59,8 @@
         "car": "",
         "default": ["", "", ""]
       },
-      "on-click": "pavucontrol"
+      "on-click": "pavucontrol",
+	  "on-right-click": "volctl mute"
     },
     "pulseaudio#mic": {
       "format": "{format_source}",

@@ -1,0 +1,10 @@
+#!/bin/sh
+
+unread() {
+	inbox_dir="${XDG_DATA_DIR:-$HOME/.local/share}/mail/$1/INBOX"
+	find "$inbox_dir" -iname '*2,' -type f | wc -l
+}
+
+unread_personal=$(unread "personal")
+
+echo -n " $unread_personal"
