@@ -37,7 +37,7 @@
   # prune
   po = remote prune origin
 [core]
-  editor = vim
+  editor = nvim
   ignorecase = false
   abbrev = 12
 

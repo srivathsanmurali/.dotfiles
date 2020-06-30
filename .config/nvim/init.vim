@@ -109,12 +109,8 @@ command! Spell :setlocal spell! spell?
 let mapleader="\<space>"
 
 nnoremap  <C-h>     <Esc><C-w>h
-inoremap  <C-h>     <Esc><C-w>h
 nnoremap  <C-k>     <Esc><C-w>k
-inoremap  <C-k>     <Esc><C-w>k
 noremap   <C-l>     <Esc><C-w>l
-inoremap  <C-l>     <Esc><C-w>l
-inoremap  <C-j>     <Esc><C-w>j
 noremap   <C-j>     <Esc><C-w>j
 nnoremap  <C-e>     :Explore<CR>
 
