@@ -12,7 +12,8 @@ c.content.fullscreen.window = True
 c.content.pdfjs = True
 
 c.fonts.statusbar = "9pt monospace"
-c.fonts.tabs = "9pt monospace"
+c.fonts.tabs.selected = "9pt monospace"
+c.fonts.tabs.unselected = "9pt monospace"
 c.fonts.prompts = "9pt san-serif"
 c.fonts.completion.entry= "9pt monospace"
 
