@@ -138,6 +138,9 @@ bindsym $mod+Shift+m exec "/usr/bin/makoctl dismiss --all"
 bindsym $mod+Prior workspace prev
 bindsym $mod+Next workspace next
 
+bindsym $mod+F1 exec "blueman-manager"
+bindsym $mod+F2 exec "pavucontrol"
+
 # Resizing containers:
 mode "resize" {
     # left will shrink the containers width
