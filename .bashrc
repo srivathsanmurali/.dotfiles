@@ -27,7 +27,6 @@ PS1='[$(prompt)]\$ '
 # aliases
 ## vim: set ft=bash:
 alias swayconfig="vi ~/.config/sway/config"
-alias vimconfig="vi ~/.dotfiles/vim"
 alias bashconfig="vi ~/.dotfiles/bash"
 alias refresh="source ~/.bashrc"
 alias abook="abook --datafile ~/.local/share/abook/addressbook"
@@ -71,10 +70,6 @@ alias weather='curl wttr.in'
 cheat() {
   curl "cheat.sh/%1"
 }
-
-if hash nvim > /dev/null 2>&1; then
-  alias vim='nvim' 
-fi
 
 ## load with config
 alias neomutt='neomutt -F ~/.config/mutt/muttrc'

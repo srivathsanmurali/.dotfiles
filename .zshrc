@@ -39,10 +39,6 @@ alias refresh="source $HOME/.zshrc"
 alias v='vim'
 alias vi='vim'
 
-if hash nvim > /dev/null 2>&1; then
-  alias vim='nvim' 
-fi
-
 # git
 alias g='git'
 alias ga='git add'
