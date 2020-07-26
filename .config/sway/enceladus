@@ -1,0 +1,28 @@
+output eDP-1 scale 1 res 1920x1080 pos 0 0
+output DP-5 res 1920x1080 pos 1920 0
+
+bindswitch lid:on output eDP-1 disable
+bindswitch lid:off output eDP-1 enable
+
+for_window [title=".*"] title_format %title (class=%class app_id=%app_id instance=%instance shell=%shell)
+
+# keyboard settings
+input 1:1:AT_Translated_Set_2_keyboard {
+	xkb_layout us
+	xkb_options "ctrl:nocaps"
+}
+
+## light
+bindsym XF86MonBrightnessUp exec "light -A 10"
+bindsym XF86MonBrightnessDown exec "light -U 10"
+
+# Pulse Audio controls
+bindsym XF86AudioRaiseVolume exec --no-startup-id volctl up
+bindsym XF86AudioLowerVolume exec --no-startup-id volctl down
+bindsym XF86AudioMute exec --no-startup-id volctl mute
+bindsym XF86AudioMicMute exec pactl set-source-mute @DEFAULT_SOURCE@ toggle
+
+bindsym $mod+F1 exec "blueman-manager"
+bindsym $mod+F2 exec "pavucontrol"
+
+include ~/.config/sway/bar

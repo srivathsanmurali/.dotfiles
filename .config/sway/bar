@@ -1,0 +1,7 @@
+bar {
+    status_command custom_statusbar
+    font InputMono 10
+    position top
+    strip_workspace_numbers yes
+    wrap_scroll yes
+}
