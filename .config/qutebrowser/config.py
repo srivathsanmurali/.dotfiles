@@ -119,3 +119,7 @@ c.aliases = {
     'mpv': 'hint links spawn --detach /usr/bin/mpv --save-position-on-quit {hint-url}',
     'dlwallpaper': 'hint links spawn --detach ~/.local/bin/dlwallpaper {hint-url}',
 }
+
+c.content.host_blocking.lists = [
+            "https://raw.githubusercontent.com/StevenBlack/hosts/master/hosts",
+        ]
