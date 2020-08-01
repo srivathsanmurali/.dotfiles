@@ -1,2 +1,8 @@
 #!/bin/sh
+set -e
 wall_change
+
+swaymsg workspace 10
+swaymsg exec "$TERMINAL -e aerc"
+swaymsg workspace 1
+swaymsg exec "$BROWSER"
