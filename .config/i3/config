@@ -4,10 +4,6 @@
 set $mod    Mod4
 set $modAlt Mod1
 
-# gaps
-gaps inner 3
-smart_gaps on
-
 #color
 set $barColor             #2f343f
 set $bg-color             #909099
