@@ -26,7 +26,7 @@ font -misc-fixed-medium-r-normal--13-120-75-75-C-70-iso10646-1
 # ==============
 
 # start a terminal
-bindsym $mod+Return exec alacritty
+bindsym $mod+Return exec gnome-terminal
 
 # launchers
 bindsym $mod+d exec "rofi -show combi -combi-modi 'drun,ssh,run' -show-icons"
@@ -222,8 +222,8 @@ mode $dmenu_mode {
 bar {
     position top
     status_command custom_statusbar
-    font pango:InputMono, Awesome 10 
-    #font pango:DejaVu Sans Mono, Awesome 10
+    #font pango:InputMono, Awesome 10 
+    font pango:DejaVu Sans Mono, Awesome 10
     strip_workspace_numbers yes
     tray_output primary
 }
@@ -244,6 +244,5 @@ for_window [class="nitrogen"] floating enable;
 for_window [title="Microsoft Teams Notification"] floating enable;
 
 exec_always --no-startup-id dunst
-exec_always --no-startup-id compton
-
-exec --no-startup-id setxkbmap -option ctrl:nocaps
+exec nm-applet
+exec startup
