@@ -96,6 +96,6 @@ corona() {
 
 while true
 do
-	printf "%s %s %s %s %s %s \n" "$(maildir_new)" "$(now_playing)" "$(network)" "$(get_volume)" "$(battery)" "$(time_now)"
+	printf "%s %s %s %s %s \n" "$(now_playing)" "$(network)" "$(get_volume)" "$(battery)" "$(time_now)"
   sleep 10
 done
