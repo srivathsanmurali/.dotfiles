@@ -22,6 +22,7 @@ Plug 'jeetsukumaran/vim-buffergator'
 Plug 'itchyny/lightline.vim'
 Plug 'godlygeek/tabular'
 Plug 'tpope/vim-surround'
+Plug 'junegunn/fzf'
 Plug 'junegunn/fzf.vim'    
 
 " formatting
