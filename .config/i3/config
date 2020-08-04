@@ -26,7 +26,7 @@ font -misc-fixed-medium-r-normal--13-120-75-75-C-70-iso10646-1
 # ==============
 
 # start a terminal
-bindsym $mod+Return exec gnome-terminal
+bindsym $mod+Return exec alacritty
 
 # launchers
 bindsym $mod+d exec "rofi -show combi -combi-modi 'drun,ssh,run' -show-icons"
@@ -45,16 +45,17 @@ bindsym XF86MonBrightnessUp exec "light -A 10"
 bindsym XF86MonBrightnessDown exec "light -U 10"
 
 # Pulse Audio controls
-bindsym XF86AudioRaiseVolume exec --no-startup-id pactl set-sink-volume 0 +5% #increase sound volume
-bindsym XF86AudioLowerVolume exec --no-startup-id pactl set-sink-volume 0 -5% #decrease sound volume
-bindsym XF86AudioMute exec --no-startup-id pactl set-sink-mute 0 toggle # mute sound
+bindsym XF86AudioRaiseVolume exec --no-startup-id volctl up
+bindsym XF86AudioLowerVolume exec --no-startup-id volctl down
+bindsym XF86AudioMute exec --no-startup-id volctl mute
+bindsym XF86AudioMicMute exec pactl set-source-mute @DEFAULT_SOURCE@ toggle
 
 # reload the configuration file
 bindsym $mod+Shift+c reload
 # restart i3 inplace (preserves your layout/session, can be used to upgrade i3)
 bindsym $mod+Shift+r restart
 # exit i3 (logs you out of your X session)
-bindsym $mod+Shift+e exec prompt_menu "Do you really want to exit i3?" "i3-msg exit"
+bindsym $mod+Shift+e exec exit-i3
 
 # Workspace Control
 # =================
@@ -235,6 +236,9 @@ for_window [class="^.*"] border pixel 3
 
 # nofocus for notifications
 no_focus [window_type="notification"]
+
+assign [class="Slack"] → workspace 9
+assign [class="zoom"] → workspace 10
 
 ## Plasma Integration
 # Try to kill the wallpaper set by Plasma (it takes up the entire workspace and hides everythiing)
