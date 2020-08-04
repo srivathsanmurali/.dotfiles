@@ -1,7 +1,7 @@
 #!/bin/sh 
 
 export BROWSER=qutebrowser
-export PATH=~/bin/$(hostname):~/bin/$(uname -m):~/bin:$PATH
+export PATH=~/bin/$(hostname):~/bin/$(uname -m):~/bin:~/.local/bin:$PATH
 export MANPATH=$MANPATH:~/.local/share/man/
 export EDITOR=nvim
 export TERMINAL=alacritty
