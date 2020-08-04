@@ -1,9 +1,16 @@
 #!/bin/bash
 set -e
-ws=$(swaymsg -t get_workspaces | jq -r .[].name | dmenu -p "Workspace:")
+
+if [ "$XDG_SESSION_DESKTOP" == "i3" ]; then
+	tool="i3-msg"
+else
+	tool="swaymsg"
+fi
+
+ws=$($tool -t get_workspaces | jq -r .[].name | dmenu -p "Workspace:")
 if [ "$1" = "switch" ]
 then
-    swaymsg "workspace $ws"
+    $tool "workspace $ws"
 else
-    swaymsg "move container to workspace $ws"
+    $tool "move container to workspace $ws"
 fi
