@@ -21,15 +21,12 @@ draw_bold_text_with_bright_colors: true
 
 font:
   normal:
-    #family: FiraCode
-    family: InputMono
+    family: DejaVu Sans Mono 
   bold:
-    family: InputMono
-    #family: FiraCode
+    family: monospace
   italic:
-    family: InputMono
-    #family: FiraCode
-  size: 9.0
+    family: monospace
+  size: 8.0
 
   # Offset is the extra space around each character. offset.y can be thought of
   # as modifying the linespacing, and offset.x as modifying the letter spacing.
