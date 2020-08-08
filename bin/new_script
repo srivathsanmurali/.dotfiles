@@ -1,9 +1,0 @@
-#!/bin/sh
-
-[ -z "$1" ] && echo "give a new script name" && exit 1
-
-file="$HOME/.dotfiles/bin/.local/bin/$1" 
-
-${EDITOR} "$file"
-chmod +x "$file"
-(cd ~/.dotfiles && stow bin)

@@ -1,6 +1,0 @@
-#!/bin/sh
-
-WallpaperDir=${WallpaperDir:-"$HOME/Pictures/Wallpapers/"}
-
-random_wallpaper=$(ls $WallpaperDir/**/*.jpg | shuf | head -n1)
-"${HOME}/.local/bin/tools/wall_change" "$random_wallpaper"

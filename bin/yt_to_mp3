@@ -1,2 +1,0 @@
-#!/bin/sh
-/usr/bin/youtube-dl -x --audio-format mp3 "$1" -o "$2"

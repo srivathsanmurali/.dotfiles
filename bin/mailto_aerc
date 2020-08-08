@@ -1,3 +1,0 @@
-#!/bin/sh
-
-/usr/local/bin/st -e /usr/local/bin/aerc $1

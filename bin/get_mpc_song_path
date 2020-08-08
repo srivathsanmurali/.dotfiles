@@ -1,3 +1,0 @@
-#!/bin/sh
-
-find ~/Music -type f | sed 's@/home/sri/Music/@@' | dmenu -i -l 15 | wl-copy

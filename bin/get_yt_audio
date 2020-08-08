@@ -1,8 +1,0 @@
-#!/bin/sh
-[ -z "$1" ] && echo "need a url please" && exit 1;
-
-if [ -z "$2" ]; then
-  youtube-dl -x --audio-format mp3 "$1"
-else
-  youtube-dl -x --audio-format mp3 "$1" -o "$2"
-fi
