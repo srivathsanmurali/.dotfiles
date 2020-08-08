@@ -1,7 +1,7 @@
 #!/bin/sh
 #prompts a yes no question and executes a command on yes
 
-case $(echo "No\nYes" | dmenu -i -p "$1") in
+case $(printf "No\nYes\n" | dmenu -i -p "$1") in
 	Yes) $2;;
 	*) printf 'Nothing\n';;
 esac
