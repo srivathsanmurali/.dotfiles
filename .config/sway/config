@@ -154,44 +154,19 @@ mode "resize" {
 }
 bindsym $mod+r mode "resize"
 
-set $dmenu_settings_mode "[b]luetooth | [m]ount | [u]mount | [n]etwork | [w]allpaper"
+set $dmenu_settings_mode "[m]ount | [u]mount | [n]etwork"
 bindsym $mod+o mode $dmenu_settings_mode
 
 mode $dmenu_settings_mode {
-  bindsym b exec "bluetooth-dmenu"; mode "default"
   bindsym m exec "mount_menu"; mode "default"
   bindsym u exec "umount_menu"; mode "default"
   bindsym n exec "networkmanager_dmenu"; mode "default"
-  bindsym w exec "wallpaper-dmenu"; mode "default"
   
   bindsym Return mode "default"
   bindsym Escape mode "default"
 }
 
-set $dmenu_mode "[a]book | [b]ookmarks | [p]df | [s]tudio | w[o]rkspaces"
-bindsym $mod+p mode $dmenu_mode
-mode $dmenu_mode {
-  bindsym a exec "abook_menu"; mode "default"
-  bindsym b exec "bookmarks-menu"; mode "default"
-  bindsym p exec "pdf_search"; mode "default"
-  bindsym s exec "studio_menu"; mode "default"
-  bindsym o exec "workspace-menu"; mode "default"
-
-  bindsym Return mode "default"
-  bindsym Escape mode "default"
-}
-
-set $music_menu "[p]lay | [s]kip | play[l]ists | [a]lbums"
-bindsym $mod+m mode $music_menu
-mode $music_menu {
-  bindsym a exec "studio albums"; mode "default"
-  bindsym p exec "studio play"; mode "default"
-  bindsym s exec "studio skip"; mode "default"
-  bindsym l exec "studio playlist"; mode "default"
-
-  bindsym Return mode "default"
-  bindsym Escape mode "default"
-}
+bindsym $mod+p exec "pdf_search"
 
 #color
 set $barColor             #2f343f
