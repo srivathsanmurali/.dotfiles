@@ -70,13 +70,18 @@ bindsym Control+$mod+l move workspace to output right
 bindsym $mod+Shift+n move workspace to output left
 
 # change container layout (stacked, tabbed, toggle split)
-bindsym $mod+s layout stacking
-bindsym $mod+w layout tabbed
-bindsym $mod+e layout toggle split
+# Change layouts with mod+,./
+bindsym $mod+comma layout stacking
+bindsym $mod+period layout tabbed
+bindsym $mod+slash layout toggle split
+
 
 # move to near workspace
-bindsym $mod+Tab workspace next
-bindsym $mod+Shift+Tab workspace prev
+bindsym $mod+Tab exec aworkspace switch
+bindsym $mod+Shift+Tab exec aworkspace move
+
+bindsym $mod+Prior workspace prev
+bindsym $mod+Next workspace next
 
 # change focus between tiling / floating windows
 bindsym $mod+space focus mode_toggle
