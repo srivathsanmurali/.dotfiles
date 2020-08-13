@@ -21,11 +21,11 @@ draw_bold_text_with_bright_colors: true
 
 font:
   normal:
-    family: InputMono 
+    family: Dejavu sans mono 
   bold:
-    family: InputMono 
+    family: Dejavu sans mono 
   italic:
-    family: InputMono 
+    family: Dejavu sans mono 
   size: 11.0
 
   # Offset is the extra space around each character. offset.y can be thought of
