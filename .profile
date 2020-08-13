@@ -1,6 +1,6 @@
 #!/bin/sh 
 
-export BROWSER=firefox
+export BROWSER=qutebrowser
 export PATH=~/bin/$(hostname):~/bin/$(uname -m):~/bin:~/.local/bin:$PATH
 export MANPATH=$MANPATH:~/.local/share/man/
 export EDITOR=vim
