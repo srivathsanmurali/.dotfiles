@@ -23,10 +23,10 @@ font:
   normal:
     family: Dejavu sans mono 
   bold:
-    family: Dejavu sans mono 
+    family: monospace
   italic:
-    family: Dejavu sans mono 
-  size: 11.0
+    family: monospace
+  size: 12.0
 
   # Offset is the extra space around each character. offset.y can be thought of
   # as modifying the linespacing, and offset.x as modifying the letter spacing.
