@@ -2,7 +2,7 @@
 
 set -e
 
-WALLPAPER_DIR="${HOME}/Pictures/Wallpapers/"
+WALLPAPER_DIR="$XDG_PICTURES_DIR/Wallpapers/"
 WALLURL="$1"
 
 if [ -z "$WALLURL" ]; then
