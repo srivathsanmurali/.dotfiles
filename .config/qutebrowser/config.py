@@ -1,4 +1,4 @@
-#!/usr/bin/env python3
+import os
 
 c.tabs.background = True
 c.tabs.position = "top"
@@ -9,7 +9,9 @@ c.window.hide_decoration = True
 c.auto_save.session = True
 
 c.content.fullscreen.window = True
-c.content.pdfjs = True
+c.content.pdfjs = False
+
+c.downloads.location.directory = "~/downloads/"
 
 c.fonts.statusbar = "9pt monospace"
 c.fonts.tabs.selected = "9pt monospace"
@@ -43,7 +45,7 @@ c.url.searchengines = {
     "r": "https://reddit.com/r/{}",
 }
 
-c.content.javascript.enabled = True
+c.content.javascript.enabled = False
 
 js_whitelist = [
     "*://localhost/*",
@@ -59,14 +61,9 @@ js_whitelist = [
     "*://*.hexdocs.pm/*",
     
     "*://*.sr.ht/*",
-
-    # Work
-    "*://*.nomoko.world/*",
-    "*://*.nomoko.lan/*",
     
     # My servers
     "*://*.vathsan.com/*",
-    "*://saturn:32400/*",
     
     "*://*.mastodon.social/*",
     "*://*.reddit.com/*",
@@ -74,6 +71,11 @@ js_whitelist = [
     "*://*.dndbeyond.com/*",
     "*://*.roll20.net/*",
 ]
+
+private_whitelist = os.path.expanduser("~/.config/qutebrowser/private-whitelist")
+if os.path.exists(private_whitelist):
+    with open(private_whitelist) as f:
+        js_whitelist += filter(lambda l: bool(l), f.read().split("\n"))
 
 for site in js_whitelist:
     with config.pattern(site) as p:
@@ -102,7 +104,7 @@ binds = {
 
     'zd': 'config-cycle content.user_stylesheets ./css/darculized-all-sites.css ""',
     
-    ';M': 'hint links spawn --detach /usr/bin/mpv --save-position-on-quit {hint-url}',
+    ';m': 'spawn --userscript ~/bin/view_in_mpv',
 }
 
 for key, value in binds.items():
