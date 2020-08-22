@@ -47,30 +47,10 @@ c.url.searchengines = {
 
 c.content.javascript.enabled = False
 
-js_whitelist = [
-    "*://localhost/*",
-    "*://localhost:*/*",
-    "*://127.0.0.1/*",
-    "*://github.com/*",
-    "*://news.ycombinator.com/*",
-    "*://duckduckgo.com/*",
-    "*://*.youtube.com/*",
-    "*://translate.google.com/*",
-    "*://darksky.net/*",
-    "*://*.hex.pm/*",
-    "*://*.hexdocs.pm/*",
-    
-    "*://*.sr.ht/*",
-    
-    # My servers
-    "*://*.vathsan.com/*",
-    
-    "*://*.mastodon.social/*",
-    "*://*.reddit.com/*",
-    
-    "*://*.dndbeyond.com/*",
-    "*://*.roll20.net/*",
-]
+js_whitelist = []
+whitelist_file = os.path.expanduser("~/.config/qutebrowser/js-whitelist")
+with open(whitelist_file) as f:
+    js_whitelist += filter(lambda l: bool(l), f.read().split("\n"))
 
 private_whitelist = os.path.expanduser("~/.config/qutebrowser/private-whitelist")
 if os.path.exists(private_whitelist):
