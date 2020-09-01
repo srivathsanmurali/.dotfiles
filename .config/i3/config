@@ -29,12 +29,12 @@ font -misc-fixed-medium-r-normal--13-120-75-75-C-70-iso10646-1
 bindsym $mod+Return exec alacritty
 
 # launchers
-bindsym $mod+d exec "rofi -show combi -combi-modi 'drun,ssh,run' -show-icons"
+#bindsym $mod+d exec "rofi -show combi -combi-modi 'drun,ssh,run' -show-icons"
+bindsym $mod+d exec "dmenu_run -l 10"
 bindsym $mod+Shift+d exec "~/.local/bin/pdf_search"
 bindsym Control+mod1+l exec "lock"
 bindsym Control+mod1+p exec "power_options.sh"
 bindsym Control+mod1+b exec ~/.config/i3/scripts/bluetooth.sh
-bindsym Control+mod1+s exec "rofi -show ssh"
 bindsym $mod+Shift+p exec "pass_menu"
 
 # print screen
