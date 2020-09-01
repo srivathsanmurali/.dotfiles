@@ -63,11 +63,17 @@ bindsym $mod+Shift+e exec exit-i3
 floating_modifier $mod
 
 # move workspace to the right
-bindsym Control+$mod+k move workspace to output up 
-bindsym Control+$mod+j move workspace to output down
-bindsym Control+$mod+h move workspace to output left
-bindsym Control+$mod+l move workspace to output right
-bindsym $mod+Shift+n move workspace to output left
+bindsym $mod+n move workspace to output up 
+bindsym $mod+Shift+n move workspace to output down
+bindsym $mod+Control+Mod1+k move workspace to output up 
+bindsym $mod+Control+Mod1+j move workspace to output down
+bindsym $mod+Control+Mod1+h move workspace to output left
+bindsym $mod+Control+Mod1+l move workspace to output right
+
+bindsym Control+$modAlt+Up move workspace to output up 
+bindsym Control+$modAlt+Down move workspace to output down
+bindsym Control+$modAlt+Left move workspace to output left
+bindsym Control+$modAlt+Right move workspace to output right
 
 # change container layout (stacked, tabbed, toggle split)
 # Change layouts with mod+,./
@@ -199,16 +205,18 @@ mode "resize" {
 }
 bindsym $mod+r mode "resize"
 
-set $dmenu_mode "rofi: [m]ount | [u]mount | [p]df"
-bindsym $mod+p mode $dmenu_mode
-mode $dmenu_mode {
+set $dmenu_settings_mode "rofi: [m]ount | [u]mount | [w]ifi"
+bindsym $mod+o mode $dmenu_settings_mode
+mode $dmenu_settings_mode {
   bindsym m exec "mount_menu"; mode "default"
   bindsym u exec "umount_menu"; mode "default"
-  bindsym p exec "pdf_search"; mode "default"
+  bindsym w exec "wifi-dmenu"; mode "default"
 
   bindsym Return mode "default"
   bindsym Escape mode "default"
 }
+
+bindsym $mod+p exec "pdf_search"
 
 bar {
     position top
