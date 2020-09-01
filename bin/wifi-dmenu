@@ -10,7 +10,7 @@ select_device() {
 }
 
 rescan_wifi() {
-	nmcli device wifi rescan
+	nmcli device wifi rescan 2>/dev/null >/dev/null
 }
 
 get_action() {
@@ -26,7 +26,14 @@ if [ $(nmcli radio wifi) != "enabled" ]; then
 	sleep 5;
 fi 
 
+rescan_wifi
+
 device=$(select_device)
+
+if [ -z "$device" ]; then
+	exit 0
+fi
+
 action=$(get_action "$device")
 
 nmcli connection $action $device
