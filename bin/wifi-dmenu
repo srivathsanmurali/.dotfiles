@@ -1,0 +1,32 @@
+#!/bin/sh
+# A simple script to use dmenu to manage wifi 
+
+list_wifi(){
+	nmcli -f SSID,RATE,SIGNAL,BARS,IN-USE device wifi list | sed '1d'
+}
+
+select_device() {
+	list_wifi | dmenu -l 10 | awk '{print $1}'
+}
+
+rescan_wifi() {
+	nmcli device wifi rescan
+}
+
+get_action() {
+	if nmcli connection show --active | grep "$1" > /dev/null; then
+		echo "down"
+	else
+		echo "up"
+	fi
+}
+
+if [ $(nmcli radio wifi) != "enabled" ]; then
+	prompt_menu "Enable Wifi radio" "nmcli radio wifi on"
+	sleep 5;
+fi 
+
+device=$(select_device)
+action=$(get_action "$device")
+
+nmcli connection $action $device
