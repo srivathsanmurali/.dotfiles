@@ -6,7 +6,7 @@ list_wifi(){
 }
 
 select_device() {
-	list_wifi | dmenu -l 10 | awk '{print $1}'
+	list_wifi | dmenu -i -l 10 | awk '{print $1}'
 }
 
 rescan_wifi() {
@@ -22,8 +22,10 @@ get_action() {
 }
 
 if [ $(nmcli radio wifi) != "enabled" ]; then
-	prompt_menu "Enable Wifi radio" "nmcli radio wifi on"
-	sleep 5;
+	case $(printf "Yes\nNo\n" | dmenu -i -p "Enable Wifi radio") in 
+		Yes) nmcli radio wifi on; sleep 5;;
+		*)	exit 1;;
+	esac
 fi 
 
 rescan_wifi
