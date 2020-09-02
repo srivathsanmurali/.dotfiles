@@ -1,13 +1,28 @@
 #!/bin/sh
 set -e
+
+copy_clip() {
+	case "$XDG_SESSION_TYPE" in
+		x11) printf "%s" "$1" | xclip -sel clip ;;
+		wayland) wl-copy $1;;
+	esac
+}
+
+paste_clip() {
+	case "$XDG_SESSION_TYPE" in
+		x11) xclip -o -sel clip;;
+		wayland) wl-paste;;
+	esac
+}
+
 target=$(
   find ~/.password-store/ -type f -name '*.gpg'\
   | sed -re "s/\.gpg$//" \
   | sed -re "s/^.*\/.password-store\///" \
   | dmenu -l 15
 )
-old=$(wl-paste || true)
-wl-copy $(pass show $target | head -n1)
+old=$(paste_clip || true)
+copy_clip $(pass show $target | head -n1)
 notify-send -u critical -t 45000 "Password in clipboard" "Your $target password is currently in your clipboard."
 sleep 45
-wl-copy "$old"
+copy_clip "$old"
