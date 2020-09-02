@@ -35,7 +35,7 @@ bindsym $mod+Shift+d exec "~/.local/bin/pdf_search"
 bindsym Control+mod1+l exec "lock"
 bindsym Control+mod1+p exec "power_options.sh"
 bindsym Control+mod1+b exec ~/.config/i3/scripts/bluetooth.sh
-bindsym $mod+Shift+p exec "pass_menu"
+bindsym $mod+Shift+p exec "pass-dmenu"
 
 # print screen
 bindsym Print exec spectacle 
