@@ -154,13 +154,13 @@ mode "resize" {
 }
 bindsym $mod+r mode "resize"
 
-set $dmenu_settings_mode "[m]ount | [u]mount | [n]etwork"
+set $dmenu_settings_mode "[m]ount | [u]mount | [w]ifi"
 bindsym $mod+o mode $dmenu_settings_mode
 
 mode $dmenu_settings_mode {
   bindsym m exec "mount_menu"; mode "default"
   bindsym u exec "umount_menu"; mode "default"
-  bindsym n exec "networkmanager_dmenu"; mode "default"
+  bindsym w exec "wifi-dmenu"; mode "default"
   
   bindsym Return mode "default"
   bindsym Escape mode "default"
@@ -185,6 +185,6 @@ client.urgent             #E53935   #E53935 $text-color           #00ff00   #E53
 
 default_border pixel 3
 
-exec_always startup sway
+exec startup sway
 
 include ~/.config/sway/`hostname`
