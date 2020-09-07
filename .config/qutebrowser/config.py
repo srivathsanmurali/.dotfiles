@@ -85,6 +85,9 @@ binds = {
     'zd': 'config-cycle content.user_stylesheets ./css/darculized-all-sites.css ""',
     
     ';m': 'spawn --userscript view_in_mpv',
+
+    '<Ctrl-b>': 'spawn --userscript ~/bin/bmarks',
+    '<Ctrl-Shift-b>': 'spawn --userscript ~/bin/bmarks -t',
 }
 
 for key, value in binds.items():

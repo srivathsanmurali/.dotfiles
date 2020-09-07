@@ -1,0 +1,11 @@
+#!/bin/sh
+# Bookmarks through dmenu
+# Userscript for qutebrowser
+set -e
+
+url=$(find ~/.config/qutebrowser/bookmarks/ -type f |
+		xargs cat |
+		dmenu -l 15 |
+		awk '{print $1}')
+
+echo "open $@ $url" >> "$QUTE_FIFO"
