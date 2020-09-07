@@ -8,4 +8,8 @@ url=$(find ~/.config/qutebrowser/bookmarks/ -type f |
 		dmenu -l 15 |
 		awk '{print $1}')
 
+if [ -z "$url" ]; then
+	exit 0;
+fi
+
 echo "open $@ $url" >> "$QUTE_FIFO"
