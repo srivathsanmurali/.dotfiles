@@ -5,7 +5,7 @@ set -e
 
 url=$(find ~/.config/qutebrowser/bookmarks/ -type f |
 		xargs cat |
-		dmenu -l 15 |
+		dmenu -i -l 15 |
 		awk '{print $1}')
 
 if [ -z "$url" ]; then
