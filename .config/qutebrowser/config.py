@@ -9,7 +9,7 @@ c.window.hide_decoration = True
 c.auto_save.session = True
 
 c.content.fullscreen.window = True
-c.content.pdfjs = False
+c.content.pdfjs = True
 
 c.downloads.location.directory = "~/downloads/"
 
