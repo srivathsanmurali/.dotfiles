@@ -3,8 +3,7 @@
 # Userscript for qutebrowser
 set -e
 
-url=$(find ~/.config/qutebrowser/bookmarks/ -type f |
-		xargs cat |
+url=$(find ~/.config/qutebrowser/bookmarks/ -type f -exec cat {} + |
 		dmenu -p "open $@" -i -l 15 |
 		awk '{print $1}')
 
