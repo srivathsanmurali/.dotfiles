@@ -25,6 +25,8 @@ Plug 'tpope/vim-surround'
 Plug 'junegunn/fzf'
 Plug 'junegunn/fzf.vim'    
 
+Plug 'chiedo/vim-case-convert'
+
 " formatting
 Plug 'rhysd/vim-clang-format'
 Plug 'mhinz/vim-mix-format', { 'for': 'elixir' }

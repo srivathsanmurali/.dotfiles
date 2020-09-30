@@ -1,7 +1,7 @@
 #!/usr/bin/env bash
 
 themes=$HOME/.config/rofi/monokai.rasi
-result=$(printf "lock\nsuspend\npoweroff\nreboot\n" | rofi -dmenu -i -columns 5 -lines 1)
+result=$(printf "lock\nsuspend\npoweroff\nreboot\n" | dmenu -i -p "Power Menu:")
 
 case "$result" in
   "lock")
