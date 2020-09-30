@@ -37,6 +37,8 @@ bindsym Control+mod1+p exec "power_options.sh"
 bindsym Control+mod1+b exec ~/.config/i3/scripts/bluetooth.sh
 bindsym $mod+Shift+p exec "pass-dmenu"
 
+bindsym $mod+F1 exec bmark
+
 # print screen
 bindsym Print exec spectacle 
 

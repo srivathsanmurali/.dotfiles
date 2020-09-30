@@ -11,4 +11,5 @@ if [ -z "$url" ]; then
 	exit 0;
 fi
 
-echo "open $@ $url" >> "$QUTE_FIFO"
+#echo "open $@ $url" >> "$QUTE_FIFO"
+$BROWSER $url
