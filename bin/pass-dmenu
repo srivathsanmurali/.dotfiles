@@ -19,7 +19,7 @@ target=$(
   find ~/.password-store/ -type f -name '*.gpg'\
   | sed -re "s/\.gpg$//" \
   | sed -re "s/^.*\/.password-store\///" \
-  | dmenu -l 15
+  | dmenu -i -l 15
 )
 old=$(paste_clip || true)
 copy_clip $(pass show $target | head -n1)

@@ -13,7 +13,7 @@ bindsym $mod+Return exec $term
 ## App kill/launch
 bindsym $mod+Shift+q kill
 #bindsym $mod+d exec "rofi -show combi -combi-modi 'drun,run' -show-icons -run-command 'swaymsg exec {cmd}'"
-bindsym $mod+d exec "dmenu-frecency"
+bindsym $mod+d exec "dmenu_run"
 
 ## sway session
 bindsym $mod+Shift+r reload
@@ -45,7 +45,7 @@ bindsym Control+$mod+j move workspace to output down
 bindsym Control+$mod+h move workspace to output left
 bindsym Control+$mod+l move workspace to output right
 bindsym $mod+Shift+n move workspace to output up
-bindsym $mod++n move workspace to output right
+bindsym $mod+n move workspace to output right
 
 ## Move your focus around
 bindsym $mod+$left focus left

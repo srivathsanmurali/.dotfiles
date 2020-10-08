@@ -2,6 +2,19 @@
 set -e
 wall_change
 
+monitor_exists() {
+	swaymsg -t get_outputs --raw \
+		| jq '.[].name' --raw-output \
+		| grep "$1" >> /dev/null
+	
+	[ "$?" == 0 ]
+}
+
+if monitor_exists "DP-5"; then
+	swaymsg output DP-5 mode 1920x1080 pos 0 0
+	swaymsg output eDP-1 mode 1920x1080 pos 1920 0
+fi
+
 swaymsg workspace 10
 swaymsg exec "$TERMINAL -e aerc"
 swaymsg workspace 1
