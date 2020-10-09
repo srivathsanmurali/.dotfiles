@@ -65,12 +65,12 @@ bindsym $mod+Shift+e exec exit-i3
 floating_modifier $mod
 
 # move workspace to the right
-bindsym $mod+n move workspace to output up 
-bindsym $mod+Shift+n move workspace to output down
-bindsym $mod+Control+Mod1+k move workspace to output up 
-bindsym $mod+Control+Mod1+j move workspace to output down
-bindsym $mod+Control+Mod1+h move workspace to output left
-bindsym $mod+Control+Mod1+l move workspace to output right
+bindsym $mod+n move workspace to output right
+bindsym $mod+Shift+n move workspace to output up 
+bindsym $mod+Control+k move workspace to output up 
+bindsym $mod+Control+j move workspace to output down
+bindsym $mod+Control+h move workspace to output left
+bindsym $mod+Control+l move workspace to output right
 
 bindsym Control+$modAlt+Up move workspace to output up 
 bindsym Control+$modAlt+Down move workspace to output down
@@ -173,7 +173,7 @@ bindsym $mod+a focus parent
 bindsym $mod+Shift+y resize shrink width 10 px or 10 ppt
 bindsym $mod+Shift+u resize grow height 10 px or 10 ppt
 bindsym $mod+Shift+i resize shrink height 10 px or 10 ppt
-bindsym $mod+Shift+o resize grow width 10 px or 10 pprightt
+bindsym $mod+Shift+o resize grow width 10 px or 10 ppt
 
 # vim: set ft=conf!
 

@@ -3,9 +3,9 @@ case "${1%%:*}" in
 	http|https)
 		exec $BROWSER "$1"
 		;;
-  *.pdf)
-    exec $READER "$1"
-    ;;
+  	*.pdf)
+		exec $READER "$1"
+		;;
 	mailto)
 		exec aerc "$1"
 		;;
