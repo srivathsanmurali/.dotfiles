@@ -132,6 +132,11 @@ nnoremap <leader>p <Esc>:GFiles<CR>
 nnoremap <leader>g :Rg<space>
 nnoremap <leader>t :tabnew<CR>
 
+function! ToCamelCase()
+	let l:snakeWord = expand("<cword>")
+	let l:camelWord = system('camelcase ' . l:snakeWord)
+	execute '%s/\<'.l:snakeWord.'\>/'.l:camelWord.'/gc'
+endfunction
 
 set tags=./tags
 
