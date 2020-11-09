@@ -1,0 +1,20 @@
+#!/bin/sh
+set -eu
+
+if ! git rev-parse --is-inside-work-tree >/dev/null 2>&1; then
+	echo "Not inside a git repository"
+	exit 1
+fi
+
+branch=$(
+	git branch -a --no-color \
+		| sort | uniq | sed 's/^.* //' \
+		| fzf --select-1 --ansi --preview 'git log --graph --oneline --color {}'
+)
+
+case "$branch" in
+	remotes/*/*)
+		branch=${branch##remotes/*/};;
+esac
+
+git checkout $branch
