@@ -151,7 +151,7 @@ schemes:
       white: '0xdcdfe4'
 
 colors: *one_half_dark
-background_opacity: 0.9
+background_opacity: 0.95
 
 bell:
   animation: EaseOutExpo
