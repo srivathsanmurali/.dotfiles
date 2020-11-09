@@ -1,0 +1,10 @@
+#!/bin/sh
+
+url=$(curl "https://www.bing.com/HPImageArchive.aspx?format=js&idx=0&n=1&mkt=en-US" \
+		| jq --raw-output '.images[0].url' \
+		| sed 's/&.*//g' \
+		| xargs printf 'https://bing.com%s')
+
+wget -O /tmp/wall.jpg "${url}"
+
+wall_change /tmp/wall.jpg
