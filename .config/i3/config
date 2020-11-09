@@ -33,7 +33,7 @@ bindsym $mod+Return exec alacritty
 bindsym $mod+d exec "dmenu_run -l 10"
 bindsym $mod+Shift+d exec "~/.local/bin/pdf_search"
 bindsym Control+mod1+l exec "lock"
-bindsym Control+mod1+p exec "power_options.sh"
+bindsym Control+mod1+Delete exec "power_options.sh"
 bindsym Control+mod1+b exec ~/.config/i3/scripts/bluetooth.sh
 bindsym $mod+Shift+p exec "pass-dmenu"
 
@@ -65,8 +65,8 @@ bindsym $mod+Shift+e exec exit-i3
 floating_modifier $mod
 
 # move workspace to the right
-bindsym $mod+n move workspace to output right
-bindsym $mod+Shift+n move workspace to output up 
+bindsym $mod+n move workspace to output left
+bindsym $mod+Shift+n move workspace to output down
 bindsym $mod+Control+k move workspace to output up 
 bindsym $mod+Control+j move workspace to output down
 bindsym $mod+Control+h move workspace to output left
