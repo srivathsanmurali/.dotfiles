@@ -1,0 +1,26 @@
+#!/bin/sh
+
+output=$(
+	swaymsg -t get_outputs --raw \
+		| jq --raw-output '.[].name' \
+		| dmenu -i -p "select output"
+)
+
+active=$(
+	swaymsg -t get_outputs --raw \
+		| jq --raw-output --arg OUTPUT "$output" \
+			'.[] | select(.name == $OUTPUT) | .active'
+)
+
+enable_output() {
+	prompt_menu "Enable $output?" "swaymsg output $output enable"
+}
+
+disable_output() {
+	prompt_menu "Disable $output?" "swaymsg output $output disable"
+}
+
+case "$active" in
+	true) disable_output;;
+	false) enable_output;;
+esac
