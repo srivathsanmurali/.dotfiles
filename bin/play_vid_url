@@ -1,0 +1,12 @@
+#!/bin/sh
+
+url=$1
+hash=$(printf "$url" | md5sum | cut -d' ' -f1)
+fifo=$(printf "/tmp/%s.fifo" "$hash")
+
+trap 'echo "Exiting..."; rm "$fifo"' 0
+
+echo "Starting stream..."
+mkfifo "$fifo"
+wget --quiet -O "$fifo" "$url" &
+mpv "$fifo" >/dev/null </dev/null
