@@ -44,9 +44,9 @@ call plug#end()
 
 filetype plugin indent on
 
-"colorscheme onehalfdark
-colorscheme default
-set background=dark
+colorscheme onehalflight
+"colorscheme default
+set background=light
 
 set laststatus=2
 set shortmess+=I

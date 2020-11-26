@@ -150,8 +150,8 @@ schemes:
       cyan: '0x56b6c2'
       white: '0xdcdfe4'
 
-colors: *one_half_dark
-background_opacity: 0.95
+colors: *one_half
+background_opacity: 1.0
 
 bell:
   animation: EaseOutExpo
