@@ -2,17 +2,9 @@
 [ -e ~/.config/studio.conf ] && . ~/.config/studio.conf
 
 now_playing() {
-  if ! $(systemctl --user is-active sol_tunnel.service > /dev/null); then
-    echo -n ""
-    return
-  fi
-  
-  np=$(studio current)
-
-  if [ -n "$np" ]; then
+  np=$(playerctl metadata title)
+  if [ $? -eq 0 ]; then
     echo -n " $np"
-  else
-    echo -n ""
   fi
 }
 
