@@ -1,0 +1,7 @@
+
+Forwarded message from {{(index .OriginalFrom 0).Name}} on {{dateFormat .OriginalDate "Mon Jan 2, 2006 at 3:04 PM"}}:
+{{if eq .OriginalMIMEType "text/html"}}
+{{exec `/usr/local/share/aerc/filters/html` .OriginalText | wrap 72 | quote}}
+{{else}}
+{{wrap 72 .OriginalText | quote}}
+{{end}}

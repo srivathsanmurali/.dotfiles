@@ -1,0 +1,55 @@
+# 
+# Sri's styleset
+# 
+# This styleset uses the terminal defaults as its base.
+# More information on how to configure the styleset can be found in
+# the *aerc-styleset.7* manpage. Please read the manual before
+# modifying or creating a styleset.
+
+*.default=true
+*default.selected.normal=true
+*default.selected.reverse=true
+*default.selected.bg=white
+*default.selected.fg=hotpink
+*default.selected.bold=true
+
+title.bg=cornflowerblue
+title.fg=white
+title.bold=true
+
+header.bold=true
+header.fg=cornflowerblue
+
+*error.fg=white
+*error.bg=hotpink
+*error.bold=true
+warning.bg=yellow
+*success.bg=green
+
+msglist_unread.bold=true
+msglist_unread.fg=blue
+msglist_marked.bold=true
+msglist_marked.fg=orange
+msglist_flagged.bold=true
+msglist_flagged.fg=red
+msglist*.selected.reverse=true
+
+completion_pill.reverse=true
+
+tab.default=true
+tab.reverse=true
+tab.bold=true
+tab.selected.normal=true
+tab.selected.fg=white
+tab.selected.bg=hotpink
+tab.selected.bold=true
+
+border.default=true
+border.reverse=true
+
+statusline_default.default=true
+statusline_default.reverse=true
+
+selector_focused.fg=white
+selector_focused.bg=hotpink
+selector_chooser.bold=true
