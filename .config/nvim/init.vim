@@ -63,8 +63,8 @@ let g:buffergator_viewport_split_policy = "N"
 let g:buffergator_vsplit_size = 3
 
 set encoding=utf-8
-set tabstop=4
-set shiftwidth=4
+set tabstop=8
+set shiftwidth=8
 set noexpandtab
 set autoindent
 set magic
@@ -151,12 +151,12 @@ autocmd FileType html setlocal et ts=2 sw=2
 autocmd FileType sh setlocal noet ts=4 sw=4
 autocmd FileType yaml setlocal et ts=2 sw=2
 autocmd FileType meson setlocal noet ts=2 sw=2
-autocmd FileType go setlocal noet ts=4 sw=4
-autocmd FileType python setlocal et ts=4 sw=4
-autocmd FileType elixir setlocal et ts=2 sw=2
-autocmd FileType c setlocal noet ts=4 sw=4 tw=80
-autocmd FileType h setlocal noet ts=4 sw=4 tw=80
-autocmd FileType cpp setlocal noet ts=4 sw=4 tw=80
+autocmd FileType go setlocal noet ts=8 sw=8
+autocmd FileType python setlocal et ts=8 sw=8
+autocmd FileType elixir setlocal et ts=4 sw=4
+autocmd FileType c setlocal noet ts=8 sw=8 tw=80
+autocmd FileType h setlocal noet ts=8 sw=8 tw=80
+autocmd FileType cpp setlocal noet ts=8 sw=8 tw=80
 autocmd FileType mail setlocal noautoindent
 
 augroup filetypedetect
