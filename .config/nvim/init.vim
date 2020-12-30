@@ -157,6 +157,7 @@ autocmd FileType elixir setlocal et ts=4 sw=4
 autocmd FileType c setlocal noet ts=8 sw=8 tw=80
 autocmd FileType h setlocal noet ts=8 sw=8 tw=80
 autocmd FileType cpp setlocal noet ts=8 sw=8 tw=80
+autocmd FileType meson setlocal noet ts=8 sw=8 tw=80
 autocmd FileType mail setlocal noautoindent
 
 augroup filetypedetect
