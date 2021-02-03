@@ -34,8 +34,14 @@
   l = log --pretty=custom2
   gr = log --graph --full-history --all --color --date=short --pretty=custom2
 
+  # changelog
+  cl= log --merges --color --date=short --oneline --pretty=cl
+
   # prune
   po = remote prune origin
+
+  # list untracted files
+  ls-untracked = ls-files -o --exclude-standard
 [core]
   ignorecase = false
   abbrev = 12
@@ -49,6 +55,7 @@
   custom = "%C(magenta)%h%C(red)%d %C(yellow)%ar \n\t%C(green)%s %C(yellow)(%an)"
   custom2 = "%x1b[31m%h%x09%Cblue%cd%x1b[32m%d%x1b[0m%x20%s%x20%x1b[33m(%an)%x1b[0m"
   simplelog = "%C(magenta)%h %C(green)%s %C(yellow)[%an]"
+  cl = "%C(magenta)%h %C(green)%s %C(yellow)"
 
 [merge]
   tool = vimdiff
