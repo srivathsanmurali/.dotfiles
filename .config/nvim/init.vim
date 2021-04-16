@@ -25,8 +25,6 @@ Plug 'tpope/vim-surround'
 Plug 'junegunn/fzf'
 Plug 'junegunn/fzf.vim'    
 
-Plug 'chiedo/vim-case-convert'
-
 " formatting
 Plug 'rhysd/vim-clang-format'
 Plug 'mhinz/vim-mix-format', { 'for': 'elixir' }
@@ -61,6 +59,9 @@ set noshowmode		"lightline already shows the mode
 let g:buffergator_autoupdate = 1
 let g:buffergator_viewport_split_policy = "N"
 let g:buffergator_vsplit_size = 3
+
+" Editorconfig
+let g:EditorConfig_exclude_patterns = ['fugitive://.*']
 
 set encoding=utf-8
 set tabstop=8
