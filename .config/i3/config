@@ -29,8 +29,8 @@ font -misc-fixed-medium-r-normal--13-120-75-75-C-70-iso10646-1
 bindsym $mod+Return exec alacritty
 
 # launchers
-#bindsym $mod+d exec "rofi -show combi -combi-modi 'drun,ssh,run' -show-icons"
-bindsym $mod+d exec "dmenu_run -l 10"
+bindsym $mod+d exec "rofi -show combi -combi-modi 'drun,ssh,run' -show-icons"
+#bindsym $mod+d exec "dmenu_run -l 10"
 bindsym $mod+Shift+d exec "~/.local/bin/pdf_search"
 bindsym Control+mod1+l exec "lock"
 bindsym Control+mod1+Delete exec "power_options.sh"
