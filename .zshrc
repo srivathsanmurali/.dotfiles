@@ -125,3 +125,6 @@ bindkey C-n down-line-or-search
 export ERL_AFLAGS="-kernel shell_history enabled"
 export ECTO_EDITOR=vim
 export ELIXIR_EDITOR=vim
+
+disable -r time
+alias time='time -p'

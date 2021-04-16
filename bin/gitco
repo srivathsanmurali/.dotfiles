@@ -12,9 +12,4 @@ branch=$(
 		| fzf --select-1 --ansi --preview 'git log --graph --oneline --color {}'
 )
 
-case "$branch" in
-	remotes/*/*)
-		branch=${branch##remotes/*/};;
-esac
-
-git checkout $branch
+git checkout $(echo "$branch" | sed "s#.*remotes/origin/##")
