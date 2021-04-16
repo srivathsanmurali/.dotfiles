@@ -15,10 +15,6 @@
   # status
   s = status
   
-  # clone
-  cl = clone
-  rcl = clone --recursive
-
   # checkout
   co = checkout
   cb = checkout -b
@@ -35,7 +31,7 @@
   gr = log --graph --full-history --all --color --date=short --pretty=custom2
 
   # changelog
-  cl= log --merges --color --date=short --oneline --pretty=cl
+  cl= log --color --date=short --oneline --pretty=cl
 
   # prune
   po = remote prune origin
@@ -55,7 +51,7 @@
   custom = "%C(magenta)%h%C(red)%d %C(yellow)%ar \n\t%C(green)%s %C(yellow)(%an)"
   custom2 = "%x1b[31m%h%x09%Cblue%cd%x1b[32m%d%x1b[0m%x20%s%x20%x1b[33m(%an)%x1b[0m"
   simplelog = "%C(magenta)%h %C(green)%s %C(yellow)[%an]"
-  cl = "%C(magenta)%h %C(green)%s %C(yellow)"
+  cl = "%h %s"
 
 [merge]
   tool = vimdiff
@@ -86,3 +82,8 @@
 
 [include]
 	path = ~/.config/git/secret
+[filter "lfs"]
+	clean = git-lfs clean -- %f
+	smudge = git-lfs smudge -- %f
+	process = git-lfs filter-process
+	required = true

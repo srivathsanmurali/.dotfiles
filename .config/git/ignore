@@ -2,3 +2,4 @@ tags
 .env
 .editorconfig
 TODO
+static_analysis
