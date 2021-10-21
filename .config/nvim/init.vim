@@ -18,7 +18,6 @@ call plug#begin('~/.local/share/nvim/plugged')
 Plug 'tpope/vim-fugitive'
 Plug 'airblade/vim-gitgutter'
 Plug 'editorconfig/editorconfig-vim'
-Plug 'jeetsukumaran/vim-buffergator'
 Plug 'itchyny/lightline.vim'
 Plug 'godlygeek/tabular'
 Plug 'tpope/vim-surround'
@@ -38,13 +37,10 @@ Plug 'thanethomson/vim-jenkinsfile'
 
 " theme
 Plug 'sonph/onehalf', {'rtp': 'vim/'}
+Plug 'NLKNguyen/papercolor-theme'
 call plug#end()
 
 filetype plugin indent on
-
-colorscheme onehalflight
-"colorscheme default
-set background=light
 
 set laststatus=2
 set shortmess+=I
@@ -126,13 +122,18 @@ vnoremap <S-y> "+y
 nnoremap <C-t> :Tags<CR>
 inoremap <C-t> :Tags<CR>
 
+" Change split direction
+nnoremap <C-w>- <C-w>t<C-w>K
+nnoremap <C-w>\| <C-w>t<C-w>H
+
 nnoremap <leader>ev :e ~/.config/nvim/init.vim<cr>
 nnoremap <leader>sv :source ~/.config/nvim/init.vim<cr>
 
-nnoremap <leader>b :BuffergatorOpen<CR>
+nnoremap <leader>b :Buffers<CR>
 nnoremap <leader>p <Esc>:GFiles<CR>
 nnoremap <leader>g :Rg<space>
 nnoremap <leader>t :tabnew<CR>
+nnoremap <leader>d :r! date +"%d %b %Y"<CR>
 
 function! ToCamelCase()
 	let l:snakeWord = expand("<cword>")
@@ -164,24 +165,12 @@ autocmd FileType mail setlocal noautoindent
 augroup filetypedetect
   autocmd BufRead,BufNewFile *qutebrowser-editor-* set ts=4 sw=4 et
 
-" syntax enable
-" highlight Search ctermbg=12 ctermfg=white
-"highlight NonText ctermfg=darkgrey
-"highlight SpecialKey ctermfg=darkgrey
-"highlight clear SignColumn
-"highlight Comment cterm=bold ctermfg=none
-"highlight Title cterm=none ctermfg=darkgrey
-"highlight TabLineFill cterm=none
-"highlight TabLine cterm=none ctermfg=darkgrey ctermbg=none
-"highlight ColorColumn ctermbg=darkgrey guibg=lightgrey
-"highlight Todo ctermbg=NONE ctermfg=red cterm=bold
-"highlight PreProc ctermfg=grey
-"highlight String ctermfg=darkblue cterm=italic
-"highlight Type ctermfg=darkblue
-"highlight lineNr ctermfg=grey cterm=italic
-"highlight cIncluded ctermfg=NONE cterm=bold
-"highlight pythonInclude ctermfg=blue
-"highlight pythonConditional ctermfg=darkcyan
-"highlight pythonBuiltin ctermfg=darkcyan
-"highlight Pmenu ctermbg=white ctermfg=black
-"highlight PmenuSel ctermbg=darkcyan ctermfg=black
+set background=light
+syntax enable
+colorscheme PaperColor
+highlight Search ctermbg=162 ctermfg=white
+highlight Normal ctermbg=none
+highlight NonText ctermbg=none
+highlight LineNr ctermbg=none
+highlight SignColumn ctermbg=none
+highlight Comment cterm=bold
