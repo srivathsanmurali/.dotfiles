@@ -179,7 +179,7 @@ mouse:
   double_click: { threshold: 300 }
   triple_click: { threshold: 300 }
 
-  url:
+  hints:
     launcher: xdg-open
     modifiers: Control
 
