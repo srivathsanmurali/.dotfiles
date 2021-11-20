@@ -1,0 +1,4 @@
+#!/bin/sh
+
+bing_wall
+picom -bc&

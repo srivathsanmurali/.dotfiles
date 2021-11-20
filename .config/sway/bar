@@ -4,4 +4,5 @@ bar {
     position top
     strip_workspace_numbers yes
     wrap_scroll yes
+    tray_output *
 }
