@@ -92,6 +92,8 @@ bindsym $mod+slash layout toggle split
 # move to near workspace
 bindsym $mod+Tab exec aworkspace switch
 bindsym $mod+Shift+Tab exec aworkspace move
+bindsym $mod+u exec aworkspace switch
+bindsym $mod+Shift+u exec aworkspace move
 
 bindsym $mod+Prior workspace prev
 bindsym $mod+Next workspace next
@@ -174,12 +176,6 @@ bindsym $mod+f fullscreen
 # focus the parent container
 bindsym $mod+a focus parent
 
-# resize focused window
-bindsym $mod+Shift+y resize shrink width 10 px or 10 ppt
-bindsym $mod+Shift+u resize grow height 10 px or 10 ppt
-bindsym $mod+Shift+i resize shrink height 10 px or 10 ppt
-bindsym $mod+Shift+o resize grow width 10 px or 10 ppt
-
 # vim: set ft=conf!
 
 bindsym $mod+x nop
@@ -227,7 +223,7 @@ mode $dmenu_settings_mode {
 bindsym $mod+p exec "pdf_search"
 
 bar {
-    position bottom
+    position top
     status_command custom_statusbar
     #font pango:InputMono, Awesome 10 
     font pango:DejaVu Sans Mono, Awesome 10
