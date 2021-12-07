@@ -1,0 +1,48 @@
+#!/bin/sh
+set -e
+
+cmd=$1
+year=$2
+day=$3
+level=$4
+answer=$5
+session=$(cat ~/.cache/aoc_session)
+
+usage() {
+	printf "aoc <problem|input|submit> <year> <day> [level] [answer]\n"
+}
+
+get_problem() {
+	curl -s --cookie "session=$session" \
+		"https://adventofcode.com/$year/day/$day" \
+		| awk '/<article class="day-desc">/,/<\/article>/' \
+		| html2text -nobs
+}
+
+get_input() {
+	curl -s --cookie "session=$session" \
+		"https://adventofcode.com/$year/day/$day/input"
+}
+
+submit_answer() {
+	curl -X POST -d "level=$level&answer=$answer" \
+		-s --cookie "session=$session"  \
+		"https://adventofcode.com/$year/day/$day/answer" \
+		| awk '/<article>/,/<\/article>/' \
+		| html2text -nobs
+}
+
+case "$cmd" in
+	"problem")
+		get_problem
+		;;
+	"input")
+		get_input
+		;;
+	"submit")
+		submit_answer
+		;;
+	*)
+		usage
+		;;
+esac
