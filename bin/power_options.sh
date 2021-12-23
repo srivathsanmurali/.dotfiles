@@ -1,4 +1,4 @@
-#!/usr/bin/env bash
+#!/bin/sh
 
 themes=$HOME/.config/rofi/monokai.rasi
 result=$(printf "lock\nsuspend\npoweroff\nreboot\n" | dmenu -i -p "Power Menu:")

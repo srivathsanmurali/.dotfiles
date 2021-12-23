@@ -53,7 +53,7 @@ alias gr='git gr'
 alias gs='git status'
 
 # ls 
-alias ls="ls --color=auto -hN --group-directories-first"
+alias ls="ls --color=auto -h --group-directories-first"
 alias lsa='ls -lah'
 alias l='ls -lah'
 alias ll='ls -lh'
