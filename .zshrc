@@ -127,5 +127,8 @@ export ERL_AFLAGS="-kernel shell_history enabled"
 export ECTO_EDITOR=vim
 export ELIXIR_EDITOR=vim
 
+## Golang
+export GOPATH="${HOME}/.local/share/go"
+
 disable -r time
 alias time='time -p'

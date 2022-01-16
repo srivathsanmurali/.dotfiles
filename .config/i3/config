@@ -243,11 +243,13 @@ assign [class="Slack"] → workspace 9
 assign [class="zoom"] → workspace 10
 assign [class="mpv"] → workspace 8
 assign [class="ottologplayer-gui"] → workspace 4
-assign [class="MapViewer | VSG"] → workspace 4
+assign [class="MapViewer | VSG"] → workspace "ms"
+assign [class="MapStudio"] → workspace "ms"
+assign [class="minecraft-launcher"] → workspace "mc"
+assign [class="Minecraft*"] → workspace "mc"
 
 for_window [class="Pavucontrol"] floating enable; border none;
 for_window [class="nitrogen"] floating enable;
-for_window [class="MapViewer | VSG"] resize 1080 1450
 
 
 ## ==========================================================================

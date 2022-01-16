@@ -30,7 +30,6 @@ Plug 'mhinz/vim-mix-format', { 'for': 'elixir' }
 
 " Syntax Highlighting
 Plug 'elixir-editors/vim-elixir', { 'for': 'elixir' }
-Plug 'fatih/vim-go', { 'for': 'go' }
 Plug 'plasticboy/vim-markdown', { 'for': 'markdown' }
 Plug 'gpanders/vim-scdoc', { 'for': 'scw' }
 Plug 'thanethomson/vim-jenkinsfile'
