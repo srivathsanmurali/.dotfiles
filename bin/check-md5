@@ -1,0 +1,13 @@
+#!/bin/sh
+set -eu
+FILE=$1
+MD5SUM=$2
+
+CAL=$(md5sum "$FILE" | cut -d' ' -f1)
+
+if [ "$CAL" = "$MD5SUM" ]; then
+	printf "Checksum matches\n"
+	exit 0
+fi
+printf "Checksum mismatch %s != %s\n" "$CAL" "$MD5SUM"
+exit 1
