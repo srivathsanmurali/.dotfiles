@@ -1,0 +1,13 @@
+#!/bin/sh
+# Find bazel targets from workdir
+# Depedencies
+# - fd (apt: fd-find)
+
+set -eu
+for i in $(fd -c never "^BUILD$" .); do
+	package=$(printf "$i" | awk 'gsub("/BUILD", "") { print "//" $0 }')
+	targets=$(grep -a1 -e "cc_library" -e "cc_binary" "$i" | sed -nr "s/name\s+=(.*),/\1/p" | sed 's/\("\| \)//g')
+	if [ -n "$targets" ]; then
+	 printf "$targets" | awk -v PK="$package" '{ printf PK ":" $0 "\n"}'
+	fi
+done
