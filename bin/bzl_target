@@ -3,11 +3,28 @@
 # Depedencies
 # - fd (apt: fd-find)
 
-set -eu
-for i in $(fd -c never "^BUILD$" .); do
-	package=$(printf "$i" | awk 'gsub("/BUILD", "") { print "//" $0 }')
-	targets=$(grep -a1 -e "cc_library" -e "cc_binary" "$i" | sed -nr "s/name\s+=(.*),/\1/p" | sed 's/\("\| \)//g')
-	if [ -n "$targets" ]; then
-	 printf "$targets" | awk -v PK="$package" '{ printf PK ":" $0 "\n"}'
-	fi
-done
+set -e
+
+if [ ! -f "$PWD/WORKSPACE" ]; then
+	echo "Not an bazel project"
+	exit 1
+fi
+
+CACHE_FILE="/tmp/bzl_target_$(echo -n $PWD | sed 's#/#_#g')"
+
+if [ "$1" = "-f" ]; then
+	rm $CACHE_FILE
+fi 
+
+if [ ! -f $CACHE_FILE ] || [ -n "$(find $CACHE_FILE -mtime +1)" ]; then
+	for i in $(fd -c never "^BUILD$" .); do
+		package=$(printf "$i" | awk 'gsub("/BUILD", "") { print "//" $0 }')
+		targets=$(grep -a1 -e "cc_library" -e "cc_binary" "$i" | sed -nr "s/name\s+=(.*),/\1/p" | sed 's/\("\| \)//g')
+		if [ -n "$targets" ]; then
+		 printf "$targets" | awk -v PK="$package" '{ printf PK ":" $0 "\n"}'
+		fi
+	done | tee $CACHE_FILE
+else
+	cat $CACHE_FILE
+fi
+
