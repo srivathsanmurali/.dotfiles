@@ -132,6 +132,7 @@ nnoremap <leader>b :Buffers<CR>
 nnoremap <leader>p <Esc>:GFiles<CR>
 nnoremap <leader>g :Rg<space>
 nnoremap <leader>t :tabnew<CR>
+nnoremap <leader>w :tabclose<CR>
 nnoremap <leader>d :r! date +"%d %b %Y"<CR>
 
 function! ToCamelCase()
