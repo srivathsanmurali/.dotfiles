@@ -65,6 +65,9 @@ return packer.startup(function(use)
   -- colorscheme
   use {"sonph/onehalf", rtp= 'vim/'}
   use "folke/tokyonight.nvim"
+
+  -- Telescope
+  use "nvim-telescope/telescope.nvim"
   
   -- Automatically set up your configuration after cloning packer.nvim
   -- Put this at the end after all plugins
