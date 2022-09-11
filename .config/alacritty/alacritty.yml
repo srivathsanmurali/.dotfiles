@@ -21,11 +21,11 @@ draw_bold_text_with_bright_colors: true
 
 font:
   normal:
-    family: Dejavu sans mono 
+    family: Fira Code Medium
   bold:
-    family: monospace
+    family: Fira Code
   italic:
-    family: monospace
+    family: Fira Code
   size: 12.0
 
   # Offset is the extra space around each character. offset.y can be thought of
