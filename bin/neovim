@@ -1,0 +1,3 @@
+#!/bin/sh
+
+/usr/bin/nvim -u "${HOME}/.config/nvim/test.lua" "$@"
