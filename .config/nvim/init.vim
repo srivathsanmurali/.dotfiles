@@ -165,7 +165,7 @@ autocmd FileType mail setlocal noautoindent
 augroup filetypedetect
   autocmd BufRead,BufNewFile *qutebrowser-editor-* set ts=4 sw=4 et
 
-set background=light
+set background=dark
 syntax enable
 colorscheme PaperColor
 highlight Search ctermbg=162 ctermfg=white
