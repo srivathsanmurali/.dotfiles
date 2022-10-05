@@ -26,7 +26,7 @@ font -misc-fixed-medium-r-normal--13-120-75-75-C-70-iso10646-1
 # ==============
 
 # start a terminal
-bindsym $mod+Return exec konsole
+bindsym $mod+Return exec alacritty
 
 # launchers
 bindsym $mod+d exec "rofi -show combi -combi-modi 'drun,ssh,run' -show-icons"
@@ -131,6 +131,8 @@ bindsym $mod+Shift+minus move scratchpad
 # Show the first scratchpad window
 bindsym $mod+minus scratchpad show
 
+bindsym $mod+x exec "autorandr --change"
+
 # Window Control
 # ==============
 # kill focused window
@@ -177,8 +179,6 @@ bindsym $mod+f fullscreen
 bindsym $mod+a focus parent
 
 # vim: set ft=conf!
-
-bindsym $mod+x nop
 
 # float conatiners
 for_window [class="Orage"] floating enable
@@ -242,6 +242,7 @@ no_focus [window_type="notification"]
 assign [class="Slack"] → workspace 9
 assign [class="zoom"] → workspace 10
 assign [class="mpv"] → workspace 8
+assign [class="youtube.com"] → workspace 8
 assign [class="ottologplayer-gui"] → workspace 4
 assign [class="MapViewer | VSG"] → workspace "ms"
 assign [class="MapStudio"] → workspace "ms"
@@ -257,6 +258,8 @@ for_window [class="nitrogen"] floating enable;
 for_window [window_role="pop-up"] floating enable
 for_window [window_role="task_dialog"] floating enable
 
+for_window [class="youtube.com"] floating disable
+for_window [class="systemsettings"] floating enable
 for_window [class="yakuake"] floating enable
 for_window [class="systemsettings"] floating enable
 for_window [class="plasmashell"] floating enable;
