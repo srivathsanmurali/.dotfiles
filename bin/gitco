@@ -12,4 +12,5 @@ branch=$(
 		| fzf --select-1 --ansi --preview 'git log --graph --oneline --color {}'
 )
 
+printf "Switching to %s\n" "$branch"
 git checkout $(echo "$branch" | sed "s#.*remotes/origin/##")
