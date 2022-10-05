@@ -51,7 +51,7 @@ return packer.startup(function(use)
   use "hrsh7th/cmp-path"
   use "hrsh7th/cmp-cmdline"
   use "saadparwaiz1/cmp_luasnip"
-  use "hrsh7th/cmp-nvim-lsp" 
+  use "hrsh7th/cmp-nvim-lsp"
   use "hrsh7th/cmp-nvim-lua"
 
   -- snippets
@@ -61,14 +61,14 @@ return packer.startup(function(use)
   -- LSP
   use "neovim/nvim-lspconfig" -- enable LSP
   use "williamboman/nvim-lsp-installer" -- simple to use language server installer
-  
+
   -- colorscheme
   use {"sonph/onehalf", rtp= 'vim/'}
   use "folke/tokyonight.nvim"
 
   -- Telescope
   use "nvim-telescope/telescope.nvim"
-  
+
   -- Automatically set up your configuration after cloning packer.nvim
   -- Put this at the end after all plugins
   if PACKER_BOOTSTRAP then
