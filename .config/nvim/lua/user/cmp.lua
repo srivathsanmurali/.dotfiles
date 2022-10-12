@@ -103,14 +103,16 @@ cmp.setup {
         luasnip = "[Snippet]",
         buffer = "[Buffer]",
         path = "[Path]",
+        nvim_lsp = "[LSP]",
       })[entry.source.name]
       return vim_item
     end,
   },
   sources = {
-    { name = "luasnip" },
-    { name = "buffer" },
     { name = "path" },
+    { name = "nvim_lsp", keyword_length = 3 },
+    { name = "buffer", keyword_length = 3 },
+    { name = "luasnip", keyword_length = 2 },
   },
   confirm_opts = {
     behavior = cmp.ConfirmBehavior.Replace,
