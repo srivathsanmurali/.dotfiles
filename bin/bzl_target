@@ -12,7 +12,7 @@ fi
 
 CACHE_FILE="/tmp/bzl_target_$(echo -n $PWD | sed 's#/#_#g')"
 
-if [ "$1" = "-f" ]; then
+if [ "$1" = "-f" ] && [ -f "$CACHE_FILE" ]; then
 	rm $CACHE_FILE
 fi 
 
