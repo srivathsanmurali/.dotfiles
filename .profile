@@ -1,7 +1,7 @@
 #!/bin/sh 
 
 export BROWSER=firefox
-export PATH=~/bin/$(hostname):~/bin/$(uname -m):~/bin:~/.local/bin:$PATH
+export PATH=~/bin/$(hostname):~/bin/$(uname -m):~/.local/bin:~/bin:$PATH
 export MANPATH=$MANPATH:~/.local/share/man/
 export EDITOR=vim
 export TERMINAL=alacritty
