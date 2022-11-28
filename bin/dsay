@@ -1,0 +1,2 @@
+#!/bin/sh
+cat ~/.dotfiles/dsay/quotes.txt | shuf -n1
