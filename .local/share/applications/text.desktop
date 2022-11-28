@@ -2,4 +2,4 @@
 [Desktop Entry]
 Type=Application
 Name=Text editor
-Exec=/usr/bin/st -e vim %u
+Exec=/usr/bin/alacritty -e vim %u
