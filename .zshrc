@@ -132,3 +132,5 @@ export GOPATH="${HOME}/.local/share/go"
 
 disable -r time
 alias time='time -p'
+
+[ -f ~/.fzf.zsh ] && source ~/.fzf.zsh

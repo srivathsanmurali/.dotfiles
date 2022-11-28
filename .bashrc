@@ -143,3 +143,5 @@ export ECTO_EDITOR=vim
 export ELIXIR_EDITOR=vim
 
 complete -C /usr/bin/mc mc
+
+[ -f ~/.fzf.bash ] && source ~/.fzf.bash
