@@ -85,9 +85,12 @@ return packer.startup(function(use)
     use 'kyazdani42/nvim-web-devicons'
     use 'kyazdani42/nvim-tree.lua'
 
+    -- Special
+    use 'ixru/nvim-markdown'
+    
     -- Automatically set up your configuration after cloning packer.nvim
     -- Put this at the end after all plugins
     if PACKER_BOOTSTRAP then
-        require("packer").sync()
+      require("packer").sync()
     end
 end)
