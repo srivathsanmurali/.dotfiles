@@ -51,6 +51,7 @@ alias gd='git diff --color-words'
 alias gdc='git diff --color-words --cached'
 alias gr='git gr'
 alias gs='git status'
+alias gl='git log --oneline'
 
 # ls 
 alias ls="ls --color=auto -h --group-directories-first"
