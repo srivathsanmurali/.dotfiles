@@ -149,8 +149,36 @@ schemes:
       magenta: '0xc678dd'
       cyan: '0x56b6c2'
       white: '0xdcdfe4'
+  
+  manifest-light: &manifest-light
+    # Default colors
+    primary:
+      background: '0xffffff'
+      foreground: '0x444444'
+  
+    # Normal colors
+    normal:
+      black:   '0x444444'
+      red:     '0xcf484c'
+      green:   '0x61b43b'
+      yellow:  '0xe77a1f'
+      blue:    '0x0079d6'
+      magenta: '0xa358b9'
+      cyan:    '0x00c19c'
+      white:   '0xdbdbdb'
+  
+    # Bright colors
+    bright:
+      black:   '0x777777'
+      red:     '0xff8a81'
+      green:   '0x84dc5b'
+      yellow:  '0xffc670'
+      blue:    '0x57b6ff'
+      magenta: '0xdb98ee'
+      cyan:    '0x6be2cc'
+      white:   '0xffffff'
 
-colors: *one_half_dark
+colors: *manifest-light
 window.opacity: 1.0
 
 bell:

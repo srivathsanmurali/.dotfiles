@@ -1,6 +1,6 @@
 local options = {
   backup = false,                          -- creates a backup file
-  background = "dark",
+  background = "light",
   clipboard = "unnamedplus",               -- allows neovim to access the system clipboard
   cmdheight = 1,                           -- more space in the neovim command line for displaying messages
   completeopt = { "menuone", "noselect" }, -- mostly just for cmp
@@ -34,7 +34,7 @@ local options = {
   wrap = true,                             -- split long line
   scrolloff = 8,                           -- is one of my fav
   sidescrolloff = 8,
-  guifont = "monospace:h17",               -- the font used in graphical neovim applications
+  guifont = "monospace:h12",               -- the font used in graphical neovim applications
 }
 
 vim.opt.shortmess:append "c"

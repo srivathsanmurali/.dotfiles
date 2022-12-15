@@ -1,4 +1,5 @@
-local colorscheme = "tokyonight-night"
+-- https://gitlab.com/ali-lab/manifest-light
+local colorscheme = "manifest-light"
 
 local status_ok, _ = pcall(vim.cmd, "colorscheme " .. colorscheme)
 if not status_ok then

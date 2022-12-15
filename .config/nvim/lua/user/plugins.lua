@@ -67,6 +67,7 @@ return packer.startup(function(use)
     -- colorscheme
     use { "sonph/onehalf", rtp = 'vim/' }
     use "folke/tokyonight.nvim"
+    use "RRethy/nvim-base16"
 
     -- Telescope
     use "nvim-telescope/telescope.nvim"
