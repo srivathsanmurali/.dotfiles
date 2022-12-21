@@ -66,6 +66,7 @@ return packer.startup(function(use)
 
     -- colorscheme
     use "RRethy/nvim-base16"
+    use "nvim-lualine/lualine.nvim"
 
     -- Telescope
     use "nvim-telescope/telescope.nvim"
