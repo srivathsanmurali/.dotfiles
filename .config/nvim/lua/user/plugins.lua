@@ -65,8 +65,6 @@ return packer.startup(function(use)
     use "williamboman/nvim-lsp-installer" -- simple to use language server installer
 
     -- colorscheme
-    use { "sonph/onehalf", rtp = 'vim/' }
-    use "folke/tokyonight.nvim"
     use "RRethy/nvim-base16"
 
     -- Telescope
