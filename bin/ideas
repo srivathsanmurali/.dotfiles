@@ -1,0 +1,8 @@
+#!/bin/sh
+IDEAS_FILE="$HOME/.config/ideas.md"
+
+if [ "$1" = "-e" ]; then
+    vim "$IDEAS_FILE"
+else
+    cat "$IDEAS_FILE"
+fi
