@@ -61,6 +61,12 @@
   # instead of opening all files:
   # git reviewone foo.js bar.js
   reviewone = !vim -p +\"tabdo Gdiff $REVIEW_BASE\" +\"let g:gitgutter_diff_base = '$REVIEW_BASE'\"
+
+  # get branchname
+  branch-name = "!git rev-parse --abbrev-ref HEAD"
+
+  reset-to-upstream = "!git reset --hard origin/$(git branch-name)"
+
 [core]
   ignorecase = false
   abbrev = 12
