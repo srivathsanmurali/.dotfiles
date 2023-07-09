@@ -1,0 +1,19 @@
+#!/bin/sh
+set -eu
+
+AC=$(find /sys/class/power_supply/ -name "AC" -type l)
+if [ -z $AC ]; then
+    printf "Error: AC not found\n"
+else
+    printf "[AC]\n"
+    printf "Online: %d\n" $(cat "$AC/online")
+    printf "\n"
+fi
+
+BATS=$(find /sys/class/power_supply/ -iname "BAT*" -type l)
+for BAT in "$BATS"; do
+    BATNAME=$(basename "$BAT")
+    printf "[%s]\n" "$BATNAME"
+    printf "Status  : %s\n" $(cat "$BAT/status")
+    printf "Capacity: %d\n" $(cat "$BAT/capacity")
+done
