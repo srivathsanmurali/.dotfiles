@@ -61,9 +61,13 @@ return packer.startup(function(use)
     use "rafamadriz/friendly-snippets" -- a bunch of snippets to use
 
     -- LSP
-    use "neovim/nvim-lspconfig" -- enable LSP
-    use "williamboman/nvim-lsp-installer" -- simple to use language server installer
-
+    use {
+        "williamboman/mason.nvim",
+        "williamboman/mason-lspconfig.nvim",
+        "neovim/nvim-lspconfig",
+        run = ":MasonUpdate" -- :MasonUpdate updates registry contents
+    }
+    
     -- colorscheme
     use "RRethy/nvim-base16"
     use "nvim-lualine/lualine.nvim"

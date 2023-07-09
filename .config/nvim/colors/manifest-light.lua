@@ -22,4 +22,3 @@ base16.setup({
 	base0E = '#a358b9',
 	base0F = '#f96aba',
 })
-
