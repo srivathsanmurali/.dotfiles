@@ -40,7 +40,8 @@ bindsym $mod+Shift+p exec "pass-dmenu"
 bindsym $mod+F1 exec bmark
 
 # print screen
-bindsym Print exec "gnome-screenshot -i"
+# bindsym Print exec "gnome-screenshot -i"
+bindsym Print exec "flameshot gui"
 
 # brightness
 bindsym XF86MonBrightnessUp exec "light -A 10"
@@ -228,7 +229,7 @@ bindsym $mod+p exec "pdf_search"
 
 bar {
     position top
-    status_command custom_statusbar
+    status_command custom_statusbar.sh
     #font pango:InputMono, Awesome 10 
     font pango:DejaVu Sans Mono, Awesome 10
     strip_workspace_numbers yes
@@ -238,7 +239,8 @@ bar {
 # vim: set ft=conf!
 
 # Wallpaper
-for_window [class="^.*"] border pixel 3
+default_border pixel 1
+default_floating_border pixel 1
 
 # nofocus for notifications
 no_focus [window_type="notification"]
@@ -256,6 +258,8 @@ assign [class="Minecraft*"] → workspace "mc"
 
 for_window [class="Pavucontrol"] floating enable; border none;
 for_window [class="nitrogen"] floating enable;
+
+for_window [class="MapStudio"] border normal
 
 
 ## ==========================================================================

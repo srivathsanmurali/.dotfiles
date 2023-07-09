@@ -67,6 +67,8 @@
 
   reset-to-upstream = "!git reset --hard origin/$(git branch-name)"
 
+  show-file = "!git-show-file"
+
 [core]
   ignorecase = false
   abbrev = 12

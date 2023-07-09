@@ -1,0 +1,6 @@
+#!/bin/sh
+set -eu
+
+COMMIT=${1:-"HEAD"}
+FILE=$(git diff-tree --no-commit-id --name-only -r "$COMMIT" | fzf --prompt="Select file:")
+git show "$COMMIT" -- "$FILE" | less -r
