@@ -1,0 +1,14 @@
+#!/bin/sh
+set -e
+
+TARGET_FILE="/tmp/br_target"
+touch "$TARGET_FILE"
+
+target=$(bzl_target -f | fzf -q "$(cat $TARGET_FILE)" --layout=reverse)
+
+printf "$target" > "$TARGET_FILE"
+
+if [ -n "$target" ]; then
+	echo "Target: $target"
+	bazel run "$target" -- "$@"
+fi
