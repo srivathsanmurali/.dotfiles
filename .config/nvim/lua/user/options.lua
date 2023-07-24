@@ -45,4 +45,6 @@ for k, v in pairs(options) do
   vim.opt[k] = v
 end
 
+vim.opt.foldmethod = "expr"
+vim.opt.foldexpr = "nvim_treesitter#foldexpr()"
 --autocmd FileType markdown setlocal spell spelllang=en_gb
