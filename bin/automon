@@ -1,0 +1,46 @@
+#!/bin/bash
+# Automon reads scripts to setup monitors from $HOME/.config/automon/<setup-name>.sh
+# Usage:
+#   `automon list` | lists the available setups
+#   `automon <setup-name>` | activate the given setup
+#
+# Requirements:
+# - bash
+# - find
+# - notify-send
+# - rofi
+
+set -eu
+
+list_setups() {
+    find ~/.config/automon/ -name "*.sh" -exec basename {} .sh ';'
+}
+
+activate_setup() {
+    SCRIPT="$HOME/.config/automon/${1}.sh"
+    source "$SCRIPT"
+    bing_wall
+    echo "Setup ${1} Activated"
+    notify-send "Automon" "Setup ${1} Activated"
+}
+
+show_error() {
+    echo "Setup ${1} not found."
+}
+
+case "$1" in
+    list|ls)
+        list_setups
+        ;;
+    rofi)
+        activate_setup "$(list_setups | rofi -dmenu)"
+        ;;
+    *) 
+        SCRIPT="$HOME/.config/automon/${1}.sh"
+        if [ -e $SCRIPT ]; then
+            activate_setup "$1"
+        else
+            show_error
+        fi
+        ;;
+esac
