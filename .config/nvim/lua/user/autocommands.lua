@@ -17,20 +17,19 @@ end
 
 
 local autoCommands = {
-    -- other autocommands
     _open_folds = {
-        {"BufReadPost,FileReadPost", "*", "normal zR"};
-    };
+        {"BufReadPost,FileReadPost", "*", "normal zR"}
+    },
     _general_settings = {
-        {"FileType", "qf,help,man,lspinfo nnoremap", "<silent> <buffer> q :close<CR>"};
-        {"TextYankPost", "*", "silent!lua require('vim.highlight').on_yank({higroup = 'Visual', timeout = 200})"};
-        {"BufWinEnter", "*", ":set formatoptions-=cro"};
-        {"FileType", "qf", "set nobuflisted"};
-    };
+        {"FileType", "qf,help,man,lspinfo nnoremap", "<silent> <buffer> q :close<CR>"},
+        {"TextYankPost", "*", "silent!lua require('vim.highlight').on_yank({higroup = 'Visual', timeout = 200})"},
+        {"BufWinEnter", "*", ":set formatoptions-=cro"},
+        {"FileType", "qf", "set nobuflisted"},
+    },
     _text = {
-        {"FileType", "gitcommit,markdown", "setlocal wrap"};
-        {"FileType", "gitcommit,markdown", "setlocal spell"};
-    };
+        {"FileType", "gitcommit,markdown", "setlocal wrap"},
+        {"FileType", "gitcommit,markdown", "setlocal spell"},
+    },
 }
 
 M.nvim_create_augroups(autoCommands)

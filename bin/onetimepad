@@ -3,9 +3,7 @@ password() {
 	head -n16 /dev/urandom | md5sum | cut -d' ' -f1
 }
 
-i=0
-while [ $i -lt 20 ]
+for i in $(seq 1 20)
 do
-	printf "%2d: %s\n" "$((i+1))" "$(password)"
-	: $((i++))
+	printf "%2d: %s\n" "$i" "$(password)"
 done

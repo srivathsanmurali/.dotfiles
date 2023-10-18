@@ -59,8 +59,8 @@ bindsym XF86AudioPlay exec "playerctl play-pause"
 bindsym XF86AudioPrev exec "playerctl previous"
 
 # Monitor Controls
-bindsym XF86Display exec "autorandr --change"
-bindsym $mod+x exec "autorandr --change"
+bindsym XF86Display exec "automon rofi"
+bindsym $mod+x exec "automon rofi"
 
 # reload the configuration file
 bindsym $mod+Shift+c reload
