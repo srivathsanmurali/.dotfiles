@@ -19,7 +19,7 @@ fi
 if [ ! -f $CACHE_FILE ] || [ -n "$(find $CACHE_FILE -mtime +1)" ]; then
 	for i in $(fd -c never "^BUILD$" .); do
 		package=$(printf "$i" | awk 'gsub("/BUILD", "") { print "//" $0 }')
-		targets=$(grep -a2 -e "cc_library" -e "cc_binary" -e "cc_test" "$i" | sed -nr "s/name\s+=(.*),/\1/p" | sed 's/\("\| \)//g')
+		targets=$(grep -a2 -e "cc_library" -e "cc_binary" -e "cc_jni_library" -e "java_jni_library" -e "java_test" -e "cc_test" "$i" | sed -nr "s/name\s+=(.*),/\1/p" | sed 's/\("\| \)//g')
 		if [ -n "$targets" ]; then
 		 printf "$package:all\n"
 		 printf "$targets" | awk -v PK="$package" '{ printf PK ":" $0 "\n"}'

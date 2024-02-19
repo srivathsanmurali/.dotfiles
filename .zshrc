@@ -51,7 +51,7 @@ alias gd='git diff --color-words'
 alias gdc='git diff --color-words --cached'
 alias gr='git gr'
 alias gs='git status'
-alias gl='git log --oneline'
+alias gl='git log --pretty="custom2"'
 
 # ls 
 alias ls="ls --color=auto -h --group-directories-first"
@@ -80,7 +80,28 @@ function sshReady() {
 }
 
 function gShowSelected() {
-  git show $(git log --pretty=simplelog | fzf --ansi | awk '{print $1}') | less -R
+  git show $(git log --pretty=custom2 | fzf --ansi | awk '{print $1}')
+}
+
+function z() {
+    cache_file="$HOME/.cache/zdirs"
+
+    if [ -z "$1" ]; then
+        cd "$(cat $cache_file | fzf --reverse | cut -f2)"
+    elif [ "$1" = "add" ]; then
+        name=$2
+        dir_path=$(pwd)
+        echo "${name}\t${dir_path}" >> "$cache_file"
+        echo "Added ${dir_path} as ${name}"
+    elif [ "$1" = "list" ]; then
+        cat "$cache_file" | column -t
+    else
+        cd "$(grep "$1" "$cache_file" | cut -f2)"
+    fi
+}
+
+function conda_activate() {
+    conda activate $(ls ~/.local/opt/miniconda3/envs -1 | fzf --reverse)
 }
 
 ## Command history configuration

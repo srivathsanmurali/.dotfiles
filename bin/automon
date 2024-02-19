@@ -22,6 +22,7 @@ activate_setup() {
     bing_wall
     echo "Setup ${1} Activated"
     notify-send "Automon" "Setup ${1} Activated"
+    echo "$1" > ~/.cache/automon
 }
 
 show_error() {
@@ -34,6 +35,14 @@ case "$1" in
         ;;
     rofi)
         activate_setup "$(list_setups | rofi -dmenu)"
+        ;;
+    edit)
+        SCRIPT="$HOME/.config/automon/${2}.sh"
+        if [ -e $SCRIPT ]; then
+            $EDITOR "$SCRIPT"
+        else
+            show_error
+        fi
         ;;
     *) 
         SCRIPT="$HOME/.config/automon/${1}.sh"

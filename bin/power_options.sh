@@ -1,9 +1,11 @@
 #!/bin/sh
 
-themes=$HOME/.config/rofi/monokai.rasi
-result=$(printf "lock\nsuspend\npoweroff\nreboot\n" | dmenu -i -p "Power Menu:")
+result=$(printf "logout\nlock\nsuspend\npoweroff\nreboot\n" | dmenu -i -p "Power Menu:")
 
 case "$result" in
+  "logout")
+    loginctl terminate-session "${XDG_SESSION_ID-}"
+    ;;
   "lock")
 	lock
     ;;
