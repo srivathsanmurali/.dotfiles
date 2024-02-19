@@ -1,0 +1,11 @@
+[Unit]
+Description=JupyterLab
+After=network.target
+
+[Service]
+Restart=on-failure
+RestartSec=20
+ExecStart=/home/srivathsan.murali/.local/opt/miniconda3/condabin/conda run --cwd /home/srivathsan.murali/sources/notebooks -n testing jupyter-lab --ServerApp.token="Test"
+
+[Install]
+WantedBy=multi-user.target
