@@ -71,6 +71,11 @@ return packer.startup(function(use)
     -- colorscheme
     use "RRethy/nvim-base16"
     use "nvim-lualine/lualine.nvim"
+    use "WhoIsSethDaniel/lualine-lsp-progress.nvim"
+    
+    -- Nvim Tree
+    use 'kyazdani42/nvim-web-devicons'
+    use 'kyazdani42/nvim-tree.lua'
 
     -- Telescope
     use "nvim-telescope/telescope.nvim"
@@ -78,16 +83,11 @@ return packer.startup(function(use)
     -- Treesitter
     use {
         "nvim-treesitter/nvim-treesitter",
-        run = ":TSUpdate",
     }
     use "p00f/nvim-ts-rainbow"
 
     -- Git signs
     use "lewis6991/gitsigns.nvim"
-
-    -- Nvim Tree
-    use 'kyazdani42/nvim-web-devicons'
-    use 'kyazdani42/nvim-tree.lua'
 
     -- Special
     use 'ixru/nvim-markdown'
@@ -99,6 +99,8 @@ return packer.startup(function(use)
     use "akinsho/bufferline.nvim"
     use "moll/vim-bbye"
 
+    -- helpers
+    use "opdavies/toggle-checkbox.nvim"
     -- Automatically set up your configuration after cloning packer.nvim
     -- Put this at the end after all plugins
     if PACKER_BOOTSTRAP then

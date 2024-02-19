@@ -78,13 +78,70 @@ telescope.setup {
     },
   },
   pickers = {
-    -- Default configuration for builtin pickers goes here:
-    -- picker_name = {
-    --   picker_config_key = value,
-    --   ...
-    -- }
-    -- Now the picker_config_key will be applied every time you call this
-    -- builtin picker
+    buffers = {
+      previewer = false,
+      layout_config = {
+        width = 0.7,
+        prompt_position = "top",
+      },
+    },
+    builtin = {
+      previewer = false,
+      layout_config = {
+        width = 0.3,
+        prompt_position = "top",
+      },
+    },
+    find_files = {
+      previewer = false,
+      layout_config = {
+        width = 0.7,
+        prompt_position = "top",
+      },
+    },
+    help_tags = {
+      layout_config = {
+        prompt_position = "top",
+        scroll_speed = 4,
+        height = 0.9,
+        width = 0.9,
+        preview_width = 0.55,
+      },
+    },
+    live_grep = {
+      layout_strategy = "vertical",
+      layout_config = {
+        width = 0.9,
+        height = 0.9,
+        preview_cutoff = 1,
+        mirror = false,
+      },
+    },
+    lsp_implementations = {
+      layout_strategy = "vertical",
+      layout_config = {
+        width = 0.9,
+        height = 0.9,
+        preview_cutoff = 1,
+        mirror = false,
+      },
+    },
+    lsp_references = {
+      layout_strategy = "vertical",
+      layout_config = {
+        width = 0.9,
+        height = 0.9,
+        preview_cutoff = 1,
+        mirror = false,
+      },
+    },
+    oldfiles = {
+      previewer = false,
+      layout_config = {
+        width = 0.9,
+        prompt_position = "top",
+      },
+    },
   },
   extensions = {
     media_files = {

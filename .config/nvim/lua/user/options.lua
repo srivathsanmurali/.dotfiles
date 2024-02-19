@@ -1,6 +1,6 @@
 local options = {
   backup = false,                          -- creates a backup file
-  background = "dark",
+  background = "light",
   clipboard = "unnamedplus",               -- allows neovim to access the system clipboard
   cmdheight = 1,                           -- more space in the neovim command line for displaying messages
   completeopt = { "menuone", "noselect" }, -- mostly just for cmp
@@ -35,6 +35,8 @@ local options = {
   scrolloff = 8,                           -- is one of my fav
   sidescrolloff = 8,
   guifont = "monospace:h12",               -- the font used in graphical neovim applications
+
+  foldlevelstart = 1,
 }
 
 vim.opt.shortmess:append "c"
@@ -45,6 +47,6 @@ for k, v in pairs(options) do
   vim.opt[k] = v
 end
 
-vim.opt.foldmethod = "expr"
-vim.opt.foldexpr = "nvim_treesitter#foldexpr()"
+-- vim.opt.foldmethod = "expr"
+-- vim.opt.foldexpr = "nvim_treesitter#foldexpr()"
 --autocmd FileType markdown setlocal spell spelllang=en_gb

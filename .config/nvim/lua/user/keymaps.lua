@@ -39,6 +39,7 @@ vim.keymap.set("i", "jk", "<ESC>", opts)
 -- Stay in indent mode
 vim.keymap.set("v", "<", "<gv", opts)
 vim.keymap.set("v", ">", ">gv", opts)
+vim.keymap.set('v', '/', "\"fy/\\V<C-R>f<CR>" )
 
 -- Move text up and down
 vim.keymap.set("v", "<A-j>", ":m .+1<CR>==", opts)
@@ -61,3 +62,9 @@ vim.keymap.set("n", "<leader>gs", "<cmd>Telescope grep_string<cr>", opts)
 vim.keymap.set("n", "<leader>g", "<cmd>Gitsigns blame_line<cr>", opts)
 vim.keymap.set("n", "<leader>h", "<cmd>ClangdSwitchSourceHeader<cr>", opts)
 vim.keymap.set("n", "<leader>e", "<cmd>NvimTreeToggle<cr>", opts)
+
+-- helpers
+vim.keymap.set("n", "<leader>x", ":lua require('toggle-checkbox').toggle()<CR>")
+
+-- search
+vim.keymap.set("n", "S", ":%s/<C-r><C-w>/<C-r><C-w>/gI<Left><Left><Left>")
