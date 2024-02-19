@@ -7,7 +7,8 @@
 	default = upstream
 [pull]
   rebase=true
-
+[rerere]
+    enabled = true
 [alias]
   # add
   a = add
@@ -80,7 +81,8 @@
   # s -> commit message
   # an -> author
   custom = "%C(magenta)%h%C(red)%d %C(yellow)%ar \n\t%C(green)%s %C(yellow)(%an)"
-  custom2 = "%x1b[31m%h%x09%Cblue%cd%x1b[32m%d%x1b[0m%x20%s%x20%x1b[33m(%an)%x1b[0m"
+  #custom2 = "%x1b[31m%h%x09%Cblue%cd%x1b[32m%d%x1b[0m%x20%s%x20%x1b[33m(%an)%x1b[0m"
+  custom2 = "%C(blue)%as %C(magenta)%h %C(green)%s %C(yellow)[%an] %C(red)%D"
   simplelog = "%C(magenta)%h %C(green)%s %C(yellow)[%an]"
   cl = "%h %s"
 
