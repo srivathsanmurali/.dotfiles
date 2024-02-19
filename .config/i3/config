@@ -22,11 +22,13 @@ font -misc-fixed-medium-r-normal--13-120-75-75-C-70-iso10646-1
 # vim: set ft=conf!
 # Key bindings
 
+
 # Custom Actions
 # ==============
 
 # start a terminal
-bindsym $mod+Return exec alacritty
+#bindsym $mod+Return exec alacritty
+bindsym $mod+Return exec kitty
 
 # launchers
 bindsym $mod+d exec "rofi -show combi -combi-modi 'drun,ssh,run' -show-icons"
@@ -182,6 +184,7 @@ bindsym $mod+f fullscreen
 bindsym $mod+a focus parent
 
 bindsym $mod+m exec open-map
+# bindsym $mod+M exec "ranger ~/data/graphs"
 
 # vim: set ft=conf!
 
@@ -255,6 +258,7 @@ assign [class="MapStudio"] → workspace "ms"
 assign [class="Joplin"] → workspace "7"
 assign [class="minecraft-launcher"] → workspace "mc"
 assign [class="Minecraft*"] → workspace "mc"
+assign [class="juptyerlab-desktop*"] → workspace "jupyter"
 
 for_window [class="Pavucontrol"] floating enable; border none;
 for_window [class="nitrogen"] floating enable;
