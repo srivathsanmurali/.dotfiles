@@ -67,6 +67,13 @@ return packer.startup(function(use)
         "neovim/nvim-lspconfig",
         run = ":MasonUpdate" -- :MasonUpdate updates registry contents
     }
+    use "hedyhli/outline.nvim"
+    --use 'simrat39/symbols-outline.nvim'
+    
+    use({
+        "jose-elias-alvarez/null-ls.nvim",
+        requires = { "nvim-lua/plenary.nvim" },
+    })
     
     -- colorscheme
     use "RRethy/nvim-base16"

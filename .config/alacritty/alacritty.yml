@@ -1,5 +1,11 @@
 env:
   TERM: xterm-256color
+
+import = [
+  "~/.config/alacritty/catppuccin-latte.toml"
+  #"~/.config/alacritty/catppuccin-frappe.toml"
+]
+
 window:
   dynamic_title: true
   dimensions:
@@ -42,174 +48,174 @@ font:
     y: 0
 
 # Colors (Blood Moon)
-schemes:
-  blood_moon: &blood_moon
-    # Default colors
-    primary:
-      background: '0x121212'
-      foreground: '0xbbbbbb'
-
-    # Normal colors
-    normal:
-      black:   '0x121212'
-      red:     '0xfa2573'
-      green:   '0x98e123'
-      yellow:  '0xdfd460'
-      blue:    '0x1080d0'
-      magenta: '0x8700ff'
-      cyan:    '0x43a8d0'
-      white:   '0xbbbbbb'
-
-    # Bright colors
-    bright:
-      black:   '0x555555'
-      red:     '0xf6669d'
-      green:   '0xb1e05f'
-      yellow:  '0xfff26d'
-      blue:    '0x00afff'
-      magenta: '0xaf87ff'
-      cyan:    '0x51ceff'
-      white:   '0xffffff'
-
-  ir_black: &ir_black
-    primary:
-      background: '#000000'
-      foreground: '#ffffff'
-
-    cursor:
-      text: '#ffffff'
-      cursor: '#ffffff'
-
-    # Normal colors
-    normal:
-      black:   '#4e4e4e'
-      red:     '#ff6c60'
-      green:   '#a8ff60'
-      yellow:  '#ffffb6'
-      blue:    '#96cbfe'
-      magenta: '#ff73fd'
-      cyan:    '#c6c5fe'
-      white:   '#eeeeee'
-
-    # Bright colors
-    bright:
-      black:   '#7c7c7c'
-      red:     '#ffb6b0'
-      green:   '#ceffab'
-      yellow:  '#ffffcb'
-      blue:    '#b5dcfe'
-      magenta: '#ff9cfe'
-      cyan:    '#dfdffe'
-      white:   '#ffffff'
-
-  one_half: &one_half
-    primary:
-      background: '0xffffff'
-      foreground: '0x383a42'
-
-    normal:
-      black: '0x383a42'
-      red: '0xe45649'
-      green: '0x50a14f'
-      yellow: '0xc18401'
-      blue: '0x0184bc'
-      magenta: '0xa626a4'
-      cyan: '0x0997b3'
-      white: '0xffffff'
-
-    bright:
-      black: '0x383a42'
-      red: '0xe45649'
-      green: '0x50a14f'
-      yellow: '0xc18401'
-      blue: '0x0184bc'
-      magenta: '0xa626a4'
-      cyan: '0x0997b3'
-      white: '0xffffff'
-
-  one_half_dark: &one_half_dark
-    primary:
-      background: '0x282c34'
-      foreground: '0xdcdfe4'
-    normal:
-      black: '0x282c34'
-      red: '0xe06c75'
-      green: '0x98c379'
-      yellow: '0xe5c07b'
-      blue: '0x61afef'
-      magenta: '0xc678dd'
-      cyan: '0x56b6c2'
-      white: '0xdcdfe4'
-    bright:
-      black: '0x282c34'
-      red: '0xe06c75'
-      green: '0x98c379'
-      yellow: '0xe5c07b'
-      blue: '0x61afef'
-      magenta: '0xc678dd'
-      cyan: '0x56b6c2'
-      white: '0xdcdfe4'
-
-  # Tokyo Night theme, based on both:
-  #   https://github.com/ghifarit53/tokyonight-vim
-  #   https://github.com/enkia/tokyo-night-vscode-theme
-  tokyo-night: &tokyo-night
-    # Default colors
-    primary:
-      background: '#1a1b26'
-      foreground: '#a9b1d6'
-
-    # Normal colors
-    normal:
-      black:   '#32344a'
-      red:     '#f7768e'
-      green:   '#9ece6a'
-      yellow:  '#e0af68'
-      blue:    '#7aa2f7'
-      magenta: '#ad8ee6'
-      cyan:    '#449dab'
-      white:   '#787c99'
-
-    # Bright colors
-    bright:
-      black:   '#444b6a'
-      red:     '#ff7a93'
-      green:   '#b9f27c'
-      yellow:  '#ff9e64'
-      blue:    '#7da6ff'
-      magenta: '#bb9af7'
-      cyan:    '#0db9d7'
-      white:   '#acb0d0'
-  
-  manifest-light: &manifest-light
-    # Default colors
-    primary:
-      background: '0xffffff'
-      foreground: '0x444444'
-  
-    # Normal colors
-    normal:
-      black:   '0x444444'
-      red:     '0xcf484c'
-      green:   '0x61b43b'
-      yellow:  '0xe77a1f'
-      blue:    '0x0079d6'
-      magenta: '0xa358b9'
-      cyan:    '0x00c19c'
-      white:   '0xdbdbdb'
-  
-    # Bright colors
-    bright:
-      black:   '0x777777'
-      red:     '0xff8a81'
-      green:   '0x84dc5b'
-      yellow:  '0xffc670'
-      blue:    '0x57b6ff'
-      magenta: '0xdb98ee'
-      cyan:    '0x6be2cc'
-      white:   '0xffffff'
-
-colors: *one_half
+# schemes:
+#   blood_moon: &blood_moon
+#     # Default colors
+#     primary:
+#       background: '0x121212'
+#       foreground: '0xbbbbbb'
+# 
+#     # Normal colors
+#     normal:
+#       black:   '0x121212'
+#       red:     '0xfa2573'
+#       green:   '0x98e123'
+#       yellow:  '0xdfd460'
+#       blue:    '0x1080d0'
+#       magenta: '0x8700ff'
+#       cyan:    '0x43a8d0'
+#       white:   '0xbbbbbb'
+# 
+#     # Bright colors
+#     bright:
+#       black:   '0x555555'
+#       red:     '0xf6669d'
+#       green:   '0xb1e05f'
+#       yellow:  '0xfff26d'
+#       blue:    '0x00afff'
+#       magenta: '0xaf87ff'
+#       cyan:    '0x51ceff'
+#       white:   '0xffffff'
+# 
+#   ir_black: &ir_black
+#     primary:
+#       background: '#000000'
+#       foreground: '#ffffff'
+# 
+#     cursor:
+#       text: '#ffffff'
+#       cursor: '#ffffff'
+# 
+#     # Normal colors
+#     normal:
+#       black:   '#4e4e4e'
+#       red:     '#ff6c60'
+#       green:   '#a8ff60'
+#       yellow:  '#ffffb6'
+#       blue:    '#96cbfe'
+#       magenta: '#ff73fd'
+#       cyan:    '#c6c5fe'
+#       white:   '#eeeeee'
+# 
+#     # Bright colors
+#     bright:
+#       black:   '#7c7c7c'
+#       red:     '#ffb6b0'
+#       green:   '#ceffab'
+#       yellow:  '#ffffcb'
+#       blue:    '#b5dcfe'
+#       magenta: '#ff9cfe'
+#       cyan:    '#dfdffe'
+#       white:   '#ffffff'
+# 
+#   one_half: &one_half
+#     primary:
+#       background: '0xffffff'
+#       foreground: '0x383a42'
+# 
+#     normal:
+#       black: '0x383a42'
+#       red: '0xe45649'
+#       green: '0x50a14f'
+#       yellow: '0xc18401'
+#       blue: '0x0184bc'
+#       magenta: '0xa626a4'
+#       cyan: '0x0997b3'
+#       white: '0xffffff'
+# 
+#     bright:
+#       black: '0x383a42'
+#       red: '0xe45649'
+#       green: '0x50a14f'
+#       yellow: '0xc18401'
+#       blue: '0x0184bc'
+#       magenta: '0xa626a4'
+#       cyan: '0x0997b3'
+#       white: '0xffffff'
+# 
+#   one_half_dark: &one_half_dark
+#     primary:
+#       background: '0x282c34'
+#       foreground: '0xdcdfe4'
+#     normal:
+#       black: '0x282c34'
+#       red: '0xe06c75'
+#       green: '0x98c379'
+#       yellow: '0xe5c07b'
+#       blue: '0x61afef'
+#       magenta: '0xc678dd'
+#       cyan: '0x56b6c2'
+#       white: '0xdcdfe4'
+#     bright:
+#       black: '0x282c34'
+#       red: '0xe06c75'
+#       green: '0x98c379'
+#       yellow: '0xe5c07b'
+#       blue: '0x61afef'
+#       magenta: '0xc678dd'
+#       cyan: '0x56b6c2'
+#       white: '0xdcdfe4'
+# 
+#   # Tokyo Night theme, based on both:
+#   #   https://github.com/ghifarit53/tokyonight-vim
+#   #   https://github.com/enkia/tokyo-night-vscode-theme
+#   tokyo-night: &tokyo-night
+#     # Default colors
+#     primary:
+#       background: '#1a1b26'
+#       foreground: '#a9b1d6'
+# 
+#     # Normal colors
+#     normal:
+#       black:   '#32344a'
+#       red:     '#f7768e'
+#       green:   '#9ece6a'
+#       yellow:  '#e0af68'
+#       blue:    '#7aa2f7'
+#       magenta: '#ad8ee6'
+#       cyan:    '#449dab'
+#       white:   '#787c99'
+# 
+#     # Bright colors
+#     bright:
+#       black:   '#444b6a'
+#       red:     '#ff7a93'
+#       green:   '#b9f27c'
+#       yellow:  '#ff9e64'
+#       blue:    '#7da6ff'
+#       magenta: '#bb9af7'
+#       cyan:    '#0db9d7'
+#       white:   '#acb0d0'
+#   
+#   manifest-light: &manifest-light
+#     # Default colors
+#     primary:
+#       background: '0xffffff'
+#       foreground: '0x444444'
+#   
+#     # Normal colors
+#     normal:
+#       black:   '0x444444'
+#       red:     '0xcf484c'
+#       green:   '0x61b43b'
+#       yellow:  '0xe77a1f'
+#       blue:    '0x0079d6'
+#       magenta: '0xa358b9'
+#       cyan:    '0x00c19c'
+#       white:   '0xdbdbdb'
+#   
+#     # Bright colors
+#     bright:
+#       black:   '0x777777'
+#       red:     '0xff8a81'
+#       green:   '0x84dc5b'
+#       yellow:  '0xffc670'
+#       blue:    '0x57b6ff'
+#       magenta: '0xdb98ee'
+#       cyan:    '0x6be2cc'
+#       white:   '0xffffff'
+# 
+# colors: *one_half
 window.opacity: 0.7
 
 bell:

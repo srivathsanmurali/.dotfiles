@@ -83,7 +83,7 @@ function gShowSelected() {
   git show $(git log --pretty=custom2 | fzf --ansi | awk '{print $1}')
 }
 
-function z() {
+function z_() {
     cache_file="$HOME/.cache/zdirs"
 
     if [ -z "$1" ]; then
@@ -156,3 +156,4 @@ disable -r time
 alias time='time -p'
 
 [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
+[ -f /usr/bin/zoxide ] && eval "$(zoxide init zsh)"
