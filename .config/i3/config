@@ -36,6 +36,7 @@ bindsym $mod+d exec "rofi -show combi -combi-modi 'drun,ssh,run' -show-icons"
 bindsym $mod+Shift+d exec "~/.local/bin/pdf_search"
 bindsym Control+mod1+l exec "lock"
 bindsym Control+mod1+Delete exec "power_options.sh"
+#bindsym Control+mod1+Delete exec "rofi -show powermenu -modi powermenu:rofi-power-menu"
 bindsym Control+mod1+b exec ~/.config/i3/scripts/bluetooth.sh
 bindsym $mod+Shift+p exec "pass-dmenu"
 

@@ -4,3 +4,4 @@ tags
 TODO
 TODO.md
 static_analysis
+.bazelversion

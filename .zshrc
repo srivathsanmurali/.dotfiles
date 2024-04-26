@@ -25,10 +25,11 @@ PROMPT='[$(prompt)]$ '
 
 git_prompt() {
   ref=$(git symbolic-ref HEAD 2>/dev/null | cut -d'/' -f3-)
+  git_hash=$(git rev-parse --short=8 HEAD 2>/dev/null)
   if [ -z "$ref" ]; then
     echo ""
   else
-    echo "[$ref]"
+    echo "[$git_hash $ref]"
   fi
 }
 RPROMPT='$(git_prompt)'
@@ -157,3 +158,4 @@ alias time='time -p'
 
 [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
 [ -f /usr/bin/zoxide ] && eval "$(zoxide init zsh)"
+[ -f /usr/bin/zoxide ] && alias cd='z'

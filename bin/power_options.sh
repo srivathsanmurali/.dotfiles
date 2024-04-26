@@ -1,6 +1,6 @@
 #!/bin/sh
 
-result=$(printf "logout\nlock\nsuspend\npoweroff\nreboot\n" | dmenu -i -p "Power Menu:")
+result=$(printf "logout\nlock\nsuspend\nhibernate\npoweroff\nreboot\n" | dmenu -i -p "Power Menu:")
 
 case "$result" in
   "logout")
@@ -11,6 +11,9 @@ case "$result" in
     ;;
   "suspend")
 	lock suspend
+    ;;
+  "hibernate")
+    systemctl hibernate 
     ;;
   "poweroff")
     systemctl poweroff
