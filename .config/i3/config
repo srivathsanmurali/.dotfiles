@@ -222,7 +222,7 @@ bindsym $mod+o mode $dmenu_settings_mode
 mode $dmenu_settings_mode {
   bindsym m exec "mount_menu"; mode "default"
   bindsym u exec "umount_menu"; mode "default"
-  bindsym w exec "wifi-dmenu"; mode "default"
+  bindsym w exec "wifi-menu"; mode "default"
   bindsym v exec "vpn dmenu"; mode "default"
 
   bindsym Return mode "default"
