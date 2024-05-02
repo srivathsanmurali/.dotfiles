@@ -62,7 +62,7 @@ vim.keymap.set("n", "<leader>gs", "<cmd>Telescope grep_string<cr>", opts)
 vim.keymap.set("n", "<leader>g", "<cmd>Gitsigns blame_line<cr>", opts)
 vim.keymap.set("n", "<leader>h", "<cmd>ClangdSwitchSourceHeader<cr>", opts)
 vim.keymap.set("n", "<leader>e", "<cmd>NvimTreeToggle<cr>", opts)
-vim.keymap.set("n", "<leader>o", "<cmd>Telescope lsp_document_symbols<cr>", opts)
+vim.keymap.set("n", "<leader>o", "<cmd>Outline<cr>", opts)
 
 
 -- helpers
