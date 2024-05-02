@@ -1,2 +1,7 @@
 #!/bin/sh
-curl -L cheat.sh/$1 | sed $'s/\e\\[[0-9;:]*[a-zA-Z]//g'
+
+if [ -f /usr/bin/tldr ]; then
+    /usr/bin/tldr $1
+else
+    curl -L cheat.sh/$1 | sed $'s/\e\\[[0-9;:]*[a-zA-Z]//g'
+fi
