@@ -4,7 +4,11 @@ set -e
 TARGET_FILE="/tmp/br_target"
 touch "$TARGET_FILE"
 
-target=$(bzl_target -f | fzf -q "$(cat $TARGET_FILE)" --layout=reverse)
+if [ -z "$1" ]; then
+    target=$(bzl_target -f | fzf -q "$(cat $TARGET_FILE)" --layout=reverse)
+else
+    target=$1
+fi
 
 printf "$target" > "$TARGET_FILE"
 
