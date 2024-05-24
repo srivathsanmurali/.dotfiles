@@ -1,6 +1,6 @@
 live_config_reload = true
 
-import = ["~/.config/alacritty/catppuccin-latte.toml"]
+import = ["~/.config/alacritty/catppuccin-macchiato.toml"]
 
 [bell]
 animation = "EaseOutExpo"
