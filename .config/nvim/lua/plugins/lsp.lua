@@ -82,7 +82,6 @@ return {
 
       local servers = {
         clangd = {},
-        gopls = {},
         lua_ls = {
           settings = {
             Lua = {
@@ -101,6 +100,8 @@ return {
         'stylua', -- Used to format Lua code
         'clang-format',
         'buildifier',
+        'black',
+        'isort',
       })
       require('mason-tool-installer').setup { ensure_installed = ensure_installed }
 
@@ -144,8 +145,8 @@ return {
         lua = { 'stylua' },
         cpp = { 'clang-forma' },
         bzl = { 'buildifier' },
+        python = { 'isort', 'black' },
         -- Conform can also run multiple formatters sequentially
-        -- python = { "isort", "black" },
         --
         -- You can use a sub-list to tell conform to run *until* a formatter
         -- is found.
