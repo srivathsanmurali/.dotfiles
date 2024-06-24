@@ -102,6 +102,7 @@ function z_() {
 }
 
 function conda_activate() {
+    conda-load
     conda activate $(ls ~/.local/opt/miniconda3/envs -1 | fzf --reverse)
 }
 
