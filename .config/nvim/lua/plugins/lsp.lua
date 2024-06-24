@@ -35,6 +35,8 @@ return {
           map('<leader>ca', vim.lsp.buf.code_action, '[C]ode [A]ction')
           map('K', vim.lsp.buf.hover, 'Hover Documentation')
           map('gD', vim.lsp.buf.declaration, '[G]oto [D]eclaration')
+          map('<leader>sh', vim.lsp.buf.signature_help, '[S]ignature [H]elp')
+          map('gl', '<cmd>lua vim.diagnostic.open_float({ border = "rounded" })<CR>', 'Show diagnostic for line')
 
           -- The following two autocommands are used to highlight references of the
           -- word under your cursor when your cursor rests there for a little while.
