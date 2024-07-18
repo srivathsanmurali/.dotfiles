@@ -55,3 +55,6 @@ vim.opt.inccommand = 'split'
 
 -- Set highlight on Search
 vim.opt.hlsearch = true
+
+-- Set true colors Used by bufferline
+vim.opt.termguicolors = true

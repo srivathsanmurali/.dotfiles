@@ -10,27 +10,6 @@ return {
       vim.cmd.colorscheme 'catppuccin-macchiato'
     end,
   },
-
-  -- See `:help gitsigns` to understand what the configuration keys do
-  { -- Adds git related signs to the gutter, as well as utilities for managing changes
-    'lewis6991/gitsigns.nvim',
-    opts = {
-      signs = {
-        add = { text = '+' },
-        change = { text = '~' },
-        delete = { text = '_' },
-        topdelete = { text = '‾' },
-        changedelete = { text = '~' },
-      },
-    },
-  },
-
-  {
-    'folke/todo-comments.nvim',
-    event = 'VimEnter',
-    dependencies = { 'nvim-lua/plenary.nvim' },
-    opts = { signs = false },
-  },
   {
     'nvim-lualine/lualine.nvim',
     dependencies = {
@@ -97,5 +76,18 @@ return {
   },
   {
     'famiu/bufdelete.nvim',
+  },
+  {
+    'akinsho/bufferline.nvim',
+    config = function()
+      require('bufferline').setup {
+        options = {
+          close_command = 'Bdelete! %d', -- can be a string | function, see "Mouse actions"
+          right_mouse_command = 'Bdelete! %d', -- can be a string | function, see "Mouse actions"
+          left_mouse_command = 'buffer %d', -- can be a string | function, see "Mouse actions"
+          middle_mouse_command = nil, -- can be a string | function, see "Mouse actions"
+        },
+      }
+    end,
   },
 }
