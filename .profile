@@ -1,6 +1,6 @@
 #!/bin/sh 
 
-export BROWSER=google-chrome
+export BROWSER=brave-browser
 export PATH=~/bin/$(hostname):~/bin/$(uname -m):~/.local/bin:~/bin:$PATH
 export MANPATH=$MANPATH:~/.local/share/man/
 export EDITOR=vim
