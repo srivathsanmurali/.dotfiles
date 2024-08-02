@@ -4,19 +4,56 @@
 set $mod    Mod4
 set $modAlt Mod1
 
-#color
-set $barColor             #2f343f
-set $bg-color             #909099
-set $inactive-bg-color    #2f343f
-set $text-color           #fdf4f5
-set $inactive-text-color  #676E7D
-set $urgent-bf-color      #E53935
+# #color
+# set $barColor             #2f343f
+# set $bg-color             #909099
+# set $inactive-bg-color    #2f343f
+# set $text-color           #fdf4f5
+# set $inactive-text-color  #676E7D
+# set $urgent-bf-color      #E53935
+#
+# # window colors
+# client.focused            $bg-color           $bg-color             $text-color           #00ff00
+# client.unfocused          $inactive-bg-color  $inactive-bg-color    $inactive-text-color  #00ff00
+# client.focused_inactive   $inactive-bg-color  $inactive-bg-color    $inactive-text-color  #00ff00
+# client.urgent             $urgent-bg-color    $urgent-bg-color      $text-color           #00ff00
 
-# window colors
-client.focused            $bg-color           $bg-color             $text-color           #00ff00
-client.unfocused          $inactive-bg-color  $inactive-bg-color    $inactive-text-color  #00ff00
-client.focused_inactive   $inactive-bg-color  $inactive-bg-color    $inactive-text-color  #00ff00
-client.urgent             $urgent-bg-color    $urgent-bg-color      $text-color           #00ff00
+# https://github.com/catppuccin/i3
+# catppucin-latte
+set $rosewater #dc8a78
+set $flamingo #dd7878
+set $pink #ea76cb
+set $mauve #8839ef
+set $red #d20f39
+set $maroon #e64553
+set $peach #fe640b
+set $yellow #df8e1d
+set $green #40a02b
+set $teal #179299
+set $sky #04a5e5
+set $sapphire #209fb5
+set $blue #1e66f5
+set $lavender #7287fd
+set $text #4c4f69
+set $subtext1 #5c5f77
+set $subtext0 #6c6f85
+set $overlay2 #7c7f93
+set $overlay1 #8c8fa1
+set $overlay0 #9ca0b0
+set $surface2 #acb0be
+set $surface1 #bcc0cc
+set $surface0 #ccd0da
+set $base #eff1f5
+set $mantle #e6e9ef
+set $crust #dce0e8
+
+# target                 title     bg    text   indicator  border
+client.focused           $lavender $base $text  $rosewater $lavender
+client.focused_inactive  $overlay0 $base $text  $rosewater $overlay0
+client.unfocused         $overlay0 $base $text  $rosewater $overlay0
+client.urgent            $peach    $base $peach $overlay0  $peach
+client.placeholder       $overlay0 $base $text  $overlay0  $overlay0
+client.background        $base
 
 font -misc-fixed-medium-r-normal--13-120-75-75-C-70-iso10646-1
 # vim: set ft=conf!
@@ -232,12 +269,23 @@ mode $dmenu_settings_mode {
 bindsym $mod+p exec "pdf_search"
 
 bar {
-    position top
-    status_command custom_statusbar.sh
-    #font pango:InputMono, Awesome 10 
-    font pango:DejaVu Sans Mono, Awesome 10
-    strip_workspace_numbers yes
-    tray_output primary
+  colors {
+    background         $base
+    statusline         $text
+    focused_statusline $text
+    focused_separator  $base
+    focused_workspace  $base $base $green
+    active_workspace   $base $base $blue
+    inactive_workspace $base $base $surface1
+    urgent_workspace   $base $base $surface1
+    binding_mode       $base $base $surface1
+  }
+  position top
+  status_command custom_statusbar.sh
+  #font pango:InputMono, Awesome 10 
+  font pango:DejaVu Sans Mono, Awesome 10
+  strip_workspace_numbers yes
+  tray_output primary
 }
 
 # vim: set ft=conf!
