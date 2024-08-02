@@ -104,6 +104,8 @@ return {
         'buildifier',
         'black',
         'isort',
+        'rust-analyzer',
+        'rustfmt',
       })
       require('mason-tool-installer').setup { ensure_installed = ensure_installed }
 
@@ -148,6 +150,7 @@ return {
         cpp = { 'clang-forma' },
         bzl = { 'buildifier' },
         python = { 'isort', 'black' },
+        rust = { 'rustfmt' },
         -- Conform can also run multiple formatters sequentially
         --
         -- You can use a sub-list to tell conform to run *until* a formatter
