@@ -68,6 +68,7 @@ alias grep="grep --color=auto"
 alias hgrep='history | grep '
 alias abook="abook --datafile ~/.local/share/abook/addressbook"
 alias yt='newsboat -u ~/.config/newsboat/yt_urls -c ~/.cache/yt_newsboat'
+alias cal='cal -y'
 
 # up function to go up in directories
 function up() {
