@@ -19,33 +19,61 @@ set $modAlt Mod1
 # client.urgent             $urgent-bg-color    $urgent-bg-color      $text-color           #00ff00
 
 # https://github.com/catppuccin/i3
-# catppucin-latte
-set $rosewater #dc8a78
-set $flamingo #dd7878
-set $pink #ea76cb
-set $mauve #8839ef
-set $red #d20f39
-set $maroon #e64553
-set $peach #fe640b
-set $yellow #df8e1d
-set $green #40a02b
-set $teal #179299
-set $sky #04a5e5
-set $sapphire #209fb5
-set $blue #1e66f5
-set $lavender #7287fd
-set $text #4c4f69
-set $subtext1 #5c5f77
-set $subtext0 #6c6f85
-set $overlay2 #7c7f93
-set $overlay1 #8c8fa1
-set $overlay0 #9ca0b0
-set $surface2 #acb0be
-set $surface1 #bcc0cc
-set $surface0 #ccd0da
-set $base #eff1f5
-set $mantle #e6e9ef
-set $crust #dce0e8
+# # catppucin-latte
+# set $rosewater #dc8a78
+# set $flamingo #dd7878
+# set $pink #ea76cb
+# set $mauve #8839ef
+# set $red #d20f39
+# set $maroon #e64553
+# set $peach #fe640b
+# set $yellow #df8e1d
+# set $green #40a02b
+# set $teal #179299
+# set $sky #04a5e5
+# set $sapphire #209fb5
+# set $blue #1e66f5
+# set $lavender #7287fd
+# set $text #4c4f69
+# set $subtext1 #5c5f77
+# set $subtext0 #6c6f85
+# set $overlay2 #7c7f93
+# set $overlay1 #8c8fa1
+# set $overlay0 #9ca0b0
+# set $surface2 #acb0be
+# set $surface1 #bcc0cc
+# set $surface0 #ccd0da
+# set $base #eff1f5
+# set $mantle #e6e9ef
+# set $crust #dce0e8
+
+# catppuccin-macchiato
+set $rosewater #f4dbd6
+set $flamingo #f0c6c6
+set $pink #f5bde6
+set $mauve #c6a0f6
+set $red #ed8796
+set $maroon #ee99a0
+set $peach #f5a97f
+set $yellow #eed49f
+set $green #a6da95
+set $teal #8bd5ca
+set $sky #91d7e3
+set $sapphire #7dc4e4
+set $blue #8aadf4
+set $lavender #b7bdf8
+set $text #cad3f5
+set $subtext1 #b8c0e0
+set $subtext0 #a5adcb
+set $overlay2 #939ab7
+set $overlay1 #8087a2
+set $overlay0 #6e738d
+set $surface2 #5b6078
+set $surface1 #494d64
+set $surface0 #363a4f
+set $base #24273a
+set $mantle #1e2030
+set $crust #181926
 
 # target                 title     bg    text   indicator  border
 client.focused           $lavender $base $text  $rosewater $lavender
@@ -222,7 +250,7 @@ bindsym $mod+f fullscreen
 bindsym $mod+a focus parent
 
 bindsym $mod+m exec open-map
-# bindsym $mod+M exec "ranger ~/data/graphs"
+bindsym $mod+Shift+m exec "open-map /tmp/"
 
 # vim: set ft=conf!
 
@@ -291,8 +319,8 @@ bar {
 # vim: set ft=conf!
 
 # Wallpaper
-default_border pixel 1
-default_floating_border pixel 1
+default_border pixel 2
+default_floating_border pixel 2
 
 # nofocus for notifications
 no_focus [window_type="notification"]
