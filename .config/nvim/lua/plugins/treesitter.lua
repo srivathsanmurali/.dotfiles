@@ -17,6 +17,7 @@ return {
         'go',
         'python',
         'scala',
+        'elixir',
       },
       -- Autoinstall languages that are not installed
       auto_install = true,
