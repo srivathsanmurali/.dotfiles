@@ -1,0 +1,13 @@
+#!/bin/sh
+set -eux
+VAULT_DIR="$HOME/data/vaults/notes-vault"
+DATE=$(date +"%Y-%m-%d %H:%M:%S")
+cd $VAULT_DIR
+git add -A
+
+message="vault backup: $DATE"
+git commit -m "$message"
+git pull --rebase
+git push
+
+notify-send "Notes Vault" "Pushed ${message}"
