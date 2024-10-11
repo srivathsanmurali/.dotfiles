@@ -41,3 +41,10 @@ vim.keymap.set('x', 'K', ":move '<-2<CR>gv-gv", { desc = 'Move the current visua
 
 -- Start a substitution with the current word
 vim.keymap.set('n', 'S', ':%s/<C-r><C-w>/<C-r><C-w>/gI<Left><Left><Left>')
+
+-- Bazel
+vim.keymap.set('n', '<leader>bb', ":lua require('sri/bazel').build_target_in_buffer()<CR>", { desc = 'Build bazel target for current buffer' })
+vim.keymap.set('n', '<leader>br', ":lua require('sri/bazel').run_target_in_buffer()<CR>", { desc = 'Build Run target for current buffer' })
+
+vim.keymap.set('n', '<leader>co', ':copen 40<CR>', { desc = 'QuickFix Open' })
+vim.keymap.set('n', '<leader>cc', ':copen<CR>', { desc = 'QuickFix Close' })
