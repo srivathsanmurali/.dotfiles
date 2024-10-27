@@ -12,13 +12,22 @@ setopt emacs
 setopt autocd
 setopt nocaseglob
 
-# completion engine
+# ----- Options
+## completion engine
 autoload -Uz compinit && compinit
 
-# local file
-[ -f $HOME/.zsh_local ] && source $HOME/.zsh_local
+## Ctrl-p & Ctrl-n
+autoload -U up-line-or-search
+autoload -U down-line-or-search
 
-## PROMPT
+bindkey C-p up-list-or-search
+bindkey C-n down-line-or-search
+
+# ----- Utility Functions
+_have() { type "$1" &> /dev/null; }
+_source_if() { [[ -r "$1" ]] && source "$1"; }
+
+# ----- PROMPT
 setopt prompt_subst
 PROMPT='[$(prompt)]$ '
 #PROMPT='$(prompt)$ '
@@ -34,6 +43,7 @@ git_prompt() {
 }
 RPROMPT='$(git_prompt)'
 
+# ----- Aliases
 # basic
 alias refresh="source $HOME/.zshrc"
 
@@ -70,6 +80,7 @@ alias abook="abook --datafile ~/.local/share/abook/addressbook"
 alias yt='newsboat -u ~/.config/newsboat/yt_urls -c ~/.cache/yt_newsboat'
 alias cal='cal -y'
 
+# ----- Functions
 # up function to go up in directories
 function up() {
   cd $(printf "%0.0s../" $(seq 1 $1));
@@ -107,6 +118,7 @@ function conda_activate() {
     conda activate $(ls ~/.local/opt/miniconda3/envs -1 | fzf --reverse)
 }
 
+# ----- History Management
 ## Command history configuration
 if [ -z "$HISTFILE" ]; then
     HISTFILE=$HOME/.zsh_history
@@ -132,20 +144,7 @@ setopt hist_verify
 setopt inc_append_history
 setopt share_history # share command history data
 
-## Ctrl-p & Ctrl-n
-autoload -U up-line-or-search
-autoload -U down-line-or-search
-
-bindkey C-p up-list-or-search
-bindkey C-n down-line-or-search
-
-# Application specific sources
-## asdf
-[ -f /opt/asdf/asdf.sh ] && source /opt/asdf/asdf.sh
-
-## fzf keybindings
-[ -f /usr/share/fzf/key-bindings.zsh ] && source /usr/share/fzf/key-bindings.zsh
-
+# ----- Extra configs
 # Config for applications
 ## elixir iex history
 export ERL_AFLAGS="-kernel shell_history enabled"
@@ -158,6 +157,14 @@ export GOPATH="${HOME}/.local/share/go"
 disable -r time
 alias time='time -p'
 
-[ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
-[ -f /usr/bin/zoxide ] && eval "$(zoxide init zsh)"
-[ -f /usr/bin/zoxide ] && alias cd='z'
+# zoxide
+_have zoxide && eval "$(zoxide init zsh)"
+_have zoxide && alias cd='z'
+
+# Application specific sources
+_source_if /opt/asdf/asdf.sh
+_source_if /usr/share/fzf/key-bindings.zsh
+
+# local file
+_source_if $HOME/.zsh_local
+_source_if ~/.fzf.zsh
