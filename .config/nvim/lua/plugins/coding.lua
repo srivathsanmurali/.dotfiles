@@ -40,4 +40,9 @@ return {
     dependencies = { 'nvim-lua/plenary.nvim' },
     opts = { signs = false },
   },
+  {
+    'windwp/nvim-autopairs',
+    event = 'InsertEnter',
+    config = true,
+  },
 }
