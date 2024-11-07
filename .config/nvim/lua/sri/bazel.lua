@@ -75,23 +75,35 @@ function M.build_target(workspace_path, target)
     on_exit = function(_, _, _, _)
       vim.cmd 'cgetbuffer'
     end,
-    on_close = function(_)
-      vim.cmd 'copen 30'
-    end,
   }
   bb:toggle()
 end
 
-function M.run_target(workspace_path, target)
+function M.run_target(workspace_path, target, cmd_args)
   local Terminal = require('toggleterm.terminal').Terminal
-  print(string.format('Running %s', target))
+  local cmd = string.format('bazel run %s', target)
+  if cmd_args then
+    print(string.format('Running cmd with args: %s %s', cmd, cmd_args))
+    cmd = string.format('%s %s', cmd, cmd_args)
+  else
+    print(string.format('Running %s', target))
+  end
   local bb = Terminal:new {
-    cmd = string.format('bazel run %s', target),
+    cmd = cmd,
     display_name = 'Bazel Run',
     dir = workspace_path,
     close_on_exit = false,
   }
   bb:toggle()
+end
+
+function M.get_test_name()
+  local line = vim.api.nvim_get_current_line()
+  local module_name, test_name = string.match(line, 'TEST[_F]+%(%s*(.*)%s*,%s*(.*)%s*%)')
+  if module_name and test_name then
+    return string.format('%s.%s', module_name, test_name)
+  end
+  return nil
 end
 
 function M.build_target_in_buffer()
@@ -104,5 +116,15 @@ function M.run_target_in_buffer()
   local filepath = vim.fn.expand '%:p'
   local targetname = M.get_target(filepath)
   M.run_target(vim.fn.getcwd(), targetname)
+end
+
+function M.run_test_in_line()
+  local filepath = vim.fn.expand '%:p'
+  local targetname = M.get_target(filepath)
+
+  local test_name = M.get_test_name()
+  if test_name then
+    M.run_target(vim.fn.getcwd(), targetname, string.format('-- --gtest_filter="%s"', test_name))
+  end
 end
 return M
