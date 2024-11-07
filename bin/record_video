@@ -2,11 +2,14 @@
 # Dependencies: slop, ffmpeg 
 
 set -eu
-VIDEO_FORMAT=${1:-"mp4"}
+VIDEO_FORMAT=${1:-"gif"}
 VIDEO_PATH="/tmp/recordings/$(date +%Y-%m-%d_%H-%M_%S).${VIDEO_FORMAT}"
 
 mkdir -p "/tmp/recordings"
 
 slop=$(slop -f "%x %y %w %h %g %i") || exit 1
 read -r X Y W H G ID <<< $slop
-ffmpeg -f x11grab -s "$W"x"$H" -i :0.0+$X,$Y $VIDEO_PATH
+ffmpeg -f x11grab -s "$W"x"$H" -i :0.0+$X,$Y $VIDEO_PATH || true
+
+notify-send "Record Video" "Recording saved to ${VIDEO_PATH}.\nVideo filepath copied to clipboard."
+echo "$VIDEO_PATH" | xclip -sel clip
