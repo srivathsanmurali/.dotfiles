@@ -18,6 +18,7 @@ return {
         'python',
         'scala',
         'elixir',
+        'query',
       },
       -- Autoinstall languages that are not installed
       auto_install = true,
@@ -44,5 +45,8 @@ return {
         max_lines = 5,
       }
     end,
+  },
+  {
+    'nvim-treesitter/playground',
   },
 }
