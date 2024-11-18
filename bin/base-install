@@ -1,0 +1,12 @@
+#!/bin/sh
+set -eux
+
+# Install my basic requirments
+## Workspace essentials
+sudo apt install i3 i3lock rofi feh pavucontrol blueman nm-tray light lightdm autorandr fonts-font-awesome
+
+## terminal essentials
+sudo apt install zsh tree htop iotop ranger fzf ncdu ripgrep fd-find stow screen watch xdot watch neovim
+
+# ## browser
+# sudo apt install firefox-browser
