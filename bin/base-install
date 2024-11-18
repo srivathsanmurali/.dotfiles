@@ -3,7 +3,7 @@ set -eux
 
 # Install my basic requirments
 ## Workspace essentials
-sudo apt install i3 i3lock rofi feh pavucontrol blueman nm-tray light lightdm autorandr fonts-font-awesome
+sudo apt install i3 i3lock rofi feh pavucontrol blueman nm-tray light lightdm autorandr fonts-font-awesome zathura
 
 ## terminal essentials
 sudo apt install zsh tree htop iotop ranger fzf ncdu ripgrep fd-find stow screen watch xdot watch neovim
