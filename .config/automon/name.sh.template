@@ -1,0 +1,14 @@
+#!/bin/sh
+set -eu
+
+LAPTOP=""
+MON1=""
+MON2=""
+
+xrandr --output "$MON2" --mode 1920x1080 --primary
+xrandr --output "$MON1" --mode 1920x1080 --rate 50 --rotate left --left-of "$MON2"
+
+# xrandr --output "$LAPTOP" --mode 1920x1080 --below "$MON2"
+xrandr --output "$LAPTOP" --off
+
+#setxkbmap -option 'ctrl:nocaps'
