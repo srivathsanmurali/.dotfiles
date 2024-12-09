@@ -65,7 +65,12 @@ alias gs='git status'
 alias gl='git log --pretty="custom2"'
 
 # ls 
-alias ls="ls --color=auto -h --group-directories-first"
+
+if [[ $(uname) == "Darwin" ]]; then
+  alias ls="ls --color=auto -h"
+else
+  alias ls="ls --color=auto -h --group-directories-first"
+fi
 alias lsa='ls -lah'
 alias l='ls -lah'
 alias ll='ls -lh'
