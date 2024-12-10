@@ -24,6 +24,7 @@ bindkey C-p up-list-or-search
 bindkey C-n down-line-or-search
 
 # ----- Utility Functions
+_macos() { [[ $(uname) == "Darwin" ]] }
 _have() { type "$1" &> /dev/null; }
 _source_if() { [[ -r "$1" ]] && source "$1"; }
 
@@ -47,9 +48,6 @@ RPROMPT='$(git_prompt)'
 # basic
 alias refresh="source $HOME/.zshrc"
 
-# vim
-alias v='vim'
-alias vi='vim'
 
 # git
 alias g='git'
@@ -161,6 +159,8 @@ export GOPATH="${HOME}/.local/share/go"
 
 disable -r time
 alias time='time -p'
+
+_macos && eval "$(/opt/homebrew/bin/brew shellenv)"
 
 # zoxide
 _have zoxide && eval "$(zoxide init zsh)"
