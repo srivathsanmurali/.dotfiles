@@ -33,7 +33,9 @@ return {
       vim.keymap.set('n', '<leader>tb', gitsigns.toggle_current_line_blame, { desc = '[T]oggle [B]lameline' })
     end,
   },
-
+  {
+    'tpope/vim-fugitive',
+  },
   {
     'folke/todo-comments.nvim',
     event = 'VimEnter',

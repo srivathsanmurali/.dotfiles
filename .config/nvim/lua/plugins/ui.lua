@@ -127,4 +127,24 @@ return {
       },
     },
   },
+  {
+    'stevearc/aerial.nvim',
+    opts = {
+      layout = {
+        default_direction = 'prefer_left',
+      },
+    },
+    -- Optional dependencies
+    dependencies = {
+      'nvim-treesitter/nvim-treesitter',
+      'nvim-tree/nvim-web-devicons',
+    },
+    keys = {
+      {
+        '<leader>ta',
+        '<cmd>AerialToggle<cr>',
+        desc = '[T]oggle [A]erial',
+      },
+    },
+  },
 }
