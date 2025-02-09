@@ -6,3 +6,6 @@ TODO
 TODO.md
 static_analysis
 .bazelversion
+compile_commands.json
+.run
+.cache
