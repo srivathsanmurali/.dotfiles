@@ -1,0 +1,8 @@
+#!/bin/sh
+
+if [ -z $1 ]; then
+    $EDITOR $(find $HOME/bin/* $HOME/.local/bin/* -type f | fzf)
+else
+    file=$(which "$1")
+    $EDITOR "$file"
+fi

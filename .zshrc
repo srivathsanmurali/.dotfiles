@@ -56,8 +56,8 @@ alias gap='git add -p'
 alias gb='git branch'
 alias gc='git commit'
 alias gco='git checkout'
-alias gd='git diff --color-words'
-alias gdc='git diff --color-words --cached'
+alias gd='git diff'
+alias gdc='git diff --cached'
 alias gr='git gr'
 alias gs='git status'
 alias gl='git log --pretty="custom2"'
@@ -82,6 +82,8 @@ alias hgrep='history | grep '
 alias abook="abook --datafile ~/.local/share/abook/addressbook"
 alias yt='newsboat -u ~/.config/newsboat/yt_urls -c ~/.cache/yt_newsboat'
 alias cal='cal -y'
+
+alias conda-load="eval $(/opt/homebrew/Caskroom/miniconda/base/bin/conda shell.zsh hook)"
 
 # ----- Functions
 # up function to go up in directories
@@ -117,8 +119,9 @@ function z_() {
 }
 
 function conda_activate() {
+    # ENV_PATH="/opt/homebrew/Caskroom/miniconda/base/envs/"
     conda-load
-    conda activate $(ls ~/.local/opt/miniconda3/envs -1 | fzf --reverse)
+    conda activate $(ls /opt/homebrew/Caskroom/miniconda/base/envs/ | tr ' ' '\n' | fzf --reverse)
 }
 
 # ----- History Management
@@ -172,4 +175,6 @@ _source_if /usr/share/fzf/key-bindings.zsh
 
 # local file
 _source_if $HOME/.zsh_local
-_source_if ~/.fzf.zsh
+# _source_if ~/.fzf.zsh
+
+_have fzf && source <(fzf --zsh)

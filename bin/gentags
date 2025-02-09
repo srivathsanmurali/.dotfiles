@@ -1,0 +1,5 @@
+#/bin/sh
+# vim: ft=sh ts=4 sw=4 et
+
+ctags --recurse --sort=1 --c++-kinds=+pxDA --fields=+iaS --extras=+q -f tags --excmd=number --map-C++=+.mm . && wc -l tags
+

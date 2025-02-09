@@ -1,0 +1,5 @@
+#!/bin/sh
+set -eux
+
+echo "PWD = ${PWD}"
+[ -f "$PWD/.run" ] && . $PWD/.run "$@"
