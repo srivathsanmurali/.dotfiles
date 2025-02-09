@@ -1,6 +1,7 @@
 return {
   {
     'neovim/nvim-lspconfig',
+    enabled = true,
     dependencies = {
       { 'williamboman/mason.nvim', config = true },
       'williamboman/mason-lspconfig.nvim',
@@ -43,29 +44,29 @@ return {
           --    See `:help CursorHold` for information about when this is executed
           --
           -- When you move your cursor, the highlights will be cleared (the second autocommand).
-          local client = vim.lsp.get_client_by_id(event.data.client_id)
-          if client and client.server_capabilities.documentHighlightProvider then
-            local highlight_augroup = vim.api.nvim_create_augroup('lsp-highlight', { clear = false })
-            vim.api.nvim_create_autocmd({ 'CursorHold', 'CursorHoldI' }, {
-              buffer = event.buf,
-              group = highlight_augroup,
-              callback = vim.lsp.buf.document_highlight,
-            })
-
-            vim.api.nvim_create_autocmd({ 'CursorMoved', 'CursorMovedI' }, {
-              buffer = event.buf,
-              group = highlight_augroup,
-              callback = vim.lsp.buf.clear_references,
-            })
-
-            vim.api.nvim_create_autocmd('LspDetach', {
-              group = vim.api.nvim_create_augroup('lsp-detach', { clear = true }),
-              callback = function(event2)
-                vim.lsp.buf.clear_references()
-                vim.api.nvim_clear_autocmds { group = 'lsp-highlight', buffer = event2.buf }
-              end,
-            })
-          end
+          -- local client = vim.lsp.get_client_by_id(event.data.client_id)
+          -- if client and client.server_capabilities.documentHighlightProvider then
+          --   local highlight_augroup = vim.api.nvim_create_augroup('lsp-highlight', { clear = false })
+          --   vim.api.nvim_create_autocmd({ 'CursorHold', 'CursorHoldI' }, {
+          --     buffer = event.buf,
+          --     group = highlight_augroup,
+          --     callback = vim.lsp.buf.document_highlight,
+          --   })
+          --
+          --   vim.api.nvim_create_autocmd({ 'CursorMoved', 'CursorMovedI' }, {
+          --     buffer = event.buf,
+          --     group = highlight_augroup,
+          --     callback = vim.lsp.buf.clear_references,
+          --   })
+          --
+          --   vim.api.nvim_create_autocmd('LspDetach', {
+          --     group = vim.api.nvim_create_augroup('lsp-detach', { clear = true }),
+          --     callback = function(event2)
+          --       vim.lsp.buf.clear_references()
+          --       vim.api.nvim_clear_autocmds { group = 'lsp-highlight', buffer = event2.buf }
+          --     end,
+          --   })
+          -- end
 
           -- The following autocommand is used to enable inlay hints in your
           -- code, if the language server you are using supports them
@@ -100,7 +101,7 @@ return {
       local ensure_installed = vim.tbl_keys(servers or {})
       vim.list_extend(ensure_installed, {
         'stylua', -- Used to format Lua code
-        'clang-format',
+        -- 'clang-format',
         'buildifier',
         'black',
         'isort',
@@ -125,6 +126,7 @@ return {
   },
   { -- Autoformat
     'stevearc/conform.nvim',
+    enabled = false,
     lazy = false,
     keys = {
       {
@@ -138,16 +140,16 @@ return {
     },
     opts = {
       notify_on_error = false,
-      format_on_save = function(bufnr)
-        local disable_filetypes = { c = true, cpp = true }
-        return {
-          timeout_ms = 500,
-          lsp_fallback = not disable_filetypes[vim.bo[bufnr].filetype],
-        }
-      end,
+      -- format_on_save = function(bufnr)
+      --   local disable_filetypes = { c = true, cpp = true }
+      --   return {
+      --     timeout_ms = 500,
+      --     lsp_fallback = not disable_filetypes[vim.bo[bufnr].filetype],
+      --   }
+      -- end,
       formatters_by_ft = {
         lua = { 'stylua' },
-        cpp = { 'clang-forma' },
+        -- cpp = { 'clang-forma' },
         bzl = { 'buildifier' },
         python = { 'isort', 'black' },
         rust = { 'rustfmt' },

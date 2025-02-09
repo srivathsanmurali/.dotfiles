@@ -29,12 +29,8 @@ return {
       indent = { enable = true, disable = { 'ruby' } },
     },
     config = function(_, opts)
-      -- [[ Configure Treesitter ]] See `:help nvim-treesitter`
-
       require('nvim-treesitter.install').prefer_git = false
       require('nvim-treesitter.configs').setup(opts)
-
-      --    - Treesitter + textobjects: https://github.com/nvim-treesitter/nvim-treesitter-textobjects
     end,
   },
   {

@@ -14,6 +14,9 @@ vim.keymap.set('n', '<leader>q', vim.diagnostic.setloclist, { desc = 'Open diagn
 -- NOTE: This won't work in all terminal emulators/tmux/etc. Try your own mapping
 -- or just use <C-\><C-n> to exit terminal mode
 vim.keymap.set('t', '<Esc><Esc>', '<C-\\><C-n>', { desc = 'Exit terminal mode' })
+vim.keymap.set('t', 'gt', ':tabnext', { desc = 'Next Tab' })
+vim.keymap.set('t', 'gT', ':tabprev', { desc = 'Prev Tab' })
+vim.keymap.set('n', '<leader>g', function() require("sri/terms").lazygit_toggle() end, { desc = '[L]azy [G]it'})
 
 -- Keybinds to make split navigation easier.
 --  Use CTRL+<hjkl> to switch between windows
@@ -49,3 +52,6 @@ vim.keymap.set('n', '<leader>bt', ":lua require('sri/bazel').run_test_in_line()<
 
 vim.keymap.set('n', '<leader>co', ':copen 40<CR>', { desc = 'QuickFix Open' })
 vim.keymap.set('n', '<leader>cc', ':copen<CR>', { desc = 'QuickFix Close' })
+
+vim.keymap.set("n", "<leader>x", ":.lua<CR>")
+vim.keymap.set("v", "<leader>x", ":lua<CR>")

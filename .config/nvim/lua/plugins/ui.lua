@@ -1,13 +1,40 @@
 return {
+  -- {
+  --   'catppuccin/nvim',
+  --   name = 'catppuccin',
+  --   priority = 1000,
+  --   config = function()
+  --     require('catppuccin').setup()
+  --
+  --     -- setup must be called before loading
+  --     vim.cmd.colorscheme 'catppuccin-mocha'
+  --     vim.opt.background = 'dark'
+  --   end,
+  -- },
+  -- {
+  --   "blazkowolf/gruber-darker.nvim",
+  --   config = function()
+  --     require('gruber-darker').setup()
+  --
+  --     vim.cmd.colorscheme 'gruber-darker'
+  --     vim.opt.background = 'dark'
+  --   end,
+  -- },
+  -- {
+  --   "olimorris/onedarkpro.nvim",
+  --   priority = 1000, -- Ensure it loads first
+  --   config = function()
+  --     vim.cmd.colorscheme 'onelight'
+  --     vim.opt.background = 'light'
+  --   end,
+  -- },
   {
-    'catppuccin/nvim',
-    name = 'catppuccin',
+    'CodeGradox/onehalf-lush',
+    lazy = false,
     priority = 1000,
     config = function()
-      require('catppuccin').setup()
-
-      -- setup must be called before loading
-      vim.cmd.colorscheme 'catppuccin-mocha'
+      vim.opt.background = 'light'
+      vim.cmd.colorscheme 'onehalf-lush'
     end,
   },
   {
@@ -130,8 +157,19 @@ return {
   {
     'stevearc/aerial.nvim',
     opts = {
+      backends = { 'treesitter', 'lsp', 'markdown', 'asciidoc', 'man' },
       layout = {
         default_direction = 'prefer_left',
+      },
+      filter_kind = {
+        'Class',
+        'Constructor',
+        'Enum',
+        'Function',
+        'Interface',
+        'Module',
+        'Method',
+        'Struct',
       },
     },
     -- Optional dependencies
