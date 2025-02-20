@@ -9,3 +9,4 @@ static_analysis
 compile_commands.json
 .run
 .cache
+**/*.DS_Store
