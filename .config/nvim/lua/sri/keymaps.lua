@@ -53,5 +53,5 @@ vim.keymap.set('n', '<leader>bt', ":lua require('sri/bazel').run_test_in_line()<
 vim.keymap.set('n', '<leader>co', ':copen 40<CR>', { desc = 'QuickFix Open' })
 vim.keymap.set('n', '<leader>cc', ':copen<CR>', { desc = 'QuickFix Close' })
 
-vim.keymap.set("n", "<leader>x", ":.lua<CR>")
-vim.keymap.set("v", "<leader>x", ":lua<CR>")
+vim.keymap.set("n", "<C-f>", "<cmd>silent !tmux neww tmux-sessionizer<CR>")
+vim.keymap.set("n", "<leader>x", "<cmd>!chmod +x %<CR>", { silent = true })
