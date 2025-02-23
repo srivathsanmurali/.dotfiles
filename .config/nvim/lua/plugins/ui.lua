@@ -1,33 +1,4 @@
 return {
-  -- {
-  --   'catppuccin/nvim',
-  --   name = 'catppuccin',
-  --   priority = 1000,
-  --   config = function()
-  --     require('catppuccin').setup()
-  --
-  --     -- setup must be called before loading
-  --     vim.cmd.colorscheme 'catppuccin-mocha'
-  --     vim.opt.background = 'dark'
-  --   end,
-  -- },
-  -- {
-  --   "blazkowolf/gruber-darker.nvim",
-  --   config = function()
-  --     require('gruber-darker').setup()
-  --
-  --     vim.cmd.colorscheme 'gruber-darker'
-  --     vim.opt.background = 'dark'
-  --   end,
-  -- },
-  -- {
-  --   "olimorris/onedarkpro.nvim",
-  --   priority = 1000, -- Ensure it loads first
-  --   config = function()
-  --     vim.cmd.colorscheme 'onelight'
-  --     vim.opt.background = 'light'
-  --   end,
-  -- },
   {
     'CodeGradox/onehalf-lush',
     lazy = false,
@@ -86,10 +57,34 @@ return {
       }
     end,
   },
-  {
-    'lukas-reineke/indent-blankline.nvim',
-    main = 'ibl',
-    opts = {},
+  -- See `:help gitsigns` to understand what the configuration keys do
+  { -- Adds git related signs to the gutter, as well as utilities for managing changes
+    'lewis6991/gitsigns.nvim',
+    config = function()
+      local gitsigns = require 'gitsigns'
+      gitsigns.setup {
+        signs = {
+          add = { text = '┃' },
+          change = { text = '┃' },
+          delete = { text = '_' },
+          topdelete = { text = '‾' },
+          changedelete = { text = '~' },
+          untracked = { text = '┆' },
+        },
+        signs_staged = {
+          add = { text = '┃' },
+          change = { text = '┃' },
+          delete = { text = '_' },
+          topdelete = { text = '‾' },
+          changedelete = { text = '~' },
+          untracked = { text = '┆' },
+        },
+        signs_staged_enable = true,
+        signcolumn = true, -- Toggle with `:Gitsigns toggle_signs`
+      }
+      vim.keymap.set('n', '<leader>hp', gitsigns.preview_hunk, { desc = '[H]unk [P]review' })
+      vim.keymap.set('n', '<leader>tb', gitsigns.toggle_current_line_blame, { desc = '[T]oggle [B]lameline' })
+    end,
   },
   {
     'stevearc/oil.nvim',
@@ -100,9 +95,6 @@ return {
       require('oil').setup {}
       vim.keymap.set('n', '<leader>e', '<cmd>:Oil<CR>', { desc = 'Open File [E]xplorer' })
     end,
-  },
-  {
-    'famiu/bufdelete.nvim',
   },
   {
     'akinsho/bufferline.nvim',
@@ -151,37 +143,6 @@ return {
         '<leader>td',
         '<cmd>Trouble diagnostics toggle filter.buf=0<cr>',
         desc = '[T]oggle [D]iagnostics (Trouble)',
-      },
-    },
-  },
-  {
-    'stevearc/aerial.nvim',
-    opts = {
-      backends = { 'treesitter', 'lsp', 'markdown', 'asciidoc', 'man' },
-      layout = {
-        default_direction = 'prefer_left',
-      },
-      filter_kind = {
-        'Class',
-        'Constructor',
-        'Enum',
-        'Function',
-        'Interface',
-        'Module',
-        'Method',
-        'Struct',
-      },
-    },
-    -- Optional dependencies
-    dependencies = {
-      'nvim-treesitter/nvim-treesitter',
-      'nvim-tree/nvim-web-devicons',
-    },
-    keys = {
-      {
-        '<leader>ta',
-        '<cmd>AerialToggle<cr>',
-        desc = '[T]oggle [A]erial',
       },
     },
   },
