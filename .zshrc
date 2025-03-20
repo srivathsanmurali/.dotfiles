@@ -23,6 +23,11 @@ autoload -U down-line-or-search
 bindkey C-p up-list-or-search
 bindkey C-n down-line-or-search
 
+# session-widget() { source tmux-sessionizer }
+# zle -N session-widget
+# bindkey ^f session-widget
+bindkey -s '^f' "^Qtmux-sessionizer\n"
+
 # ----- Utility Functions
 _macos() { [[ $(uname) == "Darwin" ]] }
 _have() { type "$1" &> /dev/null; }
@@ -47,6 +52,7 @@ RPROMPT='$(git_prompt)'
 # ----- Aliases
 # basic
 alias refresh="source $HOME/.zshrc"
+alias vi="vim"
 
 
 # git
@@ -62,7 +68,7 @@ alias gr='git gr'
 alias gs='git status'
 alias gl='git log --pretty="custom2"'
 
-# ls 
+# ls
 
 if [[ $(uname) == "Darwin" ]]; then
   alias ls="ls --color=auto -h"
@@ -86,6 +92,10 @@ alias cal='cal -y'
 alias conda-load="eval $(/opt/homebrew/Caskroom/miniconda/base/bin/conda shell.zsh hook)"
 
 # ----- Functions
+function t {
+  pushd $(mktemp -d /tmp/$1.XXXX)
+}
+
 # up function to go up in directories
 function up() {
   cd $(printf "%0.0s../" $(seq 1 $1));
@@ -121,7 +131,7 @@ function z_() {
 function conda_activate() {
     # ENV_PATH="/opt/homebrew/Caskroom/miniconda/base/envs/"
     conda-load
-    conda activate $(ls /opt/homebrew/Caskroom/miniconda/base/envs/ | tr ' ' '\n' | fzf --reverse)
+    conda activate $(conda env list --json | jq --raw-output '.envs[] | .' | sed 's#.*/##g' | fzf --reverse)
 }
 
 # ----- History Management
