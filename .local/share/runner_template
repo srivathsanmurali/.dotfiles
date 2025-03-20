@@ -1,0 +1,13 @@
+#!/bin/sh
+# vim: ft=sh ts=4 sw=4 et
+# MODE=${1:-"train"}; [ "$#" -gt 0 ] && shift
+set -eux
+
+MODE=$1
+
+case $MODE in
+    *)
+        echo "ERROR: Unknown Mode $MODE"
+        exit 1
+        ;;
+esac

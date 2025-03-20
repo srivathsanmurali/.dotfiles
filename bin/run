@@ -2,4 +2,15 @@
 set -eux
 
 echo "PWD = ${PWD}"
-[ -f "$PWD/.run" ] && . $PWD/.run "$@"
+MODE=${1:-"edit"};
+if [ $MODE == "edit" ]; then
+    [ ! -f "$PWD/.run" ] && cp -r "$HOME/.local/share/runner_template" "$PWD/.run"
+    vim .run
+    exit 0
+fi
+
+if [ -f "$PWD/.run" ]; then
+    . $PWD/.run "$@"
+else
+    echo "There is no .run file. Launch 'run edit' to initialize template"
+fi
