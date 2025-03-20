@@ -20,17 +20,21 @@ hydrate() {
     fi
 }
 
+get_selected_name() {
+    printf "$1" | sed -e "s#${HOME}/priv/##g" -e "s#${HOME}/sources/##g" -e "s#${HOME}/##g" | tr "/." '_'
+}
+
 if [[ $# -eq 1 ]]; then
     selected=$1
 else
-    selected=$(find ~/priv ~/sources ~/.dotfiles ~/.config/nvim -name '.git' -maxdepth 3 -exec dirname {} ';' | /opt/homebrew/bin/fzf)
+    selected=$(find ~/priv ~/sources ~/.dotfiles ~/.config/nvim -name '.git' -maxdepth 3 -exec dirname {} ';' | fzf --reverse --tmux=center)
 fi
 
 if [[ -z $selected ]]; then
     exit 0
 fi
 
-selected_name=$(printf "$selected" | sed -e "s#${HOME}/priv/##g" -e "s#${HOME}/sources/##g" -e "s#${HOME}/##g" | tr "/." '_')
+selected_name=$(get_selected_name "$selected")
 tmux_running=$(pgrep tmux)
 
 if [[ -z $TMUX ]] && [[ -z $tmux_running ]]; then
