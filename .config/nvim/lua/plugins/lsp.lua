@@ -93,7 +93,7 @@ return {
       local ensure_installed = vim.tbl_keys(servers or {})
       vim.list_extend(ensure_installed, {
         'stylua', -- Used to format Lua code
-        -- 'clang-format',
+        'clang-format',
         'buildifier',
         'black',
         'isort',
@@ -118,7 +118,7 @@ return {
   },
   { -- Autoformat
     'stevearc/conform.nvim',
-    enabled = false,
+    enabled = true,
     lazy = false,
     keys = {
       {
@@ -141,7 +141,7 @@ return {
       -- end,
       formatters_by_ft = {
         lua = { 'stylua' },
-        -- cpp = { 'clang-forma' },
+        cpp = { 'clang-format' },
         bzl = { 'buildifier' },
         python = { 'isort', 'black' },
         rust = { 'rustfmt' },

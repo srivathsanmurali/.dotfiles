@@ -1,0 +1,10 @@
+#!/bin/sh
+set -eu
+
+FILE=$1
+SECS=${2:-'10'}
+
+printf "Sleeping for %s seconds.\n" "$SECS"
+sleep "$SECS"
+printf "Waking up and tailing %s.\n" "$FILE"
+tail -f "$FILE"

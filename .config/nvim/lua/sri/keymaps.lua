@@ -49,3 +49,7 @@ vim.keymap.set('n', '<leader>cc', ':copen<CR>', { desc = 'QuickFix Close' })
 
 vim.keymap.set("n", "<C-f>", "<cmd>silent !tmux neww tmux-sessionizer<CR>")
 vim.keymap.set("n", "<leader>x", "<cmd>!chmod +x %<CR>", { silent = true })
+
+vim.keymap.set("n", "<leader>e", "<cmd>Explore<CR>", { desc = "[E]xplore directory" })
+
+-- DM keymaps

@@ -40,6 +40,9 @@ local autoCommands = {
     { 'FileType', 'gitcommit,markdown', 'setlocal wrap' },
     { 'FileType', 'gitcommit,markdown', 'setlocal spell' },
   },
+  _sri = {
+    { "BufWritePre", "*", [[%s/\s\+$//e]] }
+  },
 }
 
 M.nvim_create_augroups(autoCommands)

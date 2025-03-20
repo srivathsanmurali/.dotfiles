@@ -1,14 +1,5 @@
 return {
   {
-    'CodeGradox/onehalf-lush',
-    lazy = false,
-    priority = 1000,
-    config = function()
-      vim.opt.background = 'light'
-      vim.cmd.colorscheme 'onehalf-lush'
-    end,
-  },
-  {
     'nvim-lualine/lualine.nvim',
     dependencies = {
       'nvim-tree/nvim-web-devicons',
@@ -88,6 +79,7 @@ return {
   },
   {
     'stevearc/oil.nvim',
+    enabled = false,
     opts = {},
     -- Optional dependencies
     dependencies = { 'nvim-tree/nvim-web-devicons' },
