@@ -10,3 +10,4 @@ compile_commands.json
 .run
 .cache
 **/*.DS_Store
+.clang-format

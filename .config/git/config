@@ -22,8 +22,8 @@
   cb = checkout -b
 
   # diff
-  d = diff --color-words
-  dx = diff --color-words --cached
+  d = diff
+  dx = diff --cached
 
   #submodule update
   subpl = submodule update --init --recursive
@@ -88,6 +88,9 @@
   custom2 = "%C(blue)%as %C(magenta)%h %C(green)%s %C(yellow)[%an] %C(red)%D"
   simplelog = "%C(magenta)%h %C(green)%s %C(yellow)[%an]"
   cl = "%h %s"
+
+[commit]
+  cleanup = scissors
 
 [merge]
   tool = vimdiff
