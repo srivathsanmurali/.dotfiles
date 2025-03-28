@@ -1,6 +1,6 @@
-#!/bin/sh 
+#!/bin/sh
 
-export BROWSER=firefox
+export BROWSER=chromium
 export PATH=~/bin/$(hostname):~/bin/$(uname -m):~/.local/bin:~/bin:$PATH
 export MANPATH=$MANPATH:~/.local/share/man/
 export EDITOR=vim

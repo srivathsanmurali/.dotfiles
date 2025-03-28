@@ -1,9 +1,9 @@
-#          _              
-#  _______| |__  _ __ ___ 
+#          _
+#  _______| |__  _ __ ___
 # |_  / __| '_ \| '__/ __|
-#  / /\__ \ | | | | | (__ 
+#  / /\__ \ | | | | | (__
 # /___|___/_| |_|_|  \___|
-#                         
+#
 
 # options
 stty -ixon # Disable ctrl-s and ctrl-q
@@ -67,6 +67,7 @@ alias gdc='git diff --cached'
 alias gr='git gr'
 alias gs='git status'
 alias gl='git log --pretty="custom2"'
+alias lg='lazygit'
 
 # ls
 
