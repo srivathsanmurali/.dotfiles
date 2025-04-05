@@ -1,0 +1,17 @@
+#!/bin/sh
+
+TOO_OLD_THRESHOLD_MIN=120
+TMUX_LOG_PATH="/tmp/tmux-kill-sessions.log"
+
+now=$(($(date +%s)))
+
+tmux ls -F "#{session_name} #{session_activity}" | while read -r session_name last_activity; do
+    last_activity_elapsed=$(((now - last_activity) / 60))
+    if [[ "$last_activity_elapsed" -gt "$TOO_OLD_THRESHOLD_MIN" ]]; then
+        printf "%s - Killed session: %s (Inactive for %dmin\n" "$(date '+%Y-%m-%d %H:%M:%S')" $session_name $last_activity_elapsed \
+            | tee -a $TMUX_LOG_PATH
+        tmux kill-session -t ${session_name}
+        # In case you want to test the script without killing sessions, comment the 2 lines above and uncomment below
+        # echo "${session_name} is ${last_activity_elapsed}min inactive and would be killed."
+  fi
+done
