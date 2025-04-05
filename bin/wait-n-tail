@@ -2,9 +2,11 @@
 set -eu
 
 FILE=$1
-SECS=${2:-'10'}
 
-printf "Sleeping for %s seconds.\n" "$SECS"
-sleep "$SECS"
-printf "Waking up and tailing %s.\n" "$FILE"
+i=0;
+while [ ! -f "$FILE" ]; do
+    sleep "1"
+    i=$((i+1))
+done
+printf "Waking up after %s seconds and tailing %s.\n" "$i" "$FILE"
 tail -f "$FILE"
